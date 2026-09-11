@@ -81,8 +81,8 @@ built-in text-to-speech.
 
 ## Licence
 
-MIT for the code. The 272 photos keep their own Wikimedia licences and the
-font is OFL — see `LICENSE` for the details.
+MIT for the code (`LICENSE`). The 272 photos keep their own Wikimedia licences
+and the font is OFL — see `NOTICE.md`.
 
 ## Photos and licensing
 
