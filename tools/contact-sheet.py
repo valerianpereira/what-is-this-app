@@ -10,7 +10,8 @@ import sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
-APP = Path(__file__).resolve().parent.parent / "app"
+ROOT = Path(__file__).resolve().parent.parent
+APP, PHOTOS = ROOT / "app", ROOT / "photos"
 FONT = ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial.ttf", 13)
 CELL, LABEL, COLS, PAD = 150, 18, 6, 6
 
@@ -23,7 +24,7 @@ if not slots:
         slots.append(f"cat-{c['id']}")
         slots += [f"obj-{c['id']}-{slug(i['name'])}" for i in c["items"]]
 
-credits = json.loads((APP / "img/credits.json").read_text())
+credits = json.loads((APP / "data/credits.json").read_text())
 rows = (len(slots) + COLS - 1) // COLS
 sheet = Image.new("RGB", (COLS * (CELL + PAD) + PAD, rows * (CELL + LABEL + PAD) + PAD), "white")
 draw = ImageDraw.Draw(sheet)
@@ -31,7 +32,7 @@ draw = ImageDraw.Draw(sheet)
 for i, slot in enumerate(slots):
     x = PAD + (i % COLS) * (CELL + PAD)
     y = PAD + (i // COLS) * (CELL + LABEL + PAD)
-    im = Image.open(APP / "img" / f"{slot}.webp").convert("RGB")
+    im = Image.open(PHOTOS / f"{slot}.webp").convert("RGB")
     # Square centre crop, so the sheet shows what the app's square frame shows.
     side = min(im.size)
     im = im.crop((

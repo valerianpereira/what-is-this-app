@@ -6,8 +6,13 @@ handoff (`What Is This.dc.html`).
 Show a photo, the child says the word out loud, five seconds later the app says
 it back. Ten pictures a round, then a summary of the words seen.
 
-17 groups × 15 things = 255 words, 272 photos, **16 MB APK**, no permissions,
-no network, no accounts.
+17 groups × 15 things = 255 words, 272 photos, **4 MB APK**.
+
+The photos are not bundled. They are served from a CDN and cached on the device
+as the child plays — each picture is downloaded the first time it comes up and
+is local from then on, so the game keeps working with no network. A grown-up can
+also pull the whole set down in one go (Parent zone → "Download all pictures")
+before a flight.
 
 The UI is one HTML file running in a Capacitor WebView — there is no framework
 and no build step for the app itself, only the Android packaging.
@@ -32,14 +37,18 @@ leaves the replaced files' bytes inside the APK and doubles its size.
 
     app/index.html            whole app — markup, styles, game logic
     app/data/cards.json       every group and word, and where its photo comes from
-    app/img/*.webp            272 photos (17 group tiles + 255 things)
-    app/img/credits.json      photographer + licence per photo
+    app/sw.js                 serves cached photos so the game works offline
+    app/data/credits.json     photographer + licence per photo (bundled, tiny)
     app/fonts/                Fredoka variable font, 400–700
+
+    photos/*.webp             the 272 photos — NOT shipped in the APK; uploaded
+                              to the CDN and fetched on demand
 
     android/                  Capacitor wrapper (generated; `npm run apk` refreshes it)
     dist/what-is-this.apk     built debug APK (gitignored)
 
     tools/fetch-images.mjs    downloads any photo cards.json is missing
+    tools/upload-cloudinary.mjs  uploads photos/ to Cloudinary, prints imageBase
     tools/check.mjs           asserts every card has a photo and a credit
     tools/contact-sheet.py    composes a labelled sheet of the photos, to eyeball them
     tools/candidates.mjs      shows Commons search results when a photo needs replacing
@@ -48,7 +57,8 @@ leaves the replaced files' bytes inside the APK and doubles its size.
 ## Changing the words or pictures
 
 `app/data/cards.json` is the only place groups and words are defined — the app
-reads it at boot and the fetcher reads it to download photos. Each item names
+reads it at boot and the fetcher reads it to download photos. Its `imageBase`
+field is where the app fetches photos from at runtime. Each item names
 the Wikipedia article its photo comes from. A `File:Foo.jpg` value pins one
 exact Wikimedia Commons file, which is how items whose article lead image is a
 painting, a collage or a botanical diagram (Doctor, Coconut, Harp, …) get a
@@ -58,13 +68,26 @@ usable photo.
     npm run check         # fails on a card with no photo, a duplicate word, a stray credit
     python3 tools/contact-sheet.py /tmp/sheet.jpg     # look at all 272 at once
 
-To replace one bad photo: delete its `app/img/<slot>.webp` and its entry in
-`app/img/credits.json`, point the item at a better article or `File:`, re-run
-`npm run images`.
+To replace one bad photo: delete its `photos/<slot>.webp` and its entry in
+`app/data/credits.json`, point the item at a better article or `File:`, re-run
+`npm run images`, then re-upload. Bump `IMG_CACHE` in both `app/sw.js` and
+`app/index.html` if a replaced photo has to reach devices that cached the old
+one.
 
 Photos are fetched at 720px (the round card at 3× on a 1080p phone) and encoded
-as WebP q78 — about half the bytes of the equivalent JPEG, which is where most
-of the 16 MB APK comes from. Requires `cwebp` (`brew install webp`).
+as WebP q78 — about half the bytes of the equivalent JPEG. Requires `cwebp`
+(`brew install webp`).
+
+### Hosting the photos
+
+    export CLOUDINARY_URL='cloudinary://<api_key>:<api_secret>@<cloud_name>'
+    node tools/upload-cloudinary.mjs        # skips what is already uploaded
+
+It prints the `imageBase` value to paste into `app/data/cards.json`.
+Credentials are read from the environment only — never commit them.
+
+Any static host works; nothing Cloudinary-specific is relied on. The host must
+send `Access-Control-Allow-Origin`, which Cloudinary and jsDelivr both do.
 
 ## Development
 
@@ -93,8 +116,11 @@ licence and source URL for all 272. Keep that screen if you ship this.
 
 ## Android notes
 
-- The APK asks for **no permissions at all**, INTERNET included: every photo,
-  the font and the page ship inside it, and nothing phones home.
+- The APK asks for one permission, `INTERNET`, used only to fetch card photos.
+  No analytics, no accounts, no other network traffic.
+- The photo cache lives in the WebView's Cache Storage, served by `app/sw.js`.
+  If Android evicts it under storage pressure, photos re-download as they come
+  up again.
 - Locked to portrait.
 - `dist/what-is-this.apk` is a debug build — fine for sideloading, not for the
   Play Store. For that, generate an upload key and run `./gradlew bundleRelease`.

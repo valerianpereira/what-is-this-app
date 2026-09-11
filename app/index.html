@@ -63,6 +63,7 @@ button{font-family:inherit}
 #promptText{font-size:38px;font-weight:700;letter-spacing:-.8px;color:#241C15}
 .pic{position:relative;width:min(298px,74vw);height:min(298px,74vw)}
 .pic>.face{position:absolute;inset:0;border:none;padding:0;border-radius:46px;background:#fff;box-shadow:0 12px 0 rgba(0,0,0,.09);cursor:pointer;overflow:hidden}
+#picMissing{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:0 34px;text-align:center;font-size:17px;font-weight:500;color:#A2907B}
 #ring{position:absolute;right:-14px;bottom:-14px;width:96px;height:96px;pointer-events:none}
 #countText{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:700;color:#241C15;line-height:1}
 .say{height:96px;display:flex;align-items:center;justify-content:center}
@@ -175,7 +176,7 @@ button{font-family:inherit}
   <div class="stage">
     <div id="promptText">What is this?</div>
     <div class="pic">
-      <button type="button" class="face" data-act="reveal" aria-label="Show the answer"><img class="photo" id="pic" alt=""></button>
+      <button type="button" class="face" data-act="reveal" aria-label="Show the answer"><img class="photo" id="pic" alt=""><span id="picMissing" hidden>No picture yet — needs internet once</span></button>
       <div id="ring">
         <svg viewBox="0 0 96 96" width="96" height="96" style="display:block">
           <circle cx="48" cy="48" r="40" fill="#FFFCF6"></circle>
@@ -248,7 +249,8 @@ button{font-family:inherit}
     <div class="by">By group</div>
     <div id="rows"></div>
     <button type="button" class="done" data-act="close">Done</button>
-    <button type="button" class="link" style="margin-top:10px" data-act="credits">Photo credits</button>
+    <button type="button" class="link" style="margin-top:10px" data-act="getAll" id="getAllBtn">Download all pictures</button>
+    <button type="button" class="link" style="margin-top:6px" data-act="credits">Photo credits</button>
   </div>
 </section>
 
@@ -267,7 +269,9 @@ const REVEAL_HOLD = 2800;
 const $ = (id) => document.getElementById(id);
 const slug = (s) => s.toLowerCase().replace(/\s+/g, '-');
 const slotId = (catId, name) => 'obj-' + catId + '-' + slug(name);
-const photo = (slot) => 'img/' + slot + '.webp';
+let IMAGE_BASE = '';
+const IMG_CACHE = 'wit-img-v1';
+const photo = (slot) => `${IMAGE_BASE}/${slot}.webp`;
 
 const seenIn = (c) => (S.seen[c.id] ? Object.keys(S.seen[c.id]).length : 0);
 const speakerIcon = (on) => `<svg width="22" height="20" viewBox="0 0 22 20" fill="none" aria-hidden="true">
@@ -319,6 +323,7 @@ function startRound(catId) {
   Object.assign(S, { screen: 'round', catId, queue: pool.slice(0, PER_ROUND), idx: 0, phase: 'ask', left: S.seconds * 1000, paused: false, overlay: null });
   buildDots();
   render();
+  prefetchAhead();
   speak('What is this?');
 }
 
@@ -346,6 +351,7 @@ function next() {
   }
   Object.assign(S, { idx: i, phase: 'ask', left: S.seconds * 1000 });
   render();
+  prefetchAhead();
   speak('What is this?');
 }
 
@@ -425,7 +431,13 @@ function render() {
     $('promptText').textContent = asking ? 'What is this?' : 'It is a…';
     $('answerText').textContent = cur ? cur.n : '';
     const src = cur ? photo(slotId(cur.c, cur.n)) : '';
-    if (!$('pic').src.endsWith(src)) $('pic').src = src;
+    if ($('pic').src !== src) {
+      $('picMissing').hidden = true;
+      $('pic').style.visibility = 'hidden';
+      $('pic').onload = () => { $('pic').style.visibility = 'visible'; };
+      $('pic').onerror = () => { $('picMissing').hidden = false; };
+      $('pic').src = src;
+    }
     $('pic').alt = !asking && cur ? cur.n : '';
     $('ring').hidden = !asking;
     $('askHint').hidden = !asking;
@@ -484,6 +496,7 @@ const ACTIONS = {
   voice: () => { S.voice = !S.voice; save(); render(); },
   auto: () => { S.auto = !S.auto; save(); render(); },
   credits: () => showCredits(),
+  getAll: () => downloadEverything(),
   closeCredits: () => { $('credits').hidden = true; }
 };
 
@@ -519,7 +532,7 @@ async function showCredits() {
   $('credits').hidden = false;
   if (box.dataset.loaded) return;
   try {
-    const c = await (await fetch('img/credits.json')).json();
+    const c = await (await fetch('data/credits.json')).json();
     box.innerHTML = '<div>Photos from Wikimedia Commons / Wikipedia, under the licences noted below.</div>' +
       Object.values(c).map((v) =>
         `<div><b>${v.name}</b> — ${v.author} · ${v.licence} · <a href="${v.source}" target="_blank" rel="noopener">source</a></div>`).join('');
@@ -527,10 +540,90 @@ async function showCredits() {
   } catch (e) { box.textContent = 'Credits unavailable offline.'; }
 }
 
-(async () => {
-  CATS = (await (await fetch('data/cards.json')).json()).categories;
-  buildHome(); buildTimers(); buildParentRows(); render();
-})();
+function allSlots() {
+  return CATS.flatMap((c) => ['cat-' + c.id, ...c.items.map((it) => slotId(c.id, it.name))]);
+}
+
+// Warms the cache ahead of the child. Writes to the cache directly rather than
+// relying on the service worker to intercept: on the very first launch the
+// worker is not controlling the page yet, and those fetches would be stored
+// nowhere. Failures are ignored — the round still plays, and the card shows
+// its "no picture yet" state.
+async function prefetch(slots) {
+  const cache = await caches.open(IMG_CACHE);
+  await Promise.all(slots.filter(Boolean).map(async (slot) => {
+    const url = photo(slot);
+    if (await cache.match(url)) return;
+    try {
+      const res = await fetch(url, { mode: 'cors' });
+      if (res.ok) await cache.put(url, res);
+    } catch (e) {}
+  }));
+}
+
+function prefetchAhead() {
+  prefetch(S.queue.slice(S.idx + 1, S.idx + 4).map((q) => slotId(q.c, q.n)));
+}
+
+// Parent zone: pull the whole set down deliberately, before a flight or a car
+// journey. Resumes, so it only fetches what is actually missing.
+let getAllRunning = false;
+async function downloadEverything() {
+  if (getAllRunning) return;
+  getAllRunning = true;
+  const btn = $('getAllBtn');
+  const cache = await caches.open(IMG_CACHE);
+  const missing = [];
+  for (const slot of allSlots()) {
+    if (!(await cache.match(photo(slot)))) missing.push(slot);
+  }
+  if (!missing.length) { btn.textContent = 'All pictures downloaded'; getAllRunning = false; return; }
+
+  let done = 0, failed = 0;
+  const total = missing.length;
+  btn.textContent = `Downloading 0 of ${total}…`;
+  // Six at a time keeps a slow connection busy without swamping it.
+  await Promise.all(Array.from({ length: 6 }, async () => {
+    for (;;) {
+      const slot = missing.shift();
+      if (!slot) return;
+      try {
+        const res = await fetch(photo(slot), { mode: 'cors' });
+        if (!res.ok) throw new Error(res.status);
+        await cache.put(photo(slot), res);
+      } catch (e) { failed++; }
+      btn.textContent = `Downloading ${++done} of ${total}…`;
+    }
+  }));
+  btn.textContent = failed ? `${failed} could not be downloaded — tap to retry` : 'All pictures downloaded';
+  getAllRunning = false;
+}
+
+async function boot() {
+  const cfg = await (await fetch('data/cards.json')).json();
+  IMAGE_BASE = cfg.imageBase.replace(/\/$/, '');
+  CATS = cfg.categories;
+  buildHome(); buildTimers(); buildParentRows();
+  render();
+  // The worker is what lets <img src="https://…"> resolve from the cache with
+  // no network, so wait until it is actually controlling this page.
+  if ('serviceWorker' in navigator) {
+    try {
+      await navigator.serviceWorker.register('sw.js');
+      await navigator.serviceWorker.ready;
+      if (!navigator.serviceWorker.controller) {
+        await new Promise((r) => {
+          navigator.serviceWorker.addEventListener('controllerchange', r, { once: true });
+          setTimeout(r, 2000);
+        });
+      }
+    } catch (e) {}
+  }
+  // The group tiles are what the child sees first; keep them for next launch.
+  prefetch(allSlots().filter((s) => s.startsWith('cat-')));
+}
+
+boot();
 </script>
 </body>
 </html>

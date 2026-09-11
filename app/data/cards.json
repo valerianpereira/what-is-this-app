@@ -1,5 +1,6 @@
 {
-  "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram.",
+  "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram. imageBase is where the app fetches photos from on first run; tools/upload-cloudinary.mjs prints the value to put here.",
+  "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@main/photos",
   "categories": [
     {
       "id": "vehicles",

@@ -38,5 +38,7 @@
 
     <!-- Permissions -->
 
-    <!-- No INTERNET permission: every asset ships inside the APK. -->
+    <!-- Needed once, to download the card photos on first run. Everything
+         else is local and the app works with no network after that. -->
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

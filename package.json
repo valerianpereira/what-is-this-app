@@ -8,7 +8,8 @@
     "check": "node tools/check.mjs",
     "apk": "npx cap sync android && cd android && ./gradlew assembleDebug",
     "preview": "python3 -m http.server 8000 --directory app",
-    "install-apk": "adb install -r dist/what-is-this.apk"
+    "install-apk": "adb install -r dist/what-is-this.apk",
+    "upload": "node tools/upload-cloudinary.mjs"
   },
   "keywords": [],
   "author": "",

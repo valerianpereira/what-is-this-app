@@ -6,8 +6,9 @@ import { readFile, access } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 
 const root = new URL('../app/', import.meta.url).pathname;
-const { categories } = JSON.parse(await readFile(root + 'data/cards.json', 'utf8'));
-const credits = JSON.parse(await readFile(root + 'img/credits.json', 'utf8'));
+const photos = new URL('../photos/', import.meta.url).pathname;
+const { categories, imageBase } = JSON.parse(await readFile(root + 'data/cards.json', 'utf8'));
+const credits = JSON.parse(await readFile(root + 'data/credits.json', 'utf8'));
 const slug = (s) => s.toLowerCase().replace(/\s+/g, '-');
 
 const slots = [];
@@ -29,14 +30,14 @@ for (const c of categories) {
 
 const missing = [];
 for (const s of slots) {
-  try { await access(`${root}img/${s}.webp`); } catch { missing.push(s + '.webp'); }
+  try { await access(`${photos}${s}.webp`); } catch { missing.push(s + '.webp'); }
   if (!credits[s]) missing.push(s + ' (credit)');
   else assert.ok(credits[s].licence && credits[s].source, `${s} credit is incomplete`);
 }
 assert.deepEqual(missing, [], 'missing assets');
 
-// A credit with no card behind it means a leftover photo is still being shipped
-// inside the APK.
+// A credit with no card behind it means a leftover photo is still being served
+// from the CDN and listed in the app's credits screen.
 const extra = Object.keys(credits).filter((k) => !slots.includes(k));
 assert.deepEqual(extra, [], 'credits.json has entries with no matching card');
 
@@ -44,4 +45,7 @@ assert.deepEqual(extra, [], 'credits.json has entries with no matching card');
 const dupes = [...seenNames].filter(([, n]) => n > 1).map(([n]) => n);
 assert.deepEqual(dupes, [], 'the same word appears in more than one group');
 
+assert.ok(/^https:\/\/\S+[^/]$/.test(imageBase || ''), 'cards.json needs an https imageBase with no trailing slash');
+
 console.log(`ok — ${categories.length} groups, ${slots.length} cards, all photos and credits present`);
+console.log(`   images served from ${imageBase}`);

@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-// Downloads one photo per card from Wikipedia/Commons into app/img/, and records
-// author + licence into app/img/credits.json (CC-BY requires attribution).
+// Downloads one photo per card from Wikipedia/Commons into photos/, and records
+// author + licence into app/data/credits.json (CC-BY requires attribution).
+// photos/ is deliberately outside app/ so the images stay out of the APK — they
+// are uploaded to a CDN by tools/upload-cloudinary.mjs and fetched on first run.
 // Cards come from app/data/cards.json — the app reads the same file.
 // Re-run safe: skips cards that already have a photo and a credit.
 import { mkdir, writeFile, readFile, access } from 'node:fs/promises';
@@ -12,7 +14,7 @@ const sh = promisify(execFile);
 // putting a personal address in a public repository.
 const UA = 'WhatIsThisKidsApp/1.0 (offline kids learning app; https://github.com/valerianpereira/what-is-this-app)';
 const APP = new URL('../app/', import.meta.url).pathname;
-const OUT = APP + 'img/';
+const OUT = new URL('../photos/', import.meta.url).pathname;
 
 const slug = (s) => s.toLowerCase().replace(/\s+/g, '-');
 const nap = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -73,7 +75,7 @@ for (const c of categories) {
 }
 
 await mkdir(OUT, { recursive: true });
-const creditsPath = OUT + 'credits.json';
+const creditsPath = APP + 'data/credits.json';
 const credits = await exists(creditsPath) ? JSON.parse(await readFile(creditsPath, 'utf8')) : {};
 const failed = [];
 
