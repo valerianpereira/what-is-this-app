@@ -1,0 +1,8 @@
+{
+  "appId": "com.valerianpereira.whatisthis",
+  "appName": "What is this?",
+  "webDir": "app",
+  "android": {
+    "backgroundColor": "#FFFCF6"
+  }
+}

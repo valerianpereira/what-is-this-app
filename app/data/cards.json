@@ -1,0 +1,1178 @@
+{
+  "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram.",
+  "categories": [
+    {
+      "id": "vehicles",
+      "name": "Vehicles",
+      "color": "#FFD166",
+      "shadow": "#D9A83F",
+      "tile": "Bus",
+      "items": [
+        {
+          "name": "Car",
+          "wiki": "Car"
+        },
+        {
+          "name": "Bus",
+          "wiki": "Bus"
+        },
+        {
+          "name": "Bicycle",
+          "wiki": "Bicycle"
+        },
+        {
+          "name": "Train",
+          "wiki": "Train"
+        },
+        {
+          "name": "Aeroplane",
+          "wiki": "Airplane"
+        },
+        {
+          "name": "Boat",
+          "wiki": "Boat"
+        },
+        {
+          "name": "Tractor",
+          "wiki": "Tractor"
+        },
+        {
+          "name": "Fire Truck",
+          "wiki": "Fire engine"
+        },
+        {
+          "name": "Helicopter",
+          "wiki": "Helicopter"
+        },
+        {
+          "name": "Scooter",
+          "wiki": "Motor scooter"
+        },
+        {
+          "name": "Truck",
+          "wiki": "Truck"
+        },
+        {
+          "name": "Ship",
+          "wiki": "Ship"
+        },
+        {
+          "name": "Ambulance",
+          "wiki": "Ambulance"
+        },
+        {
+          "name": "Auto Rickshaw",
+          "wiki": "Auto rickshaw"
+        },
+        {
+          "name": "Motorcycle",
+          "wiki": "Motorcycle"
+        }
+      ]
+    },
+    {
+      "id": "fruits",
+      "name": "Fruits",
+      "color": "#FF9E7A",
+      "shadow": "#D97350",
+      "tile": "Fruit",
+      "items": [
+        {
+          "name": "Apple",
+          "wiki": "Apple"
+        },
+        {
+          "name": "Banana",
+          "wiki": "Banana"
+        },
+        {
+          "name": "Mango",
+          "wiki": "Mango"
+        },
+        {
+          "name": "Grapes",
+          "wiki": "Grape"
+        },
+        {
+          "name": "Orange",
+          "wiki": "Orange (fruit)"
+        },
+        {
+          "name": "Watermelon",
+          "wiki": "Watermelon"
+        },
+        {
+          "name": "Strawberry",
+          "wiki": "Strawberry"
+        },
+        {
+          "name": "Pineapple",
+          "wiki": "Pineapple"
+        },
+        {
+          "name": "Papaya",
+          "wiki": "File:Papaya - longitudinal section.jpg"
+        },
+        {
+          "name": "Cherry",
+          "wiki": "Cherry"
+        },
+        {
+          "name": "Guava",
+          "wiki": "Guava"
+        },
+        {
+          "name": "Pomegranate",
+          "wiki": "Pomegranate"
+        },
+        {
+          "name": "Coconut",
+          "wiki": "File:Coconuts - single and cracked open.jpg"
+        },
+        {
+          "name": "Lemon",
+          "wiki": "Lemon"
+        },
+        {
+          "name": "Pear",
+          "wiki": "Pear"
+        }
+      ]
+    },
+    {
+      "id": "vegetables",
+      "name": "Vegetables",
+      "color": "#A8D98B",
+      "shadow": "#7FAF63",
+      "tile": "Vegetable",
+      "items": [
+        {
+          "name": "Carrot",
+          "wiki": "Carrot"
+        },
+        {
+          "name": "Tomato",
+          "wiki": "Tomato"
+        },
+        {
+          "name": "Potato",
+          "wiki": "Potato"
+        },
+        {
+          "name": "Onion",
+          "wiki": "Onion"
+        },
+        {
+          "name": "Peas",
+          "wiki": "Pea"
+        },
+        {
+          "name": "Pumpkin",
+          "wiki": "Pumpkin"
+        },
+        {
+          "name": "Cabbage",
+          "wiki": "Cabbage"
+        },
+        {
+          "name": "Corn",
+          "wiki": "File:Corn on the cob (sweet corn).jpg"
+        },
+        {
+          "name": "Brinjal",
+          "wiki": "Eggplant"
+        },
+        {
+          "name": "Cucumber",
+          "wiki": "Cucumber"
+        },
+        {
+          "name": "Spinach",
+          "wiki": "Spinach"
+        },
+        {
+          "name": "Cauliflower",
+          "wiki": "Cauliflower"
+        },
+        {
+          "name": "Beetroot",
+          "wiki": "Beetroot"
+        },
+        {
+          "name": "Radish",
+          "wiki": "File:Radishes fresh from the garden.jpg"
+        },
+        {
+          "name": "Capsicum",
+          "wiki": "Bell pepper"
+        }
+      ]
+    },
+    {
+      "id": "wild",
+      "name": "Wild Animals",
+      "color": "#F5B971",
+      "shadow": "#CE9349",
+      "tile": "Lion",
+      "items": [
+        {
+          "name": "Lion",
+          "wiki": "Lion"
+        },
+        {
+          "name": "Tiger",
+          "wiki": "Tiger"
+        },
+        {
+          "name": "Elephant",
+          "wiki": "Elephant"
+        },
+        {
+          "name": "Giraffe",
+          "wiki": "Giraffe"
+        },
+        {
+          "name": "Zebra",
+          "wiki": "Zebra"
+        },
+        {
+          "name": "Monkey",
+          "wiki": "Monkey"
+        },
+        {
+          "name": "Bear",
+          "wiki": "Bear"
+        },
+        {
+          "name": "Deer",
+          "wiki": "File:Red Deer Poing.JPG"
+        },
+        {
+          "name": "Crocodile",
+          "wiki": "Crocodile"
+        },
+        {
+          "name": "Hippo",
+          "wiki": "Hippopotamus"
+        },
+        {
+          "name": "Rhinoceros",
+          "wiki": "Rhinoceros"
+        },
+        {
+          "name": "Wolf",
+          "wiki": "Wolf"
+        },
+        {
+          "name": "Fox",
+          "wiki": "Red fox"
+        },
+        {
+          "name": "Kangaroo",
+          "wiki": "Kangaroo"
+        },
+        {
+          "name": "Panda",
+          "wiki": "Giant panda"
+        }
+      ]
+    },
+    {
+      "id": "birds",
+      "name": "Birds",
+      "color": "#9CC6F5",
+      "shadow": "#719CCB",
+      "tile": "Bird",
+      "items": [
+        {
+          "name": "Parrot",
+          "wiki": "Parrot"
+        },
+        {
+          "name": "Peacock",
+          "wiki": "Indian peafowl"
+        },
+        {
+          "name": "Owl",
+          "wiki": "Owl"
+        },
+        {
+          "name": "Crow",
+          "wiki": "Corvus"
+        },
+        {
+          "name": "Duck",
+          "wiki": "Duck"
+        },
+        {
+          "name": "Penguin",
+          "wiki": "Penguin"
+        },
+        {
+          "name": "Eagle",
+          "wiki": "File:Weisskopf Seeadler haliaeetus leucocephalus 8 amk.jpg"
+        },
+        {
+          "name": "Sparrow",
+          "wiki": "House sparrow"
+        },
+        {
+          "name": "Flamingo",
+          "wiki": "Flamingo"
+        },
+        {
+          "name": "Hen",
+          "wiki": "Chicken"
+        },
+        {
+          "name": "Pigeon",
+          "wiki": "Rock dove"
+        },
+        {
+          "name": "Swan",
+          "wiki": "Swan"
+        },
+        {
+          "name": "Ostrich",
+          "wiki": "Common ostrich"
+        },
+        {
+          "name": "Woodpecker",
+          "wiki": "Woodpecker"
+        },
+        {
+          "name": "Kingfisher",
+          "wiki": "Kingfisher"
+        }
+      ]
+    },
+    {
+      "id": "insects",
+      "name": "Insects",
+      "color": "#C7B9F0",
+      "shadow": "#9C8CC7",
+      "tile": "Insect",
+      "items": [
+        {
+          "name": "Butterfly",
+          "wiki": "Butterfly"
+        },
+        {
+          "name": "Ant",
+          "wiki": "Ant"
+        },
+        {
+          "name": "Bee",
+          "wiki": "Bee"
+        },
+        {
+          "name": "Ladybug",
+          "wiki": "Coccinellidae"
+        },
+        {
+          "name": "Grasshopper",
+          "wiki": "Grasshopper"
+        },
+        {
+          "name": "Dragonfly",
+          "wiki": "Dragonfly"
+        },
+        {
+          "name": "Spider",
+          "wiki": "Spider"
+        },
+        {
+          "name": "Snail",
+          "wiki": "File:Snail-wiki-120-Zachi-Evenor.jpg"
+        },
+        {
+          "name": "Beetle",
+          "wiki": "File:Golden stag beetle.jpg"
+        },
+        {
+          "name": "Caterpillar",
+          "wiki": "Caterpillar"
+        },
+        {
+          "name": "Moth",
+          "wiki": "Moth"
+        },
+        {
+          "name": "Firefly",
+          "wiki": "Firefly"
+        },
+        {
+          "name": "Wasp",
+          "wiki": "Wasp"
+        },
+        {
+          "name": "Mantis",
+          "wiki": "Mantis"
+        },
+        {
+          "name": "Cricket",
+          "wiki": "Cricket (insect)"
+        }
+      ]
+    },
+    {
+      "id": "flowers",
+      "name": "Flowers",
+      "color": "#F7A8C4",
+      "shadow": "#CD809B",
+      "tile": "Flower",
+      "items": [
+        {
+          "name": "Rose",
+          "wiki": "Rose"
+        },
+        {
+          "name": "Sunflower",
+          "wiki": "Common sunflower"
+        },
+        {
+          "name": "Lotus",
+          "wiki": "Nelumbo nucifera"
+        },
+        {
+          "name": "Tulip",
+          "wiki": "Tulip"
+        },
+        {
+          "name": "Marigold",
+          "wiki": "Tagetes"
+        },
+        {
+          "name": "Daisy",
+          "wiki": "File:Bellis perennis single Macro.jpg"
+        },
+        {
+          "name": "Jasmine",
+          "wiki": "File:Jasminum sambac Flower.jpg"
+        },
+        {
+          "name": "Hibiscus",
+          "wiki": "Hibiscus"
+        },
+        {
+          "name": "Lily",
+          "wiki": "Lilium"
+        },
+        {
+          "name": "Orchid",
+          "wiki": "Orchidaceae"
+        },
+        {
+          "name": "Lavender",
+          "wiki": "Lavandula"
+        },
+        {
+          "name": "Poppy",
+          "wiki": "Papaver"
+        },
+        {
+          "name": "Dahlia",
+          "wiki": "Dahlia"
+        },
+        {
+          "name": "Bougainvillea",
+          "wiki": "Bougainvillea"
+        },
+        {
+          "name": "Chrysanthemum",
+          "wiki": "File:Pink Chrysanthemum flower 6.JPG"
+        }
+      ]
+    },
+    {
+      "id": "helpers",
+      "name": "Community Helpers",
+      "color": "#8ED2C4",
+      "shadow": "#65A99B",
+      "tile": "Firefighter",
+      "items": [
+        {
+          "name": "Doctor",
+          "wiki": "File:Doctor examines patient with stethoscope.jpg"
+        },
+        {
+          "name": "Teacher",
+          "wiki": "Teacher"
+        },
+        {
+          "name": "Farmer",
+          "wiki": "Farmer"
+        },
+        {
+          "name": "Police Officer",
+          "wiki": "Police officer"
+        },
+        {
+          "name": "Firefighter",
+          "wiki": "Firefighter"
+        },
+        {
+          "name": "Postman",
+          "wiki": "File:Postman in Hermanus 2017.jpg"
+        },
+        {
+          "name": "Chef",
+          "wiki": "File:Chef prepares red onion at kitchen counter for cooking in the morning.jpg"
+        },
+        {
+          "name": "Nurse",
+          "wiki": "Nursing"
+        },
+        {
+          "name": "Driver",
+          "wiki": "Bus driver"
+        },
+        {
+          "name": "Carpenter",
+          "wiki": "File:Carpenter in traditional dress.jpg"
+        },
+        {
+          "name": "Pilot",
+          "wiki": "Aircraft pilot"
+        },
+        {
+          "name": "Dentist",
+          "wiki": "Dentistry"
+        },
+        {
+          "name": "Barber",
+          "wiki": "Barber"
+        },
+        {
+          "name": "Tailor",
+          "wiki": "File:A Tailor Sewing Clothes in Her Shop.jpg"
+        },
+        {
+          "name": "Fisherman",
+          "wiki": "File:Fisherman cleaning fishing net on fishing boat.jpg"
+        }
+      ]
+    },
+    {
+      "id": "countries",
+      "name": "Countries",
+      "color": "#E8CFA9",
+      "shadow": "#BFA57E",
+      "tile": "Flag",
+      "items": [
+        {
+          "name": "India",
+          "wiki": "Flag of India"
+        },
+        {
+          "name": "Japan",
+          "wiki": "Flag of Japan"
+        },
+        {
+          "name": "Brazil",
+          "wiki": "Flag of Brazil"
+        },
+        {
+          "name": "Egypt",
+          "wiki": "Flag of Egypt"
+        },
+        {
+          "name": "France",
+          "wiki": "Flag of France"
+        },
+        {
+          "name": "Kenya",
+          "wiki": "Flag of Kenya"
+        },
+        {
+          "name": "Canada",
+          "wiki": "Flag of Canada"
+        },
+        {
+          "name": "Australia",
+          "wiki": "Flag of Australia"
+        },
+        {
+          "name": "Italy",
+          "wiki": "Flag of Italy"
+        },
+        {
+          "name": "Mexico",
+          "wiki": "Flag of Mexico"
+        },
+        {
+          "name": "Germany",
+          "wiki": "Flag of Germany"
+        },
+        {
+          "name": "China",
+          "wiki": "Flag of China"
+        },
+        {
+          "name": "Spain",
+          "wiki": "Flag of Spain"
+        },
+        {
+          "name": "Nigeria",
+          "wiki": "Flag of Nigeria"
+        },
+        {
+          "name": "America",
+          "wiki": "Flag of the United States"
+        }
+      ]
+    },
+    {
+      "id": "sea",
+      "name": "Sea Animals",
+      "color": "#8FD3E8",
+      "shadow": "#67A7BD",
+      "tile": "Dolphin",
+      "items": [
+        {
+          "name": "Fish",
+          "wiki": "Fish"
+        },
+        {
+          "name": "Dolphin",
+          "wiki": "Dolphin"
+        },
+        {
+          "name": "Whale",
+          "wiki": "Whale"
+        },
+        {
+          "name": "Shark",
+          "wiki": "Shark"
+        },
+        {
+          "name": "Octopus",
+          "wiki": "Octopus"
+        },
+        {
+          "name": "Crab",
+          "wiki": "Crab"
+        },
+        {
+          "name": "Starfish",
+          "wiki": "Starfish"
+        },
+        {
+          "name": "Jellyfish",
+          "wiki": "Jellyfish"
+        },
+        {
+          "name": "Seahorse",
+          "wiki": "Seahorse"
+        },
+        {
+          "name": "Turtle",
+          "wiki": "Sea turtle"
+        },
+        {
+          "name": "Lobster",
+          "wiki": "Lobster"
+        },
+        {
+          "name": "Squid",
+          "wiki": "Squid"
+        },
+        {
+          "name": "Seal",
+          "wiki": "Harbor seal"
+        },
+        {
+          "name": "Stingray",
+          "wiki": "Stingray"
+        },
+        {
+          "name": "Clownfish",
+          "wiki": "Clownfish"
+        }
+      ]
+    },
+    {
+      "id": "farm",
+      "name": "Farm Animals",
+      "color": "#E9D8A6",
+      "shadow": "#BFAE7D",
+      "tile": "Cattle",
+      "items": [
+        {
+          "name": "Cow",
+          "wiki": "Cattle"
+        },
+        {
+          "name": "Goat",
+          "wiki": "Goat"
+        },
+        {
+          "name": "Sheep",
+          "wiki": "Sheep"
+        },
+        {
+          "name": "Horse",
+          "wiki": "Horse"
+        },
+        {
+          "name": "Pig",
+          "wiki": "Pig"
+        },
+        {
+          "name": "Donkey",
+          "wiki": "Donkey"
+        },
+        {
+          "name": "Buffalo",
+          "wiki": "Water buffalo"
+        },
+        {
+          "name": "Camel",
+          "wiki": "Camel"
+        },
+        {
+          "name": "Rabbit",
+          "wiki": "Rabbit"
+        },
+        {
+          "name": "Goose",
+          "wiki": "Goose"
+        },
+        {
+          "name": "Turkey",
+          "wiki": "Domestic turkey"
+        },
+        {
+          "name": "Llama",
+          "wiki": "Llama"
+        },
+        {
+          "name": "Yak",
+          "wiki": "Domestic yak"
+        },
+        {
+          "name": "Ox",
+          "wiki": "Ox"
+        },
+        {
+          "name": "Calf",
+          "wiki": "File:Highland cow and calf. - geograph.org.uk - 404228.jpg"
+        }
+      ]
+    },
+    {
+      "id": "pets",
+      "name": "Pets",
+      "color": "#F9B8D0",
+      "shadow": "#CE8FA6",
+      "tile": "Dog",
+      "items": [
+        {
+          "name": "Dog",
+          "wiki": "Dog"
+        },
+        {
+          "name": "Cat",
+          "wiki": "Cat"
+        },
+        {
+          "name": "Puppy",
+          "wiki": "Puppy"
+        },
+        {
+          "name": "Kitten",
+          "wiki": "Kitten"
+        },
+        {
+          "name": "Goldfish",
+          "wiki": "Goldfish"
+        },
+        {
+          "name": "Hamster",
+          "wiki": "Hamster"
+        },
+        {
+          "name": "Guinea Pig",
+          "wiki": "Guinea pig"
+        },
+        {
+          "name": "Budgie",
+          "wiki": "Budgerigar"
+        },
+        {
+          "name": "Tortoise",
+          "wiki": "Tortoise"
+        },
+        {
+          "name": "Pony",
+          "wiki": "Pony"
+        },
+        {
+          "name": "Mouse",
+          "wiki": "House mouse"
+        },
+        {
+          "name": "Canary",
+          "wiki": "Domestic canary"
+        },
+        {
+          "name": "Ferret",
+          "wiki": "Ferret"
+        },
+        {
+          "name": "Lovebird",
+          "wiki": "Lovebird"
+        },
+        {
+          "name": "Fish Tank",
+          "wiki": "Aquarium"
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "name": "Sky and Weather",
+      "color": "#BFE3FF",
+      "shadow": "#92B7D6",
+      "tile": "File:White Cumulus Clouds against Blue Sky (4).jpg",
+      "items": [
+        {
+          "name": "Sun",
+          "wiki": "File:Bright Shades Of Sky Ans Sparkling Sun , Aligarh.jpg"
+        },
+        {
+          "name": "Moon",
+          "wiki": "Moon"
+        },
+        {
+          "name": "Star",
+          "wiki": "File:Night Sky Stars Trees 02.jpg"
+        },
+        {
+          "name": "Cloud",
+          "wiki": "File:White Cumulus Clouds against Blue Sky (4).jpg"
+        },
+        {
+          "name": "Rain",
+          "wiki": "File:Rain on a blue umbrella.jpg"
+        },
+        {
+          "name": "Rainbow",
+          "wiki": "Rainbow"
+        },
+        {
+          "name": "Snow",
+          "wiki": "Snow"
+        },
+        {
+          "name": "Lightning",
+          "wiki": "Lightning"
+        },
+        {
+          "name": "Fog",
+          "wiki": "Fog"
+        },
+        {
+          "name": "Sunrise",
+          "wiki": "Sunrise"
+        },
+        {
+          "name": "Sunset",
+          "wiki": "Sunset"
+        },
+        {
+          "name": "Storm",
+          "wiki": "Thunderstorm"
+        },
+        {
+          "name": "Hail",
+          "wiki": "Hail"
+        },
+        {
+          "name": "Ice",
+          "wiki": "Ice"
+        },
+        {
+          "name": "Sky",
+          "wiki": "File:LosAngelesSky.jpg"
+        }
+      ]
+    },
+    {
+      "id": "clothes",
+      "name": "Clothes",
+      "color": "#F3A2A2",
+      "shadow": "#C87B7B",
+      "tile": "Clothing",
+      "items": [
+        {
+          "name": "Shirt",
+          "wiki": "Shirt"
+        },
+        {
+          "name": "T-shirt",
+          "wiki": "T-shirt"
+        },
+        {
+          "name": "Trousers",
+          "wiki": "Trousers"
+        },
+        {
+          "name": "Dress",
+          "wiki": "File:HK MTR woman clothing Orange mini dress September 2024 R12S 01.jpg"
+        },
+        {
+          "name": "Hat",
+          "wiki": "File:Sun Hat hanged on a wall.jpg"
+        },
+        {
+          "name": "Shoes",
+          "wiki": "File:Pair of Pink Leather Baby Shoes And Original Box.jpg"
+        },
+        {
+          "name": "Socks",
+          "wiki": "Sock"
+        },
+        {
+          "name": "Jacket",
+          "wiki": "Jacket"
+        },
+        {
+          "name": "Sweater",
+          "wiki": "Sweater"
+        },
+        {
+          "name": "Skirt",
+          "wiki": "File:Woman wearing full skirt.jpg"
+        },
+        {
+          "name": "Scarf",
+          "wiki": "Scarf"
+        },
+        {
+          "name": "Gloves",
+          "wiki": "Glove"
+        },
+        {
+          "name": "Shorts",
+          "wiki": "File:Men's Shorts - Old Bull Lee - Orange.jpg"
+        },
+        {
+          "name": "Sandals",
+          "wiki": "Sandal"
+        },
+        {
+          "name": "Raincoat",
+          "wiki": "Raincoat"
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "color": "#D7A8F0",
+      "shadow": "#A97CC2",
+      "tile": "Musical instrument",
+      "items": [
+        {
+          "name": "Guitar",
+          "wiki": "Guitar"
+        },
+        {
+          "name": "Drum",
+          "wiki": "Drum"
+        },
+        {
+          "name": "Piano",
+          "wiki": "Piano"
+        },
+        {
+          "name": "Violin",
+          "wiki": "Violin"
+        },
+        {
+          "name": "Flute",
+          "wiki": "Flute"
+        },
+        {
+          "name": "Trumpet",
+          "wiki": "Trumpet"
+        },
+        {
+          "name": "Harp",
+          "wiki": "File:A musical instrument. A harp.jpg"
+        },
+        {
+          "name": "Tabla",
+          "wiki": "Tabla"
+        },
+        {
+          "name": "Sitar",
+          "wiki": "Sitar"
+        },
+        {
+          "name": "Saxophone",
+          "wiki": "Saxophone"
+        },
+        {
+          "name": "Xylophone",
+          "wiki": "File:Xylophone rn.jpg"
+        },
+        {
+          "name": "Accordion",
+          "wiki": "File:Paris - Accordion Player - 0956.jpg"
+        },
+        {
+          "name": "Banjo",
+          "wiki": "File:Banjo (AM 1998.60.131-1).jpg"
+        },
+        {
+          "name": "Cello",
+          "wiki": "Cello"
+        },
+        {
+          "name": "Harmonica",
+          "wiki": "Harmonica"
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "Things at Home",
+      "color": "#CFCAB8",
+      "shadow": "#A6A190",
+      "tile": "Chair",
+      "items": [
+        {
+          "name": "Chair",
+          "wiki": "Chair"
+        },
+        {
+          "name": "Table",
+          "wiki": "Table (furniture)"
+        },
+        {
+          "name": "Bed",
+          "wiki": "File:44 Made bed with richly decorated pillows and ornate bedspread.jpg"
+        },
+        {
+          "name": "Lamp",
+          "wiki": "File:Bedside Table Lamp.jpg"
+        },
+        {
+          "name": "Clock",
+          "wiki": "Clock"
+        },
+        {
+          "name": "Spoon",
+          "wiki": "Spoon"
+        },
+        {
+          "name": "Fork",
+          "wiki": "Fork"
+        },
+        {
+          "name": "Cup",
+          "wiki": "Cup"
+        },
+        {
+          "name": "Plate",
+          "wiki": "File:The way we like our plates at the end of dinner- Dinner on New Year's Day 2024 - The Eighth Day of Christmas - 53435741068.jpg"
+        },
+        {
+          "name": "Bowl",
+          "wiki": "Bowl"
+        },
+        {
+          "name": "Door",
+          "wiki": "File:Grand Parade Front Doors, West Hoe, Plymouth.jpg"
+        },
+        {
+          "name": "Window",
+          "wiki": "Window"
+        },
+        {
+          "name": "Sofa",
+          "wiki": "Couch"
+        },
+        {
+          "name": "Broom",
+          "wiki": "Broom"
+        },
+        {
+          "name": "Bucket",
+          "wiki": "File:Plastsic pail of paint.jpg"
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food",
+      "color": "#F5D76E",
+      "shadow": "#CBAF4F",
+      "tile": "Food",
+      "items": [
+        {
+          "name": "Bread",
+          "wiki": "Bread"
+        },
+        {
+          "name": "Rice",
+          "wiki": "File:A bowl of rice.jpg"
+        },
+        {
+          "name": "Milk",
+          "wiki": "Milk"
+        },
+        {
+          "name": "Egg",
+          "wiki": "Egg as food"
+        },
+        {
+          "name": "Cheese",
+          "wiki": "Cheese"
+        },
+        {
+          "name": "Cake",
+          "wiki": "Cake"
+        },
+        {
+          "name": "Biscuit",
+          "wiki": "Biscuit"
+        },
+        {
+          "name": "Pizza",
+          "wiki": "Pizza"
+        },
+        {
+          "name": "Ice Cream",
+          "wiki": "Ice cream"
+        },
+        {
+          "name": "Chocolate",
+          "wiki": "Chocolate"
+        },
+        {
+          "name": "Honey",
+          "wiki": "Honey"
+        },
+        {
+          "name": "Butter",
+          "wiki": "Butter"
+        },
+        {
+          "name": "Noodles",
+          "wiki": "Noodle"
+        },
+        {
+          "name": "Sandwich",
+          "wiki": "Sandwich"
+        },
+        {
+          "name": "Samosa",
+          "wiki": "Samosa"
+        }
+      ]
+    }
+  ]
+}

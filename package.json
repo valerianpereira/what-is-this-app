@@ -1,0 +1,25 @@
+{
+  "name": "what-is-this-app",
+  "version": "1.0.0",
+  "description": "Picture-naming game for 2-4 year olds",
+  "main": "index.js",
+  "scripts": {
+    "images": "node tools/fetch-images.mjs",
+    "check": "node tools/check.mjs",
+    "apk": "npx cap sync android && cd android && ./gradlew assembleDebug",
+    "preview": "python3 -m http.server 8000 --directory app",
+    "install-apk": "adb install -r dist/what-is-this.apk"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "private": "true",
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.1"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.1",
+    "@capacitor/core": "^8.5.1"
+  }
+}

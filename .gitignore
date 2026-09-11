@@ -1,0 +1,13 @@
+node_modules/
+dist/
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+android/app/src/main/assets/public/
+.DS_Store
+
+# Claude Design handoff bundle, kept locally only: its image-slot.js / support.js
+# are the design tool's own runtime, not ours to redistribute.
+what-is-this-game-app/
+*-handoff.zip

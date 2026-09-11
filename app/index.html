@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#FFFCF6">
+<title>What is this?</title>
+<style>
+@font-face{font-family:Fredoka;src:url(fonts/fredoka-latin.woff2) format('woff2');font-weight:400 700;font-display:swap}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{margin:0;background:#F3ECE1;font-family:Fredoka,system-ui,sans-serif;color:#241C15;overscroll-behavior:none;-webkit-font-smoothing:antialiased}
+button{font-family:inherit}
+@keyframes wit-pop{0%{transform:scale(.7);opacity:0}60%{transform:scale(1.06)}100%{transform:scale(1);opacity:1}}
+@keyframes wit-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+@keyframes wit-rise{from{transform:translateY(14px);opacity:0}to{transform:translateY(0);opacity:1}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+
+#app{position:relative;height:100%;width:100%;overflow:hidden;background:#FFFCF6}
+.screen{position:absolute;inset:0;display:flex;flex-direction:column}
+[hidden]{display:none!important}
+.spacer{flex:1}
+.photo{width:100%;height:100%;object-fit:cover;display:block}
+
+/* onboarding */
+#onboarding{padding:104px 30px 40px;background:linear-gradient(180deg,#FFE7B8 0%,#FFFCF6 62%)}
+.eyebrow{font-size:15px;font-weight:600;letter-spacing:2.4px;text-transform:uppercase;color:#B98B3C}
+.wordmark{font-size:56px;font-weight:700;line-height:.98;letter-spacing:-1.5px}
+.pitch{font-size:19px;font-weight:400;line-height:1.45;color:#6B5A48;max-width:280px;text-wrap:pretty}
+.steps{display:flex;flex-direction:column;gap:14px;margin-top:34px}
+.step{display:flex;align-items:center;gap:14px}
+.step b{width:44px;height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700}
+.step span{font-size:17px;font-weight:500;color:#3E3226}
+.cta{border:none;width:100%;height:68px;border-radius:34px;background:#E0532F;color:#fff;font-size:23px;font-weight:600;letter-spacing:.3px;box-shadow:0 8px 0 #B23A1B;cursor:pointer;animation:wit-breathe 2.6s ease-in-out infinite}
+.quiet{margin-top:16px;background:none;border:none;color:#9C8B78;font-size:15px;font-weight:500;cursor:pointer}
+
+/* home */
+#home{overflow:auto;padding:66px 20px 34px;display:block}
+.home-head{display:flex;align-items:flex-end;justify-content:space-between;padding:0 6px 18px}
+.home-head .eyebrow{font-size:14px;letter-spacing:2px;color:#B08A5E}
+.home-head h1{margin:0;font-size:34px;font-weight:700;letter-spacing:-.8px;line-height:1.1}
+.gear{width:46px;height:46px;border-radius:23px;border:2px solid #E8DCC9;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none}
+.gear i{width:18px;height:18px;border-radius:9px;border:3px solid #8A7761;display:block}
+#grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{border:none;padding:0;cursor:pointer;text-align:left;border-radius:30px;overflow:hidden;display:flex;flex-direction:column;font-family:inherit}
+.card .frame{position:relative;height:112px;margin:10px 10px 0;border-radius:22px;overflow:hidden;background:rgba(255,255,255,.5)}
+.card .meta{padding:11px 14px 14px;display:flex;align-items:center;justify-content:space-between;gap:6px}
+.card .name{font-size:18px;font-weight:600;color:#241C15;line-height:1.1}
+.card .badge{font-size:12px;font-weight:600;color:rgba(36,28,21,.5)}
+.surprise{width:100%;height:64px;border-radius:32px;border:3px dashed #DCCDB5;background:#FFFCF6;color:#7A6853;font-size:19px;font-weight:600;cursor:pointer}
+
+/* round */
+#round{padding:64px 22px 26px}
+.bar{display:flex;align-items:center;gap:12px}
+.chip{height:44px;border-radius:22px;border:none;background:rgba(255,255,255,.75);color:#4A3D2F;font-family:inherit;font-weight:600;flex:none;cursor:pointer}
+.chip.sq{width:44px;font-size:22px}
+.chip.pause{width:44px;font-size:15px}
+#muteBtn{display:flex;align-items:center;justify-content:center}
+.chip.label{flex:1;display:flex;align-items:center;justify-content:center;font-size:16px;cursor:default}
+#dots{display:flex;gap:5px;padding:16px 2px 0}
+#dots div{flex:1;height:7px;border-radius:4px}
+.stage{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px}
+#promptText{font-size:38px;font-weight:700;letter-spacing:-.8px;color:#241C15}
+.pic{position:relative;width:min(298px,74vw);height:min(298px,74vw)}
+.pic>.face{position:absolute;inset:0;border:none;padding:0;border-radius:46px;background:#fff;box-shadow:0 12px 0 rgba(0,0,0,.09);cursor:pointer;overflow:hidden}
+#ring{position:absolute;right:-14px;bottom:-14px;width:96px;height:96px;pointer-events:none}
+#countText{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:700;color:#241C15;line-height:1}
+.say{height:96px;display:flex;align-items:center;justify-content:center}
+#revealBox{display:flex;flex-direction:column;align-items:center;gap:10px;animation:wit-pop .34s cubic-bezier(.2,1.4,.5,1) both}
+#answerText{font-size:46px;font-weight:700;letter-spacing:-1px;line-height:1;text-align:center}
+.again{border:none;height:38px;padding:0 20px;border-radius:19px;background:rgba(255,255,255,.85);color:#4A3D2F;font-size:15px;font-weight:600;cursor:pointer}
+#askHint{font-size:17px;font-weight:500;color:rgba(36,28,21,.45);text-align:center}
+#paused{position:absolute;inset:0;background:rgba(36,28,21,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px}
+#paused h2{margin:0;font-size:32px;font-weight:700;color:#fff}
+.resume{border:none;height:62px;padding:0 44px;border-radius:31px;background:#fff;font-size:21px;font-weight:600;color:#241C15;cursor:pointer}
+.ghost{border:none;background:none;color:rgba(255,255,255,.8);font-size:16px;font-weight:500;cursor:pointer}
+
+/* summary */
+#summary{padding:88px 26px 34px;background:linear-gradient(180deg,#FFE7B8 0%,#FFFCF6 55%)}
+#summary .eyebrow{font-size:15px;letter-spacing:2.2px;color:#B08A5E}
+#summaryTitle{font-size:46px;font-weight:700;letter-spacing:-1.2px;line-height:1.05;margin-top:6px}
+.tap-hint{font-size:18px;font-weight:400;color:#6B5A48;margin-top:8px}
+#words{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px;overflow:auto;padding-bottom:5px}
+#words button{border:none;height:44px;padding:0 18px;border-radius:22px;background:#fff;box-shadow:0 3px 0 rgba(36,28,21,.1);font-size:17px;font-weight:600;color:#241C15;cursor:pointer;animation:wit-rise .3s ease both}
+.again-big{border:none;width:100%;height:66px;border-radius:33px;background:#E0532F;color:#fff;font-size:21px;font-weight:600;box-shadow:0 7px 0 #B23A1B;cursor:pointer}
+.outline{margin-top:12px;width:100%;height:60px;border-radius:30px;background:#fff;border:2px solid #E8DCC9;color:#4A3D2F;font-size:19px;font-weight:600;cursor:pointer}
+
+/* settings */
+#scrim{position:absolute;inset:0;background:rgba(36,28,21,.45);border:none;padding:0}
+#sheet{position:absolute;left:0;right:0;bottom:0;background:#FFFCF6;border-radius:34px 34px 0 0;padding:26px 24px 34px;box-shadow:0 -10px 40px rgba(36,28,21,.2)}
+.grab{width:44px;height:5px;border-radius:3px;background:#E2D6C2;margin:0 auto 18px}
+#sheet h2{margin:0;font-size:26px;font-weight:700;letter-spacing:-.5px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.row .t{font-size:18px;font-weight:600}
+.row .s{font-size:14px;color:#8A7761}
+.toggle{border:none;width:66px;height:38px;border-radius:19px;cursor:pointer;display:flex;align-items:center;padding:4px}
+.toggle i{width:30px;height:30px;border-radius:15px;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.2);display:block}
+.rule{height:1px;background:#EFE5D5;margin:18px 0}
+#timers{display:flex;gap:10px;margin-top:12px}
+#timers button{flex:1;height:58px;border-radius:22px;font-size:17px;font-weight:600;cursor:pointer}
+.grown{margin-top:22px;width:100%;height:58px;border-radius:29px;border:2px solid #E8DCC9;background:#fff;color:#4A3D2F;font-size:18px;font-weight:600;cursor:pointer}
+
+/* parent */
+#parent{background:#241C15;color:#fff;padding:70px 26px 32px}
+#locked{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px}
+#locked h2{margin:0;font-size:26px;font-weight:700}
+#locked p{margin:0;font-size:17px;color:rgba(255,255,255,.6);text-align:center;max-width:250px}
+#hold{width:150px;height:150px;border-radius:75px;border:6px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative;user-select:none;background:none;color:rgba(255,255,255,.85);font-size:19px;font-weight:600;touch-action:none}
+#holdFill{position:absolute;inset:-6px;border-radius:81px;border:6px solid #FFD166}
+.link{border:none;background:none;color:rgba(255,255,255,.5);font-size:16px;cursor:pointer}
+#open{display:flex;flex-direction:column;height:100%}
+#open .eyebrow{font-size:14px;letter-spacing:2px;color:rgba(255,209,102,.9)}
+#open h2{margin:4px 0 0;font-size:34px;font-weight:700;letter-spacing:-.8px}
+.stats{display:flex;gap:12px;margin-top:20px}
+.stat{flex:1;background:rgba(255,255,255,.08);border-radius:24px;padding:18px}
+.stat b{display:block;font-size:38px;font-weight:700;line-height:1}
+.stat span{display:block;font-size:14px;color:rgba(255,255,255,.55);margin-top:4px}
+.by{font-size:16px;font-weight:600;color:rgba(255,255,255,.6);margin:24px 0 10px}
+#rows{flex:1;overflow:auto;display:flex;flex-direction:column;gap:10px}
+#rows .r{display:flex;align-items:center;gap:12px}
+#rows .dot{width:12px;height:12px;border-radius:6px;flex:none}
+#rows .nm{flex:1;font-size:16px;font-weight:500}
+#rows .track{width:96px;height:8px;border-radius:5px;background:rgba(255,255,255,.12);overflow:hidden}
+#rows .fill{display:block;height:100%;border-radius:5px}
+#rows .ct{width:40px;text-align:right;font-size:14px;color:rgba(255,255,255,.5)}
+.done{margin-top:18px;border:none;width:100%;height:60px;border-radius:30px;background:#FFD166;color:#241C15;font-size:19px;font-weight:600;cursor:pointer}
+
+/* photo credits — CC-BY attribution has to be reachable in the app */
+#credits{position:absolute;inset:0;background:#241C15;color:#fff;padding:70px 26px 32px;display:flex;flex-direction:column}
+#credits h2{margin:0 0 12px;font-size:26px;font-weight:700}
+#creditList{flex:1;overflow:auto;font-size:13px;line-height:1.5;color:rgba(255,255,255,.7)}
+#creditList a{color:#FFD166}
+#creditList div{padding:6px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+</style>
+</head>
+<body>
+<div id="app">
+
+<section class="screen" id="onboarding">
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <div class="wordmark">What<br>is this?</div>
+    <div class="pitch">Pick a group, look at the picture, say it out loud. In five seconds we say it back.</div>
+  </div>
+  <div class="steps">
+    <div class="step"><b style="background:#FFD166">1</b><span>Choose a group of things</span></div>
+    <div class="step"><b style="background:#8ED2A8">2</b><span>Guess out loud, no tapping</span></div>
+    <div class="step"><b style="background:#9CC6F5">3</b><span>Ten things, then a little cheer</span></div>
+  </div>
+  <div class="spacer"></div>
+  <button type="button" class="cta" data-act="start">Let's play</button>
+  <button type="button" class="quiet" data-act="parent">For grown-ups</button>
+</section>
+
+<section class="screen" id="home" hidden>
+  <div class="home-head">
+    <div>
+      <div class="eyebrow">Pick a group</div>
+      <h1>What is this?</h1>
+    </div>
+    <button type="button" class="gear" data-act="settings" aria-label="Settings"><i></i></button>
+  </div>
+  <div id="grid"></div>
+  <div style="height:14px"></div>
+  <button type="button" class="surprise" data-act="surprise">Surprise me — mix them all</button>
+</section>
+
+<section class="screen" id="round" hidden>
+  <div class="bar">
+    <button type="button" class="chip sq" data-act="home" aria-label="Back">‹</button>
+    <div class="chip label" id="roundLabel"></div>
+    <button type="button" class="chip sq" id="muteBtn" data-act="voice" aria-label="Sound"></button>
+    <button type="button" class="chip pause" data-act="pause" aria-label="Pause">II</button>
+  </div>
+  <div id="dots"></div>
+  <div class="stage">
+    <div id="promptText">What is this?</div>
+    <div class="pic">
+      <button type="button" class="face" data-act="reveal" aria-label="Show the answer"><img class="photo" id="pic" alt=""></button>
+      <div id="ring">
+        <svg viewBox="0 0 96 96" width="96" height="96" style="display:block">
+          <circle cx="48" cy="48" r="40" fill="#FFFCF6"></circle>
+          <circle cx="48" cy="48" r="34" fill="none" stroke="rgba(36,28,21,.12)" stroke-width="8"></circle>
+          <circle id="ringArc" cx="48" cy="48" r="34" fill="none" stroke="#E0532F" stroke-width="8" stroke-linecap="round" stroke-dasharray="213.6" stroke-dashoffset="0" transform="rotate(-90 48 48)"></circle>
+        </svg>
+        <div id="countText">5</div>
+      </div>
+    </div>
+    <div class="say">
+      <div id="revealBox" hidden aria-live="polite">
+        <div id="answerText"></div>
+        <button type="button" class="again" data-act="sayAgain">Say it again</button>
+      </div>
+      <div id="askHint">Say it out loud… or tap to peek</div>
+    </div>
+  </div>
+  <div id="paused" hidden>
+    <h2>Paused</h2>
+    <button type="button" class="resume" data-act="pause">Keep playing</button>
+    <button type="button" class="ghost" data-act="home">Back to groups</button>
+  </div>
+</section>
+
+<section class="screen" id="summary" hidden>
+  <div class="eyebrow" id="summaryCat"></div>
+  <div id="summaryTitle"></div>
+  <div class="tap-hint">Tap any word to hear it again.</div>
+  <div id="words"></div>
+  <div class="spacer"></div>
+  <button type="button" class="again-big" data-act="playAgain">Ten more</button>
+  <button type="button" class="outline" data-act="home">Pick another group</button>
+</section>
+
+<div id="settings" hidden>
+  <button type="button" id="scrim" data-act="close" aria-label="Close settings"></button>
+  <div id="sheet">
+    <div class="grab"></div>
+    <h2>Settings</h2>
+    <div class="row" style="margin-top:20px">
+      <div><div class="t">Say the answer</div><div class="s">Reads each word out loud</div></div>
+      <button type="button" class="toggle" id="voiceToggle" data-act="voice" role="switch"><i></i></button>
+    </div>
+    <div class="rule"></div>
+    <div class="t">How long to think</div>
+    <div id="timers"></div>
+    <div class="rule"></div>
+    <div class="row">
+      <div><div class="t">Keep playing on its own</div><div class="s">Moves to the next picture by itself</div></div>
+      <button type="button" class="toggle" id="autoToggle" data-act="auto" role="switch"><i></i></button>
+    </div>
+    <button type="button" class="grown" data-act="parent">For grown-ups</button>
+  </div>
+</div>
+
+<section class="screen" id="parent" hidden>
+  <div id="locked">
+    <h2>Grown-ups only</h2>
+    <p>Press and hold the circle for two seconds.</p>
+    <button type="button" id="hold"><span id="holdFill"></span>Hold</button>
+    <button type="button" class="link" data-act="close">Back to the game</button>
+  </div>
+  <div id="open" hidden>
+    <div class="eyebrow">Parent zone</div>
+    <h2>Progress</h2>
+    <div class="stats">
+      <div class="stat"><b id="statWords">0</b><span>words seen</span></div>
+      <div class="stat"><b id="statRounds">0</b><span>rounds played</span></div>
+    </div>
+    <div class="by">By group</div>
+    <div id="rows"></div>
+    <button type="button" class="done" data-act="close">Done</button>
+    <button type="button" class="link" style="margin-top:10px" data-act="credits">Photo credits</button>
+  </div>
+</section>
+
+<section id="credits" hidden>
+  <h2>Photo credits</h2>
+  <div id="creditList"></div>
+  <button type="button" class="done" data-act="closeCredits">Done</button>
+</section>
+
+</div>
+<script>
+let CATS = [];
+const KEY = 'wit-progress-v1';
+const PER_ROUND = 10;
+const REVEAL_HOLD = 2800;
+const $ = (id) => document.getElementById(id);
+const slug = (s) => s.toLowerCase().replace(/\s+/g, '-');
+const slotId = (catId, name) => 'obj-' + catId + '-' + slug(name);
+const photo = (slot) => 'img/' + slot + '.webp';
+
+const seenIn = (c) => (S.seen[c.id] ? Object.keys(S.seen[c.id]).length : 0);
+const speakerIcon = (on) => `<svg width="22" height="20" viewBox="0 0 22 20" fill="none" aria-hidden="true">
+  <path d="M3 7.5h3.2L10.5 4v12L6.2 12.5H3z" fill="#4A3D2F"/>
+  ${on
+    ? '<path d="M13.6 6.6a5 5 0 010 6.8M16.2 4.4a8.4 8.4 0 010 11.2" stroke="#4A3D2F" stroke-width="1.8" stroke-linecap="round"/>'
+    : '<path d="M13.8 7.2l5 5.6M18.8 7.2l-5 5.6" stroke="#4A3D2F" stroke-width="1.8" stroke-linecap="round"/>'}
+</svg>`;
+
+const S = {
+  screen: 'onboarding', overlay: null, parentLocked: true, holdPct: 0,
+  catId: null, queue: [], idx: 0, phase: 'ask', left: 0, revealLeft: 0,
+  paused: false, voice: true, seconds: 5, auto: true, seen: {}, rounds: 0
+};
+
+try {
+  const p = JSON.parse(localStorage.getItem(KEY) || '{}');
+  S.seen = p.seen || {}; S.rounds = p.rounds || 0;
+  if (p.voice !== undefined) S.voice = p.voice;
+  if (p.auto !== undefined) S.auto = p.auto;
+  if (p.seconds) S.seconds = p.seconds;
+} catch (e) {}
+const save = () => {
+  try {
+    localStorage.setItem(KEY, JSON.stringify({ seen: S.seen, rounds: S.rounds, voice: S.voice, auto: S.auto, seconds: S.seconds }));
+  } catch (e) {}
+};
+
+function speak(text) {
+  if (!S.voice || typeof speechSynthesis === 'undefined') return;
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.82; u.pitch = 1.15; u.lang = 'en-GB';
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+
+function startRound(catId) {
+  let pool;
+  if (catId === 'mix') {
+    pool = [];
+    CATS.forEach((c) => c.items.forEach((it) => pool.push({ n: it.name, c: c.id })));
+  } else {
+    const cat = CATS.find((c) => c.id === catId);
+    pool = cat.items.map((it) => ({ n: it.name, c: cat.id }));
+  }
+  for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+  Object.assign(S, { screen: 'round', catId, queue: pool.slice(0, PER_ROUND), idx: 0, phase: 'ask', left: S.seconds * 1000, paused: false, overlay: null });
+  buildDots();
+  render();
+  speak('What is this?');
+}
+
+function reveal() {
+  const cur = S.queue[S.idx];
+  if (!cur) return;
+  S.seen[cur.c] = Object.assign({}, S.seen[cur.c] || {});
+  S.seen[cur.c][cur.n] = true;
+  save();
+  Object.assign(S, { phase: 'reveal', left: 0, revealLeft: REVEAL_HOLD });
+  render();
+  speak(cur.n);
+}
+
+function next() {
+  const i = S.idx + 1;
+  if (i >= S.queue.length) {
+    S.rounds++;
+    save();
+    S.screen = 'summary';
+    buildSummary();
+    render();
+    speak('You did it!');
+    return;
+  }
+  Object.assign(S, { idx: i, phase: 'ask', left: S.seconds * 1000 });
+  render();
+  speak('What is this?');
+}
+
+setInterval(() => {
+  if (S.screen !== 'round' || S.paused || S.overlay) return;
+  if (S.phase === 'ask') {
+    S.left -= 100;
+    if (S.left <= 0) reveal(); else paintTimer();
+  } else if (S.auto) {
+    S.revealLeft -= 100;
+    if (S.revealLeft <= 0) next();
+  }
+}, 100);
+
+/* ---------- build once ---------- */
+function buildHome() {
+  $('grid').innerHTML = CATS.map((c) => `
+    <button type="button" class="card" data-cat="${c.id}" style="background:${c.color};box-shadow:0 6px 0 ${c.shadow}">
+      <span class="frame"><img class="photo" src="${photo('cat-' + c.id)}" alt=""></span>
+      <span class="meta"><span class="name">${c.name}</span><span class="badge" data-badge="${c.id}"></span></span>
+    </button>`).join('');
+}
+function buildTimers() {
+  $('timers').innerHTML = [3, 5, 8].map((n) => `<button type="button" data-sec="${n}">${n} sec</button>`).join('');
+}
+function buildParentRows() {
+  $('rows').innerHTML = CATS.map((c) => `
+    <div class="r">
+      <span class="dot" style="background:${c.color}"></span>
+      <span class="nm">${c.name}</span>
+      <span class="track"><span class="fill" data-fill="${c.id}" style="background:${c.color};width:0%"></span></span>
+      <span class="ct" data-count="${c.id}">0/${c.items.length}</span>
+    </div>`).join('');
+}
+function buildDots() {
+  $('dots').innerHTML = S.queue.map(() => '<div></div>').join('');
+}
+function buildSummary() {
+  const cat = CATS.find((c) => c.id === S.catId);
+  $('summaryCat').textContent = S.catId === 'mix' ? 'Mixed up' : (cat ? cat.name : '');
+  $('summaryTitle').textContent = 'You saw ' + S.queue.length + ' things!';
+  $('words').innerHTML = S.queue.map((q, i) => `<button type="button" data-say="${q.n}" style="animation-delay:${i * 40}ms">${q.n}</button>`).join('');
+}
+
+/* ---------- render ---------- */
+function paintTimer() {
+  const total = S.seconds * 1000;
+  const frac = S.phase === 'ask' ? Math.max(0, S.left) / total : 0;
+  $('ringArc').setAttribute('stroke-dashoffset', 213.6 * (1 - frac));
+  $('countText').textContent = String(Math.max(1, Math.ceil(Math.max(0, S.left) / 1000)));
+}
+
+function render() {
+  const asking = S.phase === 'ask';
+  const cat = CATS.find((c) => c.id === S.catId);
+  const cur = S.queue[S.idx];
+
+  $('onboarding').hidden = !(S.screen === 'onboarding' && !S.overlay);
+  $('home').hidden = !(S.screen === 'home' && S.overlay !== 'parent');
+  $('round').hidden = !(S.screen === 'round' && S.overlay !== 'parent');
+  $('summary').hidden = !(S.screen === 'summary' && S.overlay !== 'parent');
+  $('settings').hidden = S.overlay !== 'settings';
+  $('parent').hidden = S.overlay !== 'parent';
+
+  if (S.screen === 'home') {
+    CATS.forEach((c) => {
+      $('grid').querySelector(`[data-badge="${c.id}"]`).textContent = seenIn(c) + '/' + c.items.length;
+    });
+  }
+
+  if (S.screen === 'round') {
+    $('round').style.background = S.catId === 'mix' ? '#FFF3DC' : (cat ? cat.color : '#FFF3DC');
+    $('roundLabel').textContent = S.catId === 'mix' ? 'Mixed up' : (cat ? cat.name : '');
+    $('round').querySelector('[data-act="pause"]').textContent = S.paused ? '▶' : 'II';
+    $('muteBtn').innerHTML = speakerIcon(S.voice);
+    $('muteBtn').setAttribute('aria-label', S.voice ? 'Sound on' : 'Sound off');
+    $('promptText').textContent = asking ? 'What is this?' : 'It is a…';
+    $('answerText').textContent = cur ? cur.n : '';
+    const src = cur ? photo(slotId(cur.c, cur.n)) : '';
+    if (!$('pic').src.endsWith(src)) $('pic').src = src;
+    $('pic').alt = !asking && cur ? cur.n : '';
+    $('ring').hidden = !asking;
+    $('askHint').hidden = !asking;
+    $('revealBox').hidden = asking;
+    if (!asking) { $('revealBox').style.animation = 'none'; void $('revealBox').offsetWidth; $('revealBox').style.animation = ''; }
+    $('paused').hidden = !S.paused;
+    Array.from($('dots').children).forEach((d, i) => {
+      d.style.background = i < S.idx ? 'rgba(36,28,21,.55)' : (i === S.idx ? '#E0532F' : 'rgba(255,255,255,.7)');
+    });
+    paintTimer();
+  }
+
+  if (S.overlay === 'settings') {
+    $('voiceToggle').style.background = S.voice ? '#5BB98C' : '#DCD2C2';
+    $('voiceToggle').style.justifyContent = S.voice ? 'flex-end' : 'flex-start';
+    $('voiceToggle').setAttribute('aria-checked', S.voice);
+    $('autoToggle').style.background = S.auto ? '#5BB98C' : '#DCD2C2';
+    $('autoToggle').style.justifyContent = S.auto ? 'flex-end' : 'flex-start';
+    $('autoToggle').setAttribute('aria-checked', S.auto);
+    Array.from($('timers').children).forEach((b) => {
+      const on = Number(b.dataset.sec) === S.seconds;
+      b.style.background = on ? '#241C15' : '#fff';
+      b.style.color = on ? '#fff' : '#4A3D2F';
+      b.style.border = '2px solid ' + (on ? '#241C15' : '#E8DCC9');
+    });
+  }
+
+  if (S.overlay === 'parent') {
+    $('locked').hidden = !S.parentLocked;
+    $('open').hidden = S.parentLocked;
+    $('holdFill').style.clipPath = `inset(${100 - S.holdPct}% 0 0 0)`;
+    if (!S.parentLocked) {
+      $('statWords').textContent = Object.keys(S.seen).reduce((a, k) => a + Object.keys(S.seen[k]).length, 0);
+      $('statRounds').textContent = S.rounds;
+      CATS.forEach((c) => {
+        const n = seenIn(c);
+        $('rows').querySelector(`[data-fill="${c.id}"]`).style.width = (n / c.items.length * 100) + '%';
+        $('rows').querySelector(`[data-count="${c.id}"]`).textContent = n + '/' + c.items.length;
+      });
+    }
+  }
+}
+
+/* ---------- events ---------- */
+const ACTIONS = {
+  start: () => { S.screen = 'home'; render(); },
+  home: () => { Object.assign(S, { screen: 'home', overlay: null, paused: false }); render(); },
+  settings: () => { S.overlay = 'settings'; render(); },
+  parent: () => { Object.assign(S, { overlay: 'parent', parentLocked: true, holdPct: 0 }); render(); },
+  close: () => { S.overlay = null; render(); },
+  surprise: () => startRound('mix'),
+  playAgain: () => startRound(S.catId || 'vehicles'),
+  reveal: () => { if (S.phase === 'ask') reveal(); else next(); },
+  sayAgain: () => { const cur = S.queue[S.idx]; if (cur) speak(cur.n); },
+  pause: () => { S.paused = !S.paused; render(); },
+  voice: () => { S.voice = !S.voice; save(); render(); },
+  auto: () => { S.auto = !S.auto; save(); render(); },
+  credits: () => showCredits(),
+  closeCredits: () => { $('credits').hidden = true; }
+};
+
+document.addEventListener('click', (e) => {
+  const act = e.target.closest('[data-act]');
+  if (act) return ACTIONS[act.dataset.act]();
+  const card = e.target.closest('[data-cat]');
+  if (card) return startRound(card.dataset.cat);
+  const sec = e.target.closest('[data-sec]');
+  if (sec) { S.seconds = Number(sec.dataset.sec); save(); return render(); }
+  const say = e.target.closest('[data-say]');
+  if (say) return speak(say.dataset.say);
+});
+
+let holdTimer;
+const holdStart = (e) => {
+  e.preventDefault();
+  clearInterval(holdTimer);
+  holdTimer = setInterval(() => {
+    S.holdPct += 5; // 5% per 100ms = the two seconds the copy promises
+    if (S.holdPct >= 100) { clearInterval(holdTimer); S.holdPct = 100; S.parentLocked = false; }
+    render();
+  }, 100);
+};
+const holdEnd = () => { clearInterval(holdTimer); if (S.parentLocked) { S.holdPct = 0; render(); } };
+$('hold').addEventListener('pointerdown', holdStart);
+$('hold').addEventListener('pointerup', holdEnd);
+$('hold').addEventListener('pointercancel', holdEnd);
+$('hold').addEventListener('pointerleave', holdEnd);
+
+async function showCredits() {
+  const box = $('creditList');
+  $('credits').hidden = false;
+  if (box.dataset.loaded) return;
+  try {
+    const c = await (await fetch('img/credits.json')).json();
+    box.innerHTML = '<div>Photos from Wikimedia Commons / Wikipedia, under the licences noted below.</div>' +
+      Object.values(c).map((v) =>
+        `<div><b>${v.name}</b> — ${v.author} · ${v.licence} · <a href="${v.source}" target="_blank" rel="noopener">source</a></div>`).join('');
+    box.dataset.loaded = '1';
+  } catch (e) { box.textContent = 'Credits unavailable offline.'; }
+}
+
+(async () => {
+  CATS = (await (await fetch('data/cards.json')).json()).categories;
+  buildHome(); buildTimers(); buildParentRows(); render();
+})();
+</script>
+</body>
+</html>
