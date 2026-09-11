@@ -2,8 +2,6 @@
 
 The MIT licence in `LICENSE` covers the source code only.
 
-This licence covers the source code only.
-
 The photographs in `app/img/` come from Wikimedia Commons and Wikipedia and
 remain under their own licences — mostly CC BY-SA and public domain. Author,
 licence and source URL for each of the 272 photos are recorded in
