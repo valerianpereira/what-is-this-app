@@ -1,5 +1,5 @@
 {
-  "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram. imageBase is where the app fetches photos from on first run; tools/upload-cloudinary.mjs prints the value to put here.",
+  "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram. A category marked \"drawn\": true has no photos to fetch — tools/draw-cards.py renders its cards locally. imageBase is where the app fetches photos from on first run; tools/upload-cloudinary.mjs prints the value to put here.",
   "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@main/photos",
   "categories": [
     {
@@ -1172,6 +1172,333 @@
         {
           "name": "Samosa",
           "wiki": "Samosa"
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body Parts",
+      "color": "#FFCDB2",
+      "shadow": "#D6A489",
+      "tile": "Hand",
+      "items": [
+        {
+          "name": "Hand",
+          "wiki": "Hand"
+        },
+        {
+          "name": "Eye",
+          "wiki": "Human eye"
+        },
+        {
+          "name": "Ear",
+          "wiki": "Ear"
+        },
+        {
+          "name": "Nose",
+          "wiki": "File:Fort Ross Elena wearing Traditional Russian Costume (cropped).jpg"
+        },
+        {
+          "name": "Mouth",
+          "wiki": "File:Lips 2023.jpg"
+        },
+        {
+          "name": "Teeth",
+          "wiki": "File:06-10-06smile.jpg"
+        },
+        {
+          "name": "Tongue",
+          "wiki": "Tongue"
+        },
+        {
+          "name": "Hair",
+          "wiki": "File:Curlsbaby.jpg"
+        },
+        {
+          "name": "Arm",
+          "wiki": "Arm"
+        },
+        {
+          "name": "Elbow",
+          "wiki": "Elbow"
+        },
+        {
+          "name": "Finger",
+          "wiki": "Index finger"
+        },
+        {
+          "name": "Thumb",
+          "wiki": "Thumb"
+        },
+        {
+          "name": "Foot",
+          "wiki": "Foot"
+        },
+        {
+          "name": "Knee",
+          "wiki": "Knee"
+        },
+        {
+          "name": "Leg",
+          "wiki": "File:Male legs 01.jpg"
+        }
+      ]
+    },
+    {
+      "id": "toys",
+      "name": "Toys",
+      "color": "#B5EAD7",
+      "shadow": "#8CC0AE",
+      "tile": "Teddy bear",
+      "items": [
+        {
+          "name": "Ball",
+          "wiki": "Ball"
+        },
+        {
+          "name": "Balloon",
+          "wiki": "Balloon"
+        },
+        {
+          "name": "Teddy Bear",
+          "wiki": "Teddy bear"
+        },
+        {
+          "name": "Doll",
+          "wiki": "Rag doll"
+        },
+        {
+          "name": "Kite",
+          "wiki": "Kite"
+        },
+        {
+          "name": "Blocks",
+          "wiki": "Toy block"
+        },
+        {
+          "name": "Puzzle",
+          "wiki": "Jigsaw puzzle"
+        },
+        {
+          "name": "Marbles",
+          "wiki": "Marble (toy)"
+        },
+        {
+          "name": "Spinning Top",
+          "wiki": "Spinning top"
+        },
+        {
+          "name": "Rocking Horse",
+          "wiki": "Rocking horse"
+        },
+        {
+          "name": "Toy Car",
+          "wiki": "Toy car"
+        },
+        {
+          "name": "Skipping Rope",
+          "wiki": "Skipping rope"
+        },
+        {
+          "name": "Yo-yo",
+          "wiki": "Yo-yo"
+        },
+        {
+          "name": "Pinwheel",
+          "wiki": "Pinwheel (toy)"
+        },
+        {
+          "name": "Bubbles",
+          "wiki": "Soap bubble"
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "name": "School Things",
+      "color": "#A9D6E5",
+      "shadow": "#80AEBC",
+      "tile": "Backpack",
+      "items": [
+        {
+          "name": "Pencil",
+          "wiki": "Pencil"
+        },
+        {
+          "name": "Pen",
+          "wiki": "Pen"
+        },
+        {
+          "name": "Crayon",
+          "wiki": "Crayon"
+        },
+        {
+          "name": "Chalk",
+          "wiki": "Sidewalk chalk"
+        },
+        {
+          "name": "Eraser",
+          "wiki": "Eraser"
+        },
+        {
+          "name": "Sharpener",
+          "wiki": "Pencil sharpener"
+        },
+        {
+          "name": "Ruler",
+          "wiki": "Ruler"
+        },
+        {
+          "name": "Scissors",
+          "wiki": "Scissors"
+        },
+        {
+          "name": "Glue",
+          "wiki": "Glue stick"
+        },
+        {
+          "name": "Paintbrush",
+          "wiki": "Paintbrush"
+        },
+        {
+          "name": "Notebook",
+          "wiki": "Notebook"
+        },
+        {
+          "name": "Book",
+          "wiki": "Paperback"
+        },
+        {
+          "name": "Bag",
+          "wiki": "Backpack"
+        },
+        {
+          "name": "Blackboard",
+          "wiki": "File:家課日誌 2020-10-30.jpg"
+        },
+        {
+          "name": "Globe",
+          "wiki": "Globe"
+        }
+      ]
+    },
+    {
+      "id": "shapes",
+      "name": "Shapes",
+      "color": "#E3D5FF",
+      "shadow": "#B8ABD4",
+      "tile": "drawn",
+      "drawn": true,
+      "items": [
+        {
+          "name": "Circle",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Square",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Triangle",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Rectangle",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Oval",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Heart",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Diamond",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Crescent",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Pentagon",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Hexagon",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Arrow",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Cross",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Ring",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Semicircle",
+          "wiki": "drawn"
+        }
+      ]
+    },
+    {
+      "id": "colors",
+      "name": "Colours",
+      "color": "#FFE5A0",
+      "shadow": "#D6BE7E",
+      "tile": "drawn",
+      "drawn": true,
+      "items": [
+        {
+          "name": "Red",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Blue",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Yellow",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Green",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Purple",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Pink",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Brown",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Black",
+          "wiki": "drawn"
+        },
+        {
+          "name": "White",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Grey",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Gold",
+          "wiki": "drawn"
         }
       ]
     }

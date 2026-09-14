@@ -6,7 +6,7 @@ handoff (`What Is This.dc.html`).
 Show a photo, the child says the word out loud, five seconds later the app says
 it back. Ten pictures a round, then a summary of the words seen.
 
-17 groups × 15 things = 255 words, 272 photos, **4 MB APK**.
+22 groups, 325 words, 347 card pictures, **4 MB APK**.
 
 The photos are not bundled. They are served from a CDN and cached on the device
 as the child plays — each picture is downloaded the first time it comes up and
@@ -41,14 +41,15 @@ leaves the replaced files' bytes inside the APK and doubles its size.
     app/data/credits.json     photographer + licence per photo (bundled, tiny)
     app/fonts/                Fredoka variable font, 400–700
 
-    photos/*.webp             the 272 photos — NOT shipped in the APK; uploaded
-                              to the CDN and fetched on demand
+    photos/*.webp             the 347 card pictures — NOT shipped in the APK;
+                              uploaded to the CDN and fetched on demand
 
     android/                  Capacitor wrapper (generated; `npm run apk` refreshes it)
     dist/what-is-this.apk     built debug APK (gitignored)
 
     tools/fetch-images.mjs    downloads any photo cards.json is missing
     tools/upload-cloudinary.mjs  uploads photos/ to Cloudinary, prints imageBase
+    tools/draw-cards.py       renders the shape and colour cards, which have no photo
     tools/check.mjs           asserts every card has a photo and a credit
     tools/contact-sheet.py    composes a labelled sheet of the photos, to eyeball them
     tools/candidates.mjs      shows Commons search results when a photo needs replacing
@@ -104,7 +105,7 @@ built-in text-to-speech.
 
 ## Licence
 
-MIT for the code (`LICENSE`). The 272 photos keep their own Wikimedia licences
+MIT for the code (`LICENSE`). The 320 photos keep their own Wikimedia licences
 and the font is OFL — see `NOTICE.md`.
 
 ## Photos and licensing
@@ -112,7 +113,13 @@ and the font is OFL — see `NOTICE.md`.
 All photos come from Wikimedia Commons / Wikipedia under CC and public-domain
 licences. Attribution is required and is shown in the app: Settings → For
 grown-ups → hold 2s → Photo credits. `app/img/credits.json` holds author,
-licence and source URL for all 272. Keep that screen if you ship this.
+licence and source URL for all 320. Keep that screen if you ship this.
+
+The 27 Shapes and Colours cards are the exception: Wikipedia leads those
+articles with annotated geometry diagrams and with an object of that colour
+(Red → strawberries), which teaches the wrong word, so `tools/draw-cards.py`
+draws them instead. They are CC0 and marked `"drawn": true` in `cards.json`,
+which is what tells the fetcher to skip them.
 
 ## Android notes
 

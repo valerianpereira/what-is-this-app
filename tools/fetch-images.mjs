@@ -70,6 +70,8 @@ async function download({ file, wiki }, dest) {
 const { categories } = JSON.parse(await readFile(APP + 'data/cards.json', 'utf8'));
 const targets = [];
 for (const c of categories) {
+  // Shapes and colours have no photograph to fetch — tools/draw-cards.py renders them.
+  if (c.drawn) continue;
   targets.push({ slot: `cat-${c.id}`, title: c.tile, label: `${c.name} (group tile)` });
   for (const it of c.items) targets.push({ slot: `obj-${c.id}-${slug(it.name)}`, title: it.wiki, label: it.name });
 }
@@ -99,5 +101,5 @@ for (const t of targets) {
   await nap(120); // stay polite to the Wikimedia APIs
 }
 
-console.log(`\n${Object.keys(credits).length}/${targets.length} images ready`);
+console.log(`\n${targets.filter((t) => credits[t.slot]).length}/${targets.length} images ready`);
 if (failed.length) { console.log('FAILED:'); failed.forEach((f) => console.log('  ' + f)); process.exitCode = 1; }

@@ -1902,5 +1902,530 @@
   "author": "Moheen Reeyad",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ASamosas%2C_snack_food_at_Wikipedia's_16th_Birthday_celebration_in_Chittagong_(01).jpg"
+ },
+ "obj-shapes-circle": {
+  "name": "Circle",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-square": {
+  "name": "Square",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-triangle": {
+  "name": "Triangle",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-rectangle": {
+  "name": "Rectangle",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-oval": {
+  "name": "Oval",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-heart": {
+  "name": "Heart",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-diamond": {
+  "name": "Diamond",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-crescent": {
+  "name": "Crescent",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-pentagon": {
+  "name": "Pentagon",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-hexagon": {
+  "name": "Hexagon",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-arrow": {
+  "name": "Arrow",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-cross": {
+  "name": "Cross",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-ring": {
+  "name": "Ring",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-shapes-semicircle": {
+  "name": "Semicircle",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-colors-red": {
+  "name": "Red",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-colors-blue": {
+  "name": "Blue",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-colors-yellow": {
+  "name": "Yellow",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-colors-green": {
+  "name": "Green",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-colors-purple": {
+  "name": "Purple",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-colors-pink": {
+  "name": "Pink",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-colors-brown": {
+  "name": "Brown",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-colors-black": {
+  "name": "Black",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-colors-white": {
+  "name": "White",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-colors-grey": {
+  "name": "Grey",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-colors-gold": {
+  "name": "Gold",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "cat-shapes": {
+  "name": "Shapes (group tile)",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "cat-colors": {
+  "name": "Colours (group tile)",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "cat-body": {
+  "name": "Body Parts (group tile)",
+  "article": "Hand",
+  "author": "Genusfotografen (Tomas Gunnarsson) / Wikimedia",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AHand%2C_fingers_-_back.jpg"
+ },
+ "obj-body-hand": {
+  "name": "Hand",
+  "article": "Hand",
+  "author": "Genusfotografen (Tomas Gunnarsson) / Wikimedia",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AHand%2C_fingers_-_back.jpg"
+ },
+ "obj-body-eye": {
+  "name": "Eye",
+  "article": "Human eye",
+  "author": "ROTFLOLEB",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AHuman_eye_with_blood_vessels.jpg"
+ },
+ "obj-body-ear": {
+  "name": "Ear",
+  "article": "Ear",
+  "author": "Genusfotografen (Tomas Gunnarsson) / Wikimedia Sverige",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AHuman_right_ear_(cropped).jpg"
+ },
+ "obj-body-nose": {
+  "name": "Nose",
+  "article": "File:Fort Ross Elena wearing Traditional Russian Costume (cropped).jpg",
+  "author": "Franco Folini",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AFort%20Ross%20Elena%20wearing%20Traditional%20Russian%20Costume%20(cropped).jpg"
+ },
+ "obj-body-mouth": {
+  "name": "Mouth",
+  "article": "File:Lips 2023.jpg",
+  "author": "PumpkinMan1943",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALips%202023.jpg"
+ },
+ "obj-body-teeth": {
+  "name": "Teeth",
+  "article": "File:06-10-06smile.jpg",
+  "author": "dozenist",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3A06-10-06smile.jpg"
+ },
+ "obj-body-tongue": {
+  "name": "Tongue",
+  "article": "Tongue",
+  "author": "Mahdiabbasinv",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3A%D8%B2%D8%A8%D8%A7%D9%86_tongue.jpg"
+ },
+ "obj-body-hair": {
+  "name": "Hair",
+  "article": "File:Curlsbaby.jpg",
+  "author": "Larali21",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACurlsbaby.jpg"
+ },
+ "obj-body-arm": {
+  "name": "Arm",
+  "article": "Arm",
+  "author": "Genusfotografen (Tomas Gunnarsson) / Wikimedia Sverige",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AExtended_arm.jpg"
+ },
+ "obj-body-elbow": {
+  "name": "Elbow",
+  "article": "Elbow",
+  "author": "Genusfotografen (Tommas Gunnarsson) / Wikimedia Sverige",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AElbow_on_gray_background.jpg"
+ },
+ "obj-body-finger": {
+  "name": "Finger",
+  "article": "Index finger",
+  "author": "Pogrebnoj-Alexandroff",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AIndex_finger_%3D_to_attention.JPG"
+ },
+ "obj-body-thumb": {
+  "name": "Thumb",
+  "article": "Thumb",
+  "author": "Bwyell80",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALiam_Thumb.jpg"
+ },
+ "obj-body-foot": {
+  "name": "Foot",
+  "article": "Foot",
+  "author": "Genusfotografen (Tomas Gunnarsson) / Wikimedia",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AFoot_on_white_background.jpg"
+ },
+ "obj-body-knee": {
+  "name": "Knee",
+  "article": "Knee",
+  "author": "Genusfotografen (Tomas Gunnarsson) / Wikimedia Sverige",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AHuman_knees.jpg"
+ },
+ "obj-body-leg": {
+  "name": "Leg",
+  "article": "File:Male legs 01.jpg",
+  "author": "Oxfordian Kissuth",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMale%20legs%2001.jpg"
+ },
+ "cat-toys": {
+  "name": "Toys (group tile)",
+  "article": "Teddy bear",
+  "author": "Smithsonian Museum of Natural History",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ATeddy_bear_early_1900s_-_Smithsonian_Museum_of_Natural_History.jpg"
+ },
+ "obj-toys-ball": {
+  "name": "Ball",
+  "article": "Ball",
+  "author": "Conrad 7",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMany_balls.jpg"
+ },
+ "obj-toys-balloon": {
+  "name": "Balloon",
+  "article": "Balloon",
+  "author": "Photographer: Warren Denning. Creative Director: Stan Weir. Marketing Director: Tim Vlamis",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACongrats_bqt.jpg"
+ },
+ "obj-toys-teddy-bear": {
+  "name": "Teddy Bear",
+  "article": "Teddy bear",
+  "author": "Smithsonian Museum of Natural History",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ATeddy_bear_early_1900s_-_Smithsonian_Museum_of_Natural_History.jpg"
+ },
+ "obj-toys-doll": {
+  "name": "Doll",
+  "article": "Rag doll",
+  "author": "Anne Norman",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AHand_made_dolls.jpg"
+ },
+ "obj-toys-kite": {
+  "name": "Kite",
+  "article": "Kite",
+  "author": "Jon Sullivan",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AKitesflying.jpg"
+ },
+ "obj-toys-blocks": {
+  "name": "Blocks",
+  "article": "Toy block",
+  "author": "Unknown",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AToyblocks.JPG"
+ },
+ "obj-toys-puzzle": {
+  "name": "Puzzle",
+  "article": "Jigsaw puzzle",
+  "author": "Scouten",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AJigsaw_puzzle_01_by_Scouten.jpg"
+ },
+ "obj-toys-marbles": {
+  "name": "Marbles",
+  "article": "Marble (toy)",
+  "author": "Wendy",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMarble_collector_-_Flickr_-_smkybear.jpg"
+ },
+ "obj-toys-spinning-top": {
+  "name": "Spinning Top",
+  "article": "Spinning top",
+  "author": "Davidturnswood",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AA_tough_gang_of_Spinning_Tops.jpg"
+ },
+ "obj-toys-rocking-horse": {
+  "name": "Rocking Horse",
+  "article": "Rocking horse",
+  "author": "Unknown",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AThe_Childrens_Museum_of_Indianapolis_-_Rocking_Horse.jpg"
+ },
+ "obj-toys-toy-car": {
+  "name": "Toy Car",
+  "article": "Toy car",
+  "author": "Doggo19292",
+  "licence": "Attribution",
+  "source": "https://commons.wikimedia.org/wiki/File%3AToyCars.jpg"
+ },
+ "obj-toys-skipping-rope": {
+  "name": "Skipping Rope",
+  "article": "Skipping rope",
+  "author": "Pambelle12",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGhanaian_kid_(skipping_rope)_06_(cropped).jpg"
+ },
+ "obj-toys-yo-yo": {
+  "name": "Yo-yo",
+  "article": "Yo-yo",
+  "author": "Evan-Amos",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AYo-Yo-Plastic-Toy-Green.jpg"
+ },
+ "obj-toys-pinwheel": {
+  "name": "Pinwheel",
+  "article": "Pinwheel (toy)",
+  "author": "Tom Woodward",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGreen_pinwheel.jpg"
+ },
+ "obj-toys-bubbles": {
+  "name": "Bubbles",
+  "article": "Soap bubble",
+  "author": "Brocken Inaglory. The image was edited by user:Alvesgaspar",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AReflection_in_a_soap_bubble_edit.jpg"
+ },
+ "cat-school": {
+  "name": "School Things (group tile)",
+  "article": "Backpack",
+  "author": "de:Benutzer:sjr",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARucksack1.jpg"
+ },
+ "obj-school-pencil": {
+  "name": "Pencil",
+  "article": "Pencil",
+  "author": "Original uploader was Dmgerman at en.wikipedia",
+  "licence": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APencils_hb.jpg"
+ },
+ "obj-school-pen": {
+  "name": "Pen",
+  "article": "Pen",
+  "author": "Vadim Zhuravlev",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACarandache_Ecridor.jpg"
+ },
+ "obj-school-crayon": {
+  "name": "Crayon",
+  "article": "Crayon",
+  "author": "Jorge Barrios",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACrayones_cera.jpg"
+ },
+ "obj-school-chalk": {
+  "name": "Chalk",
+  "article": "Sidewalk chalk",
+  "author": "Nakaner",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASidewalk_chalk.jpg"
+ },
+ "obj-school-eraser": {
+  "name": "Eraser",
+  "article": "Eraser",
+  "author": "Evan-Amos",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AOffice-pink-erasers.jpg"
+ },
+ "obj-school-sharpener": {
+  "name": "Sharpener",
+  "article": "Pencil sharpener",
+  "author": "Alexander Klink",
+  "licence": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASharpener_with_Pencil.jpg"
+ },
+ "obj-school-ruler": {
+  "name": "Ruler",
+  "article": "Ruler",
+  "author": "Geof",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ADiverse%C2%B7Ma%C3%9Fst%C3%A4be%2C15.365.jpg"
+ },
+ "obj-school-scissors": {
+  "name": "Scissors",
+  "article": "Scissors",
+  "author": "Doggerelblogger",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AStandard_household_scissors.jpg"
+ },
+ "obj-school-glue": {
+  "name": "Glue",
+  "article": "Glue stick",
+  "author": "Elarkon",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APritt_Sticks.JPG"
+ },
+ "obj-school-paintbrush": {
+  "name": "Paintbrush",
+  "article": "Paintbrush",
+  "author": "Krestavilis at English Wikipedia",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3APaintbrushes.jpg"
+ },
+ "obj-school-notebook": {
+  "name": "Notebook",
+  "article": "Notebook",
+  "author": "L.Marie",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ANotebooks.jpg"
+ },
+ "obj-school-book": {
+  "name": "Book",
+  "article": "Paperback",
+  "author": "Trey Jones",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABlank_book_on_a_table.jpg"
+ },
+ "obj-school-bag": {
+  "name": "Bag",
+  "article": "Backpack",
+  "author": "de:Benutzer:sjr",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARucksack1.jpg"
+ },
+ "obj-school-blackboard": {
+  "name": "Blackboard",
+  "article": "File:家課日誌 2020-10-30.jpg",
+  "author": "Kitabc12345",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3A%E5%AE%B6%E8%AA%B2%E6%97%A5%E8%AA%8C%202020-10-30.jpg"
+ },
+ "obj-school-globe": {
+  "name": "Globe",
+  "article": "Globe",
+  "author": "David Keddie",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AThe_Great_Globe%2C_Guyot_Hall%2C_Princeton_University.jpg"
  }
 }

@@ -533,7 +533,7 @@ async function showCredits() {
   if (box.dataset.loaded) return;
   try {
     const c = await (await fetch('data/credits.json')).json();
-    box.innerHTML = '<div>Photos from Wikimedia Commons / Wikipedia, under the licences noted below.</div>' +
+    box.innerHTML = '<div>Photos from Wikimedia Commons / Wikipedia, under the licences noted below. The shape and colour cards are drawn for this app.</div>' +
       Object.values(c).map((v) =>
         `<div><b>${v.name}</b> — ${v.author} · ${v.licence} · <a href="${v.source}" target="_blank" rel="noopener">source</a></div>`).join('');
     box.dataset.loaded = '1';
