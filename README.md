@@ -33,6 +33,24 @@ Needs the Android SDK (API 35+), JDK 17+, and `ANDROID_HOME` set. Use
 `./gradlew clean assembleDebug` after changing assets — an incremental build
 leaves the replaced files' bytes inside the APK and doubles its size.
 
+## Publishing to Google Play
+
+    npm run aab                # signed release bundle → dist/what-is-this.aab
+
+The release build is signed with the Play upload key in
+`android/upload-keystore.jks`, whose passwords live in
+`android/keystore.properties`. Both are gitignored: back them up somewhere
+safe — without the key, updates cannot be uploaded to the same listing. Without
+the files the release build is unsigned and only `npm run apk` works.
+
+Everything the Play Console asks for is in `store/`: `listing.md` has the
+copy and the answers to the App content questionnaire, `icon-512.png` and
+`feature-1024x500.png` are the listing art, `screenshots/01..05.png` the phone
+screenshots. The privacy policy is published from the `gh-pages` branch at
+https://valerianpereira.github.io/what-is-this-app/.
+
+Bump `versionCode` in `android/app/build.gradle` before every upload.
+
 ## Layout
 
     app/index.html            whole app — markup, styles, game logic
@@ -53,7 +71,10 @@ leaves the replaced files' bytes inside the APK and doubles its size.
     tools/check.mjs           asserts every card has a photo and a credit
     tools/contact-sheet.py    composes a labelled sheet of the photos, to eyeball them
     tools/candidates.mjs      shows Commons search results when a photo needs replacing
-    tools/make-android-icons.py  regenerates launcher icons and the splash
+    tools/make-android-icons.py  draws the logo: launcher icons, splash, store icon + feature graphic
+    tools/store-shots.py      frames store/screenshots/raw-*.png into Play Store screenshots
+
+    store/                    Play Store listing copy, art and screenshots
 
 ## Changing the words or pictures
 
