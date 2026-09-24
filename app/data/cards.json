@@ -1,6 +1,7 @@
 {
   "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram. A category marked \"drawn\": true has no photos to fetch — tools/draw-cards.py renders its cards locally. imageBase is where the app fetches photos from on first run; tools/upload-cloudinary.mjs prints the value to put here.",
   "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@main/photos",
+  "imageVersion": 2,
   "categories": [
     {
       "id": "vehicles",
@@ -27,7 +28,8 @@
         },
         {
           "name": "Aeroplane",
-          "wiki": "Airplane"
+          "wiki": "Airplane",
+          "fit": "contain"
         },
         {
           "name": "Boat",
@@ -51,11 +53,11 @@
         },
         {
           "name": "Truck",
-          "wiki": "Truck"
+          "wiki": "File:Tata Truck India.jpg"
         },
         {
           "name": "Ship",
-          "wiki": "Ship"
+          "wiki": "File:Vision of The Seas cruise ship by Royal Caribbean International, in Alaska.jpg"
         },
         {
           "name": "Ambulance",
@@ -68,6 +70,46 @@
         {
           "name": "Motorcycle",
           "wiki": "Motorcycle"
+        },
+        {
+          "name": "Jeep",
+          "wiki": "File:Jeep Wrangler Unlimited 3.8 Rubicon 2011 (12510514345).jpg"
+        },
+        {
+          "name": "Taxi",
+          "wiki": "File:Ambassador taxi (7169354693).jpg"
+        },
+        {
+          "name": "Van",
+          "wiki": "Van"
+        },
+        {
+          "name": "Bulldozer",
+          "wiki": "Bulldozer"
+        },
+        {
+          "name": "Crane",
+          "wiki": "File:A Liebherr LTM 1500-8.1 crane truck lifting a Genie S-85 Lift Crane.jpg"
+        },
+        {
+          "name": "Submarine",
+          "wiki": "Submarine"
+        },
+        {
+          "name": "Rocket",
+          "wiki": "Rocket"
+        },
+        {
+          "name": "Hot Air Balloon",
+          "wiki": "Hot air balloon"
+        },
+        {
+          "name": "School Bus",
+          "wiki": "School bus"
+        },
+        {
+          "name": "Cycle Rickshaw",
+          "wiki": "Cycle rickshaw"
         }
       ]
     },
@@ -80,7 +122,7 @@
       "items": [
         {
           "name": "Apple",
-          "wiki": "Apple"
+          "wiki": "File:Red Apple.jpg"
         },
         {
           "name": "Banana",
@@ -100,7 +142,7 @@
         },
         {
           "name": "Watermelon",
-          "wiki": "Watermelon"
+          "wiki": "File:Slice of Watermelon from Wilson Farm, Lexington MA.jpg"
         },
         {
           "name": "Strawberry",
@@ -108,7 +150,7 @@
         },
         {
           "name": "Pineapple",
-          "wiki": "Pineapple"
+          "wiki": "File:Ananas~May 2008-1.jpg"
         },
         {
           "name": "Papaya",
@@ -116,7 +158,8 @@
         },
         {
           "name": "Cherry",
-          "wiki": "Cherry"
+          "wiki": "Cherry",
+          "fit": "contain"
         },
         {
           "name": "Guava",
@@ -132,11 +175,51 @@
         },
         {
           "name": "Lemon",
-          "wiki": "Lemon"
+          "wiki": "File:Lemon Fruit.jpg"
         },
         {
           "name": "Pear",
-          "wiki": "Pear"
+          "wiki": "File:Pear DS.jpg"
+        },
+        {
+          "name": "Kiwi",
+          "wiki": "File:Kiwi (Actinidia chinensis) 1 Luc Viatour.jpg"
+        },
+        {
+          "name": "Peach",
+          "wiki": "File:A Bowl Of Peaches (168126787).jpg"
+        },
+        {
+          "name": "Plum",
+          "wiki": "Plum"
+        },
+        {
+          "name": "Jackfruit",
+          "wiki": "Jackfruit"
+        },
+        {
+          "name": "Litchi",
+          "wiki": "Lychee"
+        },
+        {
+          "name": "Blueberry",
+          "wiki": "Blueberry"
+        },
+        {
+          "name": "Raspberry",
+          "wiki": "File:Raspberry - whole (Rubus idaeus).jpg"
+        },
+        {
+          "name": "Avocado",
+          "wiki": "File:Avocado-Fruit 42883-480x360 (4791300885).jpg"
+        },
+        {
+          "name": "Fig",
+          "wiki": "File:Ficus carica whole fruits and fruit cut open.jpg"
+        },
+        {
+          "name": "Muskmelon",
+          "wiki": "File:Cucumis melo on white background.jpg"
         }
       ]
     },
@@ -149,7 +232,7 @@
       "items": [
         {
           "name": "Carrot",
-          "wiki": "Carrot"
+          "wiki": "File:Carrots at Ljubljana Central Market.JPG"
         },
         {
           "name": "Tomato",
@@ -185,11 +268,12 @@
         },
         {
           "name": "Cucumber",
-          "wiki": "Cucumber"
+          "wiki": "File:Cucumber and cross section.jpg",
+          "fit": "contain"
         },
         {
           "name": "Spinach",
-          "wiki": "Spinach"
+          "wiki": "File:Fresh Spinach leaves.jpg"
         },
         {
           "name": "Cauliflower",
@@ -206,6 +290,46 @@
         {
           "name": "Capsicum",
           "wiki": "Bell pepper"
+        },
+        {
+          "name": "Broccoli",
+          "wiki": "Broccoli"
+        },
+        {
+          "name": "Mushroom",
+          "wiki": "Mushroom"
+        },
+        {
+          "name": "Garlic",
+          "wiki": "File:Opened garlic bulb with garlic clove.jpg"
+        },
+        {
+          "name": "Ginger",
+          "wiki": "File:Ginger rhizome.jpg"
+        },
+        {
+          "name": "Chilli",
+          "wiki": "Chili pepper"
+        },
+        {
+          "name": "Okra",
+          "wiki": "Okra"
+        },
+        {
+          "name": "Turnip",
+          "wiki": "Turnip"
+        },
+        {
+          "name": "Sweet Potato",
+          "wiki": "Sweet potato"
+        },
+        {
+          "name": "Bottle Gourd",
+          "wiki": "Calabash"
+        },
+        {
+          "name": "Lettuce",
+          "wiki": "File:Romaine lettuce.jpg"
         }
       ]
     },
@@ -230,11 +354,12 @@
         },
         {
           "name": "Giraffe",
-          "wiki": "Giraffe"
+          "wiki": "File:Giraffe standing in grass - DPLA - c15db26d625323f71f0e39a086fa5cf3.jpg"
         },
         {
           "name": "Zebra",
-          "wiki": "Zebra"
+          "wiki": "Zebra",
+          "focus": "center top"
         },
         {
           "name": "Monkey",
@@ -270,11 +395,53 @@
         },
         {
           "name": "Kangaroo",
-          "wiki": "Kangaroo"
+          "wiki": "Kangaroo",
+          "fit": "contain"
         },
         {
           "name": "Panda",
           "wiki": "Giant panda"
+        },
+        {
+          "name": "Leopard",
+          "wiki": "Leopard"
+        },
+        {
+          "name": "Cheetah",
+          "wiki": "Cheetah"
+        },
+        {
+          "name": "Gorilla",
+          "wiki": "Gorilla"
+        },
+        {
+          "name": "Chimpanzee",
+          "wiki": "Chimpanzee"
+        },
+        {
+          "name": "Hyena",
+          "wiki": "File:Sitting Spotted Hyena Luangwa Jul23 A7C 06239.jpg"
+        },
+        {
+          "name": "Porcupine",
+          "wiki": "Porcupine",
+          "fit": "contain"
+        },
+        {
+          "name": "Squirrel",
+          "wiki": "File:Squirrel in Prospect Park (92553).jpg"
+        },
+        {
+          "name": "Koala",
+          "wiki": "Koala"
+        },
+        {
+          "name": "Snake",
+          "wiki": "Snake"
+        },
+        {
+          "name": "Raccoon",
+          "wiki": "Raccoon"
         }
       ]
     },
@@ -287,11 +454,12 @@
       "items": [
         {
           "name": "Parrot",
-          "wiki": "Parrot"
+          "wiki": "File:Green parrot with orange beak (Unsplash).jpg"
         },
         {
           "name": "Peacock",
-          "wiki": "Indian peafowl"
+          "wiki": "File:Indian peafowl, commonly known as a peacock, with its vibrant tail feathers fully displayed.jpg",
+          "fit": "contain"
         },
         {
           "name": "Owl",
@@ -303,7 +471,7 @@
         },
         {
           "name": "Duck",
-          "wiki": "Duck"
+          "wiki": "File:Male mallard duck standing.png"
         },
         {
           "name": "Penguin",
@@ -323,7 +491,7 @@
         },
         {
           "name": "Hen",
-          "wiki": "Chicken"
+          "wiki": "File:Canadian chicken.jpg"
         },
         {
           "name": "Pigeon",
@@ -344,6 +512,47 @@
         {
           "name": "Kingfisher",
           "wiki": "Kingfisher"
+        },
+        {
+          "name": "Seagull",
+          "wiki": "Gull"
+        },
+        {
+          "name": "Pelican",
+          "wiki": "Pelican",
+          "fit": "contain"
+        },
+        {
+          "name": "Stork",
+          "wiki": "Stork"
+        },
+        {
+          "name": "Heron",
+          "wiki": "File:Grey heron, October 2015 II.jpg"
+        },
+        {
+          "name": "Hornbill",
+          "wiki": "Hornbill"
+        },
+        {
+          "name": "Myna",
+          "wiki": "Common myna"
+        },
+        {
+          "name": "Macaw",
+          "wiki": "File:Parrot (macaw).jpg"
+        },
+        {
+          "name": "Vulture",
+          "wiki": "Vulture"
+        },
+        {
+          "name": "Toucan",
+          "wiki": "File:Toco Toucan (Ramphastos toco) - 48153967707.jpg"
+        },
+        {
+          "name": "Cuckoo",
+          "wiki": "Cuckoo"
         }
       ]
     },
@@ -364,7 +573,7 @@
         },
         {
           "name": "Bee",
-          "wiki": "Bee"
+          "wiki": "File:Honey Bee on Gaillardia Flower - Flickr - Swallowtail Garden Seeds.jpg"
         },
         {
           "name": "Ladybug",
@@ -372,7 +581,7 @@
         },
         {
           "name": "Grasshopper",
-          "wiki": "Grasshopper"
+          "wiki": "File:Variegated grasshopper (Zonocerus variegatus).jpg"
         },
         {
           "name": "Dragonfly",
@@ -413,6 +622,46 @@
         {
           "name": "Cricket",
           "wiki": "Cricket (insect)"
+        },
+        {
+          "name": "Cockroach",
+          "wiki": "File:Asian Cockroach,Nativeplants Botanical Garden.jpg"
+        },
+        {
+          "name": "Mosquito",
+          "wiki": "Mosquito"
+        },
+        {
+          "name": "Housefly",
+          "wiki": "Housefly"
+        },
+        {
+          "name": "Termite",
+          "wiki": "Termite"
+        },
+        {
+          "name": "Scorpion",
+          "wiki": "Scorpion"
+        },
+        {
+          "name": "Centipede",
+          "wiki": "File:Scolopendra gigantea.jpg"
+        },
+        {
+          "name": "Millipede",
+          "wiki": "File:Millipedes-Walking 17592 (6837289796).jpg"
+        },
+        {
+          "name": "Earthworm",
+          "wiki": "Earthworm"
+        },
+        {
+          "name": "Bumblebee",
+          "wiki": "Bumblebee"
+        },
+        {
+          "name": "Cicada",
+          "wiki": "Cicada"
         }
       ]
     },
@@ -482,6 +731,46 @@
         {
           "name": "Chrysanthemum",
           "wiki": "File:Pink Chrysanthemum flower 6.JPG"
+        },
+        {
+          "name": "Carnation",
+          "wiki": "Dianthus caryophyllus"
+        },
+        {
+          "name": "Iris",
+          "wiki": "Iris (plant)"
+        },
+        {
+          "name": "Peony",
+          "wiki": "Peony"
+        },
+        {
+          "name": "Magnolia",
+          "wiki": "Magnolia"
+        },
+        {
+          "name": "Frangipani",
+          "wiki": "Plumeria"
+        },
+        {
+          "name": "Zinnia",
+          "wiki": "Zinnia"
+        },
+        {
+          "name": "Gerbera",
+          "wiki": "Gerbera"
+        },
+        {
+          "name": "Water Lily",
+          "wiki": "Nymphaea"
+        },
+        {
+          "name": "Camellia",
+          "wiki": "Camellia"
+        },
+        {
+          "name": "Morning Glory",
+          "wiki": "Ipomoea"
         }
       ]
     },
@@ -494,11 +783,11 @@
       "items": [
         {
           "name": "Doctor",
-          "wiki": "File:Doctor examines patient with stethoscope.jpg"
+          "wiki": "File:Covid-19 San Salvatore 01.jpg"
         },
         {
           "name": "Teacher",
-          "wiki": "Teacher"
+          "wiki": "File:School teacher 2.jpg"
         },
         {
           "name": "Farmer",
@@ -510,7 +799,7 @@
         },
         {
           "name": "Firefighter",
-          "wiki": "Firefighter"
+          "wiki": "File:Pompiers ste-anne-de-beaupré 2012.jpg"
         },
         {
           "name": "Postman",
@@ -518,7 +807,7 @@
         },
         {
           "name": "Chef",
-          "wiki": "File:Chef prepares red onion at kitchen counter for cooking in the morning.jpg"
+          "wiki": "File:西崎総料理長.jpg"
         },
         {
           "name": "Nurse",
@@ -534,7 +823,7 @@
         },
         {
           "name": "Pilot",
-          "wiki": "Aircraft pilot"
+          "wiki": "File:Pilot of an Indian Navy Boeing P-8I during the search for Malaysia Airlines Flight 370.JPG"
         },
         {
           "name": "Dentist",
@@ -546,11 +835,51 @@
         },
         {
           "name": "Tailor",
-          "wiki": "File:A Tailor Sewing Clothes in Her Shop.jpg"
+          "wiki": "File:Tailor men Behind the Sewing Machine Fingers on his chin.jpg"
         },
         {
           "name": "Fisherman",
           "wiki": "File:Fisherman cleaning fishing net on fishing boat.jpg"
+        },
+        {
+          "name": "Plumber",
+          "wiki": "File:Matchfit Plumbing Competition.jpg"
+        },
+        {
+          "name": "Electrician",
+          "wiki": "File:Electrician Mike Hughes Installing Meter Base.jpg"
+        },
+        {
+          "name": "Mechanic",
+          "wiki": "File:A man who sanding with a grinder and prepares the paint for the car in a home service. - Flickr - shixart1985.jpg"
+        },
+        {
+          "name": "Soldier",
+          "wiki": "File:Guardsmen on Parade MOD 45155722.jpg"
+        },
+        {
+          "name": "Astronaut",
+          "wiki": "Astronaut"
+        },
+        {
+          "name": "Scientist",
+          "wiki": "File:Female scientist with DNA sample pippetting.jpg"
+        },
+        {
+          "name": "Gardener",
+          "wiki": "File:Man carefully prunes plants while enjoying a sunny day in the garden.jpg"
+        },
+        {
+          "name": "Vet",
+          "wiki": "File:Stethoscope examination of a white dog in Newark, New Jersey.jpg"
+        },
+        {
+          "name": "Baker",
+          "wiki": "Baker"
+        },
+        {
+          "name": "Painter",
+          "wiki": "File:Modern-Trade-Painter.jpg"
         }
       ]
     },
@@ -620,8 +949,49 @@
         {
           "name": "America",
           "wiki": "Flag of the United States"
+        },
+        {
+          "name": "Russia",
+          "wiki": "Flag of Russia"
+        },
+        {
+          "name": "Britain",
+          "wiki": "Flag of the United Kingdom"
+        },
+        {
+          "name": "South Africa",
+          "wiki": "Flag of South Africa"
+        },
+        {
+          "name": "Argentina",
+          "wiki": "Flag of Argentina"
+        },
+        {
+          "name": "Sri Lanka",
+          "wiki": "Flag of Sri Lanka"
+        },
+        {
+          "name": "Nepal",
+          "wiki": "Flag of Nepal"
+        },
+        {
+          "name": "Singapore",
+          "wiki": "Flag of Singapore"
+        },
+        {
+          "name": "Thailand",
+          "wiki": "Flag of Thailand"
+        },
+        {
+          "name": "Switzerland",
+          "wiki": "Flag of Switzerland"
+        },
+        {
+          "name": "New Zealand",
+          "wiki": "Flag of New Zealand"
         }
-      ]
+      ],
+      "fit": "contain"
     },
     {
       "id": "sea",
@@ -689,6 +1059,46 @@
         {
           "name": "Clownfish",
           "wiki": "Clownfish"
+        },
+        {
+          "name": "Eel",
+          "wiki": "File:Green Moray Eel at the New England Aquarium.jpg"
+        },
+        {
+          "name": "Sea Urchin",
+          "wiki": "Sea urchin"
+        },
+        {
+          "name": "Coral",
+          "wiki": "Coral"
+        },
+        {
+          "name": "Oyster",
+          "wiki": "Oyster"
+        },
+        {
+          "name": "Walrus",
+          "wiki": "Walrus"
+        },
+        {
+          "name": "Pufferfish",
+          "wiki": "File:Black Saddled Toby (Canthigaster valentini) (3149749224).jpg"
+        },
+        {
+          "name": "Swordfish",
+          "wiki": "Swordfish"
+        },
+        {
+          "name": "Sea Lion",
+          "wiki": "Sea lion"
+        },
+        {
+          "name": "Shrimp",
+          "wiki": "File:ZS 中山市 Zhongshan 棠記海鮮餐廳 Tangji Seafood Restaurant 晚餐 dinner prawn May 2023 Px3 01.jpg"
+        },
+        {
+          "name": "Manatee",
+          "wiki": "Manatee"
         }
       ]
     },
@@ -713,7 +1123,8 @@
         },
         {
           "name": "Horse",
-          "wiki": "Horse"
+          "wiki": "Horse",
+          "focus": "left center"
         },
         {
           "name": "Pig",
@@ -721,7 +1132,8 @@
         },
         {
           "name": "Donkey",
-          "wiki": "Donkey"
+          "wiki": "Donkey",
+          "focus": "left center"
         },
         {
           "name": "Buffalo",
@@ -753,11 +1165,51 @@
         },
         {
           "name": "Ox",
-          "wiki": "Ox"
+          "wiki": "File:BULLOCK CART ON RACE.jpg"
         },
         {
           "name": "Calf",
           "wiki": "File:Highland cow and calf. - geograph.org.uk - 404228.jpg"
+        },
+        {
+          "name": "Rooster",
+          "wiki": "Rooster"
+        },
+        {
+          "name": "Chick",
+          "wiki": "File:Baby chicken (মুরগির বাচ্চা).jpg"
+        },
+        {
+          "name": "Lamb",
+          "wiki": "File:Sheep, Stodmarsh 6.jpg"
+        },
+        {
+          "name": "Piglet",
+          "wiki": "File:Standing piglet at golden hour in Don Det Laos.jpg"
+        },
+        {
+          "name": "Foal",
+          "wiki": "Foal"
+        },
+        {
+          "name": "Bull",
+          "wiki": "Bull"
+        },
+        {
+          "name": "Mule",
+          "wiki": "Mule"
+        },
+        {
+          "name": "Alpaca",
+          "wiki": "Alpaca"
+        },
+        {
+          "name": "Duckling",
+          "wiki": "File:Duck and ducklings (8754924770).jpg"
+        },
+        {
+          "name": "Reindeer",
+          "wiki": "Reindeer"
         }
       ]
     },
@@ -770,7 +1222,7 @@
       "items": [
         {
           "name": "Dog",
-          "wiki": "Dog"
+          "wiki": "File:Labrador Retriever portrait.jpg"
         },
         {
           "name": "Cat",
@@ -806,7 +1258,8 @@
         },
         {
           "name": "Pony",
-          "wiki": "Pony"
+          "wiki": "Pony",
+          "focus": "left center"
         },
         {
           "name": "Mouse",
@@ -818,7 +1271,7 @@
         },
         {
           "name": "Ferret",
-          "wiki": "Ferret"
+          "wiki": "File:Mustela putorius furo.jpg"
         },
         {
           "name": "Lovebird",
@@ -827,6 +1280,47 @@
         {
           "name": "Fish Tank",
           "wiki": "Aquarium"
+        },
+        {
+          "name": "Cockatiel",
+          "wiki": "Cockatiel"
+        },
+        {
+          "name": "Rat",
+          "wiki": "Rat"
+        },
+        {
+          "name": "Chinchilla",
+          "wiki": "Chinchilla"
+        },
+        {
+          "name": "Gerbil",
+          "wiki": "Gerbil"
+        },
+        {
+          "name": "Gecko",
+          "wiki": "Gecko"
+        },
+        {
+          "name": "Iguana",
+          "wiki": "Iguana",
+          "fit": "contain"
+        },
+        {
+          "name": "Angelfish",
+          "wiki": "File:Altum Angelfish (Pterophyllum altum) (3152823826).jpg"
+        },
+        {
+          "name": "Guppy",
+          "wiki": "Guppy"
+        },
+        {
+          "name": "Terrapin",
+          "wiki": "File:Diamond terrapin turtle reptile malaclemys terrapin.jpg"
+        },
+        {
+          "name": "Kennel",
+          "wiki": "File:Red wooden doghouse in Tuntorp 1.jpg"
         }
       ]
     },
@@ -855,7 +1349,7 @@
         },
         {
           "name": "Rain",
-          "wiki": "File:Rain on a blue umbrella.jpg"
+          "wiki": "File:Rain Umbrella 01.JPG"
         },
         {
           "name": "Rainbow",
@@ -863,7 +1357,7 @@
         },
         {
           "name": "Snow",
-          "wiki": "Snow"
+          "wiki": "File:Snow Scene at Shipka Pass 1.JPG"
         },
         {
           "name": "Lightning",
@@ -887,7 +1381,7 @@
         },
         {
           "name": "Hail",
-          "wiki": "Hail"
+          "wiki": "File:Hailstones.jpg"
         },
         {
           "name": "Ice",
@@ -896,6 +1390,46 @@
         {
           "name": "Sky",
           "wiki": "File:LosAngelesSky.jpg"
+        },
+        {
+          "name": "Wind",
+          "wiki": "File:Breeze (6822472939).jpg"
+        },
+        {
+          "name": "Frost",
+          "wiki": "File:Dülmen, Hausdülmen, Eiskristalle auf Blättern -- 2022 -- 9659.jpg"
+        },
+        {
+          "name": "Dew",
+          "wiki": "Dew"
+        },
+        {
+          "name": "Tornado",
+          "wiki": "Tornado"
+        },
+        {
+          "name": "Cyclone",
+          "wiki": "Tropical cyclone"
+        },
+        {
+          "name": "Puddle",
+          "wiki": "Puddle"
+        },
+        {
+          "name": "Eclipse",
+          "wiki": "Solar eclipse"
+        },
+        {
+          "name": "Comet",
+          "wiki": "Comet"
+        },
+        {
+          "name": "Icicle",
+          "wiki": "Icicle"
+        },
+        {
+          "name": "Snowman",
+          "wiki": "Snowman"
         }
       ]
     },
@@ -912,15 +1446,15 @@
         },
         {
           "name": "T-shirt",
-          "wiki": "T-shirt"
+          "wiki": "File:@pendura(porPhotocapy).jpg"
         },
         {
           "name": "Trousers",
-          "wiki": "Trousers"
+          "wiki": "File:HK TKO 將軍澳 Tseung Kwan O PopCorn mall shop Uniqlo Clothing Store May 2022 Px3 33.jpg"
         },
         {
           "name": "Dress",
-          "wiki": "File:HK MTR woman clothing Orange mini dress September 2024 R12S 01.jpg"
+          "wiki": "File:Knitted Dress as additional warm layer over street clothing - ginger woman sitting on a park bench outside of Praha hlavní nádraží.jpg"
         },
         {
           "name": "Hat",
@@ -952,7 +1486,7 @@
         },
         {
           "name": "Gloves",
-          "wiki": "Glove"
+          "wiki": "File:Two pairs of mens leather gloves from Randers Handsker.jpg"
         },
         {
           "name": "Shorts",
@@ -965,6 +1499,46 @@
         {
           "name": "Raincoat",
           "wiki": "Raincoat"
+        },
+        {
+          "name": "Saree",
+          "wiki": "Sari"
+        },
+        {
+          "name": "Kurta",
+          "wiki": "Kurta"
+        },
+        {
+          "name": "Belt",
+          "wiki": "Belt (clothing)"
+        },
+        {
+          "name": "Tie",
+          "wiki": "File:Oriental tie knot.jpg"
+        },
+        {
+          "name": "Cap",
+          "wiki": "Baseball cap"
+        },
+        {
+          "name": "Slippers",
+          "wiki": "Slipper"
+        },
+        {
+          "name": "Boots",
+          "wiki": "Boot"
+        },
+        {
+          "name": "Apron",
+          "wiki": "Apron"
+        },
+        {
+          "name": "Pyjamas",
+          "wiki": "File:Child wearing pajamas with hand in holiday popcorn tin wth caramel, cheese and classic flavors (15874044767).jpg"
+        },
+        {
+          "name": "Swimsuit",
+          "wiki": "File:Chloe Sutton - USA Swimsuit (4661622460) (alternate version).jpg"
         }
       ]
     },
@@ -993,7 +1567,8 @@
         },
         {
           "name": "Flute",
-          "wiki": "Flute"
+          "wiki": "File:Flute d'amour.jpg",
+          "fit": "contain"
         },
         {
           "name": "Trumpet",
@@ -1013,7 +1588,7 @@
         },
         {
           "name": "Saxophone",
-          "wiki": "Saxophone"
+          "wiki": "File:Yamaha YAS-25 Alto Saxophone 20080502.jpg"
         },
         {
           "name": "Xylophone",
@@ -1034,6 +1609,47 @@
         {
           "name": "Harmonica",
           "wiki": "Harmonica"
+        },
+        {
+          "name": "Clarinet",
+          "wiki": "File:Boehm 3.jpg"
+        },
+        {
+          "name": "Trombone",
+          "wiki": "Trombone"
+        },
+        {
+          "name": "Ukulele",
+          "wiki": "Ukulele"
+        },
+        {
+          "name": "Tambourine",
+          "wiki": "Tambourine"
+        },
+        {
+          "name": "Cymbal",
+          "wiki": "Cymbal"
+        },
+        {
+          "name": "Maracas",
+          "wiki": "Maraca"
+        },
+        {
+          "name": "Bagpipes",
+          "wiki": "File:The Bagpiper.jpg"
+        },
+        {
+          "name": "Mandolin",
+          "wiki": "Mandolin"
+        },
+        {
+          "name": "Veena",
+          "wiki": "Veena",
+          "fit": "contain"
+        },
+        {
+          "name": "Dholak",
+          "wiki": "Dholak"
         }
       ]
     },
@@ -1054,7 +1670,7 @@
         },
         {
           "name": "Bed",
-          "wiki": "File:44 Made bed with richly decorated pillows and ornate bedspread.jpg"
+          "wiki": "File:Moss Lee Grange Bed & Breakfast - Deluxe Double En-Suite Bedroom.jpg"
         },
         {
           "name": "Lamp",
@@ -1078,7 +1694,7 @@
         },
         {
           "name": "Plate",
-          "wiki": "File:The way we like our plates at the end of dinner- Dinner on New Year's Day 2024 - The Eighth Day of Christmas - 53435741068.jpg"
+          "wiki": "File:Wilson White House plate 02 - Smithsonian Museum of Natural History - 2012-05-15.jpg"
         },
         {
           "name": "Bowl",
@@ -1090,19 +1706,60 @@
         },
         {
           "name": "Window",
-          "wiki": "Window"
+          "wiki": "File:Double window of the D.A. Sturdza House, from Bucharest (Romania) 1.jpg"
         },
         {
           "name": "Sofa",
-          "wiki": "Couch"
+          "wiki": "File:Living room Germany 2006.jpg"
         },
         {
           "name": "Broom",
-          "wiki": "Broom"
+          "wiki": "File:New brooms - 02.jpg"
         },
         {
           "name": "Bucket",
           "wiki": "File:Plastsic pail of paint.jpg"
+        },
+        {
+          "name": "Fan",
+          "wiki": "Ceiling fan"
+        },
+        {
+          "name": "Fridge",
+          "wiki": "File:Panasonic HOME REFRIGERATOR NR-C320WP-N.jpg"
+        },
+        {
+          "name": "Television",
+          "wiki": "File:A flat-screen television.jpg"
+        },
+        {
+          "name": "Mirror",
+          "wiki": "File:A vintage, hand-carved wooden wall mirror frame.jpg"
+        },
+        {
+          "name": "Pillow",
+          "wiki": "Pillow"
+        },
+        {
+          "name": "Blanket",
+          "wiki": "File:WOOLEN BLANKETS FROM CRETE, GREECE,, 19TH C.jpg"
+        },
+        {
+          "name": "Towel",
+          "wiki": "Towel"
+        },
+        {
+          "name": "Toothbrush",
+          "wiki": "Toothbrush"
+        },
+        {
+          "name": "Comb",
+          "wiki": "Comb",
+          "fit": "contain"
+        },
+        {
+          "name": "Key",
+          "wiki": "Key (lock)"
         }
       ]
     },
@@ -1131,7 +1788,7 @@
         },
         {
           "name": "Cheese",
-          "wiki": "Cheese"
+          "wiki": "File:Piave-Vecchio-Piece.jpg"
         },
         {
           "name": "Cake",
@@ -1163,7 +1820,7 @@
         },
         {
           "name": "Noodles",
-          "wiki": "Noodle"
+          "wiki": "File:Chilli ramen noodles.jpg"
         },
         {
           "name": "Sandwich",
@@ -1172,6 +1829,46 @@
         {
           "name": "Samosa",
           "wiki": "Samosa"
+        },
+        {
+          "name": "Idli",
+          "wiki": "Idli"
+        },
+        {
+          "name": "Dosa",
+          "wiki": "File:Masala dosa 01.jpg"
+        },
+        {
+          "name": "Chapati",
+          "wiki": "Chapati"
+        },
+        {
+          "name": "Yoghurt",
+          "wiki": "Yogurt"
+        },
+        {
+          "name": "Popcorn",
+          "wiki": "File:Bowl of Popcorn (Unsplash).jpg"
+        },
+        {
+          "name": "Burger",
+          "wiki": "Hamburger"
+        },
+        {
+          "name": "Pasta",
+          "wiki": "Pasta"
+        },
+        {
+          "name": "Doughnut",
+          "wiki": "Doughnut"
+        },
+        {
+          "name": "Jalebi",
+          "wiki": "Jalebi"
+        },
+        {
+          "name": "Soup",
+          "wiki": "Soup"
         }
       ]
     },
@@ -1196,7 +1893,7 @@
         },
         {
           "name": "Nose",
-          "wiki": "File:Fort Ross Elena wearing Traditional Russian Costume (cropped).jpg"
+          "wiki": "File:Nose – Tiger.jpg"
         },
         {
           "name": "Mouth",
@@ -1241,6 +1938,46 @@
         {
           "name": "Leg",
           "wiki": "File:Male legs 01.jpg"
+        },
+        {
+          "name": "Head",
+          "wiki": "File:Gracyn Shinyei - 2013.jpg"
+        },
+        {
+          "name": "Face",
+          "wiki": "File:Woman (Imagicity 896).jpg"
+        },
+        {
+          "name": "Neck",
+          "wiki": "File:Female neck.jpg"
+        },
+        {
+          "name": "Shoulder",
+          "wiki": "Shoulder"
+        },
+        {
+          "name": "Toe",
+          "wiki": "Toe"
+        },
+        {
+          "name": "Cheek",
+          "wiki": "Cheek"
+        },
+        {
+          "name": "Chin",
+          "wiki": "File:Up close of human chin and lips.jpg"
+        },
+        {
+          "name": "Eyebrow",
+          "wiki": "Eyebrow"
+        },
+        {
+          "name": "Nail",
+          "wiki": "File:Ongle du doigt de la main - Fingernail hand.jpg"
+        },
+        {
+          "name": "Ankle",
+          "wiki": "Ankle"
         }
       ]
     },
@@ -1310,6 +2047,46 @@
         {
           "name": "Bubbles",
           "wiki": "Soap bubble"
+        },
+        {
+          "name": "Robot",
+          "wiki": "Robot"
+        },
+        {
+          "name": "Kaleidoscope",
+          "wiki": "Kaleidoscope"
+        },
+        {
+          "name": "Frisbee",
+          "wiki": "Frisbee"
+        },
+        {
+          "name": "Swing",
+          "wiki": "File:Girl On A Swing (114071963).jpeg"
+        },
+        {
+          "name": "Slide",
+          "wiki": "File:Playground Slide Metal.jpg"
+        },
+        {
+          "name": "Seesaw",
+          "wiki": "File:Playground seesaw.jpg"
+        },
+        {
+          "name": "Sandcastle",
+          "wiki": "File:Sandcastle on Alnmouth beach after the Whit Weekend - geograph.org.uk - 1323111.jpg"
+        },
+        {
+          "name": "Tricycle",
+          "wiki": "File:Frank Schulenburg, as a child on a tricycle.jpg"
+        },
+        {
+          "name": "Hula Hoop",
+          "wiki": "File:Hula Hoop 7.jpg"
+        },
+        {
+          "name": "Dollhouse",
+          "wiki": "Dollhouse"
         }
       ]
     },
@@ -1342,11 +2119,12 @@
         },
         {
           "name": "Sharpener",
-          "wiki": "Pencil sharpener"
+          "wiki": "File:Red pencil sharpener.jpg"
         },
         {
           "name": "Ruler",
-          "wiki": "Ruler"
+          "wiki": "File:Ruler on table.jpg",
+          "fit": "contain"
         },
         {
           "name": "Scissors",
@@ -1379,6 +2157,46 @@
         {
           "name": "Globe",
           "wiki": "Globe"
+        },
+        {
+          "name": "Stapler",
+          "wiki": "Stapler"
+        },
+        {
+          "name": "Paper Clip",
+          "wiki": "Paper clip"
+        },
+        {
+          "name": "Calculator",
+          "wiki": "Calculator"
+        },
+        {
+          "name": "Lunch Box",
+          "wiki": "Lunchbox"
+        },
+        {
+          "name": "Water Bottle",
+          "wiki": "Water bottle"
+        },
+        {
+          "name": "Map",
+          "wiki": "Map"
+        },
+        {
+          "name": "Abacus",
+          "wiki": "File:Wooden abacus.jpg"
+        },
+        {
+          "name": "Whiteboard",
+          "wiki": "Whiteboard"
+        },
+        {
+          "name": "Desk",
+          "wiki": "Desk"
+        },
+        {
+          "name": "Compass",
+          "wiki": "Compass"
         }
       ]
     },
@@ -1445,6 +2263,46 @@
         {
           "name": "Semicircle",
           "wiki": "drawn"
+        },
+        {
+          "name": "Octagon",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Heptagon",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Trapezium",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Parallelogram",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Spiral",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Zigzag",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Wave",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Teardrop",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Cube",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Cone",
+          "wiki": "drawn"
         }
       ]
     },
@@ -1498,6 +2356,46 @@
         },
         {
           "name": "Gold",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Violet",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Silver",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Maroon",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Turquoise",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Cream",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Lime",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Navy",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Olive",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Magenta",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Indigo",
           "wiki": "drawn"
         }
       ]

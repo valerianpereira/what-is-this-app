@@ -72,6 +72,9 @@ button{font-family:inherit}
 #answerText{font-size:46px;font-weight:700;letter-spacing:-1px;line-height:1;text-align:center}
 .again{border:none;height:38px;padding:0 20px;border-radius:19px;background:rgba(255,255,255,.85);color:#4A3D2F;font-size:15px;font-weight:600;cursor:pointer}
 #askHint{font-size:17px;font-weight:500;color:rgba(36,28,21,.45);text-align:center}
+.nav{display:flex;gap:10px;width:min(298px,74vw)}
+.nav button{flex:1;height:54px;border-radius:27px;border:none;background:rgba(255,255,255,.85);color:#4A3D2F;font-family:inherit;font-size:18px;font-weight:600;cursor:pointer;box-shadow:0 4px 0 rgba(36,28,21,.12)}
+.nav button:disabled{opacity:.4;box-shadow:none;cursor:default}
 #paused{position:absolute;inset:0;background:rgba(36,28,21,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px}
 #paused h2{margin:0;font-size:32px;font-weight:700;color:#fff}
 .resume{border:none;height:62px;padding:0 44px;border-radius:31px;background:#fff;font-size:21px;font-weight:600;color:#241C15;cursor:pointer}
@@ -86,6 +89,13 @@ button{font-family:inherit}
 #words button{border:none;height:44px;padding:0 18px;border-radius:22px;background:#fff;box-shadow:0 3px 0 rgba(36,28,21,.1);font-size:17px;font-weight:600;color:#241C15;cursor:pointer;animation:wit-rise .3s ease both}
 .again-big{border:none;width:100%;height:66px;border-radius:33px;background:#E0532F;color:#fff;font-size:21px;font-weight:600;box-shadow:0 7px 0 #B23A1B;cursor:pointer}
 .outline{margin-top:12px;width:100%;height:60px;border-radius:30px;background:#fff;border:2px solid #E8DCC9;color:#4A3D2F;font-size:19px;font-weight:600;cursor:pointer}
+
+/* peek — a word tapped on the summary shows its picture again */
+#peek{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:5}
+#peekScrim{position:absolute;inset:0;background:rgba(36,28,21,.55);border:none;padding:0}
+#peekCard{position:relative;display:flex;flex-direction:column;align-items:center;gap:14px;animation:wit-pop .3s cubic-bezier(.2,1.4,.5,1) both}
+#peekImg{width:min(300px,76vw);height:min(300px,76vw);border-radius:46px;background:#fff;object-fit:cover;box-shadow:0 12px 0 rgba(0,0,0,.18)}
+#peekName{font-size:40px;font-weight:700;letter-spacing:-1px;color:#fff}
 
 /* settings */
 #scrim{position:absolute;inset:0;background:rgba(36,28,21,.45);border:none;padding:0}
@@ -199,6 +209,10 @@ button{font-family:inherit}
       </div>
       <div id="askHint">Say it out loud… or tap to peek</div>
     </div>
+    <div class="nav">
+      <button type="button" data-act="prev" id="prevBtn">‹ Back</button>
+      <button type="button" data-act="next">Next ›</button>
+    </div>
   </div>
   <div id="paused" hidden>
     <h2>Paused</h2>
@@ -210,12 +224,20 @@ button{font-family:inherit}
 <section class="screen" id="summary" hidden>
   <div class="eyebrow" id="summaryCat"></div>
   <div id="summaryTitle"></div>
-  <div class="tap-hint">Tap any word to hear it again.</div>
+  <div class="tap-hint">Tap any word to see it again.</div>
   <div id="words"></div>
   <div class="spacer"></div>
-  <button type="button" class="again-big" data-act="playAgain">Ten more</button>
+  <button type="button" class="again-big" data-act="playAgain">More variety</button>
   <button type="button" class="outline" data-act="home">Pick another group</button>
 </section>
+
+<div id="peek" hidden>
+  <button type="button" id="peekScrim" data-act="closePeek" aria-label="Close"></button>
+  <div id="peekCard" data-act="closePeek">
+    <img id="peekImg" alt="">
+    <div id="peekName"></div>
+  </div>
+</div>
 
 <div id="settings" hidden>
   <button type="button" id="scrim" data-act="close" aria-label="Close settings"></button>
@@ -276,10 +298,25 @@ const $ = (id) => document.getElementById(id);
 const slug = (s) => s.toLowerCase().replace(/\s+/g, '-');
 const slotId = (catId, name) => 'obj-' + catId + '-' + slug(name);
 let IMAGE_BASE = '';
-const IMG_CACHE = 'wit-img-v1';
-const photo = (slot) => `${IMAGE_BASE}/${slot}.webp`;
+const IMG_CACHE = 'wit-img-v2';
+// The version rides on the URL so a replaced photo actually reaches a device
+// (and a CDN) that already cached the old one under the same name.
+let IMAGE_VERSION = 1;
+const photo = (slot) => `${IMAGE_BASE}/${slot}.webp?v=${IMAGE_VERSION}`;
 
 const seenIn = (c) => (S.seen[c.id] ? Object.keys(S.seen[c.id]).length : 0);
+const catOf = (id) => CATS.find((c) => c.id === id);
+const itemOf = (cur) => {
+  const c = cur && catOf(cur.c);
+  return c ? c.items.find((i) => i.name === cur.n) : null;
+};
+// The frame is square but the photos are not, so cover() centre-crops them.
+// "fit" (a whole group — flags want the ends kept) and "focus" (one card whose
+// subject sits off-centre) are the two knobs that let a card say otherwise.
+function frame(el, item, cat) {
+  el.style.objectFit = (item && item.fit) || (cat && cat.fit) || 'cover';
+  el.style.objectPosition = (item && item.focus) || (cat && cat.focus) || 'center';
+}
 const speakerIcon = (on) => `<svg width="22" height="20" viewBox="0 0 22 20" fill="none" aria-hidden="true">
   <path d="M3 7.5h3.2L10.5 4v12L6.2 12.5H3z" fill="#4A3D2F"/>
   ${on
@@ -306,8 +343,40 @@ const save = () => {
   } catch (e) {}
 };
 
+// Android's WebView ships no working Web Speech API — speechSynthesis exists
+// but speak() is silent, which is why the Play build had no voice. On a device
+// we talk to the native TextToSpeech plugin over Capacitor's bridge directly;
+// the browser preview keeps using speechSynthesis.
+const native = () => (window.Capacitor && window.Capacitor.isNativePlatform
+  && window.Capacitor.isNativePlatform() && window.Capacitor.nativePromise) ? window.Capacitor : null;
+const tts = (method, opts) => native().nativePromise('TextToSpeech', method, opts || {});
+let TTS_LANG = 'en-GB';
+
+// The device may not have the voice we ask for, and the plugin rejects rather
+// than falling back, so settle on a language it actually knows, once.
+async function pickVoice() {
+  if (!native()) return;
+  try {
+    const { languages } = await tts('getSupportedLanguages');
+    const has = (l) => languages.some((x) => x.toLowerCase() === l);
+    TTS_LANG = ['en-gb', 'en-in', 'en-us', 'en-au'].find(has)
+      || languages.find((x) => x.toLowerCase().startsWith('en'))
+      || languages[0] || 'en-GB';
+  } catch (e) {}
+}
+
 function speak(text) {
-  if (!S.voice || typeof speechSynthesis === 'undefined') return;
+  if (!S.voice) return;
+  if (native()) {
+    // queueStrategy 0 = flush, so a new word cuts off the one before it.
+    const say = () => tts('speak', { text, lang: TTS_LANG, rate: 0.9, pitch: 1.15, volume: 1.0, queueStrategy: 0 });
+    // The engine reports no languages until it has finished starting up, so
+    // the first word can be rejected for a language it does in fact have.
+    // Ask again and say it once more before giving up.
+    say().catch(() => pickVoice().then(say).catch(() => {}));
+    return;
+  }
+  if (typeof speechSynthesis === 'undefined') return;
   try {
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
@@ -344,6 +413,15 @@ function reveal() {
   speak(cur.n);
 }
 
+// Manual mode ("Keep playing on its own" off) leans on these; the arrows are
+// there in both modes so a word can always be gone back to.
+function prev() {
+  if (S.idx === 0) return;
+  Object.assign(S, { idx: S.idx - 1, phase: 'ask', left: S.seconds * 1000 });
+  render();
+  speak('What is this?');
+}
+
 function next() {
   const i = S.idx + 1;
   if (i >= S.queue.length) {
@@ -376,7 +454,8 @@ setInterval(() => {
 function buildHome() {
   $('grid').innerHTML = CATS.map((c) => `
     <button type="button" class="card" data-cat="${c.id}" style="background:${c.color};box-shadow:0 6px 0 ${c.shadow}">
-      <span class="frame"><img class="photo" src="${photo('cat-' + c.id)}" alt=""></span>
+      <span class="frame"><img class="photo" src="${photo('cat-' + c.id)}" alt=""
+        style="object-fit:${c.fit || 'cover'};object-position:${c.focus || 'center'}"></span>
       <span class="meta"><span class="name">${c.name}</span><span class="badge" data-badge="${c.id}"></span></span>
     </button>`).join('');
 }
@@ -399,7 +478,8 @@ function buildSummary() {
   const cat = CATS.find((c) => c.id === S.catId);
   $('summaryCat').textContent = S.catId === 'mix' ? 'Mixed up' : (cat ? cat.name : '');
   $('summaryTitle').textContent = 'You saw ' + S.queue.length + ' things!';
-  $('words').innerHTML = S.queue.map((q, i) => `<button type="button" data-say="${q.n}" style="animation-delay:${i * 40}ms">${q.n}</button>`).join('');
+  $('words').innerHTML = S.queue.map((q, i) =>
+    `<button type="button" data-say="${q.n}" data-from="${q.c}" style="animation-delay:${i * 40}ms">${q.n}</button>`).join('');
 }
 
 /* ---------- render ---------- */
@@ -444,7 +524,9 @@ function render() {
       $('pic').onerror = () => { $('picMissing').hidden = false; };
       $('pic').src = src;
     }
+    frame($('pic'), itemOf(cur), cur ? catOf(cur.c) : null);
     $('pic').alt = !asking && cur ? cur.n : '';
+    $('prevBtn').disabled = S.idx === 0;
     $('ring').hidden = !asking;
     $('askHint').hidden = !asking;
     $('revealBox').hidden = asking;
@@ -497,6 +579,9 @@ const ACTIONS = {
   surprise: () => startRound('mix'),
   playAgain: () => startRound(S.catId || 'vehicles'),
   reveal: () => { if (S.phase === 'ask') reveal(); else next(); },
+  prev: () => prev(),
+  next: () => next(),
+  closePeek: () => { $('peek').hidden = true; },
   sayAgain: () => { const cur = S.queue[S.idx]; if (cur) speak(cur.n); },
   pause: () => { S.paused = !S.paused; render(); },
   voice: () => { S.voice = !S.voice; save(); render(); },
@@ -514,7 +599,14 @@ document.addEventListener('click', (e) => {
   const sec = e.target.closest('[data-sec]');
   if (sec) { S.seconds = Number(sec.dataset.sec); save(); return render(); }
   const say = e.target.closest('[data-say]');
-  if (say) return speak(say.dataset.say);
+  if (say) {
+    const item = itemOf({ n: say.dataset.say, c: say.dataset.from });
+    $('peekImg').src = photo(slotId(say.dataset.from, say.dataset.say));
+    frame($('peekImg'), item, catOf(say.dataset.from));
+    $('peekName').textContent = say.dataset.say;
+    $('peek').hidden = false;
+    return speak(say.dataset.say);
+  }
 });
 
 let holdTimer;
@@ -608,9 +700,11 @@ async function downloadEverything() {
 async function boot() {
   const cfg = await (await fetch('data/cards.json')).json();
   IMAGE_BASE = cfg.imageBase.replace(/\/$/, '');
+  IMAGE_VERSION = cfg.imageVersion || 1;
   CATS = cfg.categories;
   buildHome(); buildTimers(); buildParentRows();
   render();
+  pickVoice();
   // The worker is what lets <img src="https://…"> resolve from the cache with
   // no network, so wait until it is actually controlling this page.
   if ('serviceWorker' in navigator) {

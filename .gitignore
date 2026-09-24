@@ -11,3 +11,6 @@ android/app/src/main/assets/public/
 # are the design tool's own runtime, not ours to redistribute.
 what-is-this-game-app/
 *-handoff.zip
+
+# Playwright MCP scratch screenshots
+.playwright-mcp/

@@ -6,7 +6,7 @@ handoff (`What Is This.dc.html`).
 Show a photo, the child says the word out loud, five seconds later the app says
 it back. Ten pictures a round, then a summary of the words seen.
 
-22 groups, 325 words, 347 card pictures, **4 MB APK**.
+22 groups, 545 words, 567 card pictures, **4 MB APK**.
 
 The photos are not bundled. They are served from a CDN and cached on the device
 as the child plays — each picture is downloaded the first time it comes up and
@@ -59,7 +59,7 @@ Bump `versionCode` in `android/app/build.gradle` before every upload.
     app/data/credits.json     photographer + licence per photo (bundled, tiny)
     app/fonts/                Fredoka variable font, 400–700
 
-    photos/*.webp             the 347 card pictures — NOT shipped in the APK;
+    photos/*.webp             the 567 card pictures — NOT shipped in the APK;
                               uploaded to the CDN and fetched on demand
 
     android/                  Capacitor wrapper (generated; `npm run apk` refreshes it)
@@ -71,6 +71,8 @@ Bump `versionCode` in `android/app/build.gradle` before every upload.
     tools/check.mjs           asserts every card has a photo and a credit
     tools/contact-sheet.py    composes a labelled sheet of the photos, to eyeball them
     tools/candidates.mjs      shows Commons search results when a photo needs replacing
+    tools/repin.mjs           points a card at a different photo and forgets the old one
+    tools/reframe.mjs         sets how a card's photo sits in the square frame
     tools/make-android-icons.py  draws the logo: launcher icons, splash, store icon + feature graphic
     tools/store-shots.py      frames store/screenshots/raw-*.png into Play Store screenshots
 
@@ -88,13 +90,31 @@ usable photo.
 
     npm run images        # downloads only what is missing
     npm run check         # fails on a card with no photo, a duplicate word, a stray credit
-    python3 tools/contact-sheet.py /tmp/sheet.jpg     # look at all 272 at once
+    python3 tools/contact-sheet.py /tmp/sheet.jpg     # look at all 567 at once
 
-To replace one bad photo: delete its `photos/<slot>.webp` and its entry in
-`app/data/credits.json`, point the item at a better article or `File:`, re-run
-`npm run images`, then re-upload. Bump `IMG_CACHE` in both `app/sw.js` and
-`app/index.html` if a replaced photo has to reach devices that cached the old
-one.
+To replace one bad photo:
+
+    node tools/repin.mjs 'vehicles:Truck=File:Tata Truck India.jpg'
+    npm run images
+
+`repin.mjs` rewrites the item's `wiki`, deletes the old `photos/<slot>.webp` and
+its `credits.json` entry, so the fetcher downloads the replacement. Then bump
+`imageVersion` in `cards.json` — the photo URLs carry it as `?v=`, which is what
+makes a replaced photo actually reach a device (or a CDN) holding the old one
+under the same name.
+
+### Fitting a photo to the square frame
+
+The card is square and the photos are not, so they are centre-cropped
+(`object-fit: cover`). When that cuts the subject — a giraffe's head, the ends
+of a flag — say so in `cards.json` rather than hunting for another photo:
+
+    node tools/reframe.mjs 'fruits:Cherry=contain' 'farm:Donkey=left center'
+
+`contain` sets `fit` (show the whole picture, letterboxed on white); anything
+else sets `focus`, a CSS `object-position`. Both also work on a whole group —
+the `countries` group is `"fit": "contain"` so no flag loses its ends. Pass
+`=cover` to clear them.
 
 Photos are fetched at 720px (the round card at 3× on a 1080p phone) and encoded
 as WebP q78 — about half the bytes of the equivalent JPEG. Requires `cwebp`
@@ -117,26 +137,46 @@ send `Access-Control-Allow-Origin`, which Cloudinary and jsDelivr both do.
 a desktop browser — a dev convenience only. The shipped product is the APK;
 there is no web build, service worker, or installable PWA.
 
+## Playing a round
+
+Ten pictures. The ring counts down, then the answer appears and is read out.
+`‹ Back` and `Next ›` under the picture move between the ten in both directions
+at any time. "Keep playing on its own" in Settings is the difference between the
+app moving on by itself after the answer (the default) and waiting for `Next ›`
+— that is the manual mode. On the summary, tapping a word says it and shows its
+picture again.
+
 ## Sound
 
 Two controls, one setting: the speaker button in the round's top bar, and
 "Say the answer" in Settings. Off means no speech at all. The choice is saved,
-so muting once keeps it muted on the next launch. Speech uses the device's
-built-in text-to-speech.
+so muting once keeps it muted on the next launch.
+
+On a device the speech goes through the native `TextToSpeech` plugin, called
+straight over Capacitor's bridge (`Capacitor.nativePromise`) — no import, so the
+app stays a single HTML file with no build step. **Android's WebView has no
+working Web Speech API**: `speechSynthesis` exists there and `speak()` is
+silently ignored, which is why the first Play build had no voice. The browser
+preview still uses `speechSynthesis`, which is why the bug did not show up
+during development.
+
+The engine reports no languages until it has finished starting up, so the app
+asks it which of `en-GB`/`en-IN`/`en-US` it actually has, and asks again and
+re-speaks once if the very first word is rejected.
 
 ## Licence
 
-MIT for the code (`LICENSE`). The 320 photos keep their own Wikimedia licences
+MIT for the code (`LICENSE`). The 520 photos keep their own Wikimedia licences
 and the font is OFL — see `NOTICE.md`.
 
 ## Photos and licensing
 
 All photos come from Wikimedia Commons / Wikipedia under CC and public-domain
 licences. Attribution is required and is shown in the app: Settings → For
-grown-ups → hold 2s → Photo credits. `app/img/credits.json` holds author,
-licence and source URL for all 320. Keep that screen if you ship this.
+grown-ups → hold 2s → Photo credits. `app/data/credits.json` holds author,
+licence and source URL for all 520. Keep that screen if you ship this.
 
-The 27 Shapes and Colours cards are the exception: Wikipedia leads those
+The 45 Shapes and Colours cards are the exception: Wikipedia leads those
 articles with annotated geometry diagrams and with an object of that colour
 (Red → strawberries), which teaches the wrong word, so `tools/draw-cards.py`
 draws them instead. They are CC0 and marked `"drawn": true` in `cards.json`,
