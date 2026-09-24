@@ -105,16 +105,19 @@ under the same name.
 
 ### Fitting a photo to the square frame
 
-The card is square and the photos are not, so they are centre-cropped
-(`object-fit: cover`). When that cuts the subject — a giraffe's head, the ends
-of a flag — say so in `cards.json` rather than hunting for another photo:
+The card is square and three photos in four are not. A centre crop that threw
+away a third of the picture was cutting wheels, heads and flag ends off, so the
+app only crops a photo when the crop would lose under 15% of it
+(`CROP_TOLERANCE` in `index.html`); anything wider or taller is shown whole,
+letterboxed on the card's white. The decision is made from the image's natural
+size when it loads, so it covers photos added later too.
+
+To override the rule for one card or a whole group:
 
     node tools/reframe.mjs 'fruits:Cherry=contain' 'farm:Donkey=left center'
 
-`contain` sets `fit` (show the whole picture, letterboxed on white); anything
-else sets `focus`, a CSS `object-position`. Both also work on a whole group —
-the `countries` group is `"fit": "contain"` so no flag loses its ends. Pass
-`=cover` to clear them.
+`contain`/`cover` set `fit`; anything else sets `focus`, a CSS
+`object-position` (only meaningful with `cover`). Pass `=cover` to clear.
 
 Photos are fetched at 720px (the round card at 3× on a 1080p phone) and encoded
 as WebP q78 — about half the bytes of the equivalent JPEG. Requires `cwebp`

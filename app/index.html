@@ -310,12 +310,23 @@ const itemOf = (cur) => {
   const c = cur && catOf(cur.c);
   return c ? c.items.find((i) => i.name === cur.n) : null;
 };
-// The frame is square but the photos are not, so cover() centre-crops them.
-// "fit" (a whole group — flags want the ends kept) and "focus" (one card whose
-// subject sits off-centre) are the two knobs that let a card say otherwise.
+// The frame is square and three photos in four are not. A centre crop that
+// throws away more than a sliver was cutting wheels, heads and flag ends off,
+// so a photo is only cropped when the crop would lose under 15% of it;
+// anything wider or taller is shown whole, letterboxed on the card's white.
+// "fit" and "focus" on a card or a group still override the rule.
+const CROP_TOLERANCE = 0.85;
 function frame(el, item, cat) {
-  el.style.objectFit = (item && item.fit) || (cat && cat.fit) || 'cover';
+  const fit = (item && item.fit) || (cat && cat.fit);
   el.style.objectPosition = (item && item.focus) || (cat && cat.focus) || 'center';
+  const decide = () => {
+    if (fit) { el.style.objectFit = fit; return; }
+    const w = el.naturalWidth, h = el.naturalHeight;
+    el.style.objectFit = w && h && Math.min(w, h) / Math.max(w, h) < CROP_TOLERANCE ? 'contain' : 'cover';
+  };
+  // natural size is only known once the bytes are in
+  if (el.complete && el.naturalWidth) decide();
+  else el.addEventListener('load', decide, { once: true });
 }
 const speakerIcon = (on) => `<svg width="22" height="20" viewBox="0 0 22 20" fill="none" aria-hidden="true">
   <path d="M3 7.5h3.2L10.5 4v12L6.2 12.5H3z" fill="#4A3D2F"/>
@@ -522,9 +533,9 @@ function render() {
       $('pic').style.visibility = 'hidden';
       $('pic').onload = () => { $('pic').style.visibility = 'visible'; };
       $('pic').onerror = () => { $('picMissing').hidden = false; };
+      frame($('pic'), itemOf(cur), cur ? catOf(cur.c) : null);
       $('pic').src = src;
     }
-    frame($('pic'), itemOf(cur), cur ? catOf(cur.c) : null);
     $('pic').alt = !asking && cur ? cur.n : '';
     $('prevBtn').disabled = S.idx === 0;
     $('ring').hidden = !asking;
@@ -601,8 +612,8 @@ document.addEventListener('click', (e) => {
   const say = e.target.closest('[data-say]');
   if (say) {
     const item = itemOf({ n: say.dataset.say, c: say.dataset.from });
-    $('peekImg').src = photo(slotId(say.dataset.from, say.dataset.say));
     frame($('peekImg'), item, catOf(say.dataset.from));
+    $('peekImg').src = photo(slotId(say.dataset.from, say.dataset.say));
     $('peekName').textContent = say.dataset.say;
     $('peek').hidden = false;
     return speak(say.dataset.say);

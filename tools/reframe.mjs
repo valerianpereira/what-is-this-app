@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-// Sets how a card's photo sits in the app's square frame, for pictures whose
-// subject a centre crop cuts into. No re-download: this is display only.
+// Overrides how a card's photo sits in the app's square frame. The app already
+// letterboxes any photo a centre crop would cut into (CROP_TOLERANCE in
+// index.html); this is for the odd card where that rule picks wrong.
+// No re-download: this is display only.
 //   node tools/reframe.mjs 'fruits:Cherry=contain' 'farm:Donkey=left center'
 // A value of "contain" or "cover" sets object-fit; anything else is an
 // object-position. "cover" clears both, putting the card back to the default.

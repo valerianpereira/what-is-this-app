@@ -28,8 +28,7 @@
         },
         {
           "name": "Aeroplane",
-          "wiki": "Airplane",
-          "fit": "contain"
+          "wiki": "Airplane"
         },
         {
           "name": "Boat",
@@ -158,8 +157,7 @@
         },
         {
           "name": "Cherry",
-          "wiki": "Cherry",
-          "fit": "contain"
+          "wiki": "Cherry"
         },
         {
           "name": "Guava",
@@ -268,8 +266,7 @@
         },
         {
           "name": "Cucumber",
-          "wiki": "File:Cucumber and cross section.jpg",
-          "fit": "contain"
+          "wiki": "File:Cucumber and cross section.jpg"
         },
         {
           "name": "Spinach",
@@ -358,8 +355,7 @@
         },
         {
           "name": "Zebra",
-          "wiki": "Zebra",
-          "focus": "center top"
+          "wiki": "Zebra"
         },
         {
           "name": "Monkey",
@@ -395,8 +391,7 @@
         },
         {
           "name": "Kangaroo",
-          "wiki": "Kangaroo",
-          "fit": "contain"
+          "wiki": "Kangaroo"
         },
         {
           "name": "Panda",
@@ -424,8 +419,7 @@
         },
         {
           "name": "Porcupine",
-          "wiki": "Porcupine",
-          "fit": "contain"
+          "wiki": "Porcupine"
         },
         {
           "name": "Squirrel",
@@ -458,8 +452,7 @@
         },
         {
           "name": "Peacock",
-          "wiki": "File:Indian peafowl, commonly known as a peacock, with its vibrant tail feathers fully displayed.jpg",
-          "fit": "contain"
+          "wiki": "File:Indian peafowl, commonly known as a peacock, with its vibrant tail feathers fully displayed.jpg"
         },
         {
           "name": "Owl",
@@ -519,8 +512,7 @@
         },
         {
           "name": "Pelican",
-          "wiki": "Pelican",
-          "fit": "contain"
+          "wiki": "Pelican"
         },
         {
           "name": "Stork",
@@ -990,8 +982,7 @@
           "name": "New Zealand",
           "wiki": "Flag of New Zealand"
         }
-      ],
-      "fit": "contain"
+      ]
     },
     {
       "id": "sea",
@@ -1123,8 +1114,7 @@
         },
         {
           "name": "Horse",
-          "wiki": "Horse",
-          "focus": "left center"
+          "wiki": "Horse"
         },
         {
           "name": "Pig",
@@ -1132,8 +1122,7 @@
         },
         {
           "name": "Donkey",
-          "wiki": "Donkey",
-          "focus": "left center"
+          "wiki": "Donkey"
         },
         {
           "name": "Buffalo",
@@ -1258,8 +1247,7 @@
         },
         {
           "name": "Pony",
-          "wiki": "Pony",
-          "focus": "left center"
+          "wiki": "Pony"
         },
         {
           "name": "Mouse",
@@ -1303,8 +1291,7 @@
         },
         {
           "name": "Iguana",
-          "wiki": "Iguana",
-          "fit": "contain"
+          "wiki": "Iguana"
         },
         {
           "name": "Angelfish",
@@ -1567,8 +1554,7 @@
         },
         {
           "name": "Flute",
-          "wiki": "File:Flute d'amour.jpg",
-          "fit": "contain"
+          "wiki": "File:Flute d'amour.jpg"
         },
         {
           "name": "Trumpet",
@@ -1644,8 +1630,7 @@
         },
         {
           "name": "Veena",
-          "wiki": "Veena",
-          "fit": "contain"
+          "wiki": "Veena"
         },
         {
           "name": "Dholak",
@@ -1754,8 +1739,7 @@
         },
         {
           "name": "Comb",
-          "wiki": "Comb",
-          "fit": "contain"
+          "wiki": "Comb"
         },
         {
           "name": "Key",
@@ -2123,8 +2107,7 @@
         },
         {
           "name": "Ruler",
-          "wiki": "File:Ruler on table.jpg",
-          "fit": "contain"
+          "wiki": "File:Ruler on table.jpg"
         },
         {
           "name": "Scissors",
