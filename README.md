@@ -59,20 +59,23 @@ Bump `versionCode` in `android/app/build.gradle` before every upload.
     app/data/credits.json     photographer + licence per photo (bundled, tiny)
     app/fonts/                Fredoka variable font, 400–700
 
-    photos/*.webp             the 567 card pictures — NOT shipped in the APK;
-                              uploaded to the CDN and fetched on demand
+    photos/*.webp             the 567 card pictures, 720px squares — NOT shipped in
+                              the APK; uploaded to the CDN and fetched on demand
+    photos-src/*.jpg          the full frames those squares are cut from (gitignored)
 
     android/                  Capacitor wrapper (generated; `npm run apk` refreshes it)
     dist/what-is-this.apk     built debug APK (gitignored)
 
-    tools/fetch-images.mjs    downloads any photo cards.json is missing
+    tools/fetch-images.mjs    downloads the full frame of any photo cards.json is missing
+    tools/square.py           cuts the square card out of each frame, around its subject
+    tools/salient.swift       asks macOS Vision where the subject is (used by square.py)
+    tools/find-square.py      finds Commons photos whose subject fits a square whole
     tools/upload-cloudinary.mjs  uploads photos/ to Cloudinary, prints imageBase
     tools/draw-cards.py       renders the shape and colour cards, which have no photo
     tools/check.mjs           asserts every card has a photo and a credit
     tools/contact-sheet.py    composes a labelled sheet of the photos, to eyeball them
     tools/candidates.mjs      shows Commons search results when a photo needs replacing
     tools/repin.mjs           points a card at a different photo and forgets the old one
-    tools/reframe.mjs         sets how a card's photo sits in the square frame
     tools/make-android-icons.py  draws the logo: launcher icons, splash, store icon + feature graphic
     tools/store-shots.py      frames store/screenshots/raw-*.png into Play Store screenshots
 
@@ -88,8 +91,9 @@ exact Wikimedia Commons file, which is how items whose article lead image is a
 painting, a collage or a botanical diagram (Doctor, Coconut, Harp, …) get a
 usable photo.
 
-    npm run images        # downloads only what is missing
-    npm run check         # fails on a card with no photo, a duplicate word, a stray credit
+    npm run images        # downloads the full frame of whatever is missing
+    npm run square        # cuts every frame into its 720px square card
+    npm run check         # fails on a missing/non-square photo, a duplicate word, a stray credit
     python3 tools/contact-sheet.py /tmp/sheet.jpg     # look at all 567 at once
 
 To replace one bad photo:
@@ -97,27 +101,32 @@ To replace one bad photo:
     node tools/repin.mjs 'vehicles:Truck=File:Tata Truck India.jpg'
     npm run images
 
-`repin.mjs` rewrites the item's `wiki`, deletes the old `photos/<slot>.webp` and
-its `credits.json` entry, so the fetcher downloads the replacement. Then bump
+`repin.mjs` rewrites the item's `wiki` and forgets the old credit, so the
+fetcher downloads the replacement frame; `npm run square` then cuts the card.
+Then bump
 `imageVersion` in `cards.json` — the photo URLs carry it as `?v=`, which is what
 makes a replaced photo actually reach a device (or a CDN) holding the old one
 under the same name.
 
-### Fitting a photo to the square frame
+### Why the photos are square
 
-The card is square and three photos in four are not. A centre crop that threw
-away a third of the picture was cutting wheels, heads and flag ends off, so the
-app only crops a photo when the crop would lose under 15% of it
-(`CROP_TOLERANCE` in `index.html`); anything wider or taller is shown whole,
-letterboxed on the card's white. The decision is made from the image's natural
-size when it loads, so it covers photos added later too.
+The card is square and shows its photo edge to edge, and three Commons photos
+in four are not square. A centre crop was cutting wheels and heads off;
+letterboxing left white bands. So the square is cut at build time instead:
+`fetch-images.mjs` keeps the full frame in `photos-src/`, and `square.py` asks
+macOS Vision (`salient.swift`) where the subject is and cuts the largest square
+the frame allows around it. `check.mjs` refuses any card that is not 720×720.
 
-To override the rule for one card or a whole group:
+A subject wider or taller than that square cannot be shown whole from that
+photo — `square.py` lists those at the end. For each, `find-square.py` searches
+Commons and shows only candidates whose subject *does* fit a square (already
+cut, so the sheet shows the card as it would be):
 
-    node tools/reframe.mjs 'fruits:Cherry=contain' 'farm:Donkey=left center'
+    python3 tools/find-square.py /tmp/cands 'vehicles:Motorcycle=motorcycle parked'
+    node tools/repin.mjs 'vehicles:Motorcycle=File:<name from the sheet>'
 
-`contain`/`cover` set `fit`; anything else sets `focus`, a CSS
-`object-position` (only meaningful with `cover`). Pass `=cover` to clear.
+Flags are the exception: no photo of a flag is square, so the `countries` group
+is `"crop": "center"` — a plain centre crop, which keeps the emblem.
 
 Photos are fetched at 720px (the round card at 3× on a 1080p phone) and encoded
 as WebP q78 — about half the bytes of the equivalent JPEG. Requires `cwebp`

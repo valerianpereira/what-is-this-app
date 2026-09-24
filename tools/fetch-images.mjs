@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-// Downloads one photo per card from Wikipedia/Commons into photos/, and records
-// author + licence into app/data/credits.json (CC-BY requires attribution).
-// photos/ is deliberately outside app/ so the images stay out of the APK — they
-// are uploaded to a CDN by tools/upload-cloudinary.mjs and fetched on first run.
+// Downloads one photo per card from Wikipedia/Commons into photos-src/ — the
+// full frame; tools/square.py then cuts the square card out of it into photos/
+// — and records author + licence into app/data/credits.json (CC-BY requires
+// attribution). Both directories are outside app/ so the images stay out of the
+// APK; photos/ is what the CDN serves and the app fetches on first run.
 // Cards come from app/data/cards.json — the app reads the same file.
 // Re-run safe: skips cards that already have a photo and a credit.
 import { mkdir, writeFile, readFile, access } from 'node:fs/promises';
@@ -14,7 +15,7 @@ const sh = promisify(execFile);
 // putting a personal address in a public repository.
 const UA = 'WhatIsThisKidsApp/1.0 (offline kids learning app; https://github.com/valerianpereira/what-is-this-app)';
 const APP = new URL('../app/', import.meta.url).pathname;
-const OUT = new URL('../photos/', import.meta.url).pathname;
+const OUT = new URL('../photos-src/', import.meta.url).pathname;
 
 const slug = (s) => s.toLowerCase().replace(/\s+/g, '-');
 const nap = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -54,17 +55,14 @@ async function exists(p) { try { await access(p); return true; } catch { return 
 async function download({ file, wiki }, dest) {
   const host = wiki === 'commons' ? 'commons.wikimedia.org' : 'en.wikipedia.org';
   // Commons resizes server-side, so we never downscale a large original ourselves.
-  // 720px matches the round card at 3x on a 1080p phone.
-  const url = `https://${host}/wiki/Special:FilePath/${encodeURIComponent(file)}?width=720`;
+  // 1200px leaves tools/square.py room to cut a 720px square out of the frame.
+  const url = `https://${host}/wiki/Special:FilePath/${encodeURIComponent(file)}?width=1200`;
   const buf = Buffer.from(await (await get(url)).arrayBuffer());
   const tmp = dest + '.orig';
   await writeFile(tmp, buf);
-  // sips normalises anything (png, svg-rendered-png, tif) to jpeg; cwebp then
-  // halves it. Android's WebView has handled WebP since 4.2.
-  const mid = dest + '.mid.jpg';
-  await sh('sips', ['-s', 'format', 'jpeg', '-s', 'formatOptions', '92', '-Z', '720', tmp, '--out', mid]);
-  await sh('cwebp', ['-q', '78', '-quiet', mid, '-o', dest]);
-  await sh('rm', ['-f', tmp, mid]);
+  // sips normalises anything (png, svg-rendered-png, tif) to jpeg
+  await sh('sips', ['-s', 'format', 'jpeg', '-s', 'formatOptions', '92', '-Z', '1200', tmp, '--out', dest]);
+  await sh('rm', ['-f', tmp]);
 }
 
 const { categories } = JSON.parse(await readFile(APP + 'data/cards.json', 'utf8'));
@@ -82,7 +80,7 @@ const credits = await exists(creditsPath) ? JSON.parse(await readFile(creditsPat
 const failed = [];
 
 for (const t of targets) {
-  const dest = `${OUT}${t.slot}.webp`;
+  const dest = `${OUT}${t.slot}.jpg`;
   if (await exists(dest) && credits[t.slot]) { process.stdout.write('.'); continue; }
   try {
     // 'File:Foo.jpg' pins one exact Commons file, for cards whose article lead
@@ -101,5 +99,5 @@ for (const t of targets) {
   await nap(120); // stay polite to the Wikimedia APIs
 }
 
-console.log(`\n${targets.filter((t) => credits[t.slot]).length}/${targets.length} images ready`);
+console.log(`\n${targets.filter((t) => credits[t.slot]).length}/${targets.length} frames ready — now: npm run square`);
 if (failed.length) { console.log('FAILED:'); failed.forEach((f) => console.log('  ' + f)); process.exitCode = 1; }

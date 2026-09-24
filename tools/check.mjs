@@ -3,7 +3,10 @@
 // item to cards.json without re-running fetch-images.mjs is the way this breaks.
 // Run: node tools/check.mjs
 import { readFile, access } from 'node:fs/promises';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
 import assert from 'node:assert/strict';
+const sh = promisify(execFile);
 
 const root = new URL('../app/', import.meta.url).pathname;
 const photos = new URL('../photos/', import.meta.url).pathname;
@@ -28,13 +31,24 @@ for (const c of categories) {
   }
 }
 
-const missing = [];
+// The card frame is square and shows the photo edge to edge, so every photo
+// must be a 720px square — tools/square.py is what makes them so.
+const size = async (file) => {
+  const { stdout } = await sh('sips', ['-g', 'pixelWidth', '-g', 'pixelHeight', file]);
+  return (stdout.match(/pixel(?:Width|Height): (\d+)/g) || []).map((m) => Number(m.split(': ')[1]));
+};
+const missing = [], notSquare = [];
 for (const s of slots) {
-  try { await access(`${photos}${s}.webp`); } catch { missing.push(s + '.webp'); }
+  try {
+    await access(`${photos}${s}.webp`);
+    const [w, h] = await size(`${photos}${s}.webp`);
+    if (w !== 720 || h !== 720) notSquare.push(`${s} ${w}x${h}`);
+  } catch { missing.push(s + '.webp'); }
   if (!credits[s]) missing.push(s + ' (credit)');
   else assert.ok(credits[s].licence && credits[s].source, `${s} credit is incomplete`);
 }
 assert.deepEqual(missing, [], 'missing assets');
+assert.deepEqual(notSquare, [], 'photos that are not 720x720 — run npm run square');
 
 // A credit with no card behind it means a leftover photo is still being served
 // from the CDN and listed in the app's credits screen.

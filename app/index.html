@@ -304,28 +304,6 @@ const photo = (slot) => `${IMAGE_BASE}/${slot}.webp?v=${IMAGE_VERSION}`;
 
 const seenIn = (c) => (S.seen[c.id] ? Object.keys(S.seen[c.id]).length : 0);
 const catOf = (id) => CATS.find((c) => c.id === id);
-const itemOf = (cur) => {
-  const c = cur && catOf(cur.c);
-  return c ? c.items.find((i) => i.name === cur.n) : null;
-};
-// The frame is square and three photos in four are not. A centre crop that
-// throws away more than a sliver was cutting wheels, heads and flag ends off,
-// so a photo is only cropped when the crop would lose under 15% of it;
-// anything wider or taller is shown whole, letterboxed on the card's white.
-// "fit" and "focus" on a card or a group still override the rule.
-const CROP_TOLERANCE = 0.85;
-function frame(el, item, cat) {
-  const fit = (item && item.fit) || (cat && cat.fit);
-  el.style.objectPosition = (item && item.focus) || (cat && cat.focus) || 'center';
-  const decide = () => {
-    if (fit) { el.style.objectFit = fit; return; }
-    const w = el.naturalWidth, h = el.naturalHeight;
-    el.style.objectFit = w && h && Math.min(w, h) / Math.max(w, h) < CROP_TOLERANCE ? 'contain' : 'cover';
-  };
-  // natural size is only known once the bytes are in
-  if (el.complete && el.naturalWidth) decide();
-  else el.addEventListener('load', decide, { once: true });
-}
 const speakerIcon = (on) => `<svg width="22" height="20" viewBox="0 0 22 20" fill="none" aria-hidden="true">
   <path d="M3 7.5h3.2L10.5 4v12L6.2 12.5H3z" fill="#4A3D2F"/>
   ${on
@@ -463,8 +441,7 @@ setInterval(() => {
 function buildHome() {
   $('grid').innerHTML = CATS.map((c) => `
     <button type="button" class="card" data-cat="${c.id}" style="background:${c.color};box-shadow:0 6px 0 ${c.shadow}">
-      <span class="frame"><img class="photo" src="${photo('cat-' + c.id)}" alt=""
-        style="object-fit:${c.fit || 'cover'};object-position:${c.focus || 'center'}"></span>
+      <span class="frame"><img class="photo" src="${photo('cat-' + c.id)}" alt=""></span>
       <span class="meta"><span class="name">${c.name}</span><span class="badge" data-badge="${c.id}"></span></span>
     </button>`).join('');
 }
@@ -531,7 +508,6 @@ function render() {
       $('pic').style.visibility = 'hidden';
       $('pic').onload = () => { $('pic').style.visibility = 'visible'; };
       $('pic').onerror = () => { $('picMissing').hidden = false; };
-      frame($('pic'), itemOf(cur), cur ? catOf(cur.c) : null);
       $('pic').src = src;
     }
     $('pic').alt = !asking && cur ? cur.n : '';
@@ -613,8 +589,6 @@ document.addEventListener('click', (e) => {
   if (sec) { S.seconds = Number(sec.dataset.sec); save(); return render(); }
   const say = e.target.closest('[data-say]');
   if (say) {
-    const item = itemOf({ n: say.dataset.say, c: say.dataset.from });
-    frame($('peekImg'), item, catOf(say.dataset.from));
     $('peekImg').src = photo(slotId(say.dataset.from, say.dataset.say));
     $('peekName').textContent = say.dataset.say;
     $('peek').hidden = false;

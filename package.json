@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "images": "node tools/fetch-images.mjs",
+    "square": "python3 tools/square.py",
     "check": "node tools/check.mjs",
     "apk": "npx cap sync android && cd android && ./gradlew assembleDebug",
     "aab": "npx cap sync android && cd android && ./gradlew bundleRelease && cp app/build/outputs/bundle/release/app-release.aab ../dist/what-is-this.aab",

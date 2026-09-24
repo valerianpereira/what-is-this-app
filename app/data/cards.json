@@ -1,7 +1,7 @@
 {
   "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram. A category marked \"drawn\": true has no photos to fetch — tools/draw-cards.py renders its cards locally. imageBase is where the app fetches photos from on first run; tools/upload-cloudinary.mjs prints the value to put here.",
   "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@main/photos",
-  "imageVersion": 2,
+  "imageVersion": 3,
   "categories": [
     {
       "id": "vehicles",
@@ -12,15 +12,15 @@
       "items": [
         {
           "name": "Car",
-          "wiki": "Car"
+          "wiki": "File:AvMalecon-LaHabanaCuba-04735.jpg"
         },
         {
           "name": "Bus",
-          "wiki": "Bus"
+          "wiki": "File:Fiat 850 Visitor-Bus by Bertone (1975) Classic-Gala 2022 1X7A0227.jpg"
         },
         {
           "name": "Bicycle",
-          "wiki": "Bicycle"
+          "wiki": "File:Bicycles parked at bicycle rack in front of building and shops.jpg"
         },
         {
           "name": "Train",
@@ -28,7 +28,7 @@
         },
         {
           "name": "Aeroplane",
-          "wiki": "Airplane"
+          "wiki": "File:Sukhoi SuperJet 100 (5114478300).jpg"
         },
         {
           "name": "Boat",
@@ -36,15 +36,15 @@
         },
         {
           "name": "Tractor",
-          "wiki": "Tractor"
+          "wiki": "File:T-40AM tractor 2013 G01.jpg"
         },
         {
           "name": "Fire Truck",
-          "wiki": "Fire engine"
+          "wiki": "File:KAMAZ fire truck - Moscow.jpg"
         },
         {
           "name": "Helicopter",
-          "wiki": "Helicopter"
+          "wiki": "File:Tengboche, Helicopter in flight, Mountains of Nepal.jpg"
         },
         {
           "name": "Scooter",
@@ -76,7 +76,7 @@
         },
         {
           "name": "Taxi",
-          "wiki": "File:Ambassador taxi (7169354693).jpg"
+          "wiki": "File:Taxi of Kolkata.jpg"
         },
         {
           "name": "Van",
@@ -96,7 +96,7 @@
         },
         {
           "name": "Rocket",
-          "wiki": "Rocket"
+          "wiki": "File:Soyuz TMA-5 launch.jpg"
         },
         {
           "name": "Hot Air Balloon",
@@ -129,7 +129,7 @@
         },
         {
           "name": "Mango",
-          "wiki": "Mango"
+          "wiki": "File:An unripe mango in jaffna.JPG"
         },
         {
           "name": "Grapes",
@@ -137,7 +137,7 @@
         },
         {
           "name": "Orange",
-          "wiki": "Orange (fruit)"
+          "wiki": "File:Ambersweet oranges.jpg"
         },
         {
           "name": "Watermelon",
@@ -161,11 +161,11 @@
         },
         {
           "name": "Guava",
-          "wiki": "Guava"
+          "wiki": "File:Unripe guava fruit.jpg"
         },
         {
           "name": "Pomegranate",
-          "wiki": "Pomegranate"
+          "wiki": "File:Pomegranate (opened).jpg"
         },
         {
           "name": "Coconut",
@@ -230,7 +230,7 @@
       "items": [
         {
           "name": "Carrot",
-          "wiki": "File:Carrots at Ljubljana Central Market.JPG"
+          "wiki": "File:Carrot vegetables, April 2023.jpg"
         },
         {
           "name": "Tomato",
@@ -266,7 +266,7 @@
         },
         {
           "name": "Cucumber",
-          "wiki": "File:Cucumber and cross section.jpg"
+          "wiki": "File:Kurkkuja.jpg"
         },
         {
           "name": "Spinach",
@@ -282,7 +282,7 @@
         },
         {
           "name": "Radish",
-          "wiki": "File:Radishes fresh from the garden.jpg"
+          "wiki": "File:Radish 3371103037 4ab07db0bf o.jpg"
         },
         {
           "name": "Capsicum",
@@ -302,7 +302,7 @@
         },
         {
           "name": "Ginger",
-          "wiki": "File:Ginger rhizome.jpg"
+          "wiki": "File:Liat Portal for Foodie Disorder - Fresh Ginger Root.jpg"
         },
         {
           "name": "Chilli",
@@ -343,11 +343,11 @@
         },
         {
           "name": "Tiger",
-          "wiki": "Tiger"
+          "wiki": "File:Amurtiger-Zoo-Duisburg-Bad-Wasserlinsen-2025-2.jpg"
         },
         {
           "name": "Elephant",
-          "wiki": "Elephant"
+          "wiki": "File:016a Desert-adapted elephant dust bathing in Damaraland Photo by Giles Laurent.jpg"
         },
         {
           "name": "Giraffe",
@@ -355,7 +355,7 @@
         },
         {
           "name": "Zebra",
-          "wiki": "Zebra"
+          "wiki": "File:Equus zebra hartmannae - Etosha 2015.jpg"
         },
         {
           "name": "Monkey",
@@ -375,7 +375,7 @@
         },
         {
           "name": "Hippo",
-          "wiki": "Hippopotamus"
+          "wiki": "File:Chobe River Front, Botswana (2625496300).jpg"
         },
         {
           "name": "Rhinoceros",
@@ -387,11 +387,11 @@
         },
         {
           "name": "Fox",
-          "wiki": "Red fox"
+          "wiki": "File:Red fox (Vulpes vulpes crucigera) Skalnate Pleso 2.jpg"
         },
         {
           "name": "Kangaroo",
-          "wiki": "Kangaroo"
+          "wiki": "File:Forester kangaroo (Macropus giganteus tasmaniensis) Esk Valley.jpg"
         },
         {
           "name": "Panda",
@@ -407,7 +407,7 @@
         },
         {
           "name": "Gorilla",
-          "wiki": "Gorilla"
+          "wiki": "File:Mountain gorilla (Gorilla beringei beringei) yawn.jpg"
         },
         {
           "name": "Chimpanzee",
@@ -419,7 +419,7 @@
         },
         {
           "name": "Porcupine",
-          "wiki": "Porcupine"
+          "wiki": "File:African crested Porcupine -Hystrix cristata- 2.jpg"
         },
         {
           "name": "Squirrel",
@@ -431,7 +431,7 @@
         },
         {
           "name": "Snake",
-          "wiki": "Snake"
+          "wiki": "File:Ahaetulla prasina, oriental whipsnake - Kaeng Krachan National Park.jpg"
         },
         {
           "name": "Raccoon",
@@ -456,11 +456,11 @@
         },
         {
           "name": "Owl",
-          "wiki": "Owl"
+          "wiki": "File:Tyto alba tylluan wen.jpg"
         },
         {
           "name": "Crow",
-          "wiki": "Corvus"
+          "wiki": "File:House Crow in Bhagalpur December 2025 by Tisha Mukherjee 01.jpg"
         },
         {
           "name": "Duck",
@@ -480,7 +480,7 @@
         },
         {
           "name": "Flamingo",
-          "wiki": "Flamingo"
+          "wiki": "File:010 Greater flamingos male and female in the Camargue during mating season Photo by Giles Laurent.jpg"
         },
         {
           "name": "Hen",
@@ -496,7 +496,7 @@
         },
         {
           "name": "Ostrich",
-          "wiki": "Common ostrich"
+          "wiki": "File:Autruche d'Afrique (Struthio camelus) (2).jpg"
         },
         {
           "name": "Woodpecker",
@@ -508,11 +508,11 @@
         },
         {
           "name": "Seagull",
-          "wiki": "Gull"
+          "wiki": "File:Seagull-croatia.jpg"
         },
         {
           "name": "Pelican",
-          "wiki": "Pelican"
+          "wiki": "File:ComputerHotline - Pelecanus crispus (by) (1).jpg"
         },
         {
           "name": "Stork",
@@ -524,15 +524,15 @@
         },
         {
           "name": "Hornbill",
-          "wiki": "Hornbill"
+          "wiki": "File:Malabar pied hornbill (Anthracoceros coronatus) male.jpg"
         },
         {
           "name": "Myna",
-          "wiki": "Common myna"
+          "wiki": "File:Common Myna in Rabindra Sarobar February 2025 by Tisha Mukherjee 01.jpg"
         },
         {
           "name": "Macaw",
-          "wiki": "File:Parrot (macaw).jpg"
+          "wiki": "File:Scarlet macaw (Ara macao cyanopterus) Copan.jpg"
         },
         {
           "name": "Vulture",
@@ -540,7 +540,7 @@
         },
         {
           "name": "Toucan",
-          "wiki": "File:Toco Toucan (Ramphastos toco) - 48153967707.jpg"
+          "wiki": "File:006 Toco toucan in Encontro das Águas State Park Photo by Giles Laurent.jpg"
         },
         {
           "name": "Cuckoo",
@@ -569,7 +569,7 @@
         },
         {
           "name": "Ladybug",
-          "wiki": "Coccinellidae"
+          "wiki": "File:Adalia bipunctata 116945366.jpg"
         },
         {
           "name": "Grasshopper",
@@ -593,7 +593,7 @@
         },
         {
           "name": "Caterpillar",
-          "wiki": "Caterpillar"
+          "wiki": "File:Monarch caterpillar (23229).jpg"
         },
         {
           "name": "Moth",
@@ -698,7 +698,7 @@
         },
         {
           "name": "Lily",
-          "wiki": "Lilium"
+          "wiki": "File:Formosa lily, Nagai Park, Osaka.jpg"
         },
         {
           "name": "Orchid",
@@ -722,7 +722,7 @@
         },
         {
           "name": "Chrysanthemum",
-          "wiki": "File:Pink Chrysanthemum flower 6.JPG"
+          "wiki": "File:Chrysanthemum flowers, specifically a variety known for its bi-color blooms with striped pink and white petals.jpg"
         },
         {
           "name": "Carnation",
@@ -738,7 +738,7 @@
         },
         {
           "name": "Magnolia",
-          "wiki": "Magnolia"
+          "wiki": "File:Magnolia grandiflora - flower 1.jpg"
         },
         {
           "name": "Frangipani",
@@ -831,7 +831,7 @@
         },
         {
           "name": "Fisherman",
-          "wiki": "File:Fisherman cleaning fishing net on fishing boat.jpg"
+          "wiki": "File:20160805 Inle Lake 7434.jpg"
         },
         {
           "name": "Plumber",
@@ -982,7 +982,8 @@
           "name": "New Zealand",
           "wiki": "Flag of New Zealand"
         }
-      ]
+      ],
+      "crop": "center"
     },
     {
       "id": "sea",
@@ -1005,7 +1006,7 @@
         },
         {
           "name": "Shark",
-          "wiki": "Shark"
+          "wiki": "File:Shark Bay 27.jpg"
         },
         {
           "name": "Octopus",
@@ -1017,11 +1018,11 @@
         },
         {
           "name": "Starfish",
-          "wiki": "Starfish"
+          "wiki": "File:Royal starfish (Astropecten articulatus) on the beach.jpg"
         },
         {
           "name": "Jellyfish",
-          "wiki": "Jellyfish"
+          "wiki": "File:Jellyfish (42062740).jpeg"
         },
         {
           "name": "Seahorse",
@@ -1049,7 +1050,7 @@
         },
         {
           "name": "Clownfish",
-          "wiki": "Clownfish"
+          "wiki": "File:Pez payaso común (Amphiprion ocellaris) en una anémona magnífica (Heteractis magnifica), Anilao, Filipinas, 2023-08-22, DD 10.jpg"
         },
         {
           "name": "Eel",
@@ -1114,11 +1115,11 @@
         },
         {
           "name": "Horse",
-          "wiki": "Horse"
+          "wiki": "File:Draft horse in Munsbach.jpg"
         },
         {
           "name": "Pig",
-          "wiki": "Pig"
+          "wiki": "File:Pig on grass.jpg"
         },
         {
           "name": "Donkey",
@@ -1146,7 +1147,7 @@
         },
         {
           "name": "Llama",
-          "wiki": "Llama"
+          "wiki": "File:Etherley Farm - Llama - geograph.org.uk - 7182126.jpg"
         },
         {
           "name": "Yak",
@@ -1186,7 +1187,7 @@
         },
         {
           "name": "Mule",
-          "wiki": "Mule"
+          "wiki": "File:Birde and Belle, the two mules at the Carter Farm (0f89a0b8-1dd8-b71b-0be9-47c5edb5f5bf).jpg"
         },
         {
           "name": "Alpaca",
@@ -1219,7 +1220,7 @@
         },
         {
           "name": "Puppy",
-          "wiki": "Puppy"
+          "wiki": "File:Puppy filtered.jpg"
         },
         {
           "name": "Kitten",
@@ -1235,7 +1236,7 @@
         },
         {
           "name": "Guinea Pig",
-          "wiki": "Guinea pig"
+          "wiki": "File:Cochon d'Inde (Cavia porcellus) (1).jpg"
         },
         {
           "name": "Budgie",
@@ -1243,7 +1244,7 @@
         },
         {
           "name": "Tortoise",
-          "wiki": "Tortoise"
+          "wiki": "File:Maple Street Tortoise, Carrollton, New Orleans October 2013 - 01.jpg"
         },
         {
           "name": "Pony",
@@ -1251,7 +1252,7 @@
         },
         {
           "name": "Mouse",
-          "wiki": "House mouse"
+          "wiki": "File:Mouse-eating.jpg"
         },
         {
           "name": "Canary",
@@ -1279,7 +1280,7 @@
         },
         {
           "name": "Chinchilla",
-          "wiki": "Chinchilla"
+          "wiki": "File:Napoleon chinchilla in box.jpg"
         },
         {
           "name": "Gerbil",
@@ -1372,11 +1373,11 @@
         },
         {
           "name": "Ice",
-          "wiki": "Ice"
+          "wiki": "File:Iceberg in North Star Bay, Greenland.jpg"
         },
         {
           "name": "Sky",
-          "wiki": "File:LosAngelesSky.jpg"
+          "wiki": "File:Sky over Munich 02.jpg"
         },
         {
           "name": "Wind",
@@ -1433,7 +1434,7 @@
         },
         {
           "name": "T-shirt",
-          "wiki": "File:@pendura(porPhotocapy).jpg"
+          "wiki": "File:A girl in a T-shirt and jeans 2009.jpg"
         },
         {
           "name": "Trousers",
@@ -1473,7 +1474,7 @@
         },
         {
           "name": "Gloves",
-          "wiki": "File:Two pairs of mens leather gloves from Randers Handsker.jpg"
+          "wiki": "File:Gloves MET CI62.35.15ab.jpg"
         },
         {
           "name": "Shorts",
@@ -1485,7 +1486,7 @@
         },
         {
           "name": "Raincoat",
-          "wiki": "Raincoat"
+          "wiki": "File:Gabriel wearing a University of Chicago disposable raincoat, Hyde Park, Illinois, US (PPL1-Corrected) julesvernex2.jpg"
         },
         {
           "name": "Saree",
@@ -1493,7 +1494,7 @@
         },
         {
           "name": "Kurta",
-          "wiki": "Kurta"
+          "wiki": "File:Boy's Kurta and Pyjama from India - DPLA - e4437f8bceae01441aeb02c82f322da2 (page 5).jpg"
         },
         {
           "name": "Belt",
@@ -1521,7 +1522,7 @@
         },
         {
           "name": "Pyjamas",
-          "wiki": "File:Child wearing pajamas with hand in holiday popcorn tin wth caramel, cheese and classic flavors (15874044767).jpg"
+          "wiki": "File:A boy in pajamas outdoors in Northern Maracay, Venezuela.jpg"
         },
         {
           "name": "Swimsuit",
@@ -1546,7 +1547,7 @@
         },
         {
           "name": "Piano",
-          "wiki": "Piano"
+          "wiki": "File:Steinway & Sons upright piano, model K-132, manufactured at Steinway's factory in Hamburg, Germany.png"
         },
         {
           "name": "Violin",
@@ -1554,11 +1555,11 @@
         },
         {
           "name": "Flute",
-          "wiki": "File:Flute d'amour.jpg"
+          "wiki": "File:Transverse Flute MET midp1998.358.jpg"
         },
         {
           "name": "Trumpet",
-          "wiki": "Trumpet"
+          "wiki": "File:Yamaha Trumpet YTR-8335LA.tif"
         },
         {
           "name": "Harp",
@@ -1598,7 +1599,7 @@
         },
         {
           "name": "Clarinet",
-          "wiki": "File:Boehm 3.jpg"
+          "wiki": "File:Yamaha Clarinet YCL-457II-22 (rotated).jpg"
         },
         {
           "name": "Trombone",
@@ -1614,7 +1615,7 @@
         },
         {
           "name": "Cymbal",
-          "wiki": "Cymbal"
+          "wiki": "File:Manjeera or Taal.jpg"
         },
         {
           "name": "Maracas",
@@ -1663,7 +1664,7 @@
         },
         {
           "name": "Clock",
-          "wiki": "Clock"
+          "wiki": "File:Classic alarm clock 20180513.jpg"
         },
         {
           "name": "Spoon",
@@ -1703,15 +1704,15 @@
         },
         {
           "name": "Bucket",
-          "wiki": "File:Plastsic pail of paint.jpg"
+          "wiki": "File:Brass bucket 01.jpg"
         },
         {
           "name": "Fan",
-          "wiki": "Ceiling fan"
+          "wiki": "File:Box fan on stand.jpg"
         },
         {
           "name": "Fridge",
-          "wiki": "File:Panasonic HOME REFRIGERATOR NR-C320WP-N.jpg"
+          "wiki": "File:EFTA00001697 - Black refrigerator stands in a kitchen with red tiled floor next to a water cooler and a white table.jpg"
         },
         {
           "name": "Television",
@@ -1739,7 +1740,7 @@
         },
         {
           "name": "Comb",
-          "wiki": "Comb"
+          "wiki": "File:Comb for hair.jpg"
         },
         {
           "name": "Key",
@@ -1788,7 +1789,7 @@
         },
         {
           "name": "Ice Cream",
-          "wiki": "Ice cream"
+          "wiki": "File:Ice cream flavor.jpg"
         },
         {
           "name": "Chocolate",
@@ -1978,7 +1979,7 @@
         },
         {
           "name": "Balloon",
-          "wiki": "Balloon"
+          "wiki": "File:20240624 Toy balloon Katowice.jpg"
         },
         {
           "name": "Teddy Bear",
@@ -1994,7 +1995,7 @@
         },
         {
           "name": "Blocks",
-          "wiki": "Toy block"
+          "wiki": "File:Learning to count with Children's Number Blocks - 51070634001.jpg"
         },
         {
           "name": "Puzzle",
@@ -2006,7 +2007,7 @@
         },
         {
           "name": "Spinning Top",
-          "wiki": "Spinning top"
+          "wiki": "File:Metal spinning top, Museum of Childhood, Edinburgh.JPG"
         },
         {
           "name": "Rocking Horse",
@@ -2014,7 +2015,7 @@
         },
         {
           "name": "Toy Car",
-          "wiki": "Toy car"
+          "wiki": "File:Abandoned toy car.jpg"
         },
         {
           "name": "Skipping Rope",
@@ -2022,7 +2023,7 @@
         },
         {
           "name": "Yo-yo",
-          "wiki": "Yo-yo"
+          "wiki": "File:Blue Yoyo.jpg"
         },
         {
           "name": "Pinwheel",
@@ -2034,7 +2035,7 @@
         },
         {
           "name": "Robot",
-          "wiki": "Robot"
+          "wiki": "File:Ha Ha Toy – Remote Control Piston Action Robot – Robby The Robot – Gold Version – Front.jpg"
         },
         {
           "name": "Kaleidoscope",
@@ -2062,7 +2063,7 @@
         },
         {
           "name": "Tricycle",
-          "wiki": "File:Frank Schulenburg, as a child on a tricycle.jpg"
+          "wiki": "File:Toys of children.jpg"
         },
         {
           "name": "Hula Hoop",
@@ -2079,7 +2080,7 @@
       "name": "School Things",
       "color": "#A9D6E5",
       "shadow": "#80AEBC",
-      "tile": "Backpack",
+      "tile": "File:A school Bag.jpg",
       "items": [
         {
           "name": "Pencil",
@@ -2099,7 +2100,7 @@
         },
         {
           "name": "Eraser",
-          "wiki": "Eraser"
+          "wiki": "File:Pink Pearl eraser.jpg"
         },
         {
           "name": "Sharpener",
@@ -2131,7 +2132,7 @@
         },
         {
           "name": "Bag",
-          "wiki": "Backpack"
+          "wiki": "File:A school Bag.jpg"
         },
         {
           "name": "Blackboard",

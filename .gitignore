@@ -7,6 +7,9 @@ android/local.properties
 android/app/src/main/assets/public/
 .DS_Store
 
+# full-frame downloads; photos/ holds the square cards cut from them
+photos-src/
+
 # Claude Design handoff bundle, kept locally only: its image-slot.js / support.js
 # are the design tool's own runtime, not ours to redistribute.
 what-is-this-game-app/
@@ -14,3 +17,4 @@ what-is-this-game-app/
 
 # Playwright MCP scratch screenshots
 .playwright-mcp/
+__pycache__/

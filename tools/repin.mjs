@@ -1,10 +1,12 @@
 #!/usr/bin/env node
-// Points cards at a different photo and forgets the old one, so
-// tools/fetch-images.mjs downloads it again on the next run.
+// Points cards at a different photo and forgets the old one (card, frame and
+// credit), so tools/fetch-images.mjs downloads it again on the next run and
+// tools/square.py cuts the new card.
 //   node tools/repin.mjs vehicles:Truck="File:Tata Truck India.jpg" ...
 import { readFile, writeFile, rm } from 'node:fs/promises';
 const APP = new URL('../app/', import.meta.url).pathname;
 const PHOTOS = new URL('../photos/', import.meta.url).pathname;
+const FRAMES = new URL('../photos-src/', import.meta.url).pathname;
 const slug = (s) => s.toLowerCase().replace(/\s+/g, '-');
 
 const cards = JSON.parse(await readFile(APP + 'data/cards.json', 'utf8'));
@@ -22,6 +24,7 @@ for (const arg of process.argv.slice(2)) {
   const slot = `obj-${catId}-${slug(name)}`;
   delete credits[slot];
   await rm(`${PHOTOS}${slot}.webp`, { force: true });
+  await rm(`${FRAMES}${slot}.jpg`, { force: true });
   console.log(`${slot} -> ${wiki}`);
 }
 
