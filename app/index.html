@@ -72,9 +72,9 @@ button{font-family:inherit}
 #answerText{font-size:46px;font-weight:700;letter-spacing:-1px;line-height:1;text-align:center}
 .again{border:none;height:38px;padding:0 20px;border-radius:19px;background:rgba(255,255,255,.85);color:#4A3D2F;font-size:15px;font-weight:600;cursor:pointer}
 #askHint{font-size:17px;font-weight:500;color:rgba(36,28,21,.45);text-align:center}
-.nav{display:flex;gap:10px;width:min(298px,74vw)}
-.nav button{flex:1;height:54px;border-radius:27px;border:none;background:rgba(255,255,255,.85);color:#4A3D2F;font-family:inherit;font-size:18px;font-weight:600;cursor:pointer;box-shadow:0 4px 0 rgba(36,28,21,.12)}
-.nav button:disabled{opacity:.4;box-shadow:none;cursor:default}
+/* the screen's left and right halves are the back/next zones; these just say so */
+.edge{position:absolute;top:50%;transform:translateY(-50%);font-size:44px;font-weight:700;color:rgba(36,28,21,.22);pointer-events:none;line-height:1}
+.edge.l{left:8px}.edge.r{right:8px}
 #paused{position:absolute;inset:0;background:rgba(36,28,21,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px}
 #paused h2{margin:0;font-size:32px;font-weight:700;color:#fff}
 .resume{border:none;height:62px;padding:0 44px;border-radius:31px;background:#fff;font-size:21px;font-weight:600;color:#241C15;cursor:pointer}
@@ -209,11 +209,9 @@ button{font-family:inherit}
       </div>
       <div id="askHint">Say it out loud… or tap to peek</div>
     </div>
-    <div class="nav">
-      <button type="button" data-act="prev" id="prevBtn">‹ Back</button>
-      <button type="button" data-act="next">Next ›</button>
-    </div>
   </div>
+  <div class="edge l" id="edgeL">‹</div>
+  <div class="edge r">›</div>
   <div id="paused" hidden>
     <h2>Paused</h2>
     <button type="button" class="resume" data-act="pause">Keep playing</button>
@@ -253,8 +251,8 @@ button{font-family:inherit}
     <div id="timers"></div>
     <div class="rule"></div>
     <div class="row">
-      <div><div class="t">Keep playing on its own</div><div class="s">Moves to the next picture by itself</div></div>
-      <button type="button" class="toggle" id="autoToggle" data-act="auto" role="switch"><i></i></button>
+      <div><div class="t">Manual mode</div><div class="s">No timer — tap the picture for the answer, tap the sides to move</div></div>
+      <button type="button" class="toggle" id="manualToggle" data-act="manual" role="switch"><i></i></button>
     </div>
     <button type="button" class="grown" data-act="parent">For grown-ups</button>
   </div>
@@ -338,19 +336,20 @@ const speakerIcon = (on) => `<svg width="22" height="20" viewBox="0 0 22 20" fil
 const S = {
   screen: 'onboarding', overlay: null, parentLocked: true, holdPct: 0,
   catId: null, queue: [], idx: 0, phase: 'ask', left: 0, revealLeft: 0,
-  paused: false, voice: true, seconds: 5, auto: true, seen: {}, rounds: 0
+  paused: false, voice: true, seconds: 5, manual: false, seen: {}, rounds: 0
 };
 
 try {
   const p = JSON.parse(localStorage.getItem(KEY) || '{}');
   S.seen = p.seen || {}; S.rounds = p.rounds || 0;
   if (p.voice !== undefined) S.voice = p.voice;
-  if (p.auto !== undefined) S.auto = p.auto;
+  if (p.manual !== undefined) S.manual = p.manual;
+  else if (p.auto === false) S.manual = true; // the setting this one replaced
   if (p.seconds) S.seconds = p.seconds;
 } catch (e) {}
 const save = () => {
   try {
-    localStorage.setItem(KEY, JSON.stringify({ seen: S.seen, rounds: S.rounds, voice: S.voice, auto: S.auto, seconds: S.seconds }));
+    localStorage.setItem(KEY, JSON.stringify({ seen: S.seen, rounds: S.rounds, voice: S.voice, manual: S.manual, seconds: S.seconds }));
   } catch (e) {}
 };
 
@@ -424,8 +423,7 @@ function reveal() {
   speak(cur.n);
 }
 
-// Manual mode ("Keep playing on its own" off) leans on these; the arrows are
-// there in both modes so a word can always be gone back to.
+// Tapping the left half of the round screen; the right half is next().
 function prev() {
   if (S.idx === 0) return;
   Object.assign(S, { idx: S.idx - 1, phase: 'ask', left: S.seconds * 1000 });
@@ -451,11 +449,11 @@ function next() {
 }
 
 setInterval(() => {
-  if (S.screen !== 'round' || S.paused || S.overlay) return;
+  if (S.screen !== 'round' || S.paused || S.overlay || S.manual) return;
   if (S.phase === 'ask') {
     S.left -= 100;
     if (S.left <= 0) reveal(); else paintTimer();
-  } else if (S.auto) {
+  } else {
     S.revealLeft -= 100;
     if (S.revealLeft <= 0) next();
   }
@@ -537,9 +535,10 @@ function render() {
       $('pic').src = src;
     }
     $('pic').alt = !asking && cur ? cur.n : '';
-    $('prevBtn').disabled = S.idx === 0;
-    $('ring').hidden = !asking;
+    $('ring').hidden = !asking || S.manual;
     $('askHint').hidden = !asking;
+    $('askHint').textContent = S.manual ? 'Tap the picture for the answer' : 'Say it out loud… or tap to peek';
+    $('edgeL').hidden = S.idx === 0;
     $('revealBox').hidden = asking;
     if (!asking) { $('revealBox').style.animation = 'none'; void $('revealBox').offsetWidth; $('revealBox').style.animation = ''; }
     $('paused').hidden = !S.paused;
@@ -553,9 +552,9 @@ function render() {
     $('voiceToggle').style.background = S.voice ? '#5BB98C' : '#DCD2C2';
     $('voiceToggle').style.justifyContent = S.voice ? 'flex-end' : 'flex-start';
     $('voiceToggle').setAttribute('aria-checked', S.voice);
-    $('autoToggle').style.background = S.auto ? '#5BB98C' : '#DCD2C2';
-    $('autoToggle').style.justifyContent = S.auto ? 'flex-end' : 'flex-start';
-    $('autoToggle').setAttribute('aria-checked', S.auto);
+    $('manualToggle').style.background = S.manual ? '#5BB98C' : '#DCD2C2';
+    $('manualToggle').style.justifyContent = S.manual ? 'flex-end' : 'flex-start';
+    $('manualToggle').setAttribute('aria-checked', S.manual);
     Array.from($('timers').children).forEach((b) => {
       const on = Number(b.dataset.sec) === S.seconds;
       b.style.background = on ? '#241C15' : '#fff';
@@ -590,13 +589,11 @@ const ACTIONS = {
   surprise: () => startRound('mix'),
   playAgain: () => startRound(S.catId || 'vehicles'),
   reveal: () => { if (S.phase === 'ask') reveal(); else next(); },
-  prev: () => prev(),
-  next: () => next(),
   closePeek: () => { $('peek').hidden = true; },
   sayAgain: () => { const cur = S.queue[S.idx]; if (cur) speak(cur.n); },
   pause: () => { S.paused = !S.paused; render(); },
   voice: () => { S.voice = !S.voice; save(); render(); },
-  auto: () => { S.auto = !S.auto; save(); render(); },
+  manual: () => { S.manual = !S.manual; save(); render(); },
   credits: () => showCredits(),
   getAll: () => downloadEverything(),
   closeCredits: () => { $('credits').hidden = true; }
@@ -605,6 +602,11 @@ const ACTIONS = {
 document.addEventListener('click', (e) => {
   const act = e.target.closest('[data-act]');
   if (act) return ACTIONS[act.dataset.act]();
+  // Anywhere else on the round screen: left half goes back, right half goes on.
+  // The picture itself and the bar have their own data-act and never get here.
+  if (S.screen === 'round' && !S.paused && !S.overlay && e.target.closest('#round')) {
+    return e.clientX < window.innerWidth / 2 ? prev() : next();
+  }
   const card = e.target.closest('[data-cat]');
   if (card) return startRound(card.dataset.cat);
   const sec = e.target.closest('[data-sec]');

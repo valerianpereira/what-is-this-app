@@ -142,12 +142,14 @@ there is no web build, service worker, or installable PWA.
 
 ## Playing a round
 
-Ten pictures. The ring counts down, then the answer appears and is read out.
-`‹ Back` and `Next ›` under the picture move between the ten in both directions
-at any time. "Keep playing on its own" in Settings is the difference between the
-app moving on by itself after the answer (the default) and waiting for `Next ›`
-— that is the manual mode. On the summary, tapping a word says it and shows its
-picture again.
+Ten pictures. The ring counts down, then the answer appears, is read out, and
+the app moves on. Tapping the picture shows the answer early. Tapping the left
+half of the screen goes back a picture, the right half goes on — at any time,
+in either mode.
+
+"Manual mode" in Settings removes the timer altogether: nothing moves until it
+is tapped — the picture for the answer, the sides to move. On the summary,
+tapping a word says it and shows its picture again.
 
 ## Sound
 
