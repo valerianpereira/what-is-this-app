@@ -1,7 +1,7 @@
 {
   "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram. A category marked \"drawn\": true has no photos to fetch — tools/draw-cards.py renders its cards locally. imageBase is where the app fetches photos from on first run; tools/upload-cloudinary.mjs prints the value to put here.",
   "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@main/photos",
-  "imageVersion": 3,
+  "imageVersion": 4,
   "categories": [
     {
       "id": "vehicles",
@@ -28,11 +28,11 @@
         },
         {
           "name": "Aeroplane",
-          "wiki": "File:Sukhoi SuperJet 100 (5114478300).jpg"
+          "wiki": "File:Air India Boeing 787-8 VT-ANB NRT (15922475860) - crop.jpg"
         },
         {
           "name": "Boat",
-          "wiki": "Boat"
+          "wiki": "File:Fishing boats in Kerala, India.jpg"
         },
         {
           "name": "Tractor",
@@ -40,7 +40,7 @@
         },
         {
           "name": "Fire Truck",
-          "wiki": "File:KAMAZ fire truck - Moscow.jpg"
+          "wiki": "File:CISF Fire Engine.jpg"
         },
         {
           "name": "Helicopter",
@@ -60,7 +60,7 @@
         },
         {
           "name": "Ambulance",
-          "wiki": "Ambulance"
+          "wiki": "File:Ambulance in India.jpg"
         },
         {
           "name": "Auto Rickshaw",
@@ -68,11 +68,11 @@
         },
         {
           "name": "Motorcycle",
-          "wiki": "Motorcycle"
+          "wiki": "File:Royal Enfield Classic 350 (2017 Model Year).jpg"
         },
         {
           "name": "Jeep",
-          "wiki": "File:Jeep Wrangler Unlimited 3.8 Rubicon 2011 (12510514345).jpg"
+          "wiki": "File:Mahindra Thar ROXX on dirt.jpg"
         },
         {
           "name": "Taxi",
@@ -84,11 +84,11 @@
         },
         {
           "name": "Bulldozer",
-          "wiki": "Bulldozer"
+          "wiki": "File:Komatsu D85PX R04.jpg"
         },
         {
           "name": "Crane",
-          "wiki": "File:A Liebherr LTM 1500-8.1 crane truck lifting a Genie S-85 Lift Crane.jpg"
+          "wiki": "File:00 0061 Turmkräne mit Ausleger.jpg"
         },
         {
           "name": "Submarine",
@@ -100,11 +100,11 @@
         },
         {
           "name": "Hot Air Balloon",
-          "wiki": "Hot air balloon"
+          "wiki": "File:Hot-air balloon in Tambov - 02.jpg"
         },
         {
           "name": "School Bus",
-          "wiki": "School bus"
+          "wiki": "File:School bus, Indore.jpg"
         },
         {
           "name": "Cycle Rickshaw",
@@ -125,7 +125,7 @@
         },
         {
           "name": "Banana",
-          "wiki": "Banana"
+          "wiki": "File:Bananas white background.jpg"
         },
         {
           "name": "Mango",
@@ -169,7 +169,7 @@
         },
         {
           "name": "Coconut",
-          "wiki": "File:Coconuts - single and cracked open.jpg"
+          "wiki": "File:Coconut face (2201055109).jpg"
         },
         {
           "name": "Lemon",
@@ -185,7 +185,7 @@
         },
         {
           "name": "Peach",
-          "wiki": "File:A Bowl Of Peaches (168126787).jpg"
+          "wiki": "File:Ripe peach.jpg"
         },
         {
           "name": "Plum",

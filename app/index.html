@@ -357,11 +357,18 @@ function speak(text) {
   if (!S.voice) return;
   if (native()) {
     // queueStrategy 0 = flush, so a new word cuts off the one before it.
-    const say = () => tts('speak', { text, lang: TTS_LANG, rate: 0.9, pitch: 1.15, volume: 1.0, queueStrategy: 0 });
+    // Rate and pitch stay at 1: the engine shifts pitch by post-processing
+    // the audio, which on phones came out doubled, like an echo.
+    const say = () => tts('speak', { text, lang: TTS_LANG, rate: 1.0, pitch: 1.0, volume: 1.0, queueStrategy: 0 });
     // The engine reports no languages until it has finished starting up, so
     // the first word can be rejected for a language it does in fact have.
-    // Ask again and say it once more before giving up.
-    say().catch(() => pickVoice().then(say).catch(() => {}));
+    // Ask again and say it once more — but only for that rejection, which
+    // comes before anything is spoken. "Failed to read text." arrives after
+    // the engine has already tried, and saying it again there is a repeat.
+    say().catch((e) => {
+      if (/Failed to read/i.test(e && e.message || '')) return;
+      pickVoice().then(say).catch(() => {});
+    });
     return;
   }
   if (typeof speechSynthesis === 'undefined') return;
@@ -683,6 +690,17 @@ async function downloadEverything() {
   btn.textContent = failed ? `${failed} could not be downloaded — tap to retry` : 'All pictures downloaded';
   getAllRunning = false;
 }
+
+// Android's hardware/gesture back button. MainActivity.java calls this via
+// evaluateJavascript before deciding whether to exit; true means we handled
+// it (closed something, gone up a screen) and native should do nothing else.
+window.androidBack = function () {
+  if (S.overlay === 'parent' && !S.parentLocked) { ACTIONS.close(); return true; }
+  if (S.overlay) { ACTIONS.close(); return true; }
+  if (S.screen === 'round' && S.paused) { ACTIONS.pause(); return true; }
+  if (S.screen === 'round' || S.screen === 'summary') { ACTIONS.home(); return true; }
+  return false; // home or onboarding, nothing open — let native handle exit
+};
 
 async function boot() {
   const cfg = await (await fetch('data/cards.json')).json();

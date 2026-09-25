@@ -342,13 +342,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3A%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A8%D0%B0%D1%82%D1%80%D0%B8%D1%89%D0%B5._%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C.jpg"
  },
- "obj-vehicles-boat": {
-  "name": "Boat",
-  "article": "Boat",
-  "author": "Kondicherry",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AMotorboat_at_Kankaria_lake.JPG"
- },
  "obj-vehicles-scooter": {
   "name": "Scooter",
   "article": "Motor scooter",
@@ -370,33 +363,12 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AVision%20of%20The%20Seas%20cruise%20ship%20by%20Royal%20Caribbean%20International%2C%20in%20Alaska.jpg"
  },
- "obj-vehicles-ambulance": {
-  "name": "Ambulance",
-  "article": "Ambulance",
-  "author": "AleWi",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AStockholm%2C_ambulans%2C_2014%2C_21.jpg"
- },
  "obj-vehicles-auto-rickshaw": {
   "name": "Auto Rickshaw",
   "article": "Auto rickshaw",
   "author": "calflier001, cropped by uploader Mr.choppers",
   "licence": "CC BY-SA 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ABajaj_auto-rickshaw_in_Sri_Lanka.jpg"
- },
- "obj-vehicles-motorcycle": {
-  "name": "Motorcycle",
-  "article": "Motorcycle",
-  "author": "Devanand.j",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AIstockphoto-114285168-612x612.jpg"
- },
- "obj-vehicles-jeep": {
-  "name": "Jeep",
-  "article": "File:Jeep Wrangler Unlimited 3.8 Rubicon 2011 (12510514345).jpg",
-  "author": "order_242 from Chile",
-  "licence": "CC BY-SA 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AJeep%20Wrangler%20Unlimited%203.8%20Rubicon%202011%20(12510514345).jpg"
  },
  "obj-vehicles-van": {
   "name": "Van",
@@ -405,40 +377,12 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3A2018_Ford_Transit_Custom_300_Base_2.0_facelift.jpg"
  },
- "obj-vehicles-bulldozer": {
-  "name": "Bulldozer",
-  "article": "Bulldozer",
-  "author": "Shaun Greiner",
-  "licence": "CC BY-SA 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ACatD9T.jpg"
- },
- "obj-vehicles-crane": {
-  "name": "Crane",
-  "article": "File:A Liebherr LTM 1500-8.1 crane truck lifting a Genie S-85 Lift Crane.jpg",
-  "author": "Tbatb",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AA%20Liebherr%20LTM%201500-8.1%20crane%20truck%20lifting%20a%20Genie%20S-85%20Lift%20Crane.jpg"
- },
  "obj-vehicles-submarine": {
   "name": "Submarine",
   "article": "Submarine",
   "author": "U.S. Navy photo by General Dynamics Electric Boat",
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3AUS_Navy_040730-N-1234E-002_PCU_Virginia_(SSN_774)_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg"
- },
- "obj-vehicles-hot-air-balloon": {
-  "name": "Hot Air Balloon",
-  "article": "Hot air balloon",
-  "author": "Kropsoq",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3A2006_Ojiya_balloon_festival_011.jpg"
- },
- "obj-vehicles-school-bus": {
-  "name": "School Bus",
-  "article": "School bus",
-  "author": "Atomic Taco",
-  "licence": "CC BY-SA 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AIC_CE_school_bus_(shortened_chassis).jpg"
  },
  "obj-vehicles-cycle-rickshaw": {
   "name": "Cycle Rickshaw",
@@ -460,13 +404,6 @@
   "author": "Abhijit Tembhekar from Mumbai, India",
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ARed%20Apple.jpg"
- },
- "obj-fruits-banana": {
-  "name": "Banana",
-  "article": "Banana",
-  "author": "TimothyPilgrim",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABananavarieties.jpg"
  },
  "obj-fruits-grapes": {
   "name": "Grapes",
@@ -510,13 +447,6 @@
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ACherry_season_(48216568227).jpg"
  },
- "obj-fruits-coconut": {
-  "name": "Coconut",
-  "article": "File:Coconuts - single and cracked open.jpg",
-  "author": "Ivar Leidus",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ACoconuts%20-%20single%20and%20cracked%20open.jpg"
- },
  "obj-fruits-lemon": {
   "name": "Lemon",
   "article": "File:Lemon Fruit.jpg",
@@ -537,13 +467,6 @@
   "author": "Luc Viatour",
   "licence": "CC BY-SA 2.5",
   "source": "https://commons.wikimedia.org/wiki/File%3AKiwi%20(Actinidia%20chinensis)%201%20Luc%20Viatour.jpg"
- },
- "obj-fruits-peach": {
-  "name": "Peach",
-  "article": "File:A Bowl Of Peaches (168126787).jpg",
-  "author": "Janos Virag",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AA%20Bowl%20Of%20Peaches%20(168126787).jpg"
  },
  "obj-fruits-plum": {
   "name": "Plum",
@@ -3562,13 +3485,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AFiat%20850%20Visitor-Bus%20by%20Bertone%20(1975)%20Classic-Gala%202022%201X7A0227.jpg"
  },
- "obj-vehicles-aeroplane": {
-  "name": "Aeroplane",
-  "article": "File:Sukhoi SuperJet 100 (5114478300).jpg",
-  "author": "SuperJet International",
-  "licence": "CC BY-SA 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ASukhoi%20SuperJet%20100%20(5114478300).jpg"
- },
  "obj-vehicles-tractor": {
   "name": "Tractor",
   "article": "File:T-40AM tractor 2013 G01.jpg",
@@ -3898,13 +3814,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ABicycles%20parked%20at%20bicycle%20rack%20in%20front%20of%20building%20and%20shops.jpg"
  },
- "obj-vehicles-fire-truck": {
-  "name": "Fire Truck",
-  "article": "File:KAMAZ fire truck - Moscow.jpg",
-  "author": "Юрий Д.К.",
-  "licence": "CC BY 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AKAMAZ%20fire%20truck%20-%20Moscow.jpg"
- },
  "obj-pets-guinea-pig": {
   "name": "Guinea Pig",
   "article": "File:Cochon d'Inde (Cavia porcellus) (1).jpg",
@@ -3967,5 +3876,96 @@
   "author": "ZooFari",
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3APink%20Pearl%20eraser.jpg"
+ },
+ "obj-vehicles-aeroplane": {
+  "name": "Aeroplane",
+  "article": "File:Air India Boeing 787-8 VT-ANB NRT (15922475860) - crop.jpg",
+  "author": "Masakatsu Ukon",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAir%20India%20Boeing%20787-8%20VT-ANB%20NRT%20(15922475860)%20-%20crop.jpg"
+ },
+ "obj-vehicles-boat": {
+  "name": "Boat",
+  "article": "File:Fishing boats in Kerala, India.jpg",
+  "author": "Josephgeorge23",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AFishing%20boats%20in%20Kerala%2C%20India.jpg"
+ },
+ "obj-vehicles-fire-truck": {
+  "name": "Fire Truck",
+  "article": "File:CISF Fire Engine.jpg",
+  "author": "Adbh266",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACISF%20Fire%20Engine.jpg"
+ },
+ "obj-vehicles-ambulance": {
+  "name": "Ambulance",
+  "article": "File:Ambulance in India.jpg",
+  "author": "Oleg Yunakov",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAmbulance%20in%20India.jpg"
+ },
+ "obj-vehicles-motorcycle": {
+  "name": "Motorcycle",
+  "article": "File:Royal Enfield Classic 350 (2017 Model Year).jpg",
+  "author": "Samihasib",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARoyal%20Enfield%20Classic%20350%20(2017%20Model%20Year).jpg"
+ },
+ "obj-vehicles-jeep": {
+  "name": "Jeep",
+  "article": "File:Mahindra Thar ROXX on dirt.jpg",
+  "author": "The Drivers Hub",
+  "licence": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMahindra%20Thar%20ROXX%20on%20dirt.jpg"
+ },
+ "obj-vehicles-bulldozer": {
+  "name": "Bulldozer",
+  "article": "File:Komatsu D85PX R04.jpg",
+  "author": "Marc Ryckaert",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AKomatsu%20D85PX%20R04.jpg"
+ },
+ "obj-vehicles-crane": {
+  "name": "Crane",
+  "article": "File:00 0061 Turmkräne mit Ausleger.jpg",
+  "author": "W. Bulach",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3A00%200061%20Turmkr%C3%A4ne%20mit%20Ausleger.jpg"
+ },
+ "obj-vehicles-hot-air-balloon": {
+  "name": "Hot Air Balloon",
+  "article": "File:Hot-air balloon in Tambov - 02.jpg",
+  "author": "Alexander Novikov",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AHot-air%20balloon%20in%20Tambov%20-%2002.jpg"
+ },
+ "obj-vehicles-school-bus": {
+  "name": "School Bus",
+  "article": "File:School bus, Indore.jpg",
+  "author": "Bernard Gagnon",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASchool%20bus%2C%20Indore.jpg"
+ },
+ "obj-fruits-banana": {
+  "name": "Banana",
+  "article": "File:Bananas white background.jpg",
+  "author": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Tamron 28-75mm f/2.8",
+  "licence": "GFDL 1.2",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABananas%20white%20background.jpg"
+ },
+ "obj-fruits-coconut": {
+  "name": "Coconut",
+  "article": "File:Coconut face (2201055109).jpg",
+  "author": "tree-species",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACoconut%20face%20(2201055109).jpg"
+ },
+ "obj-fruits-peach": {
+  "name": "Peach",
+  "article": "File:Ripe peach.jpg",
+  "author": "Prianxi",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARipe%20peach.jpg"
  }
 }
