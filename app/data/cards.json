@@ -2185,6 +2185,224 @@
       ]
     },
     {
+      "id": "festivals",
+      "name": "Festivals",
+      "color": "#E8A8D8",
+      "shadow": "#BB80AC",
+      "tile": "Rangoli",
+      "items": [
+        {
+          "name": "Diya",
+          "wiki": "Diya (lamp)"
+        },
+        {
+          "name": "Rangoli",
+          "wiki": "Rangoli"
+        },
+        {
+          "name": "Lantern",
+          "wiki": "Paper lantern"
+        },
+        {
+          "name": "Sparkler",
+          "wiki": "File:Fuljhadi.jpg"
+        },
+        {
+          "name": "Fireworks",
+          "wiki": "Fireworks"
+        },
+        {
+          "name": "Garland",
+          "wiki": "File:Marigold garlands.jpg"
+        },
+        {
+          "name": "Gift",
+          "wiki": "Gift"
+        },
+        {
+          "name": "Candle",
+          "wiki": "Candle"
+        },
+        {
+          "name": "Bell",
+          "wiki": "Ghanta"
+        },
+        {
+          "name": "Christmas Tree",
+          "wiki": "Christmas tree"
+        },
+        {
+          "name": "Santa Claus",
+          "wiki": "File:Santa Claus-SL.jpg"
+        },
+        {
+          "name": "Wreath",
+          "wiki": "Wreath"
+        },
+        {
+          "name": "Christmas Stocking",
+          "wiki": "Christmas stocking"
+        },
+        {
+          "name": "Fairy Lights",
+          "wiki": "File:Fairy lights Kingsford 001.jpg"
+        },
+        {
+          "name": "Pumpkin Lantern",
+          "wiki": "Jack-o'-lantern"
+        },
+        {
+          "name": "Easter Egg",
+          "wiki": "Easter egg"
+        },
+        {
+          "name": "Holi Colours",
+          "wiki": "Gulal"
+        },
+        {
+          "name": "Pichkari",
+          "wiki": "Water gun"
+        },
+        {
+          "name": "Rakhi",
+          "wiki": "Raksha Bandhan"
+        },
+        {
+          "name": "Ganesha",
+          "wiki": "Ganesh Chaturthi"
+        },
+        {
+          "name": "Dandiya",
+          "wiki": "File:A rasa garba dandiya dance, Navratri tradition.jpg"
+        },
+        {
+          "name": "Sweets",
+          "wiki": "File:Sweets Diwali Mithai India.jpg"
+        },
+        {
+          "name": "Bunting",
+          "wiki": "Bunting (textile)"
+        },
+        {
+          "name": "Firecracker",
+          "wiki": "Firecracker"
+        },
+        {
+          "name": "Pookalam",
+          "wiki": "Pookalam"
+        }
+      ]
+    },
+    {
+      "id": "plants",
+      "name": "Trees and Plants",
+      "color": "#8FCFA0",
+      "shadow": "#66A377",
+      "tile": "Tree",
+      "items": [
+        {
+          "name": "Tree",
+          "wiki": "Tree"
+        },
+        {
+          "name": "Leaf",
+          "wiki": "Leaf"
+        },
+        {
+          "name": "Root",
+          "wiki": "Root"
+        },
+        {
+          "name": "Seed",
+          "wiki": "Seed"
+        },
+        {
+          "name": "Bark",
+          "wiki": "Bark (botany)"
+        },
+        {
+          "name": "Branch",
+          "wiki": "File:Just a Branch of a Tree.jpg"
+        },
+        {
+          "name": "Bud",
+          "wiki": "File:Flower bud closeup.jpg"
+        },
+        {
+          "name": "Thorn",
+          "wiki": "Thorns, spines, and prickles"
+        },
+        {
+          "name": "Grass",
+          "wiki": "Grass"
+        },
+        {
+          "name": "Moss",
+          "wiki": "Moss"
+        },
+        {
+          "name": "Fern",
+          "wiki": "File:Lady fern at Myrstigen trail 1.jpg"
+        },
+        {
+          "name": "Cactus",
+          "wiki": "File:Cactus on the Pots by Sankar.jpg"
+        },
+        {
+          "name": "Bamboo",
+          "wiki": "Bamboo"
+        },
+        {
+          "name": "Money Plant",
+          "wiki": "Epipremnum aureum"
+        },
+        {
+          "name": "Bush",
+          "wiki": "Shrub"
+        },
+        {
+          "name": "Sapling",
+          "wiki": "Seedling"
+        },
+        {
+          "name": "Bonsai",
+          "wiki": "Bonsai"
+        },
+        {
+          "name": "Coconut Tree",
+          "wiki": "File:Coconut Tree.JPG"
+        },
+        {
+          "name": "Palm Tree",
+          "wiki": "Arecaceae"
+        },
+        {
+          "name": "Banyan Tree",
+          "wiki": "Banyan"
+        },
+        {
+          "name": "Mango Tree",
+          "wiki": "Mangifera indica"
+        },
+        {
+          "name": "Neem Tree",
+          "wiki": "Azadirachta indica"
+        },
+        {
+          "name": "Pine Tree",
+          "wiki": "Pine"
+        },
+        {
+          "name": "Aloe Vera",
+          "wiki": "File:A potted aloe vera plant.jpg"
+        },
+        {
+          "name": "Sugarcane",
+          "wiki": "File:Sugarcane Field Srirangapatna Karnataka Jul22 R16 06192.jpg"
+        }
+      ]
+    },
+    {
       "id": "shapes",
       "name": "Shapes",
       "color": "#E3D5FF",
@@ -2380,6 +2598,120 @@
         },
         {
           "name": "Indigo",
+          "wiki": "drawn"
+        }
+      ]
+    },
+    {
+      "id": "letters",
+      "name": "Letters",
+      "color": "#D9F2B4",
+      "shadow": "#A9C286",
+      "tile": "drawn",
+      "drawn": true,
+      "items": [
+        {
+          "name": "A",
+          "wiki": "drawn"
+        },
+        {
+          "name": "B",
+          "wiki": "drawn"
+        },
+        {
+          "name": "C",
+          "wiki": "drawn"
+        },
+        {
+          "name": "D",
+          "wiki": "drawn"
+        },
+        {
+          "name": "E",
+          "wiki": "drawn"
+        },
+        {
+          "name": "F",
+          "wiki": "drawn"
+        },
+        {
+          "name": "G",
+          "wiki": "drawn"
+        },
+        {
+          "name": "H",
+          "wiki": "drawn"
+        },
+        {
+          "name": "I",
+          "wiki": "drawn"
+        },
+        {
+          "name": "J",
+          "wiki": "drawn"
+        },
+        {
+          "name": "K",
+          "wiki": "drawn"
+        },
+        {
+          "name": "L",
+          "wiki": "drawn"
+        },
+        {
+          "name": "M",
+          "wiki": "drawn"
+        },
+        {
+          "name": "N",
+          "wiki": "drawn"
+        },
+        {
+          "name": "O",
+          "wiki": "drawn"
+        },
+        {
+          "name": "P",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Q",
+          "wiki": "drawn"
+        },
+        {
+          "name": "R",
+          "wiki": "drawn"
+        },
+        {
+          "name": "S",
+          "wiki": "drawn"
+        },
+        {
+          "name": "T",
+          "wiki": "drawn"
+        },
+        {
+          "name": "U",
+          "wiki": "drawn"
+        },
+        {
+          "name": "V",
+          "wiki": "drawn"
+        },
+        {
+          "name": "W",
+          "wiki": "drawn"
+        },
+        {
+          "name": "X",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Y",
+          "wiki": "drawn"
+        },
+        {
+          "name": "Z",
           "wiki": "drawn"
         }
       ]

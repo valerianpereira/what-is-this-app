@@ -68,7 +68,7 @@ async function download({ file, wiki }, dest) {
 const { categories } = JSON.parse(await readFile(APP + 'data/cards.json', 'utf8'));
 const targets = [];
 for (const c of categories) {
-  // Shapes and colours have no photograph to fetch — tools/draw-cards.py renders them.
+  // Shapes, colours and letters have no photograph to fetch — tools/draw-cards.py renders them.
   if (c.drawn) continue;
   targets.push({ slot: `cat-${c.id}`, title: c.tile, label: `${c.name} (group tile)` });
   for (const it of c.items) targets.push({ slot: `obj-${c.id}-${slug(it.name)}`, title: it.wiki, label: it.name });

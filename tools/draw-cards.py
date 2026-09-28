@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Draws the cards that have no photograph: shapes and colours.
+"""Draws the cards that have no photograph: shapes, colours and letters.
 
 Wikipedia's shape articles lead with annotated geometry diagrams and its colour
 articles lead with an object of that colour (Red -> strawberries), which would
 teach a two-year-old the wrong word. So these two categories are rendered here
-instead of downloaded, and marked "drawn": true in cards.json so
+instead of downloaded (letters too: a photo cannot show a letter), and marked
+"drawn": true in cards.json so
 tools/fetch-images.mjs leaves them alone. Output matches the fetcher's: one
 720px .webp per slot in photos/, plus a credit in app/data/credits.json.
 """
 import json, math, os, subprocess, tempfile
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, 'photos')
@@ -160,6 +161,23 @@ def draw_shape(d, name, px):
     else:
         raise SystemExit('no recipe for shape ' + name)
 
+def fredoka(size):
+    """The app's own font, for the letter cards. Pillow cannot open woff2, so
+    fontTools unpacks it to a ttf once, in the temp dir."""
+    src = os.path.join(ROOT, 'app', 'fonts', 'fredoka-latin.woff2')
+    ttf = os.path.join(tempfile.gettempdir(), 'wit-fredoka.ttf')
+    if not os.path.exists(ttf) or os.path.getmtime(ttf) < os.path.getmtime(src):
+        from fontTools.ttLib import TTFont
+        f = TTFont(src)
+        f.flavor = None
+        f.save(ttf)
+    font = ImageFont.truetype(ttf, size)
+    font.set_variation_by_axes([600])          # Fredoka is a variable font, wght 300-700
+    return font
+
+def draw_letter(d, name, px, font):
+    d.text((px(.5), px(.5)), name, font=font, fill=INK, anchor='mm')
+
 def canvas(bg):
     img = Image.new('RGB', (SIZE * SS, SIZE * SS), bg)
     return img, ImageDraw.Draw(img), (lambda v: int(round(v * SIZE * SS)))
@@ -175,7 +193,7 @@ def save(img, slot):
 def main():
     cards = json.load(open(os.path.join(ROOT, 'app', 'data', 'cards.json')))
     drawn = {c['id']: c for c in cards['categories'] if c.get('drawn')}
-    for want in ('shapes', 'colors'):
+    for want in ('shapes', 'colors', 'letters'):
         if want not in drawn:
             raise SystemExit('cards.json has no drawn category "%s"' % want)
     os.makedirs(OUT, exist_ok=True)
@@ -202,6 +220,12 @@ def main():
         d.ellipse([px(.06), px(.06), px(.94), px(.94)], fill=hexv)
         emit('obj-colors-' + it['name'].lower(), it['name'], img)
 
+    font = fredoka(int(SIZE * SS * 0.72))
+    for it in drawn['letters']['items']:
+        img, d, px = canvas(PAPER)
+        draw_letter(d, it['name'], px, font)
+        emit('obj-letters-' + it['name'].lower(), it['name'], img)
+
     # group tiles. The home grid frame is wide and object-fit:cover crops these
     # to a middle band, so both tiles stay in a horizontal strip.
     img, d, px = canvas(PAPER)
@@ -216,6 +240,12 @@ def main():
         cx, r = .09 + .82 * i / (len(row) - 1), 0.068
         d.ellipse([px(cx - r), px(.5 - r), px(cx + r), px(.5 + r)], fill=hexv)
     emit('cat-colors', 'Colours (group tile)', img)
+
+    img, d, px = canvas(PAPER)
+    small = fredoka(int(SIZE * SS * 0.30))
+    for i, ch in enumerate('ABC'):
+        d.text((px(.2 + .3 * i), px(.5)), ch, font=small, fill=INK, anchor='mm')
+    emit('cat-letters', 'Letters (group tile)', img)
 
     json.dump(credits, open(CREDITS, 'w'), ensure_ascii=False, indent=1)
     print('drew %d cards' % len(made))
