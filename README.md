@@ -103,10 +103,17 @@ To replace one bad photo:
 
 `repin.mjs` rewrites the item's `wiki` and forgets the old credit, so the
 fetcher downloads the replacement frame; `npm run square` then cuts the card.
-Then bump
-`imageVersion` in `cards.json` — the photo URLs carry it as `?v=`, which is what
-makes a replaced photo actually reach a device (or a CDN) holding the old one
-under the same name.
+Then publish
+the new set under its own URL — jsDelivr ignores `?v=` and caches `@main` for
+days, so photos are served from an immutable tag:
+
+    # bump imageVersion in cards.json to N, commit photos/, then
+    git tag photos-vN && git push origin photos-vN
+    # point imageBase at …/what-is-this-app@photos-vN/photos and commit
+
+`npm run check` fails if `imageBase` is not on the tag `photos-v<imageVersion>`.
+The app also carries `imageVersion` as `?v=`, which is what makes a device that
+cached the old photo fetch the new one.
 
 ### Why the photos are square
 

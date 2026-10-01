@@ -15,8 +15,17 @@ self.addEventListener('fetch', (e) => {
     if (hit) return hit;
     // Not downloaded yet: fetch it and keep it, so a photo the first run
     // missed still lands in the cache the first time it is shown.
-    const res = await fetch(e.request);
-    if (res.ok || res.type === 'opaque') await cache.put(e.request, res.clone());
-    return res;
+    try {
+      const res = await fetch(e.request);
+      if (res.ok || res.type === 'opaque') await cache.put(e.request, res.clone());
+      return res;
+    } catch (err) {
+      // Offline right after a photo update: the new URL was never fetched, but
+      // the previous copy of the same card is still here — show that instead.
+      const file = '/' + new URL(e.request.url).pathname.split('/').pop();
+      const old = (await cache.keys()).find((k) => new URL(k.url).pathname.endsWith(file));
+      if (old) return cache.match(old);
+      throw err;
+    }
   })());
 });

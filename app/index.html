@@ -653,6 +653,20 @@ async function prefetch(slots) {
   }));
 }
 
+// A new imageVersion or imageBase gives every photo a new URL, leaving the old
+// set behind in the cache. Drop an old copy once its replacement is in (or its
+// card is gone), so a phone that is offline after an update still has pictures.
+async function pruneOld() {
+  const cache = await caches.open(IMG_CACHE);
+  const want = new Map(allSlots().map((s) => [s, photo(s)]));
+  const current = new Set(want.values());
+  for (const req of await cache.keys()) {
+    if (current.has(req.url)) continue;
+    const slot = new URL(req.url).pathname.split('/').pop().replace(/\.webp$/, '');
+    if (!want.has(slot) || await cache.match(want.get(slot))) await cache.delete(req);
+  }
+}
+
 function prefetchAhead() {
   prefetch(S.queue.slice(S.idx + 1, S.idx + 4).map((q) => slotId(q.c, q.n)));
 }
@@ -689,6 +703,7 @@ async function downloadEverything() {
   }));
   btn.textContent = failed ? `${failed} could not be downloaded — tap to retry` : 'All pictures downloaded';
   getAllRunning = false;
+  pruneOld().catch(() => {});
 }
 
 // Android's hardware/gesture back button. MainActivity.java calls this via
@@ -725,7 +740,7 @@ async function boot() {
     } catch (e) {}
   }
   // The group tiles are what the child sees first; keep them for next launch.
-  prefetch(allSlots().filter((s) => s.startsWith('cat-')));
+  prefetch(allSlots().filter((s) => s.startsWith('cat-'))).then(pruneOld).catch(() => {});
 }
 
 boot();

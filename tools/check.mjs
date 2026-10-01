@@ -60,6 +60,12 @@ const dupes = [...seenNames].filter(([, n]) => n > 1).map(([n]) => n);
 assert.deepEqual(dupes, [], 'the same word appears in more than one group');
 
 assert.ok(/^https:\/\/\S+[^/]$/.test(imageBase || ''), 'cards.json needs an https imageBase with no trailing slash');
+// jsDelivr ignores ?v= and caches a branch for days, so a photo replaced on
+// main keeps serving the old bytes. A tag is immutable: new photos, new URL.
+const { imageVersion } = JSON.parse(await readFile(root + 'data/cards.json', 'utf8'));
+if (imageBase.includes('cdn.jsdelivr.net/gh/')) {
+  assert.ok(imageBase.includes(`@photos-v${imageVersion}/`), `imageBase must point at the tag photos-v${imageVersion}, not a branch`);
+}
 
 console.log(`ok — ${categories.length} groups, ${slots.length} cards, all photos and credits present`);
 console.log(`   images served from ${imageBase}`);
