@@ -909,13 +909,6 @@
   "licence": "GFDL 1.2",
   "source": "https://commons.wikimedia.org/wiki/File%3ACuculus_canorus_vogelartinfo.jpg"
  },
- "cat-insects": {
-  "name": "Insects (group tile)",
-  "article": "Insect",
-  "author": "Chiswick Chap",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AInsects_-_Neoptera_-_Paleoptera_-_Apterygota.jpg"
- },
  "obj-insects-butterfly": {
   "name": "Butterfly",
   "article": "Butterfly",
@@ -1405,13 +1398,6 @@
   "author": "Petty Officer 3rd Class Paul J. Perkins, U.S. Navy",
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3AUSS_John_C._Stennis_baker.jpg"
- },
- "obj-helpers-painter": {
-  "name": "Painter",
-  "article": "File:Modern-Trade-Painter.jpg",
-  "author": "Lukeroberts",
-  "licence": "CC BY-SA 2.5",
-  "source": "https://commons.wikimedia.org/wiki/File%3AModern-Trade-Painter.jpg"
  },
  "cat-countries": {
   "name": "Countries (group tile)",
@@ -2218,20 +2204,6 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ASnowman_in_Indiana_2014.jpg"
  },
- "cat-clothes": {
-  "name": "Clothes (group tile)",
-  "article": "Clothing",
-  "author": "Unknown authorUnknown author",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3AClothes.jpg"
- },
- "obj-clothes-shirt": {
-  "name": "Shirt",
-  "article": "Shirt",
-  "author": "Author of the photograph unknown.",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ACharvet_shirt.jpg"
- },
  "obj-clothes-trousers": {
   "name": "Trousers",
   "article": "File:HK TKO 將軍澳 Tseung Kwan O PopCorn mall shop Uniqlo Clothing Store May 2022 Px3 33.jpg",
@@ -2252,13 +2224,6 @@
   "author": "mycurrency.com",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ASun%20Hat%20hanged%20on%20a%20wall.jpg"
- },
- "obj-clothes-shoes": {
-  "name": "Shoes",
-  "article": "File:Pair of Pink Leather Baby Shoes And Original Box.jpg",
-  "author": "Unknown authorUnknown author",
-  "licence": "Attribution",
-  "source": "https://commons.wikimedia.org/wiki/File%3APair%20of%20Pink%20Leather%20Baby%20Shoes%20And%20Original%20Box.jpg"
  },
  "obj-clothes-socks": {
   "name": "Socks",
@@ -2365,13 +2330,6 @@
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AChloe%20Sutton%20-%20USA%20Swimsuit%20(4661622460)%20(alternate%20version).jpg"
  },
- "cat-music": {
-  "name": "Music (group tile)",
-  "article": "Musical instrument",
-  "author": "A.E.Booth95",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AHistorical_instruments.jpg"
- },
  "obj-music-guitar": {
   "name": "Guitar",
   "article": "Guitar",
@@ -2420,13 +2378,6 @@
   "author": "TR001",
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AYamaha%20YAS-25%20Alto%20Saxophone%2020080502.jpg"
- },
- "obj-music-xylophone": {
-  "name": "Xylophone",
-  "article": "File:Xylophone rn.jpg",
-  "author": "Rruunnaa",
-  "licence": "CC BY 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AXylophone%20rn.jpg"
  },
  "obj-music-accordion": {
   "name": "Accordion",
@@ -3107,13 +3058,6 @@
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3AFrisbee_090719.jpg"
  },
- "obj-toys-swing": {
-  "name": "Swing",
-  "article": "File:Girl On A Swing (114071963).jpeg",
-  "author": "Patrick Gätje",
-  "licence": "CC BY 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AGirl%20On%20A%20Swing%20(114071963).jpeg"
- },
  "obj-toys-slide": {
   "name": "Slide",
   "article": "File:Playground Slide Metal.jpg",
@@ -3121,26 +3065,12 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3APlayground%20Slide%20Metal.jpg"
  },
- "obj-toys-seesaw": {
-  "name": "Seesaw",
-  "article": "File:Playground seesaw.jpg",
-  "author": "Killarnee",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3APlayground%20seesaw.jpg"
- },
  "obj-toys-sandcastle": {
   "name": "Sandcastle",
   "article": "File:Sandcastle on Alnmouth beach after the Whit Weekend - geograph.org.uk - 1323111.jpg",
   "author": "Ann Clare",
   "licence": "CC BY-SA 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ASandcastle%20on%20Alnmouth%20beach%20after%20the%20Whit%20Weekend%20-%20geograph.org.uk%20-%201323111.jpg"
- },
- "obj-toys-hula-hoop": {
-  "name": "Hula Hoop",
-  "article": "File:Hula Hoop 7.jpg",
-  "author": "Joseph Githithu",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AHula%20Hoop%207.jpg"
  },
  "obj-toys-dollhouse": {
   "name": "Dollhouse",
@@ -3443,13 +3373,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AGabriel%20wearing%20a%20University%20of%20Chicago%20disposable%20raincoat%2C%20Hyde%20Park%2C%20Illinois%2C%20US%20(PPL1-Corrected)%20julesvernex2.jpg"
  },
- "obj-clothes-kurta": {
-  "name": "Kurta",
-  "article": "File:Boy's Kurta and Pyjama from India - DPLA - e4437f8bceae01441aeb02c82f322da2 (page 5).jpg",
-  "author": "Chirayu",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABoy's%20Kurta%20and%20Pyjama%20from%20India%20-%20DPLA%20-%20e4437f8bceae01441aeb02c82f322da2%20(page%205).jpg"
- },
  "obj-clothes-pyjamas": {
   "name": "Pyjamas",
   "article": "File:A boy in pajamas outdoors in Northern Maracay, Venezuela.jpg",
@@ -3477,13 +3400,6 @@
   "author": "Ezarate This is a retouched picture, which means that it has been digitally altered from its original version. Modifications: rebuild from raw fixing light compensation in shadows and lights, White balance, tonemaping balance, fix lens distortion, fix vertical distortions, remove dust spots, noise reduction and chromatic aberration fix, cut element distracting and remove oil spot and finally export in full jpeg quality by The Photographer 13:39, 12 February 2017 (UTC).",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AAvMalecon-LaHabanaCuba-04735.jpg"
- },
- "obj-vehicles-bus": {
-  "name": "Bus",
-  "article": "File:Fiat 850 Visitor-Bus by Bertone (1975) Classic-Gala 2022 1X7A0227.jpg",
-  "author": "Alexander Migl",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AFiat%20850%20Visitor-Bus%20by%20Bertone%20(1975)%20Classic-Gala%202022%201X7A0227.jpg"
  },
  "obj-vehicles-tractor": {
   "name": "Tractor",
@@ -3709,13 +3625,6 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AMouse-eating.jpg"
  },
- "obj-weather-ice": {
-  "name": "Ice",
-  "article": "File:Iceberg in North Star Bay, Greenland.jpg",
-  "author": "Jeremy Harbeck",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3AIceberg%20in%20North%20Star%20Bay%2C%20Greenland.jpg"
- },
  "obj-weather-sky": {
   "name": "Sky",
   "article": "File:Sky over Munich 02.jpg",
@@ -3827,13 +3736,6 @@
   "author": "Bluerasberry",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ANapoleon%20chinchilla%20in%20box.jpg"
- },
- "obj-music-flute": {
-  "name": "Flute",
-  "article": "File:Transverse Flute MET midp1998.358.jpg",
-  "author": "Creator:Boehm &amp; Mendler, German",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ATransverse%20Flute%20MET%20midp1998.358.jpg"
  },
  "obj-home-fridge": {
   "name": "Fridge",
@@ -4164,13 +4066,6 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ACytisus_scoparius2.jpg"
  },
- "obj-plants-sapling": {
-  "name": "Sapling",
-  "article": "Seedling",
-  "author": "w:User:Pengo",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AMonocot_vs_dicot_crop_Pengo.jpg"
- },
  "obj-plants-bonsai": {
   "name": "Bonsai",
   "article": "Bonsai",
@@ -4430,13 +4325,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AFairy%20lights%20Kingsford%20001.jpg"
  },
- "obj-festivals-sweets": {
-  "name": "Sweets",
-  "article": "File:Sweets Diwali Mithai India.jpg",
-  "author": "Krista",
-  "licence": "CC BY 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ASweets%20Diwali%20Mithai%20India.jpg"
- },
  "obj-plants-branch": {
   "name": "Branch",
   "article": "File:Just a Branch of a Tree.jpg",
@@ -4520,5 +4408,117 @@
   "author": "Pyrogrimace",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AFirecrackers.png"
+ },
+ "obj-vehicles-bus": {
+  "name": "Bus",
+  "article": "File:Mumbai 03-2016 48 bus in Mahim.jpg",
+  "author": "A.Savin",
+  "licence": "FAL",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMumbai%2003-2016%2048%20bus%20in%20Mahim.jpg"
+ },
+ "cat-insects": {
+  "name": "Insects (group tile)",
+  "article": "File:Reddish shell of Ladybird on the leaf - 1.jpg",
+  "author": "Kyu3a",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AReddish%20shell%20of%20Ladybird%20on%20the%20leaf%20-%201.jpg"
+ },
+ "obj-helpers-painter": {
+  "name": "Painter",
+  "article": "File:0086 wall painting.jpg",
+  "author": "Virtual-Pano",
+  "licence": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3A0086%20wall%20painting.jpg"
+ },
+ "obj-weather-ice": {
+  "name": "Ice",
+  "article": "File:Ice-Cubes.jpg",
+  "author": "בר",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AIce-Cubes.jpg"
+ },
+ "cat-clothes": {
+  "name": "Clothes (group tile)",
+  "article": "File:Wardrobe 2945.jpg",
+  "author": "Nevit Dilmen",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AWardrobe%202945.jpg"
+ },
+ "obj-clothes-shirt": {
+  "name": "Shirt",
+  "article": "File:Banana Republic Button-Down Shirt 1 2019-03-21.jpg",
+  "author": "FASTILY",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABanana%20Republic%20Button-Down%20Shirt%201%202019-03-21.jpg"
+ },
+ "obj-clothes-shoes": {
+  "name": "Shoes",
+  "article": "File:A pair of kids sneakers.jpg",
+  "author": "Xzpq",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AA%20pair%20of%20kids%20sneakers.jpg"
+ },
+ "obj-clothes-kurta": {
+  "name": "Kurta",
+  "article": "File:Boy's Kurta and Pyjama from India - DPLA - e4437f8bceae01441aeb02c82f322da2 (page 1).jpg",
+  "author": "Chirayu",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABoy's%20Kurta%20and%20Pyjama%20from%20India%20-%20DPLA%20-%20e4437f8bceae01441aeb02c82f322da2%20(page%201).jpg"
+ },
+ "cat-music": {
+  "name": "Music (group tile)",
+  "article": "File:Little girl playing a toy xylophone closeup.jpg",
+  "author": "Shixart1985",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALittle%20girl%20playing%20a%20toy%20xylophone%20closeup.jpg"
+ },
+ "obj-music-flute": {
+  "name": "Flute",
+  "article": "File:Western concert flute (Yamaha).jpg",
+  "author": "Petar Milošević",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AWestern%20concert%20flute%20(Yamaha).jpg"
+ },
+ "obj-music-xylophone": {
+  "name": "Xylophone",
+  "article": "File:Toy xylophone.jpg",
+  "author": "Frédérique Voisin-Demery from Grenoble, France",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AToy%20xylophone.jpg"
+ },
+ "obj-toys-swing": {
+  "name": "Swing",
+  "article": "File:Swing seat.jpg",
+  "author": "Mschel",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASwing%20seat.jpg"
+ },
+ "obj-toys-seesaw": {
+  "name": "Seesaw",
+  "article": "File:A young child sits joyfully on a colorful seesaw in a garden.jpg",
+  "author": "Shixart1985",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AA%20young%20child%20sits%20joyfully%20on%20a%20colorful%20seesaw%20in%20a%20garden.jpg"
+ },
+ "obj-toys-hula-hoop": {
+  "name": "Hula Hoop",
+  "article": "File:Hula hula.jpg",
+  "author": "Funk Dooby",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AHula%20hula.jpg"
+ },
+ "obj-festivals-sweets": {
+  "name": "Sweets",
+  "article": "File:A tray full of Indian sweets mithai desserts c.jpg",
+  "author": "DDohler",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AA%20tray%20full%20of%20Indian%20sweets%20mithai%20desserts%20c.jpg"
+ },
+ "obj-plants-sapling": {
+  "name": "Sapling",
+  "article": "File:Young maple tree (14142351780).jpg",
+  "author": "U.S. Fish and Wildlife Service Southeast Region",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AYoung%20maple%20tree%20(14142351780).jpg"
  }
 }

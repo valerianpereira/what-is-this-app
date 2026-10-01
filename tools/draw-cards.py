@@ -217,7 +217,10 @@ def main():
         if not hexv:
             raise SystemExit('no hex for colour ' + it['name'])
         img, d, px = canvas(FIELD)
-        d.ellipse([px(.06), px(.06), px(.94), px(.94)], fill=hexv)
+        # White and Cream all but vanish into FIELD, so pale discs get a rim
+        r, g, b = (int(hexv[i:i + 2], 16) for i in (1, 3, 5))
+        rim = {'outline': '#D9CBB4', 'width': px(.012)} if .299 * r + .587 * g + .114 * b > 215 else {}
+        d.ellipse([px(.06), px(.06), px(.94), px(.94)], fill=hexv, **rim)
         emit('obj-colors-' + it['name'].lower(), it['name'], img)
 
     font = fredoka(int(SIZE * SS * 0.72))

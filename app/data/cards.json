@@ -1,7 +1,7 @@
 {
   "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram. A category marked \"drawn\": true has no photos to fetch — tools/draw-cards.py renders its cards locally. imageBase is where the app fetches photos from on first run; tools/upload-cloudinary.mjs prints the value to put here.",
   "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@main/photos",
-  "imageVersion": 4,
+  "imageVersion": 5,
   "categories": [
     {
       "id": "vehicles",
@@ -16,7 +16,7 @@
         },
         {
           "name": "Bus",
-          "wiki": "File:Fiat 850 Visitor-Bus by Bertone (1975) Classic-Gala 2022 1X7A0227.jpg"
+          "wiki": "File:Mumbai 03-2016 48 bus in Mahim.jpg"
         },
         {
           "name": "Bicycle",
@@ -553,7 +553,7 @@
       "name": "Insects",
       "color": "#C7B9F0",
       "shadow": "#9C8CC7",
-      "tile": "Insect",
+      "tile": "File:Reddish shell of Ladybird on the leaf - 1.jpg",
       "items": [
         {
           "name": "Butterfly",
@@ -871,7 +871,7 @@
         },
         {
           "name": "Painter",
-          "wiki": "File:Modern-Trade-Painter.jpg"
+          "wiki": "File:0086 wall painting.jpg"
         }
       ]
     },
@@ -1373,7 +1373,7 @@
         },
         {
           "name": "Ice",
-          "wiki": "File:Iceberg in North Star Bay, Greenland.jpg"
+          "wiki": "File:Ice-Cubes.jpg"
         },
         {
           "name": "Sky",
@@ -1426,11 +1426,11 @@
       "name": "Clothes",
       "color": "#F3A2A2",
       "shadow": "#C87B7B",
-      "tile": "Clothing",
+      "tile": "File:Wardrobe 2945.jpg",
       "items": [
         {
           "name": "Shirt",
-          "wiki": "Shirt"
+          "wiki": "File:Banana Republic Button-Down Shirt 1 2019-03-21.jpg"
         },
         {
           "name": "T-shirt",
@@ -1450,7 +1450,7 @@
         },
         {
           "name": "Shoes",
-          "wiki": "File:Pair of Pink Leather Baby Shoes And Original Box.jpg"
+          "wiki": "File:A pair of kids sneakers.jpg"
         },
         {
           "name": "Socks",
@@ -1494,7 +1494,7 @@
         },
         {
           "name": "Kurta",
-          "wiki": "File:Boy's Kurta and Pyjama from India - DPLA - e4437f8bceae01441aeb02c82f322da2 (page 5).jpg"
+          "wiki": "File:Boy's Kurta and Pyjama from India - DPLA - e4437f8bceae01441aeb02c82f322da2 (page 1).jpg"
         },
         {
           "name": "Belt",
@@ -1535,7 +1535,7 @@
       "name": "Music",
       "color": "#D7A8F0",
       "shadow": "#A97CC2",
-      "tile": "Musical instrument",
+      "tile": "File:Little girl playing a toy xylophone closeup.jpg",
       "items": [
         {
           "name": "Guitar",
@@ -1555,7 +1555,7 @@
         },
         {
           "name": "Flute",
-          "wiki": "File:Transverse Flute MET midp1998.358.jpg"
+          "wiki": "File:Western concert flute (Yamaha).jpg"
         },
         {
           "name": "Trumpet",
@@ -1579,7 +1579,7 @@
         },
         {
           "name": "Xylophone",
-          "wiki": "File:Xylophone rn.jpg"
+          "wiki": "File:Toy xylophone.jpg"
         },
         {
           "name": "Accordion",
@@ -2047,7 +2047,7 @@
         },
         {
           "name": "Swing",
-          "wiki": "File:Girl On A Swing (114071963).jpeg"
+          "wiki": "File:Swing seat.jpg"
         },
         {
           "name": "Slide",
@@ -2055,7 +2055,7 @@
         },
         {
           "name": "Seesaw",
-          "wiki": "File:Playground seesaw.jpg"
+          "wiki": "File:A young child sits joyfully on a colorful seesaw in a garden.jpg"
         },
         {
           "name": "Sandcastle",
@@ -2067,7 +2067,7 @@
         },
         {
           "name": "Hula Hoop",
-          "wiki": "File:Hula Hoop 7.jpg"
+          "wiki": "File:Hula hula.jpg"
         },
         {
           "name": "Dollhouse",
@@ -2277,7 +2277,7 @@
         },
         {
           "name": "Sweets",
-          "wiki": "File:Sweets Diwali Mithai India.jpg"
+          "wiki": "File:A tray full of Indian sweets mithai desserts c.jpg"
         },
         {
           "name": "Bunting",
@@ -2362,7 +2362,7 @@
         },
         {
           "name": "Sapling",
-          "wiki": "Seedling"
+          "wiki": "File:Young maple tree (14142351780).jpg"
         },
         {
           "name": "Bonsai",
