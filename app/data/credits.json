@@ -993,13 +993,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AMantis_(European).jpg"
  },
- "obj-insects-cricket": {
-  "name": "Cricket",
-  "article": "Cricket (insect)",
-  "author": "Didier Descouens",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AGryllus_campestris_MHNT.jpg"
- },
  "obj-insects-cockroach": {
   "name": "Cockroach",
   "article": "File:Asian Cockroach,Nativeplants Botanical Garden.jpg",
@@ -4520,5 +4513,348 @@
   "author": "U.S. Fish and Wildlife Service Southeast Region",
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3AYoung%20maple%20tree%20(14142351780).jpg"
+ },
+ "obj-numbers-0": {
+  "name": "0",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-1": {
+  "name": "1",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-2": {
+  "name": "2",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-3": {
+  "name": "3",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-4": {
+  "name": "4",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-5": {
+  "name": "5",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-6": {
+  "name": "6",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-7": {
+  "name": "7",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-8": {
+  "name": "8",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-9": {
+  "name": "9",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-10": {
+  "name": "10",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-11": {
+  "name": "11",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-12": {
+  "name": "12",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-13": {
+  "name": "13",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-14": {
+  "name": "14",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-15": {
+  "name": "15",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-16": {
+  "name": "16",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-17": {
+  "name": "17",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-18": {
+  "name": "18",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-19": {
+  "name": "19",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "obj-numbers-20": {
+  "name": "20",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "cat-numbers": {
+  "name": "Numbers (group tile)",
+  "article": "drawn for this app",
+  "author": "What is this?",
+  "licence": "CC0",
+  "source": "https://github.com/valerianpereira/what-is-this-app"
+ },
+ "cat-sports": {
+  "name": "Sports (group tile)",
+  "article": "Cricket",
+  "author": "Prescott Pym on Flickr",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APollock_to_Hussey.jpg"
+ },
+ "obj-sports-cricket": {
+  "name": "Cricket",
+  "article": "Cricket",
+  "author": "Prescott Pym on Flickr",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APollock_to_Hussey.jpg"
+ },
+ "obj-sports-football": {
+  "name": "Football",
+  "article": "Association football",
+  "author": "Rick Dikeman",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AFootball_in_Bloomington%2C_Indiana%2C_1995.jpg"
+ },
+ "obj-sports-tennis": {
+  "name": "Tennis",
+  "article": "Tennis",
+  "author": "Brendan Dennis",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3A2013_Australian_Open_-_Guillaume_Rufin.jpg"
+ },
+ "obj-sports-basketball": {
+  "name": "Basketball",
+  "article": "Basketball",
+  "author": "kris krüg from Vancouver, Canada",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AUSA_vs._China_Mens_Basketball_-_Beijing_2008_Olympic_Games_(2751923597).jpg"
+ },
+ "obj-sports-swimming": {
+  "name": "Swimming",
+  "article": "Swimming",
+  "author": "Isiwal",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3A40._Schwimmzonen-_und_Mastersmeeting_Enns_2017_100m_Brust_Herren_USC_Traun-9897.jpg"
+ },
+ "obj-sports-kabaddi": {
+  "name": "Kabaddi",
+  "article": "Kabaddi",
+  "author": "Amir Hosseini",
+  "licence": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AIran_men's_national_kabaddi_team_13970602000432636707284535394012_98208.jpg"
+ },
+ "obj-sports-chess": {
+  "name": "Chess",
+  "article": "Chess",
+  "author": "Alan Light",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AChessSet.jpg"
+ },
+ "obj-sports-running": {
+  "name": "Running",
+  "article": "Running",
+  "author": "Chris Hunkeler",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASpeedsuit.jpg"
+ },
+ "obj-sports-cycling": {
+  "name": "Cycling",
+  "article": "Cycling",
+  "author": "This photo was taken by Roman Bonnefoy ( Romanceor [parlons-en]). Feel free to use my pictures, but please credit me as the author (as required by the license). An email or a message would be welcome. More free-licensed pictures on my french Wikipedia account. My website : www.romanceor.net. ; cropped by Beyond My Ken (talk) 01:26, 8 January 2016 (UTC)",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACycliste_%C3%A0_place_d'Italie-Paris_crop.jpg"
+ },
+ "obj-sports-wrestling": {
+  "name": "Wrestling",
+  "article": "Wrestling",
+  "author": "Ilgar Jafarov",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AWrestling_at_the_2016_Summer_Olympics%2C_Gazyumov_vs_Andriitsev_6.jpg"
+ },
+ "obj-sports-golf": {
+  "name": "Golf",
+  "article": "Golf",
+  "author": "Lilrizz",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGolfer_swing.jpg"
+ },
+ "obj-sports-skating": {
+  "name": "Skating",
+  "article": "Roller skating",
+  "author": "Photokadaffi",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APatineur_%C3%A0_Douala_17.jpg"
+ },
+ "obj-sports-surfing": {
+  "name": "Surfing",
+  "article": "Surfing",
+  "author": "Shalom Jacobovitz",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMavericks_Surf_Contest_2010b.jpg"
+ },
+ "obj-sports-archery": {
+  "name": "Archery",
+  "article": "Archery",
+  "author": "derivative work: Saibo (Δ) Image-ArcheryGermanyEarly1980s-OriginalScan.jpg: RX-Guru",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AArcheryGermanyEarly1980s-2.jpg"
+ },
+ "obj-sports-gymnastics": {
+  "name": "Gymnastics",
+  "article": "Gymnastics",
+  "author": "Fernando Frazão/Agência Brasil",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AESTADOS_UNIDOS_LEVAM_OURO_NA_GIN%C3%81STICA_FEMININA_POR_EQUIPES_DOS_JOGOS_OL%C3%8DMPICOS_RIO_2016_(28849586476).jpg"
+ },
+ "obj-sports-carrom": {
+  "name": "Carrom",
+  "article": "Carrom",
+  "author": "Unknown",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACarrom.jpg"
+ },
+ "obj-sports-badminton": {
+  "name": "Badminton",
+  "article": "File:Yonex IFB 2013 - Eightfinal - Kim Ki-jung-Kim Sa-rang — Chris Adcock-Andrew Ellis 03.jpg",
+  "author": "Pierre-Yves Beaudouin",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AYonex%20IFB%202013%20-%20Eightfinal%20-%20Kim%20Ki-jung-Kim%20Sa-rang%20%E2%80%94%20Chris%20Adcock-Andrew%20Ellis%2003.jpg"
+ },
+ "obj-sports-hockey": {
+  "name": "Hockey",
+  "article": "File:SK at the Rio Olympic 2016 Hockey arena.jpg",
+  "author": "Hockey India",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASK%20at%20the%20Rio%20Olympic%202016%20Hockey%20arena.jpg"
+ },
+ "obj-sports-volleyball": {
+  "name": "Volleyball",
+  "article": "File:U.S. Womens Volleyball team CISM 2007 spike.jpg",
+  "author": "soldiersmediacenter",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AU.S.%20Womens%20Volleyball%20team%20CISM%202007%20spike.jpg"
+ },
+ "obj-sports-table-tennis": {
+  "name": "Table Tennis",
+  "article": "File:Table Tennis 09.jpg",
+  "author": "INUSAH GANIYU",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ATable%20Tennis%2009.jpg"
+ },
+ "obj-sports-boxing": {
+  "name": "Boxing",
+  "article": "File:AUS vs ARG Girls' lightweight Bronze Medal Bout 2018 YOG (338).JPG",
+  "author": "BugWarp",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAUS%20vs%20ARG%20Girls'%20lightweight%20Bronze%20Medal%20Bout%202018%20YOG%20(338).JPG"
+ },
+ "obj-sports-skiing": {
+  "name": "Skiing",
+  "article": "File:Petra Vlhova in action.jpg",
+  "author": "Rolandhino1",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APetra%20Vlhova%20in%20action.jpg"
+ },
+ "obj-sports-yoga": {
+  "name": "Yoga",
+  "article": "File:Practicing Yoga (60123020).jpeg",
+  "author": "Giuseppe Milo",
+  "licence": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APracticing%20Yoga%20(60123020).jpeg"
+ },
+ "obj-sports-karate": {
+  "name": "Karate",
+  "article": "File:Karate International tournament.jpg",
+  "author": "Miguel Angel Omaña Rojas",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AKarate%20International%20tournament.jpg"
+ },
+ "obj-sports-baseball": {
+  "name": "Baseball",
+  "article": "File:Baseball swing.jpg",
+  "author": "Unknown",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABaseball%20swing.jpg"
+ },
+ "obj-insects-stick-insect": {
+  "name": "Stick Insect",
+  "article": "Phasmatodea",
+  "author": "Fritz Geller-Grimm and Felix Grimm",
+  "licence": "CC BY-SA 2.5",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALe_Caylar_fg01.JPG"
  }
 }

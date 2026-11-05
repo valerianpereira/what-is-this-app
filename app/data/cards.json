@@ -1,7 +1,7 @@
 {
   "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram. A category marked \"drawn\": true has no photos to fetch — tools/draw-cards.py renders its cards locally. imageBase is where the app fetches photos from on first run; tools/upload-cloudinary.mjs prints the value to put here.",
-  "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@photos-v5/photos",
-  "imageVersion": 5,
+  "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@photos-v6/photos",
+  "imageVersion": 6,
   "categories": [
     {
       "id": "vehicles",
@@ -612,8 +612,8 @@
           "wiki": "Mantis"
         },
         {
-          "name": "Cricket",
-          "wiki": "Cricket (insect)"
+          "name": "Stick Insect",
+          "wiki": "Phasmatodea"
         },
         {
           "name": "Cockroach",
@@ -2403,6 +2403,115 @@
       ]
     },
     {
+      "id": "sports",
+      "name": "Sports",
+      "color": "#A7C7FF",
+      "shadow": "#7A9AD1",
+      "tile": "Cricket",
+      "items": [
+        {
+          "name": "Cricket",
+          "wiki": "Cricket"
+        },
+        {
+          "name": "Football",
+          "wiki": "Association football"
+        },
+        {
+          "name": "Badminton",
+          "wiki": "File:Yonex IFB 2013 - Eightfinal - Kim Ki-jung-Kim Sa-rang — Chris Adcock-Andrew Ellis 03.jpg"
+        },
+        {
+          "name": "Tennis",
+          "wiki": "Tennis"
+        },
+        {
+          "name": "Hockey",
+          "wiki": "File:SK at the Rio Olympic 2016 Hockey arena.jpg"
+        },
+        {
+          "name": "Basketball",
+          "wiki": "Basketball"
+        },
+        {
+          "name": "Swimming",
+          "wiki": "Swimming"
+        },
+        {
+          "name": "Kabaddi",
+          "wiki": "Kabaddi"
+        },
+        {
+          "name": "Chess",
+          "wiki": "Chess"
+        },
+        {
+          "name": "Running",
+          "wiki": "Running"
+        },
+        {
+          "name": "Cycling",
+          "wiki": "Cycling"
+        },
+        {
+          "name": "Volleyball",
+          "wiki": "File:U.S. Womens Volleyball team CISM 2007 spike.jpg"
+        },
+        {
+          "name": "Table Tennis",
+          "wiki": "File:Table Tennis 09.jpg"
+        },
+        {
+          "name": "Boxing",
+          "wiki": "File:AUS vs ARG Girls' lightweight Bronze Medal Bout 2018 YOG (338).JPG"
+        },
+        {
+          "name": "Wrestling",
+          "wiki": "Wrestling"
+        },
+        {
+          "name": "Golf",
+          "wiki": "Golf"
+        },
+        {
+          "name": "Skating",
+          "wiki": "Roller skating"
+        },
+        {
+          "name": "Skiing",
+          "wiki": "File:Petra Vlhova in action.jpg"
+        },
+        {
+          "name": "Surfing",
+          "wiki": "Surfing"
+        },
+        {
+          "name": "Archery",
+          "wiki": "Archery"
+        },
+        {
+          "name": "Gymnastics",
+          "wiki": "Gymnastics"
+        },
+        {
+          "name": "Yoga",
+          "wiki": "File:Practicing Yoga (60123020).jpeg"
+        },
+        {
+          "name": "Karate",
+          "wiki": "File:Karate International tournament.jpg"
+        },
+        {
+          "name": "Carrom",
+          "wiki": "Carrom"
+        },
+        {
+          "name": "Baseball",
+          "wiki": "File:Baseball swing.jpg"
+        }
+      ]
+    },
+    {
       "id": "shapes",
       "name": "Shapes",
       "color": "#E3D5FF",
@@ -2712,6 +2821,100 @@
         },
         {
           "name": "Z",
+          "wiki": "drawn"
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "color": "#FFC9A8",
+      "shadow": "#D19C7C",
+      "tile": "drawn",
+      "drawn": true,
+      "items": [
+        {
+          "name": "0",
+          "wiki": "drawn"
+        },
+        {
+          "name": "1",
+          "wiki": "drawn"
+        },
+        {
+          "name": "2",
+          "wiki": "drawn"
+        },
+        {
+          "name": "3",
+          "wiki": "drawn"
+        },
+        {
+          "name": "4",
+          "wiki": "drawn"
+        },
+        {
+          "name": "5",
+          "wiki": "drawn"
+        },
+        {
+          "name": "6",
+          "wiki": "drawn"
+        },
+        {
+          "name": "7",
+          "wiki": "drawn"
+        },
+        {
+          "name": "8",
+          "wiki": "drawn"
+        },
+        {
+          "name": "9",
+          "wiki": "drawn"
+        },
+        {
+          "name": "10",
+          "wiki": "drawn"
+        },
+        {
+          "name": "11",
+          "wiki": "drawn"
+        },
+        {
+          "name": "12",
+          "wiki": "drawn"
+        },
+        {
+          "name": "13",
+          "wiki": "drawn"
+        },
+        {
+          "name": "14",
+          "wiki": "drawn"
+        },
+        {
+          "name": "15",
+          "wiki": "drawn"
+        },
+        {
+          "name": "16",
+          "wiki": "drawn"
+        },
+        {
+          "name": "17",
+          "wiki": "drawn"
+        },
+        {
+          "name": "18",
+          "wiki": "drawn"
+        },
+        {
+          "name": "19",
+          "wiki": "drawn"
+        },
+        {
+          "name": "20",
           "wiki": "drawn"
         }
       ]

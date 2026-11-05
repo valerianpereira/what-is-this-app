@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Draws the cards that have no photograph: shapes, colours and letters.
+"""Draws the cards that have no photograph: shapes, colours, letters and numbers.
 
 Wikipedia's shape articles lead with annotated geometry diagrams and its colour
 articles lead with an object of that colour (Red -> strawberries), which would
 teach a two-year-old the wrong word. So these two categories are rendered here
-instead of downloaded (letters too: a photo cannot show a letter), and marked
+instead of downloaded (letters and numbers too: a photo cannot show a glyph), and marked
 "drawn": true in cards.json so
 tools/fetch-images.mjs leaves them alone. Output matches the fetcher's: one
 720px .webp per slot in photos/, plus a credit in app/data/credits.json.
@@ -193,7 +193,7 @@ def save(img, slot):
 def main():
     cards = json.load(open(os.path.join(ROOT, 'app', 'data', 'cards.json')))
     drawn = {c['id']: c for c in cards['categories'] if c.get('drawn')}
-    for want in ('shapes', 'colors', 'letters'):
+    for want in ('shapes', 'colors', 'letters', 'numbers'):
         if want not in drawn:
             raise SystemExit('cards.json has no drawn category "%s"' % want)
     os.makedirs(OUT, exist_ok=True)
@@ -229,6 +229,16 @@ def main():
         draw_letter(d, it['name'], px, font)
         emit('obj-letters-' + it['name'].lower(), it['name'], img)
 
+    # Same glyph size as the letters, so "1" and "A" match; two digits are
+    # wider than the card at that size, so 10-20 shrink to fit the width.
+    for it in drawn['numbers']['items']:
+        img, d, px = canvas(PAPER)
+        f = font
+        if d.textlength(it['name'], font=f) > px(.86):
+            f = fredoka(int(SIZE * SS * 0.72 * px(.86) / d.textlength(it['name'], font=f)))
+        draw_letter(d, it['name'], px, f)
+        emit('obj-numbers-' + it['name'], it['name'], img)
+
     # group tiles. The home grid frame is wide and object-fit:cover crops these
     # to a middle band, so both tiles stay in a horizontal strip.
     img, d, px = canvas(PAPER)
@@ -249,6 +259,11 @@ def main():
     for i, ch in enumerate('ABC'):
         d.text((px(.2 + .3 * i), px(.5)), ch, font=small, fill=INK, anchor='mm')
     emit('cat-letters', 'Letters (group tile)', img)
+
+    img, d, px = canvas(PAPER)
+    for i, ch in enumerate('123'):
+        d.text((px(.2 + .3 * i), px(.5)), ch, font=small, fill=INK, anchor='mm')
+    emit('cat-numbers', 'Numbers (group tile)', img)
 
     json.dump(credits, open(CREDITS, 'w'), ensure_ascii=False, indent=1)
     print('drew %d cards' % len(made))
