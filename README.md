@@ -6,7 +6,7 @@ handoff (`What Is This.dc.html`).
 Show a photo, the child says the word out loud, five seconds later the app says
 it back. Ten pictures a round, then a summary of the words seen.
 
-27 groups, 667 words, 694 card pictures, **4 MB APK**.
+32 groups, 771 words, 803 card pictures, **4 MB APK**.
 
 The photos are not bundled. They are served from a CDN and cached on the device
 as the child plays — each picture is downloaded the first time it comes up and
@@ -59,7 +59,7 @@ Bump `versionCode` in `android/app/build.gradle` before every upload.
     app/data/credits.json     photographer + licence per photo (bundled, tiny)
     app/fonts/                Fredoka variable font, 400–700
 
-    photos/*.webp             the 694 card pictures, 720px squares — NOT shipped in
+    photos/*.webp             the 803 card pictures, 720px squares — NOT shipped in
                               the APK; uploaded to the CDN and fetched on demand
     photos-src/*.jpg          the full frames those squares are cut from (gitignored)
 
@@ -94,7 +94,7 @@ usable photo.
     npm run images        # downloads the full frame of whatever is missing
     npm run square        # cuts every frame into its 720px square card
     npm run check         # fails on a missing/non-square photo, a duplicate word, a stray credit
-    python3 tools/contact-sheet.py /tmp/sheet.jpg     # look at all 694 at once
+    python3 tools/contact-sheet.py /tmp/sheet.jpg     # look at all 803 at once
 
 To replace one bad photo:
 
@@ -187,7 +187,7 @@ re-speaks once if the very first word is rejected.
 
 ## Licence
 
-MIT for the code (`LICENSE`). The 598 photos keep their own Wikimedia licences
+MIT for the code (`LICENSE`). The 707 photos keep their own Wikimedia licences
 and the font is OFL — see `NOTICE.md`.
 
 ## Photos and licensing
@@ -195,7 +195,7 @@ and the font is OFL — see `NOTICE.md`.
 All photos come from Wikimedia Commons / Wikipedia under CC and public-domain
 licences. Attribution is required and is shown in the app: Settings → For
 grown-ups → hold 2s → Photo credits. `app/data/credits.json` holds author,
-licence and source URL for all 598. Keep that screen if you ship this.
+licence and source URL for all 707. Keep that screen if you ship this.
 
 The 92 Shapes, Colours, Letters and Numbers cards are the exception: Wikipedia leads those
 articles with annotated geometry diagrams and with an object of that colour

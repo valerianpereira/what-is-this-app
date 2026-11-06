@@ -4856,5 +4856,768 @@
   "author": "Fritz Geller-Grimm and Felix Grimm",
   "licence": "CC BY-SA 2.5",
   "source": "https://commons.wikimedia.org/wiki/File%3ALe_Caylar_fg01.JPG"
+ },
+ "cat-nature": {
+  "name": "Nature & Places (group tile)",
+  "article": "Waterfall",
+  "author": "Diego Delso",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG"
+ },
+ "obj-nature-mountain": {
+  "name": "Mountain",
+  "article": "Mountain",
+  "author": "Luca Galuzzi (Lucag)",
+  "licence": "CC BY-SA 2.5",
+  "source": "https://commons.wikimedia.org/wiki/File%3AEverest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+ },
+ "obj-nature-river": {
+  "name": "River",
+  "article": "River",
+  "author": "Basile Morin",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APirogue_running_on_the_Mekong_at_golden_hour_between_Don_Det_and_Don_Khon_Laos.jpg"
+ },
+ "obj-nature-beach": {
+  "name": "Beach",
+  "article": "Beach",
+  "author": "Daniel Dudek",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABeach_at_Fort_Lauderdale.jpg"
+ },
+ "obj-nature-desert": {
+  "name": "Desert",
+  "article": "Desert",
+  "author": "Nepenthes",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARub_al_Khali_002.JPG"
+ },
+ "obj-nature-forest": {
+  "name": "Forest",
+  "article": "Forest",
+  "author": "lubasi",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAerial_view_of_the_Amazon_Rainforest.jpg"
+ },
+ "obj-nature-waterfall": {
+  "name": "Waterfall",
+  "article": "Waterfall",
+  "author": "Diego Delso",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG"
+ },
+ "obj-nature-volcano": {
+  "name": "Volcano",
+  "article": "Volcano",
+  "author": "Cyrus Read Geophysicist USGS, Alaska Volcano Observatory cread@usgs.gov",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAugustine_volcano_Jan_24_2006_-_Cyrus_Read.jpg"
+ },
+ "obj-nature-cave": {
+  "name": "Cave",
+  "article": "Cave",
+  "author": "Dave Bunnell / Under Earth Images",
+  "licence": "CC BY-SA 2.5",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALechuguilla_Cave_Pearlsian_Gulf.jpg"
+ },
+ "obj-nature-lake": {
+  "name": "Lake",
+  "article": "Lake",
+  "author": "No machine-readable author provided. Marius~commonswiki assumed (based on copyright claims).",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALake_Idro_Italy_2005-08-16.jpg"
+ },
+ "obj-nature-valley": {
+  "name": "Valley",
+  "article": "Valley",
+  "author": "Unknown",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASalta-VallesCalchaquies-P3140151.JPG"
+ },
+ "obj-nature-hill": {
+  "name": "Hill",
+  "article": "Hill",
+  "author": "Rics1299",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AUliveti_monte_cinto.JPG"
+ },
+ "obj-nature-pond": {
+  "name": "Pond",
+  "article": "Pond",
+  "author": "Agnes Monkelbaan",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACornjum%2C_Martenastate_010.jpg"
+ },
+ "obj-nature-field": {
+  "name": "Field",
+  "article": "Field (agriculture)",
+  "author": "Diego Delso",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AIglesia_de_Nuestra_Se%C3%B1ora_de_La_Blanca%2C_Cardej%C3%B3n%2C_Espa%C3%B1a%2C_2012-09-01%2C_DD_02.JPG"
+ },
+ "obj-nature-cliff": {
+  "name": "Cliff",
+  "article": "Cliff",
+  "author": "Immanuel Giel",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AWhite_Cliffs_of_Dover_02.JPG"
+ },
+ "obj-nature-sand-dune": {
+  "name": "Sand Dune",
+  "article": "Sand Dune",
+  "author": "Himarerme",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ADunas_de_Maspalomas.jpg"
+ },
+ "obj-nature-stream": {
+  "name": "Stream",
+  "article": "Stream",
+  "author": "Svjetlopis, Vladimir Tadic",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3A%D0%A6%D0%B2%D1%80%D1%86%D0%BA%D0%B0_2_PPRP001.jpg"
+ },
+ "obj-nature-meadow": {
+  "name": "Meadow",
+  "article": "Meadow",
+  "author": "Nikater",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABlumenwiese_bei_Obermaiselstein05.jpg"
+ },
+ "obj-nature-iceberg": {
+  "name": "Iceberg",
+  "article": "Iceberg",
+  "author": "AWeith",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AIceberg_in_the_Arctic_with_its_underside_exposed.jpg"
+ },
+ "obj-nature-swamp": {
+  "name": "Swamp",
+  "article": "Swamp",
+  "author": "Unknown",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AFlorida_freshwater_swamp_usgov_image.jpg"
+ },
+ "cat-space": {
+  "name": "Space (group tile)",
+  "article": "Saturn",
+  "author": "NASA / JPL-Caltech / SSI / color composite by Gordan Ugarkovic",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASaturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png"
+ },
+ "obj-space-earth": {
+  "name": "Earth",
+  "article": "Earth",
+  "author": "EUMETSAT",
+  "licence": "Attribution",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMeteosat-12-fci-march-equinox-2025-noon.jpg"
+ },
+ "obj-space-mars": {
+  "name": "Mars",
+  "article": "Mars",
+  "author": "Kevin Gill from Los Angeles, CA, United States",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png"
+ },
+ "obj-space-jupiter": {
+  "name": "Jupiter",
+  "article": "Jupiter",
+  "author": "NASA/STSCI (S.T.A.R.S)",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AJupiter_OPAL_2024.png"
+ },
+ "obj-space-saturn": {
+  "name": "Saturn",
+  "article": "Saturn",
+  "author": "NASA / JPL-Caltech / SSI / color composite by Gordan Ugarkovic",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASaturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png"
+ },
+ "obj-space-mercury": {
+  "name": "Mercury",
+  "article": "Mercury (planet)",
+  "author": "NASA/Johns Hopkins University Applied Physics Laboratory/Arizona State University/Carnegie Institution of Washington",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMercury_in_true_color.jpg"
+ },
+ "obj-space-venus": {
+  "name": "Venus",
+  "article": "Venus",
+  "author": "NASA/JPL-Caltech",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AVenus_from_Mariner_10.jpg"
+ },
+ "obj-space-neptune": {
+  "name": "Neptune",
+  "article": "Neptune",
+  "author": "NASA / Voyager 2 / PDS / OPUS / Ardenau4",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ANeptune_Voyager2_color_calibrated.png"
+ },
+ "obj-space-uranus": {
+  "name": "Uranus",
+  "article": "Uranus",
+  "author": "Ardenau4",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AUranus_Voyager2_color_calibrated.png"
+ },
+ "obj-space-galaxy": {
+  "name": "Galaxy",
+  "article": "Galaxy",
+  "author": "The Hubble Heritage Team (AURA/STScI/NASA)NASA Headquarters - Greatest Images of NASA (NASA-HQ-GRIN)",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ANGC_4414_(NASA-med).jpg"
+ },
+ "obj-space-space-station": {
+  "name": "Space Station",
+  "article": "International Space Station",
+  "author": "NASA",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AThe_station_pictured_from_the_SpaceX_Crew_Dragon_5.jpg"
+ },
+ "obj-space-spacesuit": {
+  "name": "Spacesuit",
+  "article": "Spacesuit",
+  "author": "Aldrin_Apollo_11_original.jpg: NASA derivative work: Scott MacDonald (talk)",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAldrin_Apollo_11_cropped.jpg"
+ },
+ "obj-space-asteroid": {
+  "name": "Asteroid",
+  "article": "Asteroid",
+  "author": "243_ida.jpg: NASA/JPL derivative work: Chzz ►",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3A243_ida_crop.jpg"
+ },
+ "obj-space-nebula": {
+  "name": "Nebula",
+  "article": "Nebula",
+  "author": "David (Deddy) Dayag",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ATrifid_Nebula_by_Deddy_Dayag.jpg"
+ },
+ "obj-space-space-shuttle": {
+  "name": "Space Shuttle",
+  "article": "Space Shuttle",
+  "author": "NASA; edited by jjron (tilt corrected)",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASTS120LaunchHiRes-edit1.jpg"
+ },
+ "obj-space-lunar-rover": {
+  "name": "Lunar Rover",
+  "article": "Lunar Roving Vehicle",
+  "author": "NASA/Dave Scott; cropped by User:Bubba73",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AApollo15LunarRover.jpg"
+ },
+ "obj-space-observatory": {
+  "name": "Observatory",
+  "article": "Observatory",
+  "author": "Adusha",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARoyal_observatory_Greenwich.JPG"
+ },
+ "cat-reptiles": {
+  "name": "Reptiles & Frogs (group tile)",
+  "article": "Frog",
+  "author": "Charlie Jackson",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARed-eyed_Leaf_Frog_(49661076226).jpg"
+ },
+ "obj-reptiles-frog": {
+  "name": "Frog",
+  "article": "Common frog",
+  "author": "Richard Bartz, Munich aka Makro Freak Image:MFB.jpg",
+  "licence": "CC BY-SA 2.5",
+  "source": "https://commons.wikimedia.org/wiki/File%3AEuropean_Common_Frog_Rana_temporaria.jpg"
+ },
+ "obj-reptiles-toad": {
+  "name": "Toad",
+  "article": "Common toad",
+  "author": "Tythatguy1312",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACommon_Toad_Cornwall.jpeg"
+ },
+ "obj-reptiles-tadpole": {
+  "name": "Tadpole",
+  "article": "Tadpole",
+  "author": "Viridiflavus",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARanaTemporariaLarva2.jpg"
+ },
+ "obj-reptiles-tree-frog": {
+  "name": "Tree Frog",
+  "article": "Agalychnis callidryas",
+  "author": "Red-eyed Tree Frog (Agalychnis callidryas) 3.jpg: Geoff Gallice from Gainesville, FL, USA derivative work: B kimmel",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARed-eyed_Tree_Frog_(Agalychnis_callidryas)_1.png"
+ },
+ "obj-reptiles-lizard": {
+  "name": "Lizard",
+  "article": "Lizard",
+  "author": "Basile Morin",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AHemidactylus_platyurus_(Flat-tailed_House_Gecko)_on_white_background%2C_focus_stacking.jpg"
+ },
+ "obj-reptiles-chameleon": {
+  "name": "Chameleon",
+  "article": "Chameleon",
+  "author": "Rod Waddington",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APanther_Chameleon_738367_(cropped).jpg"
+ },
+ "obj-reptiles-cobra": {
+  "name": "Cobra",
+  "article": "Indian cobra",
+  "author": "Pavan Kumar N",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AIndian_Cobra%2C_crop.jpg"
+ },
+ "obj-reptiles-python": {
+  "name": "Python",
+  "article": "Pythonidae",
+  "author": "Tigerpython",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APython_molurus_molurus_2.jpg"
+ },
+ "obj-reptiles-viper": {
+  "name": "Viper",
+  "article": "Russell's viper",
+  "author": "AChawla",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ADaboia_russelii_A_Chawla01.jpg"
+ },
+ "obj-reptiles-anaconda": {
+  "name": "Anaconda",
+  "article": "Green anaconda",
+  "author": "MKAMPIS",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASucuri_verde.jpg"
+ },
+ "obj-reptiles-rattlesnake": {
+  "name": "Rattlesnake",
+  "article": "Rattlesnake",
+  "author": "derivative work: Victorrocha (talk · contribs) Crotalus_cerastes_mesquite_springs_CA.JPG: Tigerhawkvok (talk · contribs)",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACrotalus_cerastes_mesquite_springs_CA-2.jpg"
+ },
+ "obj-reptiles-alligator": {
+  "name": "Alligator",
+  "article": "American alligator",
+  "author": "User:Postdlf",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAmerican_Alligator.jpg"
+ },
+ "obj-reptiles-gharial": {
+  "name": "Gharial",
+  "article": "Gharial",
+  "author": "Charles J. Sharp",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGharial_(Gavialis_gangeticus)_male.jpg"
+ },
+ "obj-reptiles-komodo-dragon": {
+  "name": "Komodo Dragon",
+  "article": "Komodo Dragon",
+  "author": "James Jolokia (james1203)",
+  "licence": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3A202306_Varanus_komodoensis.jpg"
+ },
+ "obj-reptiles-monitor-lizard": {
+  "name": "Monitor Lizard",
+  "article": "Bengal monitor",
+  "author": "Shantanu Kuveskar",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABengal_monitor_(Varanus_bengalensis)_Photograph_by_Shantanu_Kuveskar.jpg"
+ },
+ "obj-reptiles-frilled-lizard": {
+  "name": "Frilled Lizard",
+  "article": "Frilled-neck lizard",
+  "author": "Matt from Melbourne, Australia",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AFrill-necked_Lizard_(Chlamydosaurus_kingii)_(8692622586).jpg"
+ },
+ "obj-reptiles-skink": {
+  "name": "Skink",
+  "article": "Skink",
+  "author": "Charles J. Sharp",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAfrican_striped_skinks_(Trachylepis_striata)_Malolotja.jpg"
+ },
+ "obj-reptiles-salamander": {
+  "name": "Salamander",
+  "article": "Fire salamander",
+  "author": "Didier Descouens",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASalamandra_salamandra_MHNT_1.jpg"
+ },
+ "obj-reptiles-newt": {
+  "name": "Newt",
+  "article": "Smooth newt",
+  "author": "Kristian Peters",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ATriturus_vulgaris_maennchen_cropped.jpg"
+ },
+ "obj-reptiles-axolotl": {
+  "name": "Axolotl",
+  "article": "Axolotl",
+  "author": "LoKiLeCh",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAxolotl_ganz.jpg"
+ },
+ "cat-town": {
+  "name": "In Town (group tile)",
+  "article": "Bridge",
+  "author": "Dantla from de.wikipedia",
+  "licence": "GFDL",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABridge_Alcantara.JPG"
+ },
+ "obj-town-hospital": {
+  "name": "Hospital",
+  "article": "Hospital",
+  "author": "H501zalc",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AHospital-de-Bellvitge.jpg"
+ },
+ "obj-town-temple": {
+  "name": "Temple",
+  "article": "Hindu temple",
+  "author": "Harry Paudyal",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APashupatinath_Temple_Nepal_IMG_7933_2018_15.jpg"
+ },
+ "obj-town-gurudwara": {
+  "name": "Gurudwara",
+  "article": "Gurdwara",
+  "author": "Imjha1",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGolden_temple_india.jpg"
+ },
+ "obj-town-shop": {
+  "name": "Shop",
+  "article": "Retail",
+  "author": "Diego Delso",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AComercio_en_la_plaza_del_9_de_abril_de_1947%2C_T%C3%A1nger%2C_Marruecos%2C_2015-12-11%2C_DD_78.JPG"
+ },
+ "obj-town-bridge": {
+  "name": "Bridge",
+  "article": "Bridge",
+  "author": "Dantla from de.wikipedia",
+  "licence": "GFDL",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABridge_Alcantara.JPG"
+ },
+ "obj-town-railway-station": {
+  "name": "Railway Station",
+  "article": "Train station",
+  "author": "Minseong Kim",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASeoul_Station_West_Side.jpg"
+ },
+ "obj-town-post-office": {
+  "name": "Post Office",
+  "article": "Post office",
+  "author": "Mattinbgn",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AEdithburghPostOffice.JPG"
+ },
+ "obj-town-bus-stop": {
+  "name": "Bus Stop",
+  "article": "Bus stop",
+  "author": "Frank Hank",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APeople_waiting_at_bus_stop.jpg"
+ },
+ "obj-town-fire-station": {
+  "name": "Fire Station",
+  "article": "Fire station",
+  "author": "CaptJayRuffins",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AFDNY_eng264_328_Ladder_134_20190214_135053~2.jpg"
+ },
+ "obj-town-library": {
+  "name": "Library",
+  "article": "Library",
+  "author": "Joe Crawford from Moorpark, California, USA",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASanDiegoCityCollegeLearningResource_-_bookshelf.jpg"
+ },
+ "obj-town-petrol-pump": {
+  "name": "Petrol Pump",
+  "article": "Filling station",
+  "author": "The Library of Congress from Washington, DC, United States",
+  "licence": "No restrictions",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMattoon_Service_Station_(pre-fabricated)%2C_angle_view%2C_National_%26_Washington_Boulevards%2C_Culver_City%2C_California_LOC_37555778230.jpg"
+ },
+ "obj-town-traffic-light": {
+  "name": "Traffic Light",
+  "article": "Traffic light",
+  "author": "Unisouth",
+  "licence": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AModern_British_LED_Traffic_Light.jpg"
+ },
+ "obj-town-zebra-crossing": {
+  "name": "Zebra Crossing",
+  "article": "Zebra crossing",
+  "author": "Misterweiss at English Wikipedia",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAbbey_Road_Zebra.jpg"
+ },
+ "obj-town-playground": {
+  "name": "Playground",
+  "article": "Playground",
+  "author": "NikosLikomitros",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AArgos_playground.jpg"
+ },
+ "obj-town-lighthouse": {
+  "name": "Lighthouse",
+  "article": "Lighthouse",
+  "author": "Walter Rademacher, derivative work Lämpel",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAerial_photograph_60D_2012_05_13_8760_DxO_retusche.jpg"
+ },
+ "obj-kitchen-pressure-cooker": {
+  "name": "Pressure Cooker",
+  "article": "Pressure cooking",
+  "author": "Unknown",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APressure_cooker.jpg"
+ },
+ "obj-kitchen-tawa": {
+  "name": "Tawa",
+  "article": "Tava",
+  "author": "Ashish Bhatnagar",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ATava.JPG"
+ },
+ "obj-kitchen-kadai": {
+  "name": "Kadai",
+  "article": "Karahi",
+  "author": "FiveRings at en.wikipedia",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AWok-and-karahi-2.jpg"
+ },
+ "obj-kitchen-kettle": {
+  "name": "Kettle",
+  "article": "Kettle",
+  "author": "Holger Ellgaard",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABernadotte_Wasserkessel.jpg"
+ },
+ "obj-kitchen-teapot": {
+  "name": "Teapot",
+  "article": "Teapot",
+  "author": "Mendhak",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABlack_tea_pot_cropped.jpg"
+ },
+ "obj-kitchen-frying-pan": {
+  "name": "Frying Pan",
+  "article": "Frying pan",
+  "author": "Unknown",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3APfanne_(Edelstahl).jpg"
+ },
+ "obj-kitchen-saucepan": {
+  "name": "Saucepan",
+  "article": "Saucepan",
+  "author": "Erik Streb",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AKupferkasserolle_Stielkasserolle_16_cm_Casserole.jpg"
+ },
+ "obj-kitchen-knife": {
+  "name": "Knife",
+  "article": "Kitchen knife",
+  "author": "Kagor",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACucina_012.jpg"
+ },
+ "obj-kitchen-whisk": {
+  "name": "Whisk",
+  "article": "Whisk",
+  "author": "No machine-readable author provided. Peng assumed (based on copyright claims).",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASchneebesen1.JPG"
+ },
+ "obj-kitchen-grater": {
+  "name": "Grater",
+  "article": "Grater",
+  "author": "Photograph: Frank C. Müller, Baden-Baden",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AKuechenreibe_(fcm).jpg"
+ },
+ "obj-kitchen-strainer": {
+  "name": "Strainer",
+  "article": "Colander",
+  "author": "Unknown",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGe%C3%ABmailleerd_vergiet_-_INDUS_V08877.jpg"
+ },
+ "obj-kitchen-tongs": {
+  "name": "Tongs",
+  "article": "Tongs",
+  "author": "Sac86738 at English Wikipedia",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AKitchen-tongs.png"
+ },
+ "obj-kitchen-toaster": {
+  "name": "Toaster",
+  "article": "Toaster",
+  "author": "Consumer Reports",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AConsumer_Reports_-_Hamilton_Beach_Digital_toaster.tiff"
+ },
+ "obj-kitchen-microwave": {
+  "name": "Microwave",
+  "article": "Microwave oven",
+  "author": "Mrbeastmodeallday",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APanasonic_NN-SD69LS_20220410.jpg"
+ },
+ "obj-kitchen-chopping-board": {
+  "name": "Chopping Board",
+  "article": "Cutting board",
+  "author": "Donovan Govan.",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AChopping_Board.jpg"
+ },
+ "obj-kitchen-mortar-and-pestle": {
+  "name": "Mortar and Pestle",
+  "article": "Mortar and pestle",
+  "author": "Evan-Amos",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AWhite-Mortar-and-Pestle.jpg"
+ },
+ "obj-kitchen-jug": {
+  "name": "Jug",
+  "article": "Jug",
+  "author": "BERNARDOT Claude-Henry",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AM0354_990116-6_1_(cropped).jpg"
+ },
+ "obj-kitchen-glass": {
+  "name": "Glass",
+  "article": "Drinking glass",
+  "author": "rawpixel.com",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ADrinkware.jpg"
+ },
+ "obj-nature-island": {
+  "name": "Island",
+  "article": "File:Lombok, Bay, Tropical palm trees, Indonesia.jpg",
+  "author": "Vyacheslav Argenberg",
+  "licence": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALombok%2C%20Bay%2C%20Tropical%20palm%20trees%2C%20Indonesia.jpg"
+ },
+ "obj-nature-canyon": {
+  "name": "Canyon",
+  "article": "File:Glen Canyon Dam MC.jpg",
+  "author": "Christian Mehlführer, User:Chmehl",
+  "licence": "CC BY 2.5",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGlen%20Canyon%20Dam%20MC.jpg"
+ },
+ "obj-nature-rock": {
+  "name": "Rock",
+  "article": "File:Letipea hiidrahn.jpg",
+  "author": "Zosma",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALetipea%20hiidrahn.jpg"
+ },
+ "obj-nature-ocean": {
+  "name": "Ocean",
+  "article": "File:Waves breaking tides sea stack ocean rialto beach d archuleta march 06 2015 (17287769136).jpg",
+  "author": "Olympic National Park",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AWaves%20breaking%20tides%20sea%20stack%20ocean%20rialto%20beach%20d%20archuleta%20march%2006%202015%20(17287769136).jpg"
+ },
+ "obj-space-satellite": {
+  "name": "Satellite",
+  "article": "File:Sputnik asm.jpg",
+  "author": "NSSDC, NASA[1]",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASputnik%20asm.jpg"
+ },
+ "obj-space-telescope": {
+  "name": "Telescope",
+  "article": "File:Celestron EdgeHD telescope.jpg",
+  "author": "Cjp24",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACelestron%20EdgeHD%20telescope.jpg"
+ },
+ "obj-town-church": {
+  "name": "Church",
+  "article": "File:Steeple Aston church - geograph.org.uk - 6965897.jpg",
+  "author": "Philip Halling",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASteeple%20Aston%20church%20-%20geograph.org.uk%20-%206965897.jpg"
+ },
+ "obj-town-mosque": {
+  "name": "Mosque",
+  "article": "File:Dome of Prophet's Mosque - Medina.jpg",
+  "author": "User:Abdul Hafeez Bakhsh",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ADome%20of%20Prophet's%20Mosque%20-%20Medina.jpg"
+ },
+ "obj-town-market": {
+  "name": "Market",
+  "article": "File:Veg Flower Stalls Ooty Market Nilgiris Aug25 A7CR 07099.jpg",
+  "author": "Timothy A. Gonsalves",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AVeg%20Flower%20Stalls%20Ooty%20Market%20Nilgiris%20Aug25%20A7CR%2007099.jpg"
+ },
+ "obj-town-park": {
+  "name": "Park",
+  "article": "File:Prospect Park New York November 2016 001.jpg",
+  "author": "King of Hearts",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AProspect%20Park%20New%20York%20November%202016%20001.jpg"
+ },
+ "obj-town-airport": {
+  "name": "Airport",
+  "article": "File:Israel 3 023 Israelic Aeroplane.jpg",
+  "author": "Unknown",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AIsrael%203%20023%20Israelic%20Aeroplane.jpg"
+ },
+ "obj-town-cinema": {
+  "name": "Cinema",
+  "article": "File:4DX seats in cinema (motion and environmental effects synced with the on-screen action) bench rows in a movie theater hall Kinostoler kinosal Kilden kino Tønsberg, Norway 2023 IMG 7849.jpg",
+  "author": "Wolfmann",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3A4DX%20seats%20in%20cinema%20(motion%20and%20environmental%20effects%20synced%20with%20the%20on-screen%20action)%20bench%20rows%20in%20a%20movie%20theater%20hall%20Kinostoler%20kinosal%20Kilden%20kino%20T%C3%B8nsberg%2C%20Norway%202023%20IMG%207849.jpg"
+ },
+ "cat-kitchen": {
+  "name": "Kitchen (group tile)",
+  "article": "Kettle",
+  "author": "Holger Ellgaard",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABernadotte_Wasserkessel.jpg"
+ },
+ "obj-kitchen-gas-stove": {
+  "name": "Gas Stove",
+  "article": "File:Gas stove blue flames.jpg",
+  "author": "Marina Burity from Santo André, Brazil",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGas%20stove%20blue%20flames.jpg"
+ },
+ "obj-kitchen-ladle": {
+  "name": "Ladle",
+  "article": "File:Greek - Ladle - Walters 57909.jpg",
+  "author": "Anonymous (Greece)Unknown author",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGreek%20-%20Ladle%20-%20Walters%2057909.jpg"
+ },
+ "obj-kitchen-spatula": {
+  "name": "Spatula",
+  "article": "File:Degskrapor.png",
+  "author": "Micke",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ADegskrapor.png"
+ },
+ "obj-kitchen-sink": {
+  "name": "Sink",
+  "article": "File:Kitchen water tap 20190408.jpg",
+  "author": "Santeri Viinamäki",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AKitchen%20water%20tap%2020190408.jpg"
  }
 }

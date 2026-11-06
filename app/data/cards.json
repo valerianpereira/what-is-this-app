@@ -1,7 +1,7 @@
 {
   "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram. A category marked \"drawn\": true has no photos to fetch — tools/draw-cards.py renders its cards locally. imageBase is where the app fetches photos from on first run; tools/upload-cloudinary.mjs prints the value to put here.",
-  "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@photos-v6/photos",
-  "imageVersion": 6,
+  "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@photos-v7/photos",
+  "imageVersion": 7,
   "categories": [
     {
       "id": "vehicles",
@@ -2508,6 +2508,467 @@
         {
           "name": "Baseball",
           "wiki": "File:Baseball swing.jpg"
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Places",
+      "color": "#B7DB9E",
+      "shadow": "#89AD72",
+      "tile": "Waterfall",
+      "items": [
+        {
+          "name": "Mountain",
+          "wiki": "Mountain"
+        },
+        {
+          "name": "River",
+          "wiki": "River"
+        },
+        {
+          "name": "Beach",
+          "wiki": "Beach"
+        },
+        {
+          "name": "Desert",
+          "wiki": "Desert"
+        },
+        {
+          "name": "Forest",
+          "wiki": "Forest"
+        },
+        {
+          "name": "Waterfall",
+          "wiki": "Waterfall"
+        },
+        {
+          "name": "Volcano",
+          "wiki": "Volcano"
+        },
+        {
+          "name": "Island",
+          "wiki": "File:Lombok, Bay, Tropical palm trees, Indonesia.jpg"
+        },
+        {
+          "name": "Cave",
+          "wiki": "Cave"
+        },
+        {
+          "name": "Lake",
+          "wiki": "Lake"
+        },
+        {
+          "name": "Valley",
+          "wiki": "Valley"
+        },
+        {
+          "name": "Hill",
+          "wiki": "Hill"
+        },
+        {
+          "name": "Pond",
+          "wiki": "Pond"
+        },
+        {
+          "name": "Canyon",
+          "wiki": "File:Glen Canyon Dam MC.jpg"
+        },
+        {
+          "name": "Field",
+          "wiki": "Field (agriculture)"
+        },
+        {
+          "name": "Cliff",
+          "wiki": "Cliff"
+        },
+        {
+          "name": "Sand Dune",
+          "wiki": "Sand Dune"
+        },
+        {
+          "name": "Rock",
+          "wiki": "File:Letipea hiidrahn.jpg"
+        },
+        {
+          "name": "Stream",
+          "wiki": "Stream"
+        },
+        {
+          "name": "Meadow",
+          "wiki": "Meadow"
+        },
+        {
+          "name": "Ocean",
+          "wiki": "File:Waves breaking tides sea stack ocean rialto beach d archuleta march 06 2015 (17287769136).jpg"
+        },
+        {
+          "name": "Iceberg",
+          "wiki": "Iceberg"
+        },
+        {
+          "name": "Swamp",
+          "wiki": "Swamp"
+        }
+      ]
+    },
+    {
+      "id": "space",
+      "name": "Space",
+      "color": "#B3B8E8",
+      "shadow": "#858ABA",
+      "tile": "Saturn",
+      "items": [
+        {
+          "name": "Earth",
+          "wiki": "Earth"
+        },
+        {
+          "name": "Mars",
+          "wiki": "Mars"
+        },
+        {
+          "name": "Jupiter",
+          "wiki": "Jupiter"
+        },
+        {
+          "name": "Saturn",
+          "wiki": "Saturn"
+        },
+        {
+          "name": "Mercury",
+          "wiki": "Mercury (planet)"
+        },
+        {
+          "name": "Venus",
+          "wiki": "Venus"
+        },
+        {
+          "name": "Neptune",
+          "wiki": "Neptune"
+        },
+        {
+          "name": "Uranus",
+          "wiki": "Uranus"
+        },
+        {
+          "name": "Satellite",
+          "wiki": "File:Sputnik asm.jpg"
+        },
+        {
+          "name": "Telescope",
+          "wiki": "File:Celestron EdgeHD telescope.jpg"
+        },
+        {
+          "name": "Galaxy",
+          "wiki": "Galaxy"
+        },
+        {
+          "name": "Space Station",
+          "wiki": "International Space Station"
+        },
+        {
+          "name": "Spacesuit",
+          "wiki": "Spacesuit"
+        },
+        {
+          "name": "Asteroid",
+          "wiki": "Asteroid"
+        },
+        {
+          "name": "Nebula",
+          "wiki": "Nebula"
+        },
+        {
+          "name": "Space Shuttle",
+          "wiki": "Space Shuttle"
+        },
+        {
+          "name": "Lunar Rover",
+          "wiki": "Lunar Roving Vehicle"
+        },
+        {
+          "name": "Observatory",
+          "wiki": "Observatory"
+        }
+      ]
+    },
+    {
+      "id": "reptiles",
+      "name": "Reptiles & Frogs",
+      "color": "#C5E07A",
+      "shadow": "#97B24E",
+      "tile": "Frog",
+      "items": [
+        {
+          "name": "Frog",
+          "wiki": "Common frog"
+        },
+        {
+          "name": "Toad",
+          "wiki": "Common toad"
+        },
+        {
+          "name": "Tadpole",
+          "wiki": "Tadpole"
+        },
+        {
+          "name": "Tree Frog",
+          "wiki": "Agalychnis callidryas"
+        },
+        {
+          "name": "Lizard",
+          "wiki": "Lizard"
+        },
+        {
+          "name": "Chameleon",
+          "wiki": "Chameleon"
+        },
+        {
+          "name": "Cobra",
+          "wiki": "Indian cobra"
+        },
+        {
+          "name": "Python",
+          "wiki": "Pythonidae"
+        },
+        {
+          "name": "Viper",
+          "wiki": "Russell's viper"
+        },
+        {
+          "name": "Anaconda",
+          "wiki": "Green anaconda"
+        },
+        {
+          "name": "Rattlesnake",
+          "wiki": "Rattlesnake"
+        },
+        {
+          "name": "Alligator",
+          "wiki": "American alligator"
+        },
+        {
+          "name": "Gharial",
+          "wiki": "Gharial"
+        },
+        {
+          "name": "Komodo Dragon",
+          "wiki": "Komodo Dragon"
+        },
+        {
+          "name": "Monitor Lizard",
+          "wiki": "Bengal monitor"
+        },
+        {
+          "name": "Frilled Lizard",
+          "wiki": "Frilled-neck lizard"
+        },
+        {
+          "name": "Skink",
+          "wiki": "Skink"
+        },
+        {
+          "name": "Salamander",
+          "wiki": "Fire salamander"
+        },
+        {
+          "name": "Newt",
+          "wiki": "Smooth newt"
+        },
+        {
+          "name": "Axolotl",
+          "wiki": "Axolotl"
+        }
+      ]
+    },
+    {
+      "id": "town",
+      "name": "In Town",
+      "color": "#F2C6A0",
+      "shadow": "#C49872",
+      "tile": "Bridge",
+      "items": [
+        {
+          "name": "Hospital",
+          "wiki": "Hospital"
+        },
+        {
+          "name": "Temple",
+          "wiki": "Hindu temple"
+        },
+        {
+          "name": "Church",
+          "wiki": "File:Steeple Aston church - geograph.org.uk - 6965897.jpg"
+        },
+        {
+          "name": "Mosque",
+          "wiki": "File:Dome of Prophet's Mosque - Medina.jpg"
+        },
+        {
+          "name": "Gurudwara",
+          "wiki": "Gurdwara"
+        },
+        {
+          "name": "Shop",
+          "wiki": "Retail"
+        },
+        {
+          "name": "Market",
+          "wiki": "File:Veg Flower Stalls Ooty Market Nilgiris Aug25 A7CR 07099.jpg"
+        },
+        {
+          "name": "Park",
+          "wiki": "File:Prospect Park New York November 2016 001.jpg"
+        },
+        {
+          "name": "Bridge",
+          "wiki": "Bridge"
+        },
+        {
+          "name": "Railway Station",
+          "wiki": "Train station"
+        },
+        {
+          "name": "Post Office",
+          "wiki": "Post office"
+        },
+        {
+          "name": "Bus Stop",
+          "wiki": "Bus stop"
+        },
+        {
+          "name": "Airport",
+          "wiki": "File:Israel 3 023 Israelic Aeroplane.jpg"
+        },
+        {
+          "name": "Fire Station",
+          "wiki": "Fire station"
+        },
+        {
+          "name": "Library",
+          "wiki": "Library"
+        },
+        {
+          "name": "Petrol Pump",
+          "wiki": "Filling station"
+        },
+        {
+          "name": "Traffic Light",
+          "wiki": "Traffic light"
+        },
+        {
+          "name": "Zebra Crossing",
+          "wiki": "Zebra crossing"
+        },
+        {
+          "name": "Playground",
+          "wiki": "Playground"
+        },
+        {
+          "name": "Cinema",
+          "wiki": "File:4DX seats in cinema (motion and environmental effects synced with the on-screen action) bench rows in a movie theater hall Kinostoler kinosal Kilden kino Tønsberg, Norway 2023 IMG 7849.jpg"
+        },
+        {
+          "name": "Lighthouse",
+          "wiki": "Lighthouse"
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "color": "#F0B8B0",
+      "shadow": "#C28A82",
+      "tile": "Kettle",
+      "items": [
+        {
+          "name": "Pressure Cooker",
+          "wiki": "Pressure cooking"
+        },
+        {
+          "name": "Tawa",
+          "wiki": "Tava"
+        },
+        {
+          "name": "Kadai",
+          "wiki": "Karahi"
+        },
+        {
+          "name": "Kettle",
+          "wiki": "Kettle"
+        },
+        {
+          "name": "Teapot",
+          "wiki": "Teapot"
+        },
+        {
+          "name": "Gas Stove",
+          "wiki": "File:Gas stove blue flames.jpg"
+        },
+        {
+          "name": "Frying Pan",
+          "wiki": "Frying pan"
+        },
+        {
+          "name": "Saucepan",
+          "wiki": "Saucepan"
+        },
+        {
+          "name": "Knife",
+          "wiki": "Kitchen knife"
+        },
+        {
+          "name": "Ladle",
+          "wiki": "File:Greek - Ladle - Walters 57909.jpg"
+        },
+        {
+          "name": "Spatula",
+          "wiki": "File:Degskrapor.png"
+        },
+        {
+          "name": "Whisk",
+          "wiki": "Whisk"
+        },
+        {
+          "name": "Grater",
+          "wiki": "Grater"
+        },
+        {
+          "name": "Strainer",
+          "wiki": "Colander"
+        },
+        {
+          "name": "Tongs",
+          "wiki": "Tongs"
+        },
+        {
+          "name": "Toaster",
+          "wiki": "Toaster"
+        },
+        {
+          "name": "Microwave",
+          "wiki": "Microwave oven"
+        },
+        {
+          "name": "Chopping Board",
+          "wiki": "Cutting board"
+        },
+        {
+          "name": "Mortar and Pestle",
+          "wiki": "Mortar and pestle"
+        },
+        {
+          "name": "Jug",
+          "wiki": "Jug"
+        },
+        {
+          "name": "Glass",
+          "wiki": "Drinking glass"
+        },
+        {
+          "name": "Sink",
+          "wiki": "File:Kitchen water tap 20190408.jpg"
         }
       ]
     },
