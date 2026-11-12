@@ -1,7 +1,7 @@
 {
   "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram. A category marked \"drawn\": true has no photos to fetch — tools/draw-cards.py renders its cards locally. imageBase is where the app fetches photos from on first run; tools/upload-cloudinary.mjs prints the value to put here.",
-  "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@photos-v7/photos",
-  "imageVersion": 7,
+  "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@photos-v8/photos",
+  "imageVersion": 8,
   "categories": [
     {
       "id": "vehicles",
@@ -16,19 +16,19 @@
         },
         {
           "name": "Bus",
-          "wiki": "File:Mumbai 03-2016 48 bus in Mahim.jpg"
+          "wiki": "File:The BEST bus and ST Teresa’s Church.jpg"
         },
         {
           "name": "Bicycle",
-          "wiki": "File:Bicycles parked at bicycle rack in front of building and shops.jpg"
+          "wiki": "File:White bicycle.jpg"
         },
         {
           "name": "Train",
-          "wiki": "Train"
+          "wiki": "File:Indian Railways WAP4 Class Locomotive Pulling a Passenger Train Near Katihar.png"
         },
         {
           "name": "Aeroplane",
-          "wiki": "File:Air India Boeing 787-8 VT-ANB NRT (15922475860) - crop.jpg"
+          "wiki": "File:Southwest Boeing 737-700 N947WN BWI MD1.jpg"
         },
         {
           "name": "Boat",
@@ -36,7 +36,7 @@
         },
         {
           "name": "Tractor",
-          "wiki": "File:T-40AM tractor 2013 G01.jpg"
+          "wiki": "File:Swaraj 735 FE.jpg"
         },
         {
           "name": "Fire Truck",
@@ -56,7 +56,7 @@
         },
         {
           "name": "Ship",
-          "wiki": "File:Vision of The Seas cruise ship by Royal Caribbean International, in Alaska.jpg"
+          "wiki": "File:Cargo Ship Yantian Sea (4423755390).jpg"
         },
         {
           "name": "Ambulance",
@@ -72,7 +72,7 @@
         },
         {
           "name": "Jeep",
-          "wiki": "File:Mahindra Thar ROXX on dirt.jpg"
+          "wiki": "File:Mahindra Thar 2.5 CRDe 2011.jpg"
         },
         {
           "name": "Taxi",
@@ -80,7 +80,7 @@
         },
         {
           "name": "Van",
-          "wiki": "Van"
+          "wiki": "File:Maruti Omni in India.jpg"
         },
         {
           "name": "Bulldozer",
@@ -88,7 +88,7 @@
         },
         {
           "name": "Crane",
-          "wiki": "File:00 0061 Turmkräne mit Ausleger.jpg"
+          "wiki": "File:A Liebherr LTM 1500-8.1 crane truck in Taiwan 01.jpg"
         },
         {
           "name": "Submarine",
@@ -104,7 +104,7 @@
         },
         {
           "name": "School Bus",
-          "wiki": "File:School bus, Indore.jpg"
+          "wiki": "File:Front of Thomas Built MVP ER school bus (13182500055).jpg"
         },
         {
           "name": "Cycle Rickshaw",
@@ -125,11 +125,11 @@
         },
         {
           "name": "Banana",
-          "wiki": "File:Bananas white background.jpg"
+          "wiki": "File:Cavendish bananas DS.jpg"
         },
         {
           "name": "Mango",
-          "wiki": "File:An unripe mango in jaffna.JPG"
+          "wiki": "File:A ripe yellow mango 2025.jpg"
         },
         {
           "name": "Grapes",
@@ -149,15 +149,15 @@
         },
         {
           "name": "Pineapple",
-          "wiki": "File:Ananas~May 2008-1.jpg"
+          "wiki": "File:Pineapple.jpg"
         },
         {
           "name": "Papaya",
-          "wiki": "File:Papaya - longitudinal section.jpg"
+          "wiki": "File:Ripe Papaya of dhakuakhana.jpg"
         },
         {
           "name": "Cherry",
-          "wiki": "Cherry"
+          "wiki": "File:Cherry Stella444.jpg"
         },
         {
           "name": "Guava",
@@ -169,7 +169,7 @@
         },
         {
           "name": "Coconut",
-          "wiki": "File:Coconut face (2201055109).jpg"
+          "wiki": "File:One half of a coconut.jpg"
         },
         {
           "name": "Lemon",
@@ -177,23 +177,23 @@
         },
         {
           "name": "Pear",
-          "wiki": "File:Pear DS.jpg"
+          "wiki": "File:Pear Packham 78.jpg"
         },
         {
           "name": "Kiwi",
-          "wiki": "File:Kiwi (Actinidia chinensis) 1 Luc Viatour.jpg"
+          "wiki": "File:Kiwifruit-Actinidia deliciosa half.jpg"
         },
         {
           "name": "Peach",
-          "wiki": "File:Ripe peach.jpg"
+          "wiki": "File:Peach (1).jpg"
         },
         {
           "name": "Plum",
-          "wiki": "Plum"
+          "wiki": "File:Plums.jpg"
         },
         {
           "name": "Jackfruit",
-          "wiki": "Jackfruit"
+          "wiki": "File:Jackfruit growing on tree trunk in Uganda.jpg"
         },
         {
           "name": "Litchi",
@@ -213,7 +213,7 @@
         },
         {
           "name": "Fig",
-          "wiki": "File:Ficus carica whole fruits and fruit cut open.jpg"
+          "wiki": "File:Bowl of Figs.jpg"
         },
         {
           "name": "Muskmelon",
@@ -419,7 +419,7 @@
         },
         {
           "name": "Porcupine",
-          "wiki": "File:African crested Porcupine -Hystrix cristata- 2.jpg"
+          "wiki": "File:Hystrix indica 365302751.jpg"
         },
         {
           "name": "Squirrel",
@@ -472,7 +472,7 @@
         },
         {
           "name": "Eagle",
-          "wiki": "File:Weisskopf Seeadler haliaeetus leucocephalus 8 amk.jpg"
+          "wiki": "File:Мангистауская область, степной орёл.jpg"
         },
         {
           "name": "Sparrow",
@@ -484,7 +484,7 @@
         },
         {
           "name": "Hen",
-          "wiki": "File:Canadian chicken.jpg"
+          "wiki": "File:Lohmann Brown adult hen looking for food 03.jpg"
         },
         {
           "name": "Pigeon",
@@ -520,7 +520,7 @@
         },
         {
           "name": "Heron",
-          "wiki": "File:Grey heron, October 2015 II.jpg"
+          "wiki": "File:Grey heron at sunset. Eriyadu, Maldives.jpg"
         },
         {
           "name": "Hornbill",
@@ -540,7 +540,7 @@
         },
         {
           "name": "Toucan",
-          "wiki": "File:006 Toco toucan in Encontro das Águas State Park Photo by Giles Laurent.jpg"
+          "wiki": "File:Ramphastos toco -perching on a branch-8a.jpg"
         },
         {
           "name": "Cuckoo",
@@ -589,7 +589,7 @@
         },
         {
           "name": "Beetle",
-          "wiki": "File:Golden stag beetle.jpg"
+          "wiki": "File:Cetonia-aurata.jpg"
         },
         {
           "name": "Caterpillar",
@@ -633,7 +633,7 @@
         },
         {
           "name": "Scorpion",
-          "wiki": "Scorpion"
+          "wiki": "File:Emperor scorpion or Imperial scorpion (Pandinus imperator).jpg"
         },
         {
           "name": "Centipede",
@@ -653,7 +653,7 @@
         },
         {
           "name": "Cicada",
-          "wiki": "Cicada"
+          "wiki": "File:Tonggeret Cicada Cicadidae 07.jpg"
         }
       ]
     },
@@ -772,10 +772,11 @@
       "color": "#8ED2C4",
       "shadow": "#65A99B",
       "tile": "Firefighter",
+      "ask": "Who is this?",
       "items": [
         {
           "name": "Doctor",
-          "wiki": "File:Covid-19 San Salvatore 01.jpg"
+          "wiki": "File:Saeed-Ghezelbaash-in-clinical-office.jpg"
         },
         {
           "name": "Teacher",
@@ -787,7 +788,7 @@
         },
         {
           "name": "Police Officer",
-          "wiki": "Police officer"
+          "wiki": "File:India - Kolkata traffic cop - 3661.jpg"
         },
         {
           "name": "Firefighter",
@@ -795,27 +796,27 @@
         },
         {
           "name": "Postman",
-          "wiki": "File:Postman in Hermanus 2017.jpg"
+          "wiki": "File:Sikh postman 01.jpg"
         },
         {
           "name": "Chef",
-          "wiki": "File:西崎総料理長.jpg"
+          "wiki": "File:Chef Vijaya Raghavan.jpg"
         },
         {
           "name": "Nurse",
-          "wiki": "Nursing"
+          "wiki": "File:Nurse takes a patient's blood pressure.jpg"
         },
         {
           "name": "Driver",
-          "wiki": "Bus driver"
+          "wiki": "File:Pedi-cab Driver (10522135146).jpg"
         },
         {
           "name": "Carpenter",
-          "wiki": "File:Carpenter in traditional dress.jpg"
+          "wiki": "File:Skilled Carpenter Working on Wood in a Workshop.jpg"
         },
         {
           "name": "Pilot",
-          "wiki": "File:Pilot of an Indian Navy Boeing P-8I during the search for Malaysia Airlines Flight 370.JPG"
+          "wiki": "File:Test Pilot Dan Canin Poses with X-59 Research Aircraft (AFRC2023-0198-28).jpg"
         },
         {
           "name": "Dentist",
@@ -827,19 +828,19 @@
         },
         {
           "name": "Tailor",
-          "wiki": "File:Tailor men Behind the Sewing Machine Fingers on his chin.jpg"
+          "wiki": "File:Tailor.JPG"
         },
         {
           "name": "Fisherman",
-          "wiki": "File:20160805 Inle Lake 7434.jpg"
+          "wiki": "File:Fisherman working.JPG"
         },
         {
           "name": "Plumber",
-          "wiki": "File:Matchfit Plumbing Competition.jpg"
+          "wiki": "File:Toilet leak repair.jpg"
         },
         {
           "name": "Electrician",
-          "wiki": "File:Electrician Mike Hughes Installing Meter Base.jpg"
+          "wiki": "File:Electrician at work (2).jpg"
         },
         {
           "name": "Mechanic",
@@ -847,7 +848,7 @@
         },
         {
           "name": "Soldier",
-          "wiki": "File:Guardsmen on Parade MOD 45155722.jpg"
+          "wiki": "File:Indian army soldier (7348730240).jpg"
         },
         {
           "name": "Astronaut",
@@ -855,11 +856,11 @@
         },
         {
           "name": "Scientist",
-          "wiki": "File:Female scientist with DNA sample pippetting.jpg"
+          "wiki": "File:Scientist looking thorugh microscope.jpg"
         },
         {
           "name": "Gardener",
-          "wiki": "File:Man carefully prunes plants while enjoying a sunny day in the garden.jpg"
+          "wiki": "File:Gardener in a senior high school pruning a hedge.jpg"
         },
         {
           "name": "Vet",
@@ -867,7 +868,7 @@
         },
         {
           "name": "Baker",
-          "wiki": "Baker"
+          "wiki": "File:Baker Oslo.jpg"
         },
         {
           "name": "Painter",
@@ -983,7 +984,7 @@
           "wiki": "Flag of New Zealand"
         }
       ],
-      "crop": "center"
+      "crop": "contain"
     },
     {
       "id": "sea",
@@ -994,7 +995,7 @@
       "items": [
         {
           "name": "Fish",
-          "wiki": "Fish"
+          "wiki": "File:Goldfish3.jpg"
         },
         {
           "name": "Dolphin",
@@ -1006,7 +1007,7 @@
         },
         {
           "name": "Shark",
-          "wiki": "File:Shark Bay 27.jpg"
+          "wiki": "File:Full Shot of a Caribbean Reef Shark at Tiger Beach Bahamas.jpg"
         },
         {
           "name": "Octopus",
@@ -1014,7 +1015,7 @@
         },
         {
           "name": "Crab",
-          "wiki": "Crab"
+          "wiki": "File:Crab migration extra - chris bray-1.jpg"
         },
         {
           "name": "Starfish",
@@ -1034,11 +1035,11 @@
         },
         {
           "name": "Lobster",
-          "wiki": "Lobster"
+          "wiki": "File:Homarus gammarus 239918972.jpg"
         },
         {
           "name": "Squid",
-          "wiki": "Squid"
+          "wiki": "File:Caribbean Reef Squid (50672441773).jpg"
         },
         {
           "name": "Seal",
@@ -1050,11 +1051,11 @@
         },
         {
           "name": "Clownfish",
-          "wiki": "File:Pez payaso común (Amphiprion ocellaris) en una anémona magnífica (Heteractis magnifica), Anilao, Filipinas, 2023-08-22, DD 10.jpg"
+          "wiki": "File:Common clownfish.jpg"
         },
         {
           "name": "Eel",
-          "wiki": "File:Green Moray Eel at the New England Aquarium.jpg"
+          "wiki": "File:Conger eel, Paignton Sands - geograph.org.uk - 7654656.jpg"
         },
         {
           "name": "Sea Urchin",
@@ -1066,7 +1067,7 @@
         },
         {
           "name": "Oyster",
-          "wiki": "Oyster"
+          "wiki": "File:Pearl-variety hg.jpg"
         },
         {
           "name": "Walrus",
@@ -1077,20 +1078,20 @@
           "wiki": "File:Black Saddled Toby (Canthigaster valentini) (3149749224).jpg"
         },
         {
-          "name": "Swordfish",
-          "wiki": "Swordfish"
+          "name": "Sea Otter",
+          "wiki": "File:Wild Sea Otter (17348235490).jpg"
         },
         {
           "name": "Sea Lion",
-          "wiki": "Sea lion"
+          "wiki": "File:Zalophus californianus (Otarie de Californie) - 459.jpg"
         },
         {
           "name": "Shrimp",
-          "wiki": "File:ZS 中山市 Zhongshan 棠記海鮮餐廳 Tangji Seafood Restaurant 晚餐 dinner prawn May 2023 Px3 01.jpg"
+          "wiki": "File:Cleaner shrimp - Monterey Bay Aquarium - DSC07218.JPG"
         },
         {
           "name": "Manatee",
-          "wiki": "Manatee"
+          "wiki": "File:Manatee cow and calf swimming side by side.jpg"
         }
       ]
     },
@@ -1123,7 +1124,7 @@
         },
         {
           "name": "Donkey",
-          "wiki": "Donkey"
+          "wiki": "File:A donkey standing.jpg"
         },
         {
           "name": "Buffalo",
@@ -1163,7 +1164,7 @@
         },
         {
           "name": "Rooster",
-          "wiki": "Rooster"
+          "wiki": "File:Brown Leghorn rooster in Australia.jpg"
         },
         {
           "name": "Chick",
@@ -1174,8 +1175,8 @@
           "wiki": "File:Sheep, Stodmarsh 6.jpg"
         },
         {
-          "name": "Piglet",
-          "wiki": "File:Standing piglet at golden hour in Don Det Laos.jpg"
+          "name": "Ram",
+          "wiki": "File:A Portland ram at Shipley, West Sussex, England.JPG"
         },
         {
           "name": "Foal",
@@ -1321,7 +1322,7 @@
       "items": [
         {
           "name": "Sun",
-          "wiki": "File:Bright Shades Of Sky Ans Sparkling Sun , Aligarh.jpg"
+          "wiki": "File:Full disk of the Sun (eso1703e-comparisona).jpg"
         },
         {
           "name": "Moon",
@@ -1539,7 +1540,8 @@
       "items": [
         {
           "name": "Guitar",
-          "wiki": "Guitar"
+          "wiki": "File:Gitara elektro-akustyczna GLA-T100 ACE Tramontane firmy Lag.jpg",
+          "crop": "contain"
         },
         {
           "name": "Drum",
@@ -1555,19 +1557,20 @@
         },
         {
           "name": "Flute",
-          "wiki": "File:Western concert flute (Yamaha).jpg"
+          "wiki": "File:Pandit Chetan Joshi Flute Artist.jpg"
         },
         {
           "name": "Trumpet",
-          "wiki": "File:Yamaha Trumpet YTR-8335LA.tif"
+          "wiki": "File:Yamaha Trumpet YTR-8335LA.tif",
+          "crop": "contain"
         },
         {
           "name": "Harp",
-          "wiki": "File:A musical instrument. A harp.jpg"
+          "wiki": "File:Pedal harp - Freeman's Auction House Stringed Instrument Auction Exhibition, Philadelphia (2015-11-15 14.14.26 by David Hilowitz).jpg"
         },
         {
           "name": "Tabla",
-          "wiki": "Tabla"
+          "wiki": "File:Tabla set Music Instrument.jpg"
         },
         {
           "name": "Sitar",
@@ -1575,31 +1578,41 @@
         },
         {
           "name": "Saxophone",
-          "wiki": "File:Yamaha YAS-25 Alto Saxophone 20080502.jpg"
+          "wiki": "File:Yamaha Saxophone YAS-62.tif",
+          "crop": "contain"
         },
         {
           "name": "Xylophone",
-          "wiki": "File:Toy xylophone.jpg"
+          "wiki": "File:Xylophones-02.jpg"
         },
         {
           "name": "Accordion",
           "wiki": "File:Paris - Accordion Player - 0956.jpg"
         },
         {
-          "name": "Banjo",
-          "wiki": "File:Banjo (AM 1998.60.131-1).jpg"
+          "name": "Harmonium",
+          "wiki": "File:Harmonium A instrument of India.jpg"
         },
         {
           "name": "Cello",
-          "wiki": "Cello"
+          "wiki": "Cello",
+          "crop": "contain",
+          "frame": [
+            0,
+            0,
+            0.55,
+            1
+          ]
         },
         {
           "name": "Harmonica",
-          "wiki": "Harmonica"
+          "wiki": "File:Tremolo Harmonica Stagg Key C.png",
+          "crop": "contain"
         },
         {
           "name": "Clarinet",
-          "wiki": "File:Yamaha Clarinet YCL-457II-22 (rotated).jpg"
+          "wiki": "File:Yamaha Clarinet YCL-457II-22 (rotated).jpg",
+          "crop": "contain"
         },
         {
           "name": "Trombone",
@@ -1607,15 +1620,15 @@
         },
         {
           "name": "Ukulele",
-          "wiki": "Ukulele"
+          "wiki": "File:17 inch pocket ukulele branded \"ultnice\".jpg"
         },
         {
           "name": "Tambourine",
-          "wiki": "Tambourine"
+          "wiki": "File:LP Tambourine by MusicTales.jpg"
         },
         {
           "name": "Cymbal",
-          "wiki": "File:Manjeera or Taal.jpg"
+          "wiki": "File:Crash 41808 18\" B8 firmy Sabian.jpg"
         },
         {
           "name": "Maracas",
@@ -1623,7 +1636,7 @@
         },
         {
           "name": "Bagpipes",
-          "wiki": "File:The Bagpiper.jpg"
+          "wiki": "File:Bagpipe - MIM Brussels (2018-05-26 10.51.23 by Miguel Discart @Flickr 31384964587).jpg"
         },
         {
           "name": "Mandolin",
@@ -1631,7 +1644,8 @@
         },
         {
           "name": "Veena",
-          "wiki": "Veena"
+          "wiki": "File:Antique-Saraswati-Veena-Double-Pumpkin-Full-Ivory-Desing- 57.jpg",
+          "crop": "contain"
         },
         {
           "name": "Dholak",
@@ -1866,7 +1880,7 @@
       "items": [
         {
           "name": "Hand",
-          "wiki": "Hand"
+          "wiki": "File:Child shows hand with fingers spread in classroom setting during art activity.jpg"
         },
         {
           "name": "Eye",
@@ -1874,11 +1888,11 @@
         },
         {
           "name": "Ear",
-          "wiki": "Ear"
+          "wiki": "File:Closeup of a human ear.jpg"
         },
         {
           "name": "Nose",
-          "wiki": "File:Nose – Tiger.jpg"
+          "wiki": "File:Eyes & Nose 5783.JPG"
         },
         {
           "name": "Mouth",
@@ -1914,7 +1928,7 @@
         },
         {
           "name": "Foot",
-          "wiki": "Foot"
+          "wiki": "File:Human male foot.jpg"
         },
         {
           "name": "Knee",
@@ -1922,11 +1936,19 @@
         },
         {
           "name": "Leg",
-          "wiki": "File:Male legs 01.jpg"
+          "wiki": "File:ALCANZANDO METAS GUATAPE 2017.jpg",
+          "point": [
+            0.57,
+            0.8
+          ]
         },
         {
           "name": "Head",
-          "wiki": "File:Gracyn Shinyei - 2013.jpg"
+          "wiki": "File:Grinning young boy of Laos.jpg",
+          "point": [
+            0.5,
+            0.16
+          ]
         },
         {
           "name": "Face",

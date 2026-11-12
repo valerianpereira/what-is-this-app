@@ -133,7 +133,12 @@ cut, so the sheet shows the card as it would be):
     node tools/repin.mjs 'vehicles:Motorcycle=File:<name from the sheet>'
 
 Flags are the exception: no photo of a flag is square, so the `countries` group
-is `"crop": "center"` — a plain centre crop, which keeps the emblem.
+is `"crop": "contain"` — the whole flag, fitted inside a white square with a
+thin grey rim so white flags still show their edge.
+
+A body part a photo alone leaves ambiguous (Head, Hand, Leg) gets a
+`"point": [x, y]` on its item — fractions of the square — and `square.py` draws
+a fat arrow with its tip there.
 
 Photos are fetched at 720px (the round card at 3× on a 1080p phone) and encoded
 as WebP q78 — about half the bytes of the equivalent JPEG. Requires `cwebp`

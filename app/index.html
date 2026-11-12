@@ -380,6 +380,14 @@ function speak(text) {
   } catch (e) {}
 }
 
+// A group can ask its own question ("Who is this?" for people); in a mixed round
+// the current card's group decides.
+function question() {
+  const cur = S.queue[S.idx];
+  const cat = cur && CATS.find((c) => c.id === cur.c);
+  return (cat && cat.ask) || 'What is this?';
+}
+
 function startRound(catId) {
   let pool;
   if (catId === 'mix') {
@@ -394,7 +402,7 @@ function startRound(catId) {
   buildDots();
   render();
   prefetchAhead();
-  speak('What is this?');
+  speak(question());
 }
 
 function reveal() {
@@ -413,7 +421,7 @@ function prev() {
   if (S.idx === 0) return;
   Object.assign(S, { idx: S.idx - 1, phase: 'ask', left: S.seconds * 1000 });
   render();
-  speak('What is this?');
+  speak(question());
 }
 
 function next() {
@@ -430,7 +438,7 @@ function next() {
   Object.assign(S, { idx: i, phase: 'ask', left: S.seconds * 1000 });
   render();
   prefetchAhead();
-  speak('What is this?');
+  speak(question());
 }
 
 setInterval(() => {
@@ -507,7 +515,7 @@ function render() {
     $('round').querySelector('[data-act="pause"]').textContent = S.paused ? '▶' : 'II';
     $('muteBtn').innerHTML = speakerIcon(S.voice);
     $('muteBtn').setAttribute('aria-label', S.voice ? 'Sound on' : 'Sound off');
-    $('promptText').textContent = asking ? 'What is this?' : 'It is a…';
+    $('promptText').textContent = asking ? question() : 'It is a…';
     $('answerText').textContent = cur ? cur.n : '';
     const src = cur ? photo(slotId(cur.c, cur.n)) : '';
     if ($('pic').src !== src) {
