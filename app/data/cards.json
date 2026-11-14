@@ -1,7 +1,7 @@
 {
   "_comment": "Single source of truth for the game. The app reads name/color/shadow/items[].name; tools/fetch-images.mjs reads tile and items[].wiki to download one photo per card. A wiki value of 'File:Foo.jpg' pins one exact Wikimedia Commons file, used where the article's lead image is a painting, a collage or a diagram. A category marked \"drawn\": true has no photos to fetch — tools/draw-cards.py renders its cards locally. imageBase is where the app fetches photos from on first run; tools/upload-cloudinary.mjs prints the value to put here.",
-  "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@photos-v8/photos",
-  "imageVersion": 8,
+  "imageBase": "https://cdn.jsdelivr.net/gh/valerianpereira/what-is-this-app@photos-v9/photos",
+  "imageVersion": 9,
   "categories": [
     {
       "id": "vehicles",
@@ -250,15 +250,15 @@
         },
         {
           "name": "Pumpkin",
-          "wiki": "Pumpkin"
+          "wiki": "File:Pumpkin 2108-1292.jpg"
         },
         {
           "name": "Cabbage",
-          "wiki": "Cabbage"
+          "wiki": "File:Liat Portal for Foodie Disorder - Green Cabbage.jpg"
         },
         {
           "name": "Corn",
-          "wiki": "File:Corn on the cob (sweet corn).jpg"
+          "wiki": "File:Liat Portal for Foodie Disorder - Cooked Corn on the Cob.jpg"
         },
         {
           "name": "Brinjal",
@@ -290,7 +290,7 @@
         },
         {
           "name": "Broccoli",
-          "wiki": "Broccoli"
+          "wiki": "File:Good broccoli Deal!.jpg"
         },
         {
           "name": "Mushroom",
@@ -310,15 +310,15 @@
         },
         {
           "name": "Okra",
-          "wiki": "Okra"
+          "wiki": "File:Okra with corriander.png"
         },
         {
           "name": "Turnip",
-          "wiki": "Turnip"
+          "wiki": "File:Liat Portal for Foodie Disorder - Turnip.jpg"
         },
         {
           "name": "Sweet Potato",
-          "wiki": "Sweet potato"
+          "wiki": "File:Liat Portal for Foodie Disorder - Sweet potatoes from San Francisco farmers market.jpg"
         },
         {
           "name": "Bottle Gourd",
@@ -448,7 +448,7 @@
       "items": [
         {
           "name": "Parrot",
-          "wiki": "File:Green parrot with orange beak (Unsplash).jpg"
+          "wiki": "File:Alexandrine parakeet (Psittacula eupatria eupatria) male.jpg"
         },
         {
           "name": "Peacock",
@@ -524,7 +524,7 @@
         },
         {
           "name": "Hornbill",
-          "wiki": "File:Malabar pied hornbill (Anthracoceros coronatus) male.jpg"
+          "wiki": "File:Great Hornbill (Buceros bicornis).jpg"
         },
         {
           "name": "Myna",
@@ -666,7 +666,7 @@
       "items": [
         {
           "name": "Rose",
-          "wiki": "Rose"
+          "wiki": "File:Rose flower at the Lalbaghgarden Bangalore.jpg"
         },
         {
           "name": "Sunflower",
@@ -750,7 +750,7 @@
         },
         {
           "name": "Gerbera",
-          "wiki": "Gerbera"
+          "wiki": "File:Yellow Gerbera daisy flower.jpg"
         },
         {
           "name": "Water Lily",
@@ -804,7 +804,7 @@
         },
         {
           "name": "Nurse",
-          "wiki": "File:Nurse takes a patient's blood pressure.jpg"
+          "wiki": "File:Nurse checks blood pressure.jpg"
         },
         {
           "name": "Driver",
@@ -856,7 +856,7 @@
         },
         {
           "name": "Scientist",
-          "wiki": "File:Scientist looking thorugh microscope.jpg"
+          "wiki": "File:Researcher uses pipettes.jpg"
         },
         {
           "name": "Gardener",
@@ -995,7 +995,7 @@
       "items": [
         {
           "name": "Fish",
-          "wiki": "File:Goldfish3.jpg"
+          "wiki": "File:CSIRO ScienceImage 2879 Tropical Reef Fish.jpg"
         },
         {
           "name": "Dolphin",
@@ -1075,7 +1075,7 @@
         },
         {
           "name": "Pufferfish",
-          "wiki": "File:Black Saddled Toby (Canthigaster valentini) (3149749224).jpg"
+          "wiki": "File:Spotted Puffer Fish. (13421084473).jpg"
         },
         {
           "name": "Sea Otter",
@@ -1112,7 +1112,7 @@
         },
         {
           "name": "Sheep",
-          "wiki": "Sheep"
+          "wiki": "File:Swaledale Sheep, Lake District, England - June 2009.jpg"
         },
         {
           "name": "Horse",
@@ -1124,7 +1124,7 @@
         },
         {
           "name": "Donkey",
-          "wiki": "File:A donkey standing.jpg"
+          "wiki": "File:Equus asinus Kadzidłowo 001.jpg"
         },
         {
           "name": "Buffalo",
@@ -1156,11 +1156,11 @@
         },
         {
           "name": "Ox",
-          "wiki": "File:BULLOCK CART ON RACE.jpg"
+          "wiki": "File:Kangayam bull, Kolathupalayam Getticheviyur (2).jpg"
         },
         {
           "name": "Calf",
-          "wiki": "File:Highland cow and calf. - geograph.org.uk - 404228.jpg"
+          "wiki": "File:Sand colored calf trotting in the countryside of Don Det Laos.jpg"
         },
         {
           "name": "Rooster",
@@ -1213,7 +1213,7 @@
       "items": [
         {
           "name": "Dog",
-          "wiki": "File:Labrador Retriever portrait.jpg"
+          "wiki": "File:Dog sitting on grass (7257609304).jpg"
         },
         {
           "name": "Cat",
@@ -1289,7 +1289,7 @@
         },
         {
           "name": "Gecko",
-          "wiki": "Gecko"
+          "wiki": "File:Gecko Lizard.jpg"
         },
         {
           "name": "Iguana",
@@ -1301,7 +1301,7 @@
         },
         {
           "name": "Guppy",
-          "wiki": "Guppy"
+          "wiki": "File:Poecilia reticulata - Guppy, male, cobra-green morph.jpg"
         },
         {
           "name": "Terrapin",
@@ -1330,7 +1330,14 @@
         },
         {
           "name": "Star",
-          "wiki": "File:Night Sky Stars Trees 02.jpg"
+          "wiki": "File:The Dog Star, Sirius, and its Tiny Companion (2005-36-1820).jpg",
+          "crop": "contain",
+          "frame": [
+            0.035,
+            0.053,
+            0.966,
+            0.81
+          ]
         },
         {
           "name": "Cloud",
@@ -1338,7 +1345,7 @@
         },
         {
           "name": "Rain",
-          "wiki": "File:Rain Umbrella 01.JPG"
+          "wiki": "File:Rain drops (Unsplash).jpg"
         },
         {
           "name": "Rainbow",
@@ -1354,7 +1361,7 @@
         },
         {
           "name": "Fog",
-          "wiki": "Fog"
+          "wiki": "File:Foggy road in Tuntorp.jpg"
         },
         {
           "name": "Sunrise",
@@ -1382,7 +1389,7 @@
         },
         {
           "name": "Wind",
-          "wiki": "File:Breeze (6822472939).jpg"
+          "wiki": "File:2026-08-22 Letfest windsock 03.jpg"
         },
         {
           "name": "Frost",
@@ -1402,7 +1409,7 @@
         },
         {
           "name": "Puddle",
-          "wiki": "Puddle"
+          "wiki": "File:Rain puddle reflection Cot Way Shepherds Cot Crouch End London England 01.jpg"
         },
         {
           "name": "Eclipse",
@@ -1431,7 +1438,7 @@
       "items": [
         {
           "name": "Shirt",
-          "wiki": "File:Banana Republic Button-Down Shirt 1 2019-03-21.jpg"
+          "wiki": "File:Banana Republic Button-Down Shirt 2 2019-03-21.jpg"
         },
         {
           "name": "T-shirt",
@@ -1439,11 +1446,11 @@
         },
         {
           "name": "Trousers",
-          "wiki": "File:HK TKO 將軍澳 Tseung Kwan O PopCorn mall shop Uniqlo Clothing Store May 2022 Px3 33.jpg"
+          "wiki": "File:Chino pants.jpg"
         },
         {
           "name": "Dress",
-          "wiki": "File:Knitted Dress as additional warm layer over street clothing - ginger woman sitting on a park bench outside of Praha hlavní nádraží.jpg"
+          "wiki": "File:Girl in white dress running in the backyard.jpg"
         },
         {
           "name": "Hat",
@@ -1479,7 +1486,7 @@
         },
         {
           "name": "Shorts",
-          "wiki": "File:Men's Shorts - Old Bull Lee - Orange.jpg"
+          "wiki": "File:Orange men's shorts for sale at Target.jpg"
         },
         {
           "name": "Sandals",
@@ -1487,7 +1494,7 @@
         },
         {
           "name": "Raincoat",
-          "wiki": "File:Gabriel wearing a University of Chicago disposable raincoat, Hyde Park, Illinois, US (PPL1-Corrected) julesvernex2.jpg"
+          "wiki": "File:Rain coat (3705441959).jpg"
         },
         {
           "name": "Saree",
@@ -1503,7 +1510,7 @@
         },
         {
           "name": "Tie",
-          "wiki": "File:Oriental tie knot.jpg"
+          "wiki": "File:Dress-pinstripe.jpg"
         },
         {
           "name": "Cap",
@@ -1519,7 +1526,7 @@
         },
         {
           "name": "Apron",
-          "wiki": "Apron"
+          "wiki": "File:Apron with pockets for clothes pegs.png"
         },
         {
           "name": "Pyjamas",
@@ -1527,7 +1534,7 @@
         },
         {
           "name": "Swimsuit",
-          "wiki": "File:Chloe Sutton - USA Swimsuit (4661622460) (alternate version).jpg"
+          "wiki": "File:Polo Sport Ralph Lauren trunks.jpg"
         }
       ]
     },
@@ -1574,7 +1581,7 @@
         },
         {
           "name": "Sitar",
-          "wiki": "Sitar"
+          "wiki": "File:Pt. Shivnath Mishra.jpg"
         },
         {
           "name": "Saxophone",
@@ -1611,8 +1618,7 @@
         },
         {
           "name": "Clarinet",
-          "wiki": "File:Yamaha Clarinet YCL-457II-22 (rotated).jpg",
-          "crop": "contain"
+          "wiki": "File:Clarinetist, Prague, January 2009, detail.jpg"
         },
         {
           "name": "Trombone",
@@ -1636,7 +1642,7 @@
         },
         {
           "name": "Bagpipes",
-          "wiki": "File:Bagpipe - MIM Brussels (2018-05-26 10.51.23 by Miguel Discart @Flickr 31384964587).jpg"
+          "wiki": "File:Bagpiper of the International Celtic Pipes and Drums 1.jpg"
         },
         {
           "name": "Mandolin",
@@ -1644,8 +1650,7 @@
         },
         {
           "name": "Veena",
-          "wiki": "File:Antique-Saraswati-Veena-Double-Pumpkin-Full-Ivory-Desing- 57.jpg",
-          "crop": "contain"
+          "wiki": "File:Guru Pt Ramarao Patra Odissi Bina (Veena).jpg"
         },
         {
           "name": "Dholak",
@@ -1666,11 +1671,11 @@
         },
         {
           "name": "Table",
-          "wiki": "Table (furniture)"
+          "wiki": "File:Tavolino DSC 0482.tif"
         },
         {
           "name": "Bed",
-          "wiki": "File:Moss Lee Grange Bed & Breakfast - Deluxe Double En-Suite Bedroom.jpg"
+          "wiki": "File:Wooden Four-poster Bed - Bedroom - Swami Vivekanandas Ancestral House - Kolkata 2011-10-22 6101.JPG"
         },
         {
           "name": "Lamp",
@@ -1686,7 +1691,7 @@
         },
         {
           "name": "Fork",
-          "wiki": "Fork"
+          "wiki": "File:Fork, knife and spoon made of bamboo on a plate.jpg"
         },
         {
           "name": "Cup",
@@ -1694,7 +1699,7 @@
         },
         {
           "name": "Plate",
-          "wiki": "File:Wilson White House plate 02 - Smithsonian Museum of Natural History - 2012-05-15.jpg"
+          "wiki": "File:Decorative plate from Poland Bogucice Katowice Porcelana Śląska 1952-1993 01.jpg"
         },
         {
           "name": "Bowl",
@@ -1714,7 +1719,7 @@
         },
         {
           "name": "Broom",
-          "wiki": "File:New brooms - 02.jpg"
+          "wiki": "File:Chinese broom and sweeping tool.jpg"
         },
         {
           "name": "Bucket",
@@ -1726,7 +1731,7 @@
         },
         {
           "name": "Fridge",
-          "wiki": "File:EFTA00001697 - Black refrigerator stands in a kitchen with red tiled floor next to a water cooler and a white table.jpg"
+          "wiki": "File:Kitchen old design with different appliances.jpg"
         },
         {
           "name": "Television",
@@ -1734,7 +1739,7 @@
         },
         {
           "name": "Mirror",
-          "wiki": "File:A vintage, hand-carved wooden wall mirror frame.jpg"
+          "wiki": "File:Mirror MET DP106620.jpg"
         },
         {
           "name": "Pillow",
@@ -1742,7 +1747,7 @@
         },
         {
           "name": "Blanket",
-          "wiki": "File:WOOLEN BLANKETS FROM CRETE, GREECE,, 19TH C.jpg"
+          "wiki": "File:Grey knitted blanket.jpg"
         },
         {
           "name": "Towel",
@@ -1855,7 +1860,7 @@
         },
         {
           "name": "Pasta",
-          "wiki": "Pasta"
+          "wiki": "File:A plate of red sauce pasta.jpg"
         },
         {
           "name": "Doughnut",
@@ -1916,7 +1921,11 @@
         },
         {
           "name": "Elbow",
-          "wiki": "Elbow"
+          "wiki": "File:Running boy in joyous mood.jpg",
+          "point": [
+            0.37,
+            0.5
+          ]
         },
         {
           "name": "Finger",
@@ -1932,7 +1941,11 @@
         },
         {
           "name": "Knee",
-          "wiki": "Knee"
+          "wiki": "File:ALCANZANDO METAS GUATAPE 2017.jpg",
+          "point": [
+            0.38,
+            0.79
+          ]
         },
         {
           "name": "Leg",
@@ -1968,11 +1981,19 @@
         },
         {
           "name": "Cheek",
-          "wiki": "Cheek"
+          "wiki": "File:Grinning young boy of Laos.jpg",
+          "point": [
+            0.66,
+            0.66
+          ]
         },
         {
           "name": "Chin",
-          "wiki": "File:Up close of human chin and lips.jpg"
+          "wiki": "File:Grinning young boy of Laos.jpg",
+          "point": [
+            0.46,
+            0.93
+          ]
         },
         {
           "name": "Eyebrow",
@@ -2009,11 +2030,11 @@
         },
         {
           "name": "Doll",
-          "wiki": "Rag doll"
+          "wiki": "File:Mexican rag doll from Chiapas (muñeca chiapaneca).jpg"
         },
         {
           "name": "Kite",
-          "wiki": "Kite"
+          "wiki": "File:Go fly a kite (7511318416).jpg"
         },
         {
           "name": "Blocks",
@@ -2041,7 +2062,7 @@
         },
         {
           "name": "Skipping Rope",
-          "wiki": "Skipping rope"
+          "wiki": "File:Skipping Rope (5004365763).jpg"
         },
         {
           "name": "Yo-yo",
@@ -2150,7 +2171,7 @@
         },
         {
           "name": "Book",
-          "wiki": "Paperback"
+          "wiki": "File:Old Books 01.JPG"
         },
         {
           "name": "Bag",
@@ -2190,7 +2211,7 @@
         },
         {
           "name": "Abacus",
-          "wiki": "File:Wooden abacus.jpg"
+          "wiki": "File:20th Century Small Wooden Abacus.jpg"
         },
         {
           "name": "Whiteboard",
@@ -2198,7 +2219,7 @@
         },
         {
           "name": "Desk",
-          "wiki": "Desk"
+          "wiki": "File:School desk - Kolomna local museum.jpg"
         },
         {
           "name": "Compass",
@@ -2223,7 +2244,7 @@
         },
         {
           "name": "Lantern",
-          "wiki": "Paper lantern"
+          "wiki": "File:Diwali Lanterns 2.jpg"
         },
         {
           "name": "Sparkler",
@@ -2235,7 +2256,7 @@
         },
         {
           "name": "Garland",
-          "wiki": "File:Marigold garlands.jpg"
+          "wiki": "File:Marigold Flowers as garland.jpg"
         },
         {
           "name": "Gift",
@@ -2303,11 +2324,11 @@
         },
         {
           "name": "Bunting",
-          "wiki": "Bunting (textile)"
+          "wiki": "File:Pink Bunting (7889856472).jpg"
         },
         {
           "name": "Firecracker",
-          "wiki": "Firecracker"
+          "wiki": "File:Sparklers at DLF City Phase 2, K Block, Gurgaon during Diwali 2.jpg"
         },
         {
           "name": "Pookalam",
@@ -2344,11 +2365,11 @@
         },
         {
           "name": "Branch",
-          "wiki": "File:Just a Branch of a Tree.jpg"
+          "wiki": "File:A branch with autumn leaves.jpg"
         },
         {
           "name": "Bud",
-          "wiki": "File:Flower bud closeup.jpg"
+          "wiki": "File:Nelumbo nucifera, also known as Indian lotus in bud stage (Image 7 of 7).jpg"
         },
         {
           "name": "Thorn",
@@ -2360,7 +2381,7 @@
         },
         {
           "name": "Moss",
-          "wiki": "Moss"
+          "wiki": "File:MOSS ROCK (5593170966).jpg"
         },
         {
           "name": "Fern",
@@ -2384,7 +2405,7 @@
         },
         {
           "name": "Sapling",
-          "wiki": "File:Young maple tree (14142351780).jpg"
+          "wiki": "File:The seedling.jpg"
         },
         {
           "name": "Bonsai",
@@ -2433,15 +2454,15 @@
       "items": [
         {
           "name": "Cricket",
-          "wiki": "Cricket"
+          "wiki": "File:Master Blaster at work.jpg"
         },
         {
           "name": "Football",
-          "wiki": "Association football"
+          "wiki": "File:Soccer Ball (46208304925).jpg"
         },
         {
           "name": "Badminton",
-          "wiki": "File:Yonex IFB 2013 - Eightfinal - Kim Ki-jung-Kim Sa-rang — Chris Adcock-Andrew Ellis 03.jpg"
+          "wiki": "File:Rachetă de badminton şi fluturaş.jpg"
         },
         {
           "name": "Tennis",
@@ -2449,7 +2470,7 @@
         },
         {
           "name": "Hockey",
-          "wiki": "File:SK at the Rio Olympic 2016 Hockey arena.jpg"
+          "wiki": "File:Olivos hockey (3).jpg"
         },
         {
           "name": "Basketball",
@@ -2489,11 +2510,11 @@
         },
         {
           "name": "Wrestling",
-          "wiki": "Wrestling"
+          "wiki": "File:Davangere Wrestlers.jpg"
         },
         {
           "name": "Golf",
-          "wiki": "Golf"
+          "wiki": "File:Golfer in Golf Links 1.jpg"
         },
         {
           "name": "Skating",
@@ -2505,11 +2526,12 @@
         },
         {
           "name": "Surfing",
-          "wiki": "Surfing"
+          "wiki": "File:Surfing - Cocoa Beach - Florida.jpg"
         },
         {
           "name": "Archery",
-          "wiki": "Archery"
+          "wiki": "File:U.S. Invictus team archer Chasity Kuczer takes aim during an archery gold medal round at the 2016 Invictus Games (26925974655).jpg",
+          "crop": "contain"
         },
         {
           "name": "Gymnastics",
@@ -2525,7 +2547,7 @@
         },
         {
           "name": "Carrom",
-          "wiki": "Carrom"
+          "wiki": "File:Carrom in Tamil Nadu.jpg"
         },
         {
           "name": "Baseball",
@@ -2586,7 +2608,7 @@
         },
         {
           "name": "Hill",
-          "wiki": "Hill"
+          "wiki": "File:Tuscan landscape with lonely tree.jpg"
         },
         {
           "name": "Pond",
@@ -2655,7 +2677,8 @@
         },
         {
           "name": "Saturn",
-          "wiki": "Saturn"
+          "wiki": "Saturn",
+          "crop": "contain"
         },
         {
           "name": "Mercury",
@@ -2675,7 +2698,8 @@
         },
         {
           "name": "Satellite",
-          "wiki": "File:Sputnik asm.jpg"
+          "wiki": "File:Sputnik asm.jpg",
+          "crop": "contain"
         },
         {
           "name": "Telescope",
@@ -2687,11 +2711,12 @@
         },
         {
           "name": "Space Station",
-          "wiki": "International Space Station"
+          "wiki": "International Space Station",
+          "crop": "contain"
         },
         {
           "name": "Spacesuit",
-          "wiki": "Spacesuit"
+          "wiki": "File:Sunita Williams.jpg"
         },
         {
           "name": "Asteroid",
@@ -2703,15 +2728,15 @@
         },
         {
           "name": "Space Shuttle",
-          "wiki": "Space Shuttle"
+          "wiki": "File:Space Shuttle Columbia launching.jpg"
         },
         {
           "name": "Lunar Rover",
-          "wiki": "Lunar Roving Vehicle"
+          "wiki": "File:NASA Apollo 17 Lunar Roving Vehicle.jpg"
         },
         {
-          "name": "Observatory",
-          "wiki": "Observatory"
+          "name": "Solar System",
+          "wiki": "File:Solar system model.jpg"
         }
       ]
     },
@@ -2732,7 +2757,7 @@
         },
         {
           "name": "Tadpole",
-          "wiki": "Tadpole"
+          "wiki": "File:Tadpoles 10 days.jpg"
         },
         {
           "name": "Tree Frog",
@@ -2772,7 +2797,7 @@
         },
         {
           "name": "Gharial",
-          "wiki": "Gharial"
+          "wiki": "File:Gavialis gangeticus.jpg"
         },
         {
           "name": "Komodo Dragon",
@@ -2780,7 +2805,7 @@
         },
         {
           "name": "Monitor Lizard",
-          "wiki": "Bengal monitor"
+          "wiki": "File:Bengal monitor (Varanus bengalensis)..jpg"
         },
         {
           "name": "Frilled Lizard",
@@ -2813,7 +2838,7 @@
       "items": [
         {
           "name": "Hospital",
-          "wiki": "Hospital"
+          "wiki": "File:P.G. (SSKM) Hospital, administrative building and campus 10.jpg"
         },
         {
           "name": "Temple",
@@ -2825,7 +2850,7 @@
         },
         {
           "name": "Mosque",
-          "wiki": "File:Dome of Prophet's Mosque - Medina.jpg"
+          "wiki": "File:Jama Masjid 2011.jpg"
         },
         {
           "name": "Gurudwara",
@@ -2849,23 +2874,23 @@
         },
         {
           "name": "Railway Station",
-          "wiki": "Train station"
+          "wiki": "File:Tiruchirappalli Junction railway station (26387).jpg"
         },
         {
           "name": "Post Office",
-          "wiki": "Post office"
+          "wiki": "File:Post Office Headquarters Mehsana India Post Payments Bank .jpg"
         },
         {
           "name": "Bus Stop",
-          "wiki": "Bus stop"
+          "wiki": "File:Bus stop babarpur.jpg"
         },
         {
           "name": "Airport",
-          "wiki": "File:Israel 3 023 Israelic Aeroplane.jpg"
+          "wiki": "File:AI B787 V19 Mumbai Airport.png"
         },
         {
           "name": "Fire Station",
-          "wiki": "Fire station"
+          "wiki": "File:Fire station in Vizag.jpg"
         },
         {
           "name": "Library",
@@ -2873,7 +2898,7 @@
         },
         {
           "name": "Petrol Pump",
-          "wiki": "Filling station"
+          "wiki": "File:Petrol Pump in Uphara.jpg"
         },
         {
           "name": "Traffic Light",
@@ -2881,11 +2906,11 @@
         },
         {
           "name": "Zebra Crossing",
-          "wiki": "Zebra crossing"
+          "wiki": "File:Pedestrian Crossing with Textured Paving Blocks.jpg"
         },
         {
           "name": "Playground",
-          "wiki": "Playground"
+          "wiki": "File:Slide and swings at playground of ZŠ ul. Kpt. Jaroše in Třebíč, Třebíč District.jpg"
         },
         {
           "name": "Cinema",
@@ -2906,15 +2931,15 @@
       "items": [
         {
           "name": "Pressure Cooker",
-          "wiki": "Pressure cooking"
+          "wiki": "File:Pressure cooker - Hawkins, Contura Model - 3 litres - 2.jpg"
         },
         {
           "name": "Tawa",
-          "wiki": "Tava"
+          "wiki": "File:Tawa(Griddle).jpg"
         },
         {
           "name": "Kadai",
-          "wiki": "Karahi"
+          "wiki": "File:Cooking with a wok on an outdoor stove 2.jpg"
         },
         {
           "name": "Kettle",
@@ -2926,23 +2951,23 @@
         },
         {
           "name": "Gas Stove",
-          "wiki": "File:Gas stove blue flames.jpg"
+          "wiki": "File:Gas Stove (two burners).jpg"
         },
         {
           "name": "Frying Pan",
-          "wiki": "Frying pan"
+          "wiki": "File:Frying pan pan.jpg"
         },
         {
           "name": "Saucepan",
-          "wiki": "Saucepan"
+          "wiki": "File:Kupferkasserolle Stielkasserolle 16 cm Casserole.jpg"
         },
         {
           "name": "Knife",
-          "wiki": "Kitchen knife"
+          "wiki": "File:Knife in a table.jpg"
         },
         {
           "name": "Ladle",
-          "wiki": "File:Greek - Ladle - Walters 57909.jpg"
+          "wiki": "File:Set of serving ladles on stainless kitchen wall.jpg"
         },
         {
           "name": "Spatula",
@@ -2954,19 +2979,21 @@
         },
         {
           "name": "Grater",
-          "wiki": "Grater"
+          "wiki": "Grater",
+          "crop": "contain"
         },
         {
           "name": "Strainer",
-          "wiki": "Colander"
+          "wiki": "File:Yellow plastic colander 2017 - C.jpg"
         },
         {
           "name": "Tongs",
-          "wiki": "Tongs"
+          "wiki": "Tongs",
+          "crop": "contain"
         },
         {
           "name": "Toaster",
-          "wiki": "Toaster"
+          "wiki": "File:Bread in Toaster (51920214512).jpg"
         },
         {
           "name": "Microwave",
@@ -2974,7 +3001,7 @@
         },
         {
           "name": "Chopping Board",
-          "wiki": "Cutting board"
+          "wiki": "File:Wooden Chopping Board.jpg"
         },
         {
           "name": "Mortar and Pestle",
@@ -2982,15 +3009,15 @@
         },
         {
           "name": "Jug",
-          "wiki": "Jug"
+          "wiki": "File:Water Pitcher MET 176262.jpg"
         },
         {
           "name": "Glass",
-          "wiki": "Drinking glass"
+          "wiki": "File:Glass of water ouside.jpg"
         },
         {
           "name": "Sink",
-          "wiki": "File:Kitchen water tap 20190408.jpg"
+          "wiki": "File:Dishwashing sink at Tulppion Majat.jpg"
         }
       ]
     },

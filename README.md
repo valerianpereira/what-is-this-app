@@ -134,7 +134,12 @@ cut, so the sheet shows the card as it would be):
 
 Flags are the exception: no photo of a flag is square, so the `countries` group
 is `"crop": "contain"` — the whole flag, fitted inside a white square with a
-thin grey rim so white flags still show their edge.
+thin grey rim so white flags still show their edge. A single item can be
+`"crop": "contain"` too (a trumpet, a ladle — long things no square holds): it
+is shown whole at 80%, padded with its own backdrop colour. That only works for a
+photo on a plain backdrop (a product shot on white, a planet on black), so
+`square.py` lists any contained card whose border is busy — find it a photo that
+fills the square instead. `"frame": [l, t, r, b]` trims the photo first.
 
 A body part a photo alone leaves ambiguous (Head, Hand, Leg) gets a
 `"point": [x, y]` on its item — fractions of the square — and `square.py` draws

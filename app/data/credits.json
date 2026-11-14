@@ -482,27 +482,6 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3APeas_in_pods_-_Studio.jpg"
  },
- "obj-vegetables-pumpkin": {
-  "name": "Pumpkin",
-  "article": "Pumpkin",
-  "author": "Infrogmation of New Orleans",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AFrenchMarketPumpkinsB.jpg"
- },
- "obj-vegetables-cabbage": {
-  "name": "Cabbage",
-  "article": "Cabbage",
-  "author": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
-  "licence": "GFDL 1.2",
-  "source": "https://commons.wikimedia.org/wiki/File%3ACabbage_and_cross_section_on_white.jpg"
- },
- "obj-vegetables-corn": {
-  "name": "Corn",
-  "article": "File:Corn on the cob (sweet corn).jpg",
-  "author": "Nutrition, Food Safety &amp; Health",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ACorn%20on%20the%20cob%20(sweet%20corn).jpg"
- },
  "obj-vegetables-brinjal": {
   "name": "Brinjal",
   "article": "Eggplant",
@@ -538,13 +517,6 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AGreen-Yellow-Red-Pepper-2009.jpg"
  },
- "obj-vegetables-broccoli": {
-  "name": "Broccoli",
-  "article": "Broccoli",
-  "author": "Fir0002",
-  "licence": "GFDL 1.2",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABroccoli_and_cross_section_edit.jpg"
- },
  "obj-vegetables-mushroom": {
   "name": "Mushroom",
   "article": "Mushroom",
@@ -565,27 +537,6 @@
   "author": "Takeaway",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AMadame_Jeanette_and_other_chillies.jpg"
- },
- "obj-vegetables-okra": {
-  "name": "Okra",
-  "article": "Okra",
-  "author": "Earth100",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AHong_Kong_Okra_Aug_25_2012.JPG"
- },
- "obj-vegetables-turnip": {
-  "name": "Turnip",
-  "article": "Turnip",
-  "author": "thebittenword.com",
-  "licence": "CC BY 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ATurnip_2622027.jpg"
- },
- "obj-vegetables-sweet-potato": {
-  "name": "Sweet Potato",
-  "article": "Sweet potato",
-  "author": "Llez",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AIpomoea_batatas_006.JPG"
  },
  "obj-vegetables-bottle-gourd": {
   "name": "Bottle Gourd",
@@ -726,13 +677,6 @@
   "author": "C. Robiller / naturlichter.de (Hyla meridionalis)",
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AKleiber_Flug.jpg"
- },
- "obj-birds-parrot": {
-  "name": "Parrot",
-  "article": "File:Green parrot with orange beak (Unsplash).jpg",
-  "author": "Sven Scheuermeier sveninho",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AGreen%20parrot%20with%20orange%20beak%20(Unsplash).jpg"
  },
  "obj-birds-peacock": {
   "name": "Peacock",
@@ -951,13 +895,6 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AMagnolia_grandiflora_-_flower_1.jpg"
  },
- "obj-flowers-rose": {
-  "name": "Rose",
-  "article": "Rose",
-  "author": "Stan Shebs",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ARosa_rubiginosa_1.jpg"
- },
  "obj-flowers-sunflower": {
   "name": "Sunflower",
   "article": "Common sunflower",
@@ -1076,13 +1013,6 @@
   "author": "শক্তিশেল",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AZinnia_single_layer_and_12_Petals_2.jpg"
- },
- "obj-flowers-gerbera": {
-  "name": "Gerbera",
-  "article": "Gerbera",
-  "author": "Dmitry Makeev",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AUnidentified_Gerbera.jpg"
  },
  "obj-flowers-water-lily": {
   "name": "Water Lily",
@@ -1427,13 +1357,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AWalrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg"
  },
- "obj-sea-pufferfish": {
-  "name": "Pufferfish",
-  "article": "File:Black Saddled Toby (Canthigaster valentini) (3149749224).jpg",
-  "author": "Cliff from Arlington, Virginia, USA",
-  "licence": "CC BY 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABlack%20Saddled%20Toby%20(Canthigaster%20valentini)%20(3149749224).jpg"
- },
  "cat-farm": {
   "name": "Farm Animals (group tile)",
   "article": "Cattle",
@@ -1454,13 +1377,6 @@
   "author": "Kuebi = Armin Kübelbeck",
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AHausziege_04.jpg"
- },
- "obj-farm-sheep": {
-  "name": "Sheep",
-  "article": "Sheep",
-  "author": "Keith Weller",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3AFlock_of_sheep.jpg"
  },
  "obj-farm-buffalo": {
   "name": "Buffalo",
@@ -1503,20 +1419,6 @@
   "author": "Alexandr frolov",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ASarlyk_Yak2.jpg"
- },
- "obj-farm-ox": {
-  "name": "Ox",
-  "article": "File:BULLOCK CART ON RACE.jpg",
-  "author": "JERIN LIGHT CLICKS",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABULLOCK%20CART%20ON%20RACE.jpg"
- },
- "obj-farm-calf": {
-  "name": "Calf",
-  "article": "File:Highland cow and calf. - geograph.org.uk - 404228.jpg",
-  "author": "Richard Webb",
-  "licence": "CC BY-SA 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AHighland%20cow%20and%20calf.%20-%20geograph.org.uk%20-%20404228.jpg"
  },
  "obj-farm-chick": {
   "name": "Chick",
@@ -1573,13 +1475,6 @@
   "author": "M. Rehemtulla",
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AHuskiesatrest.jpg"
- },
- "obj-pets-dog": {
-  "name": "Dog",
-  "article": "File:Labrador Retriever portrait.jpg",
-  "author": "Herwig Kavallar",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3ALabrador%20Retriever%20portrait.jpg"
  },
  "obj-pets-cat": {
   "name": "Cat",
@@ -1672,13 +1567,6 @@
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3AMeriones_unguiculatus_(wild).jpg"
  },
- "obj-pets-gecko": {
-  "name": "Gecko",
-  "article": "Gecko",
-  "author": "Unknown",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3APhelsuma_l._laticauda.jpg"
- },
  "obj-pets-iguana": {
   "name": "Iguana",
   "article": "Iguana",
@@ -1692,13 +1580,6 @@
   "author": "Cliff from Arlington, Virginia, USA",
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AAltum%20Angelfish%20(Pterophyllum%20altum)%20(3152823826).jpg"
- },
- "obj-pets-guppy": {
-  "name": "Guppy",
-  "article": "Guppy",
-  "author": "Per Harald Olsen",
-  "licence": "CC BY 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AGuppy_pho_0048.jpg"
  },
  "obj-pets-terrapin": {
   "name": "Terrapin",
@@ -1728,26 +1609,12 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AFullMoon2010.jpg"
  },
- "obj-weather-star": {
-  "name": "Star",
-  "article": "File:Night Sky Stars Trees 02.jpg",
-  "author": "Michael J. Bennett",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ANight%20Sky%20Stars%20Trees%2002.jpg"
- },
  "obj-weather-cloud": {
   "name": "Cloud",
   "article": "File:White Cumulus Clouds against Blue Sky (4).jpg",
   "author": "Lance Vanlewen",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AWhite%20Cumulus%20Clouds%20against%20Blue%20Sky%20(4).jpg"
- },
- "obj-weather-rain": {
-  "name": "Rain",
-  "article": "File:Rain Umbrella 01.JPG",
-  "author": "No machine-readable author provided. Alsafrata assumed (based on copyright claims).",
-  "licence": "CC BY 2.5",
-  "source": "https://commons.wikimedia.org/wiki/File%3ARain%20Umbrella%2001.JPG"
  },
  "obj-weather-rainbow": {
   "name": "Rainbow",
@@ -1769,13 +1636,6 @@
   "author": "Maxime Raynal from France",
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3APort_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg"
- },
- "obj-weather-fog": {
-  "name": "Fog",
-  "article": "Fog",
-  "author": "Abdul Momin",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AA_foggy_winter_morning.jpg"
  },
  "obj-weather-sunrise": {
   "name": "Sunrise",
@@ -1805,13 +1665,6 @@
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3AHailstones.jpg"
  },
- "obj-weather-wind": {
-  "name": "Wind",
-  "article": "File:Breeze (6822472939).jpg",
-  "author": "Hernán Piñera from Marbella",
-  "licence": "CC BY-SA 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABreeze%20(6822472939).jpg"
- },
  "obj-weather-frost": {
   "name": "Frost",
   "article": "File:Dülmen, Hausdülmen, Eiskristalle auf Blättern -- 2022 -- 9659.jpg",
@@ -1840,13 +1693,6 @@
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ADramatic_Views_of_Hurricane_Florence_from_the_International_Space_Station_From_9_12_(42828603210)_(cropped).jpg"
  },
- "obj-weather-puddle": {
-  "name": "Puddle",
-  "article": "Puddle",
-  "author": "Katunchi",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABegliktash_puddle_%D0%91%D0%B5%D0%B3%D0%BB%D0%B8%D0%BA%D1%82%D0%B0%D1%88_%D0%BB%D0%BE%D0%BA%D0%B2%D0%B0_%E2%80%94_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg"
- },
  "obj-weather-eclipse": {
   "name": "Eclipse",
   "article": "Solar eclipse",
@@ -1874,20 +1720,6 @@
   "author": "GutMaze",
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ASnowman_in_Indiana_2014.jpg"
- },
- "obj-clothes-trousers": {
-  "name": "Trousers",
-  "article": "File:HK TKO 將軍澳 Tseung Kwan O PopCorn mall shop Uniqlo Clothing Store May 2022 Px3 33.jpg",
-  "author": "HSGTLAEHRE 3041",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AHK%20TKO%20%E5%B0%87%E8%BB%8D%E6%BE%B3%20Tseung%20Kwan%20O%20PopCorn%20mall%20shop%20Uniqlo%20Clothing%20Store%20May%202022%20Px3%2033.jpg"
- },
- "obj-clothes-dress": {
-  "name": "Dress",
-  "article": "File:Knitted Dress as additional warm layer over street clothing - ginger woman sitting on a park bench outside of Praha hlavní nádraží.jpg",
-  "author": "Tobias ToMar Maier",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AKnitted%20Dress%20as%20additional%20warm%20layer%20over%20street%20clothing%20-%20ginger%20woman%20sitting%20on%20a%20park%20bench%20outside%20of%20Praha%20hlavn%C3%AD%20n%C3%A1dra%C5%BE%C3%AD.jpg"
  },
  "obj-clothes-hat": {
   "name": "Hat",
@@ -1931,13 +1763,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3A100%25_Kaschmir_Wolle_vonk_kaschmirprodukte.de.jpg"
  },
- "obj-clothes-shorts": {
-  "name": "Shorts",
-  "article": "File:Men's Shorts - Old Bull Lee - Orange.jpg",
-  "author": "OldBullLeeWasHere",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AMen's%20Shorts%20-%20Old%20Bull%20Lee%20-%20Orange.jpg"
- },
  "obj-clothes-sandals": {
   "name": "Sandals",
   "article": "Sandal",
@@ -1958,13 +1783,6 @@
   "author": "CEphoto, Uwe Aranas",
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AGermany_Belt-and-Buckle-02.jpg"
- },
- "obj-clothes-tie": {
-  "name": "Tie",
-  "article": "File:Oriental tie knot.jpg",
-  "author": "“Keith S Brown (Ksbrown)”",
-  "licence": "CC BY-SA 2.5",
-  "source": "https://commons.wikimedia.org/wiki/File%3AOriental%20tie%20knot.jpg"
  },
  "obj-clothes-cap": {
   "name": "Cap",
@@ -1987,20 +1805,6 @@
   "licence": "CC BY-SA 2.5",
   "source": "https://commons.wikimedia.org/wiki/File%3ACliff_Climbers_Combat_boot_Shoes_Blast.png"
  },
- "obj-clothes-apron": {
-  "name": "Apron",
-  "article": "Apron",
-  "author": "Serge Melki from Indianapolis, USA",
-  "licence": "CC BY 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3APreparing_the_Cake_(5285262061).jpg"
- },
- "obj-clothes-swimsuit": {
-  "name": "Swimsuit",
-  "article": "File:Chloe Sutton - USA Swimsuit (4661622460) (alternate version).jpg",
-  "author": "Don Le",
-  "licence": "CC BY 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AChloe%20Sutton%20-%20USA%20Swimsuit%20(4661622460)%20(alternate%20version).jpg"
- },
  "obj-music-drum": {
   "name": "Drum",
   "article": "Drum",
@@ -2014,13 +1818,6 @@
   "author": "Just plain Bill",
   "licence": "CC0",
   "source": "https://commons.wikimedia.org/wiki/File%3AViolin_VL100.png"
- },
- "obj-music-sitar": {
-  "name": "Sitar",
-  "article": "Sitar",
-  "author": "unknown, MET museum",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ASitar%2C_late_19th_Century.jpg"
  },
  "obj-music-accordion": {
   "name": "Accordion",
@@ -2078,20 +1875,6 @@
   "licence": "CC0",
   "source": "https://commons.wikimedia.org/wiki/File%3ASet_of_fourteen_side_chairs_MET_DP110780.jpg"
  },
- "obj-home-table": {
-  "name": "Table",
-  "article": "Table (furniture)",
-  "author": "Neoclassicism Enthusiast",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABeautiful_Baroque_gilded_table_from_the_Cinquantenaire_Museum_(Bruxelles%2C_Belgium).jpg"
- },
- "obj-home-bed": {
-  "name": "Bed",
-  "article": "File:Moss Lee Grange Bed & Breakfast - Deluxe Double En-Suite Bedroom.jpg",
-  "author": "Mossleegrange",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AMoss%20Lee%20Grange%20Bed%20%26%20Breakfast%20-%20Deluxe%20Double%20En-Suite%20Bedroom.jpg"
- },
  "obj-home-lamp": {
   "name": "Lamp",
   "article": "File:Bedside Table Lamp.jpg",
@@ -2106,26 +1889,12 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ASoup_Spoon.jpg"
  },
- "obj-home-fork": {
-  "name": "Fork",
-  "article": "Fork",
-  "author": "Unknown",
-  "licence": "CC BY-SA 3.0 us",
-  "source": "https://commons.wikimedia.org/wiki/File%3AAssorted_forks.jpg"
- },
  "obj-home-cup": {
   "name": "Cup",
   "article": "Cup",
   "author": "Vincennes Porcelain (France, circa 1739–1756), Francois Binet (France, active 1750-1775, born 1731)",
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3ACup_and_Saucer_LACMA_47.35.6a-b_(1_of_3).jpg"
- },
- "obj-home-plate": {
-  "name": "Plate",
-  "article": "File:Wilson White House plate 02 - Smithsonian Museum of Natural History - 2012-05-15.jpg",
-  "author": "Tim Evanson",
-  "licence": "CC BY-SA 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AWilson%20White%20House%20plate%2002%20-%20Smithsonian%20Museum%20of%20Natural%20History%20-%202012-05-15.jpg"
  },
  "obj-home-bowl": {
   "name": "Bowl",
@@ -2155,13 +1924,6 @@
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ALiving%20room%20Germany%202006.jpg"
  },
- "obj-home-broom": {
-  "name": "Broom",
-  "article": "File:New brooms - 02.jpg",
-  "author": "Oto Zapletal",
-  "licence": "CC BY 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ANew%20brooms%20-%2002.jpg"
- },
  "obj-home-television": {
   "name": "Television",
   "article": "File:A flat-screen television.jpg",
@@ -2169,26 +1931,12 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AA%20flat-screen%20television.jpg"
  },
- "obj-home-mirror": {
-  "name": "Mirror",
-  "article": "File:A vintage, hand-carved wooden wall mirror frame.jpg",
-  "author": "পাপৰি বৰা",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AA%20vintage%2C%20hand-carved%20wooden%20wall%20mirror%20frame.jpg"
- },
  "obj-home-pillow": {
   "name": "Pillow",
   "article": "Pillow",
   "author": "Amin",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3APillows_on_a_hotel_bed.jpg"
- },
- "obj-home-blanket": {
-  "name": "Blanket",
-  "article": "File:WOOLEN BLANKETS FROM CRETE, GREECE,, 19TH C.jpg",
-  "author": "SEN Heritage Looms - Sophia Tsourinaki",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AWOOLEN%20BLANKETS%20FROM%20CRETE%2C%20GREECE%2C%2C%2019TH%20C.jpg"
  },
  "obj-home-towel": {
   "name": "Towel",
@@ -2358,13 +2106,6 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ARedDot_Burger.jpg"
  },
- "obj-food-pasta": {
-  "name": "Pasta",
-  "article": "Pasta",
-  "author": "David Adam Kess",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3A(Pasta)_by_David_Adam_Kess_(pic.2).jpg"
- },
  "obj-food-doughnut": {
   "name": "Doughnut",
   "article": "Doughnut",
@@ -2435,13 +2176,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AExtended_arm.jpg"
  },
- "obj-body-elbow": {
-  "name": "Elbow",
-  "article": "Elbow",
-  "author": "Genusfotografen (Tommas Gunnarsson) / Wikimedia Sverige",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AElbow_on_gray_background.jpg"
- },
  "obj-body-finger": {
   "name": "Finger",
   "article": "Index finger",
@@ -2455,13 +2189,6 @@
   "author": "Bwyell80",
   "licence": "CC0",
   "source": "https://commons.wikimedia.org/wiki/File%3ALiam_Thumb.jpg"
- },
- "obj-body-knee": {
-  "name": "Knee",
-  "article": "Knee",
-  "author": "Genusfotografen (Tomas Gunnarsson) / Wikimedia Sverige",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AHuman_knees.jpg"
  },
  "obj-body-face": {
   "name": "Face",
@@ -2490,20 +2217,6 @@
   "author": "Stoneisland24",
   "licence": "CC0",
   "source": "https://commons.wikimedia.org/wiki/File%3AToes.png"
- },
- "obj-body-cheek": {
-  "name": "Cheek",
-  "article": "Cheek",
-  "author": "Paolo Neo",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ACheek.jpg"
- },
- "obj-body-chin": {
-  "name": "Chin",
-  "article": "File:Up close of human chin and lips.jpg",
-  "author": "Punker1999",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AUp%20close%20of%20human%20chin%20and%20lips.jpg"
  },
  "obj-body-eyebrow": {
   "name": "Eyebrow",
@@ -2547,20 +2260,6 @@
   "licence": "CC BY-SA 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ATeddy_bear_early_1900s_-_Smithsonian_Museum_of_Natural_History.jpg"
  },
- "obj-toys-doll": {
-  "name": "Doll",
-  "article": "Rag doll",
-  "author": "Anne Norman",
-  "licence": "CC BY 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AHand_made_dolls.jpg"
- },
- "obj-toys-kite": {
-  "name": "Kite",
-  "article": "Kite",
-  "author": "Jon Sullivan",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3AKitesflying.jpg"
- },
  "obj-toys-puzzle": {
   "name": "Puzzle",
   "article": "Jigsaw puzzle",
@@ -2581,13 +2280,6 @@
   "author": "Unknown",
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AThe_Childrens_Museum_of_Indianapolis_-_Rocking_Horse.jpg"
- },
- "obj-toys-skipping-rope": {
-  "name": "Skipping Rope",
-  "article": "Skipping rope",
-  "author": "Pambelle12",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AGhanaian_kid_(skipping_rope)_06_(cropped).jpg"
  },
  "obj-toys-pinwheel": {
   "name": "Pinwheel",
@@ -2708,13 +2400,6 @@
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ANotebooks.jpg"
  },
- "obj-school-book": {
-  "name": "Book",
-  "article": "Paperback",
-  "author": "Trey Jones",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABlank_book_on_a_table.jpg"
- },
  "obj-school-blackboard": {
   "name": "Blackboard",
   "article": "File:家課日誌 2020-10-30.jpg",
@@ -2771,26 +2456,12 @@
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3AWorld_Map_1689.JPG"
  },
- "obj-school-abacus": {
-  "name": "Abacus",
-  "article": "File:Wooden abacus.jpg",
-  "author": "Nabunje Leticia",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AWooden%20abacus.jpg"
- },
  "obj-school-whiteboard": {
   "name": "Whiteboard",
   "article": "Whiteboard",
   "author": "The U.S. Food and Drug Administration",
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3ANCTR_Intern_Claire_Boyle_(15558843862).jpg"
- },
- "obj-school-desk": {
-  "name": "Desk",
-  "article": "Desk",
-  "author": "John Townsend",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABureau_table_MET_DP108643.jpg"
  },
  "obj-school-compass": {
   "name": "Compass",
@@ -2840,13 +2511,6 @@
   "author": "Thomas Bresson",
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AComputerHotline%20-%20Pelecanus%20crispus%20(by)%20(1).jpg"
- },
- "obj-birds-hornbill": {
-  "name": "Hornbill",
-  "article": "File:Malabar pied hornbill (Anthracoceros coronatus) male.jpg",
-  "author": "Charles J. Sharp",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AMalabar%20pied%20hornbill%20(Anthracoceros%20coronatus)%20male.jpg"
  },
  "obj-birds-myna": {
   "name": "Myna",
@@ -2917,13 +2581,6 @@
   "author": "Unknown",
   "licence": "CC0",
   "source": "https://commons.wikimedia.org/wiki/File%3AGloves%20MET%20CI62.35.15ab.jpg"
- },
- "obj-clothes-raincoat": {
-  "name": "Raincoat",
-  "article": "File:Gabriel wearing a University of Chicago disposable raincoat, Hyde Park, Illinois, US (PPL1-Corrected) julesvernex2.jpg",
-  "author": "Jules Verne Times Two",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AGabriel%20wearing%20a%20University%20of%20Chicago%20disposable%20raincoat%2C%20Hyde%20Park%2C%20Illinois%2C%20US%20(PPL1-Corrected)%20julesvernex2.jpg"
  },
  "obj-clothes-pyjamas": {
   "name": "Pyjamas",
@@ -3156,13 +2813,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AYamaha%20Trumpet%20YTR-8335LA.tif"
  },
- "obj-music-clarinet": {
-  "name": "Clarinet",
-  "article": "File:Yamaha Clarinet YCL-457II-22 (rotated).jpg",
-  "author": "Yamaha Corporation; rotation by — Chris Woodrich (talk)",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AYamaha%20Clarinet%20YCL-457II-22%20(rotated).jpg"
- },
  "obj-home-clock": {
   "name": "Clock",
   "article": "File:Classic alarm clock 20180513.jpg",
@@ -3232,13 +2882,6 @@
   "author": "Bluerasberry",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ANapoleon%20chinchilla%20in%20box.jpg"
- },
- "obj-home-fridge": {
-  "name": "Fridge",
-  "article": "File:EFTA00001697 - Black refrigerator stands in a kitchen with red tiled floor next to a water cooler and a white table.jpg",
-  "author": "Federal Bureau of Investigation",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3AEFTA00001697%20-%20Black%20refrigerator%20stands%20in%20a%20kitchen%20with%20red%20tiled%20floor%20next%20to%20a%20water%20cooler%20and%20a%20white%20table.jpg"
  },
  "obj-home-comb": {
   "name": "Comb",
@@ -3337,13 +2980,6 @@
   "author": "Dinesh Korgaokar",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ADiya_deepak_Diwali_rangoli_in_goa.JPG"
- },
- "obj-festivals-lantern": {
-  "name": "Lantern",
-  "article": "Paper lantern",
-  "author": "Thierry from Gif-sur-Yvette, France",
-  "licence": "CC BY 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ARed_paper_lanterns%2C_Shanghai%2C_2012.jpg"
  },
  "obj-festivals-fireworks": {
   "name": "Fireworks",
@@ -3491,13 +3127,6 @@
   "author": "Rasbak",
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3APoa_annua.jpg"
- },
- "obj-plants-moss": {
-  "name": "Moss",
-  "article": "Moss",
-  "author": "IvoShandor",
-  "licence": "CC BY 2.5",
-  "source": "https://commons.wikimedia.org/wiki/File%3ATionesta-ac-moss2.jpg"
  },
  "obj-plants-bamboo": {
   "name": "Bamboo",
@@ -3751,13 +3380,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AFuljhadi.jpg"
  },
- "obj-festivals-garland": {
-  "name": "Garland",
-  "article": "File:Marigold garlands.jpg",
-  "author": "পাপৰি বৰা",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AMarigold%20garlands.jpg"
- },
  "obj-festivals-santa-claus": {
   "name": "Santa Claus",
   "article": "File:Santa Claus-SL.jpg",
@@ -3771,20 +3393,6 @@
   "author": "Sardaka",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AFairy%20lights%20Kingsford%20001.jpg"
- },
- "obj-plants-branch": {
-  "name": "Branch",
-  "article": "File:Just a Branch of a Tree.jpg",
-  "author": "Kuber Rana Magar",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AJust%20a%20Branch%20of%20a%20Tree.jpg"
- },
- "obj-plants-bud": {
-  "name": "Bud",
-  "article": "File:Flower bud closeup.jpg",
-  "author": "Madugrero",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AFlower%20bud%20closeup.jpg"
  },
  "obj-plants-fern": {
   "name": "Fern",
@@ -3842,20 +3450,6 @@
   "licence": "CC BY-SA 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AA%20rasa%20garba%20dandiya%20dance%2C%20Navratri%20tradition.jpg"
  },
- "obj-festivals-bunting": {
-  "name": "Bunting",
-  "article": "Bunting (textile)",
-  "author": "Msasso139",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABuntingprofessionals.JPG"
- },
- "obj-festivals-firecracker": {
-  "name": "Firecracker",
-  "article": "Firecracker",
-  "author": "Pyrogrimace",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AFirecrackers.png"
- },
  "cat-insects": {
   "name": "Insects (group tile)",
   "article": "File:Reddish shell of Ladybird on the leaf - 1.jpg",
@@ -3883,13 +3477,6 @@
   "author": "Nevit Dilmen",
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AWardrobe%202945.jpg"
- },
- "obj-clothes-shirt": {
-  "name": "Shirt",
-  "article": "File:Banana Republic Button-Down Shirt 1 2019-03-21.jpg",
-  "author": "FASTILY",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABanana%20Republic%20Button-Down%20Shirt%201%202019-03-21.jpg"
  },
  "obj-clothes-shoes": {
   "name": "Shoes",
@@ -3939,13 +3526,6 @@
   "author": "DDohler",
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AA%20tray%20full%20of%20Indian%20sweets%20mithai%20desserts%20c.jpg"
- },
- "obj-plants-sapling": {
-  "name": "Sapling",
-  "article": "File:Young maple tree (14142351780).jpg",
-  "author": "U.S. Fish and Wildlife Service Southeast Region",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3AYoung%20maple%20tree%20(14142351780).jpg"
  },
  "obj-numbers-0": {
   "name": "0",
@@ -4108,20 +3688,6 @@
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3APollock_to_Hussey.jpg"
  },
- "obj-sports-cricket": {
-  "name": "Cricket",
-  "article": "Cricket",
-  "author": "Prescott Pym on Flickr",
-  "licence": "CC BY 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3APollock_to_Hussey.jpg"
- },
- "obj-sports-football": {
-  "name": "Football",
-  "article": "Association football",
-  "author": "Rick Dikeman",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AFootball_in_Bloomington%2C_Indiana%2C_1995.jpg"
- },
  "obj-sports-tennis": {
   "name": "Tennis",
   "article": "Tennis",
@@ -4171,20 +3737,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ACycliste_%C3%A0_place_d'Italie-Paris_crop.jpg"
  },
- "obj-sports-wrestling": {
-  "name": "Wrestling",
-  "article": "Wrestling",
-  "author": "Ilgar Jafarov",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AWrestling_at_the_2016_Summer_Olympics%2C_Gazyumov_vs_Andriitsev_6.jpg"
- },
- "obj-sports-golf": {
-  "name": "Golf",
-  "article": "Golf",
-  "author": "Lilrizz",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AGolfer_swing.jpg"
- },
  "obj-sports-skating": {
   "name": "Skating",
   "article": "Roller skating",
@@ -4192,47 +3744,12 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3APatineur_%C3%A0_Douala_17.jpg"
  },
- "obj-sports-surfing": {
-  "name": "Surfing",
-  "article": "Surfing",
-  "author": "Shalom Jacobovitz",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AMavericks_Surf_Contest_2010b.jpg"
- },
- "obj-sports-archery": {
-  "name": "Archery",
-  "article": "Archery",
-  "author": "derivative work: Saibo (Δ) Image-ArcheryGermanyEarly1980s-OriginalScan.jpg: RX-Guru",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AArcheryGermanyEarly1980s-2.jpg"
- },
  "obj-sports-gymnastics": {
   "name": "Gymnastics",
   "article": "Gymnastics",
   "author": "Fernando Frazão/Agência Brasil",
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AESTADOS_UNIDOS_LEVAM_OURO_NA_GIN%C3%81STICA_FEMININA_POR_EQUIPES_DOS_JOGOS_OL%C3%8DMPICOS_RIO_2016_(28849586476).jpg"
- },
- "obj-sports-carrom": {
-  "name": "Carrom",
-  "article": "Carrom",
-  "author": "Unknown",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3ACarrom.jpg"
- },
- "obj-sports-badminton": {
-  "name": "Badminton",
-  "article": "File:Yonex IFB 2013 - Eightfinal - Kim Ki-jung-Kim Sa-rang — Chris Adcock-Andrew Ellis 03.jpg",
-  "author": "Pierre-Yves Beaudouin",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AYonex%20IFB%202013%20-%20Eightfinal%20-%20Kim%20Ki-jung-Kim%20Sa-rang%20%E2%80%94%20Chris%20Adcock-Andrew%20Ellis%2003.jpg"
- },
- "obj-sports-hockey": {
-  "name": "Hockey",
-  "article": "File:SK at the Rio Olympic 2016 Hockey arena.jpg",
-  "author": "Hockey India",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ASK%20at%20the%20Rio%20Olympic%202016%20Hockey%20arena.jpg"
  },
  "obj-sports-volleyball": {
   "name": "Volleyball",
@@ -4367,13 +3884,6 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ASalta-VallesCalchaquies-P3140151.JPG"
  },
- "obj-nature-hill": {
-  "name": "Hill",
-  "article": "Hill",
-  "author": "Rics1299",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AUliveti_monte_cinto.JPG"
- },
  "obj-nature-pond": {
   "name": "Pond",
   "article": "Pond",
@@ -4507,13 +4017,6 @@
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3AThe_station_pictured_from_the_SpaceX_Crew_Dragon_5.jpg"
  },
- "obj-space-spacesuit": {
-  "name": "Spacesuit",
-  "article": "Spacesuit",
-  "author": "Aldrin_Apollo_11_original.jpg: NASA derivative work: Scott MacDonald (talk)",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3AAldrin_Apollo_11_cropped.jpg"
- },
  "obj-space-asteroid": {
   "name": "Asteroid",
   "article": "Asteroid",
@@ -4527,27 +4030,6 @@
   "author": "David (Deddy) Dayag",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ATrifid_Nebula_by_Deddy_Dayag.jpg"
- },
- "obj-space-space-shuttle": {
-  "name": "Space Shuttle",
-  "article": "Space Shuttle",
-  "author": "NASA; edited by jjron (tilt corrected)",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3ASTS120LaunchHiRes-edit1.jpg"
- },
- "obj-space-lunar-rover": {
-  "name": "Lunar Rover",
-  "article": "Lunar Roving Vehicle",
-  "author": "NASA/Dave Scott; cropped by User:Bubba73",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3AApollo15LunarRover.jpg"
- },
- "obj-space-observatory": {
-  "name": "Observatory",
-  "article": "Observatory",
-  "author": "Adusha",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ARoyal_observatory_Greenwich.JPG"
  },
  "cat-reptiles": {
   "name": "Reptiles & Frogs (group tile)",
@@ -4569,13 +4051,6 @@
   "author": "Tythatguy1312",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ACommon_Toad_Cornwall.jpeg"
- },
- "obj-reptiles-tadpole": {
-  "name": "Tadpole",
-  "article": "Tadpole",
-  "author": "Viridiflavus",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ARanaTemporariaLarva2.jpg"
  },
  "obj-reptiles-tree-frog": {
   "name": "Tree Frog",
@@ -4640,26 +4115,12 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AAmerican_Alligator.jpg"
  },
- "obj-reptiles-gharial": {
-  "name": "Gharial",
-  "article": "Gharial",
-  "author": "Charles J. Sharp",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AGharial_(Gavialis_gangeticus)_male.jpg"
- },
  "obj-reptiles-komodo-dragon": {
   "name": "Komodo Dragon",
   "article": "Komodo Dragon",
   "author": "James Jolokia (james1203)",
   "licence": "CC BY 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3A202306_Varanus_komodoensis.jpg"
- },
- "obj-reptiles-monitor-lizard": {
-  "name": "Monitor Lizard",
-  "article": "Bengal monitor",
-  "author": "Shantanu Kuveskar",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABengal_monitor_(Varanus_bengalensis)_Photograph_by_Shantanu_Kuveskar.jpg"
  },
  "obj-reptiles-frilled-lizard": {
   "name": "Frilled Lizard",
@@ -4703,13 +4164,6 @@
   "licence": "GFDL",
   "source": "https://commons.wikimedia.org/wiki/File%3ABridge_Alcantara.JPG"
  },
- "obj-town-hospital": {
-  "name": "Hospital",
-  "article": "Hospital",
-  "author": "H501zalc",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AHospital-de-Bellvitge.jpg"
- },
  "obj-town-temple": {
   "name": "Temple",
   "article": "Hindu temple",
@@ -4738,47 +4192,12 @@
   "licence": "GFDL",
   "source": "https://commons.wikimedia.org/wiki/File%3ABridge_Alcantara.JPG"
  },
- "obj-town-railway-station": {
-  "name": "Railway Station",
-  "article": "Train station",
-  "author": "Minseong Kim",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ASeoul_Station_West_Side.jpg"
- },
- "obj-town-post-office": {
-  "name": "Post Office",
-  "article": "Post office",
-  "author": "Mattinbgn",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AEdithburghPostOffice.JPG"
- },
- "obj-town-bus-stop": {
-  "name": "Bus Stop",
-  "article": "Bus stop",
-  "author": "Frank Hank",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3APeople_waiting_at_bus_stop.jpg"
- },
- "obj-town-fire-station": {
-  "name": "Fire Station",
-  "article": "Fire station",
-  "author": "CaptJayRuffins",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AFDNY_eng264_328_Ladder_134_20190214_135053~2.jpg"
- },
  "obj-town-library": {
   "name": "Library",
   "article": "Library",
   "author": "Joe Crawford from Moorpark, California, USA",
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ASanDiegoCityCollegeLearningResource_-_bookshelf.jpg"
- },
- "obj-town-petrol-pump": {
-  "name": "Petrol Pump",
-  "article": "Filling station",
-  "author": "The Library of Congress from Washington, DC, United States",
-  "licence": "No restrictions",
-  "source": "https://commons.wikimedia.org/wiki/File%3AMattoon_Service_Station_(pre-fabricated)%2C_angle_view%2C_National_%26_Washington_Boulevards%2C_Culver_City%2C_California_LOC_37555778230.jpg"
  },
  "obj-town-traffic-light": {
   "name": "Traffic Light",
@@ -4787,47 +4206,12 @@
   "licence": "CC BY 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AModern_British_LED_Traffic_Light.jpg"
  },
- "obj-town-zebra-crossing": {
-  "name": "Zebra Crossing",
-  "article": "Zebra crossing",
-  "author": "Misterweiss at English Wikipedia",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3AAbbey_Road_Zebra.jpg"
- },
- "obj-town-playground": {
-  "name": "Playground",
-  "article": "Playground",
-  "author": "NikosLikomitros",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AArgos_playground.jpg"
- },
  "obj-town-lighthouse": {
   "name": "Lighthouse",
   "article": "Lighthouse",
   "author": "Walter Rademacher, derivative work Lämpel",
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AAerial_photograph_60D_2012_05_13_8760_DxO_retusche.jpg"
- },
- "obj-kitchen-pressure-cooker": {
-  "name": "Pressure Cooker",
-  "article": "Pressure cooking",
-  "author": "Unknown",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3APressure_cooker.jpg"
- },
- "obj-kitchen-tawa": {
-  "name": "Tawa",
-  "article": "Tava",
-  "author": "Ashish Bhatnagar",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3ATava.JPG"
- },
- "obj-kitchen-kadai": {
-  "name": "Kadai",
-  "article": "Karahi",
-  "author": "FiveRings at en.wikipedia",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AWok-and-karahi-2.jpg"
  },
  "obj-kitchen-kettle": {
   "name": "Kettle",
@@ -4843,27 +4227,6 @@
   "licence": "CC BY-SA 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ABlack_tea_pot_cropped.jpg"
  },
- "obj-kitchen-frying-pan": {
-  "name": "Frying Pan",
-  "article": "Frying pan",
-  "author": "Unknown",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3APfanne_(Edelstahl).jpg"
- },
- "obj-kitchen-saucepan": {
-  "name": "Saucepan",
-  "article": "Saucepan",
-  "author": "Erik Streb",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AKupferkasserolle_Stielkasserolle_16_cm_Casserole.jpg"
- },
- "obj-kitchen-knife": {
-  "name": "Knife",
-  "article": "Kitchen knife",
-  "author": "Kagor",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ACucina_012.jpg"
- },
  "obj-kitchen-whisk": {
   "name": "Whisk",
   "article": "Whisk",
@@ -4878,26 +4241,12 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AKuechenreibe_(fcm).jpg"
  },
- "obj-kitchen-strainer": {
-  "name": "Strainer",
-  "article": "Colander",
-  "author": "Unknown",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AGe%C3%ABmailleerd_vergiet_-_INDUS_V08877.jpg"
- },
  "obj-kitchen-tongs": {
   "name": "Tongs",
   "article": "Tongs",
   "author": "Sac86738 at English Wikipedia",
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3AKitchen-tongs.png"
- },
- "obj-kitchen-toaster": {
-  "name": "Toaster",
-  "article": "Toaster",
-  "author": "Consumer Reports",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AConsumer_Reports_-_Hamilton_Beach_Digital_toaster.tiff"
  },
  "obj-kitchen-microwave": {
   "name": "Microwave",
@@ -4906,33 +4255,12 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3APanasonic_NN-SD69LS_20220410.jpg"
  },
- "obj-kitchen-chopping-board": {
-  "name": "Chopping Board",
-  "article": "Cutting board",
-  "author": "Donovan Govan.",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AChopping_Board.jpg"
- },
  "obj-kitchen-mortar-and-pestle": {
   "name": "Mortar and Pestle",
   "article": "Mortar and pestle",
   "author": "Evan-Amos",
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3AWhite-Mortar-and-Pestle.jpg"
- },
- "obj-kitchen-jug": {
-  "name": "Jug",
-  "article": "Jug",
-  "author": "BERNARDOT Claude-Henry",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AM0354_990116-6_1_(cropped).jpg"
- },
- "obj-kitchen-glass": {
-  "name": "Glass",
-  "article": "Drinking glass",
-  "author": "rawpixel.com",
-  "licence": "CC0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ADrinkware.jpg"
  },
  "obj-nature-island": {
   "name": "Island",
@@ -4983,13 +4311,6 @@
   "licence": "CC BY-SA 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ASteeple%20Aston%20church%20-%20geograph.org.uk%20-%206965897.jpg"
  },
- "obj-town-mosque": {
-  "name": "Mosque",
-  "article": "File:Dome of Prophet's Mosque - Medina.jpg",
-  "author": "User:Abdul Hafeez Bakhsh",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ADome%20of%20Prophet's%20Mosque%20-%20Medina.jpg"
- },
  "obj-town-market": {
   "name": "Market",
   "article": "File:Veg Flower Stalls Ooty Market Nilgiris Aug25 A7CR 07099.jpg",
@@ -5003,13 +4324,6 @@
   "author": "King of Hearts",
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AProspect%20Park%20New%20York%20November%202016%20001.jpg"
- },
- "obj-town-airport": {
-  "name": "Airport",
-  "article": "File:Israel 3 023 Israelic Aeroplane.jpg",
-  "author": "Unknown",
-  "licence": "CC BY-SA 3.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AIsrael%203%20023%20Israelic%20Aeroplane.jpg"
  },
  "obj-town-cinema": {
   "name": "Cinema",
@@ -5025,33 +4339,12 @@
   "licence": "CC BY-SA 3.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ABernadotte_Wasserkessel.jpg"
  },
- "obj-kitchen-gas-stove": {
-  "name": "Gas Stove",
-  "article": "File:Gas stove blue flames.jpg",
-  "author": "Marina Burity from Santo André, Brazil",
-  "licence": "CC BY-SA 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AGas%20stove%20blue%20flames.jpg"
- },
- "obj-kitchen-ladle": {
-  "name": "Ladle",
-  "article": "File:Greek - Ladle - Walters 57909.jpg",
-  "author": "Anonymous (Greece)Unknown author",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3AGreek%20-%20Ladle%20-%20Walters%2057909.jpg"
- },
  "obj-kitchen-spatula": {
   "name": "Spatula",
   "article": "File:Degskrapor.png",
   "author": "Micke",
   "licence": "Public domain",
   "source": "https://commons.wikimedia.org/wiki/File%3ADegskrapor.png"
- },
- "obj-kitchen-sink": {
-  "name": "Sink",
-  "article": "File:Kitchen water tap 20190408.jpg",
-  "author": "Santeri Viinamäki",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AKitchen%20water%20tap%2020190408.jpg"
  },
  "obj-vehicles-bus": {
   "name": "Bus",
@@ -5227,13 +4520,6 @@
   "author": "Candramawa99",
   "licence": "CC0",
   "source": "https://commons.wikimedia.org/wiki/File%3ATonggeret%20Cicada%20Cicadidae%2007.jpg"
- },
- "obj-sea-fish": {
-  "name": "Fish",
-  "article": "File:Goldfish3.jpg",
-  "author": "No machine-readable author provided. Heptagon assumed (based on copyright claims).",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3AGoldfish3.jpg"
  },
  "obj-sea-shark": {
   "name": "Shark",
@@ -5424,13 +4710,6 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AChef%20Vijaya%20Raghavan.jpg"
  },
- "obj-helpers-nurse": {
-  "name": "Nurse",
-  "article": "File:Nurse takes a patient's blood pressure.jpg",
-  "author": "Bill Branson (Photographer)",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3ANurse%20takes%20a%20patient's%20blood%20pressure.jpg"
- },
  "obj-helpers-driver": {
   "name": "Driver",
   "article": "File:Pedi-cab Driver (10522135146).jpg",
@@ -5487,13 +4766,6 @@
   "licence": "CC BY 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3AIndian%20army%20soldier%20(7348730240).jpg"
  },
- "obj-helpers-scientist": {
-  "name": "Scientist",
-  "article": "File:Scientist looking thorugh microscope.jpg",
-  "author": "Unknown photographer",
-  "licence": "Public domain",
-  "source": "https://commons.wikimedia.org/wiki/File%3AScientist%20looking%20thorugh%20microscope.jpg"
- },
  "obj-helpers-gardener": {
   "name": "Gardener",
   "article": "File:Gardener in a senior high school pruning a hedge.jpg",
@@ -5507,13 +4779,6 @@
   "author": "Thomas Berg",
   "licence": "CC BY-SA 2.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ABaker%20Oslo.jpg"
- },
- "obj-farm-donkey": {
-  "name": "Donkey",
-  "article": "File:A donkey standing.jpg",
-  "author": "Zak Raha",
-  "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AA%20donkey%20standing.jpg"
  },
  "obj-farm-rooster": {
   "name": "Rooster",
@@ -5606,18 +4871,753 @@
   "licence": "CC BY-SA 4.0",
   "source": "https://commons.wikimedia.org/wiki/File%3ACrash%2041808%2018%22%20B8%20firmy%20Sabian.jpg"
  },
- "obj-music-bagpipes": {
-  "name": "Bagpipes",
-  "article": "File:Bagpipe - MIM Brussels (2018-05-26 10.51.23 by Miguel Discart @Flickr 31384964587).jpg",
-  "author": "Miguel Discart",
+ "obj-sports-football": {
+  "name": "Football",
+  "article": "File:Soccer Ball (46208304925).jpg",
+  "author": "Wutthichai Charoenburi from Bangkok",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASoccer%20Ball%20(46208304925).jpg"
+ },
+ "obj-sports-badminton": {
+  "name": "Badminton",
+  "article": "File:Rachetă de badminton şi fluturaş.jpg",
+  "author": "Vladimir Maftei, http://www.enciclopedie.info/",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARachet%C4%83%20de%20badminton%20%C5%9Fi%20flutura%C5%9F.jpg"
+ },
+ "obj-sports-hockey": {
+  "name": "Hockey",
+  "article": "File:Olivos hockey (3).jpg",
+  "author": "Adrian Lasso",
   "licence": "CC BY-SA 2.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3ABagpipe%20-%20MIM%20Brussels%20(2018-05-26%2010.51.23%20by%20Miguel%20Discart%20%40Flickr%2031384964587).jpg"
+  "source": "https://commons.wikimedia.org/wiki/File%3AOlivos%20hockey%20(3).jpg"
+ },
+ "obj-sports-wrestling": {
+  "name": "Wrestling",
+  "article": "File:Davangere Wrestlers.jpg",
+  "author": "Prasanna Revan aka. Prasannare at en.wikipedia",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ADavangere%20Wrestlers.jpg"
+ },
+ "obj-sports-archery": {
+  "name": "Archery",
+  "article": "File:U.S. Invictus team archer Chasity Kuczer takes aim during an archery gold medal round at the 2016 Invictus Games (26925974655).jpg",
+  "author": "DoD News Features",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AU.S.%20Invictus%20team%20archer%20Chasity%20Kuczer%20takes%20aim%20during%20an%20archery%20gold%20medal%20round%20at%20the%202016%20Invictus%20Games%20(26925974655).jpg"
+ },
+ "obj-space-solar-system": {
+  "name": "Solar System",
+  "article": "File:Solar system model.jpg",
+  "author": "Jiafei Slay Queen",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASolar%20system%20model.jpg"
+ },
+ "obj-town-hospital": {
+  "name": "Hospital",
+  "article": "File:P.G. (SSKM) Hospital, administrative building and campus 10.jpg",
+  "author": "Pinakpani",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AP.G.%20(SSKM)%20Hospital%2C%20administrative%20building%20and%20campus%2010.jpg"
+ },
+ "obj-town-mosque": {
+  "name": "Mosque",
+  "article": "File:Jama Masjid 2011.jpg",
+  "author": "Marcin Białek",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AJama%20Masjid%202011.jpg"
+ },
+ "obj-town-railway-station": {
+  "name": "Railway Station",
+  "article": "File:Tiruchirappalli Junction railway station (26387).jpg",
+  "author": "Manukrishnan80",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ATiruchirappalli%20Junction%20railway%20station%20(26387).jpg"
+ },
+ "obj-town-post-office": {
+  "name": "Post Office",
+  "article": "File:Post Office Headquarters Mehsana India Post Payments Bank .jpg",
+  "author": "Nizil Shah",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APost%20Office%20Headquarters%20Mehsana%20India%20Post%20Payments%20Bank%20.jpg"
+ },
+ "obj-town-bus-stop": {
+  "name": "Bus Stop",
+  "article": "File:Bus stop babarpur.jpg",
+  "author": "Gurtej Chauhan",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABus%20stop%20babarpur.jpg"
+ },
+ "obj-town-airport": {
+  "name": "Airport",
+  "article": "File:AI B787 V19 Mumbai Airport.png",
+  "author": "Anonymous8010",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAI%20B787%20V19%20Mumbai%20Airport.png"
+ },
+ "obj-town-fire-station": {
+  "name": "Fire Station",
+  "article": "File:Fire station in Vizag.jpg",
+  "author": "రవిచంద్ర",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AFire%20station%20in%20Vizag.jpg"
+ },
+ "obj-town-petrol-pump": {
+  "name": "Petrol Pump",
+  "article": "File:Petrol Pump in Uphara.jpg",
+  "author": "Buffs Travel",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APetrol%20Pump%20in%20Uphara.jpg"
+ },
+ "obj-town-zebra-crossing": {
+  "name": "Zebra Crossing",
+  "article": "File:Pedestrian Crossing with Textured Paving Blocks.jpg",
+  "author": "Kiyok",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APedestrian%20Crossing%20with%20Textured%20Paving%20Blocks.jpg"
+ },
+ "obj-kitchen-chopping-board": {
+  "name": "Chopping Board",
+  "article": "File:Wooden Chopping Board.jpg",
+  "author": "Pisethinfo",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AWooden%20Chopping%20Board.jpg"
+ },
+ "obj-music-clarinet": {
+  "name": "Clarinet",
+  "article": "File:Clarinetist, Prague, January 2009, detail.jpg",
+  "author": "Martin Kozák",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AClarinetist%2C%20Prague%2C%20January%202009%2C%20detail.jpg"
+ },
+ "obj-sports-carrom": {
+  "name": "Carrom",
+  "article": "File:Carrom in Tamil Nadu.jpg",
+  "author": "Ajay Tallam",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACarrom%20in%20Tamil%20Nadu.jpg"
+ },
+ "obj-space-spacesuit": {
+  "name": "Spacesuit",
+  "article": "File:Sunita Williams.jpg",
+  "author": "NASA",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASunita%20Williams.jpg"
+ },
+ "obj-space-space-shuttle": {
+  "name": "Space Shuttle",
+  "article": "File:Space Shuttle Columbia launching.jpg",
+  "author": "NASA",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASpace%20Shuttle%20Columbia%20launching.jpg"
+ },
+ "obj-space-lunar-rover": {
+  "name": "Lunar Rover",
+  "article": "File:NASA Apollo 17 Lunar Roving Vehicle.jpg",
+  "author": "NASA / Harrison H. Schmitt",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ANASA%20Apollo%2017%20Lunar%20Roving%20Vehicle.jpg"
+ },
+ "obj-kitchen-pressure-cooker": {
+  "name": "Pressure Cooker",
+  "article": "File:Pressure cooker - Hawkins, Contura Model - 3 litres - 2.jpg",
+  "author": "Cantons-de-l'Est",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APressure%20cooker%20-%20Hawkins%2C%20Contura%20Model%20-%203%20litres%20-%202.jpg"
+ },
+ "obj-kitchen-kadai": {
+  "name": "Kadai",
+  "article": "File:Cooking with a wok on an outdoor stove 2.jpg",
+  "author": "Mx. Granger",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACooking%20with%20a%20wok%20on%20an%20outdoor%20stove%202.jpg"
+ },
+ "obj-kitchen-frying-pan": {
+  "name": "Frying Pan",
+  "article": "File:Frying pan pan.jpg",
+  "author": "Superspidey33",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AFrying%20pan%20pan.jpg"
+ },
+ "obj-kitchen-knife": {
+  "name": "Knife",
+  "article": "File:Knife in a table.jpg",
+  "author": "Knites",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AKnife%20in%20a%20table.jpg"
+ },
+ "obj-kitchen-strainer": {
+  "name": "Strainer",
+  "article": "File:Yellow plastic colander 2017 - C.jpg",
+  "author": "Fructibus",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AYellow%20plastic%20colander%202017%20-%20C.jpg"
+ },
+ "obj-kitchen-toaster": {
+  "name": "Toaster",
+  "article": "File:Bread in Toaster (51920214512).jpg",
+  "author": "Dejan Krsmanovic",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABread%20in%20Toaster%20(51920214512).jpg"
+ },
+ "obj-kitchen-jug": {
+  "name": "Jug",
+  "article": "File:Water Pitcher MET 176262.jpg",
+  "author": "New England Glass Company",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AWater%20Pitcher%20MET%20176262.jpg"
+ },
+ "obj-kitchen-glass": {
+  "name": "Glass",
+  "article": "File:Glass of water ouside.jpg",
+  "author": "Kurt Kaiser",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGlass%20of%20water%20ouside.jpg"
+ },
+ "obj-kitchen-sink": {
+  "name": "Sink",
+  "article": "File:Dishwashing sink at Tulppion Majat.jpg",
+  "author": "JIP",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ADishwashing%20sink%20at%20Tulppion%20Majat.jpg"
+ },
+ "obj-kitchen-tawa": {
+  "name": "Tawa",
+  "article": "File:Tawa(Griddle).jpg",
+  "author": "Rajani Gairshail",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ATawa(Griddle).jpg"
+ },
+ "obj-kitchen-gas-stove": {
+  "name": "Gas Stove",
+  "article": "File:Gas Stove (two burners).jpg",
+  "author": "K.Venkataramana",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGas%20Stove%20(two%20burners).jpg"
+ },
+ "obj-kitchen-saucepan": {
+  "name": "Saucepan",
+  "article": "File:Kupferkasserolle Stielkasserolle 16 cm Casserole.jpg",
+  "author": "Erik Streb",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AKupferkasserolle%20Stielkasserolle%2016%20cm%20Casserole.jpg"
+ },
+ "obj-kitchen-ladle": {
+  "name": "Ladle",
+  "article": "File:Set of serving ladles on stainless kitchen wall.jpg",
+  "author": "Marc-Lautenbacher",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASet%20of%20serving%20ladles%20on%20stainless%20kitchen%20wall.jpg"
  },
  "obj-music-veena": {
   "name": "Veena",
-  "article": "File:Antique-Saraswati-Veena-Double-Pumpkin-Full-Ivory-Desing- 57.jpg",
-  "author": "Sagnique",
+  "article": "File:Guru Pt Ramarao Patra Odissi Bina (Veena).jpg",
+  "author": "Prateek Pattanaik",
   "licence": "CC BY-SA 4.0",
-  "source": "https://commons.wikimedia.org/wiki/File%3AAntique-Saraswati-Veena-Double-Pumpkin-Full-Ivory-Desing-%2057.jpg"
+  "source": "https://commons.wikimedia.org/wiki/File%3AGuru%20Pt%20Ramarao%20Patra%20Odissi%20Bina%20(Veena).jpg"
+ },
+ "obj-vegetables-pumpkin": {
+  "name": "Pumpkin",
+  "article": "File:Pumpkin 2108-1292.jpg",
+  "author": "Mozzihh",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APumpkin%202108-1292.jpg"
+ },
+ "obj-vegetables-cabbage": {
+  "name": "Cabbage",
+  "article": "File:Liat Portal for Foodie Disorder - Green Cabbage.jpg",
+  "author": "HaJunkiyada",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALiat%20Portal%20for%20Foodie%20Disorder%20-%20Green%20Cabbage.jpg"
+ },
+ "obj-vegetables-corn": {
+  "name": "Corn",
+  "article": "File:Liat Portal for Foodie Disorder - Cooked Corn on the Cob.jpg",
+  "author": "HaJunkiyada",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALiat%20Portal%20for%20Foodie%20Disorder%20-%20Cooked%20Corn%20on%20the%20Cob.jpg"
+ },
+ "obj-vegetables-broccoli": {
+  "name": "Broccoli",
+  "article": "File:Good broccoli Deal!.jpg",
+  "author": "Renee Comet (Photographer)",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGood%20broccoli%20Deal!.jpg"
+ },
+ "obj-vegetables-okra": {
+  "name": "Okra",
+  "article": "File:Okra with corriander.png",
+  "author": "Andrew Z. Colvin",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AOkra%20with%20corriander.png"
+ },
+ "obj-vegetables-sweet-potato": {
+  "name": "Sweet Potato",
+  "article": "File:Liat Portal for Foodie Disorder - Sweet potatoes from San Francisco farmers market.jpg",
+  "author": "HaJunkiyada",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALiat%20Portal%20for%20Foodie%20Disorder%20-%20Sweet%20potatoes%20from%20San%20Francisco%20farmers%20market.jpg"
+ },
+ "obj-vegetables-turnip": {
+  "name": "Turnip",
+  "article": "File:Liat Portal for Foodie Disorder - Turnip.jpg",
+  "author": "HaJunkiyada",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALiat%20Portal%20for%20Foodie%20Disorder%20-%20Turnip.jpg"
+ },
+ "obj-birds-parrot": {
+  "name": "Parrot",
+  "article": "File:Alexandrine parakeet (Psittacula eupatria eupatria) male.jpg",
+  "author": "Charles J. Sharp",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAlexandrine%20parakeet%20(Psittacula%20eupatria%20eupatria)%20male.jpg"
+ },
+ "obj-birds-hornbill": {
+  "name": "Hornbill",
+  "article": "File:Great Hornbill (Buceros bicornis).jpg",
+  "author": "Malyasri Bhattacharya",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGreat%20Hornbill%20(Buceros%20bicornis).jpg"
+ },
+ "obj-flowers-rose": {
+  "name": "Rose",
+  "article": "File:Rose flower at the Lalbaghgarden Bangalore.jpg",
+  "author": "Rameshng at Malayalam Wikipedia",
+  "licence": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARose%20flower%20at%20the%20Lalbaghgarden%20Bangalore.jpg"
+ },
+ "obj-flowers-gerbera": {
+  "name": "Gerbera",
+  "article": "File:Yellow Gerbera daisy flower.jpg",
+  "author": "Aliva Sahoo",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AYellow%20Gerbera%20daisy%20flower.jpg"
+ },
+ "obj-helpers-nurse": {
+  "name": "Nurse",
+  "article": "File:Nurse checks blood pressure.jpg",
+  "author": "Linda Bartlett (Photographer)",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ANurse%20checks%20blood%20pressure.jpg"
+ },
+ "obj-helpers-scientist": {
+  "name": "Scientist",
+  "article": "File:Researcher uses pipettes.jpg",
+  "author": "Rhoda Baer (Photographer)",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AResearcher%20uses%20pipettes.jpg"
+ },
+ "obj-sea-fish": {
+  "name": "Fish",
+  "article": "File:CSIRO ScienceImage 2879 Tropical Reef Fish.jpg",
+  "author": "Robert Kerton, CSIRO",
+  "licence": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ACSIRO%20ScienceImage%202879%20Tropical%20Reef%20Fish.jpg"
+ },
+ "obj-sea-pufferfish": {
+  "name": "Pufferfish",
+  "article": "File:Spotted Puffer Fish. (13421084473).jpg",
+  "author": "Bernard Spragg. NZ from Christchurch, New Zealand",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASpotted%20Puffer%20Fish.%20(13421084473).jpg"
+ },
+ "obj-farm-sheep": {
+  "name": "Sheep",
+  "article": "File:Swaledale Sheep, Lake District, England - June 2009.jpg",
+  "author": "User:Diliff",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASwaledale%20Sheep%2C%20Lake%20District%2C%20England%20-%20June%202009.jpg"
+ },
+ "obj-farm-donkey": {
+  "name": "Donkey",
+  "article": "File:Equus asinus Kadzidłowo 001.jpg",
+  "author": "Lilly M",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AEquus%20asinus%20Kadzid%C5%82owo%20001.jpg"
+ },
+ "obj-farm-ox": {
+  "name": "Ox",
+  "article": "File:Kangayam bull, Kolathupalayam Getticheviyur (2).jpg",
+  "author": "Ksp balu",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AKangayam%20bull%2C%20Kolathupalayam%20Getticheviyur%20(2).jpg"
+ },
+ "obj-farm-calf": {
+  "name": "Calf",
+  "article": "File:Sand colored calf trotting in the countryside of Don Det Laos.jpg",
+  "author": "Basile Morin",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASand%20colored%20calf%20trotting%20in%20the%20countryside%20of%20Don%20Det%20Laos.jpg"
+ },
+ "obj-pets-gecko": {
+  "name": "Gecko",
+  "article": "File:Gecko Lizard.jpg",
+  "author": "Kwabenabaop",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGecko%20Lizard.jpg"
+ },
+ "obj-pets-guppy": {
+  "name": "Guppy",
+  "article": "File:Poecilia reticulata - Guppy, male, cobra-green morph.jpg",
+  "author": "5snake5",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APoecilia%20reticulata%20-%20Guppy%2C%20male%2C%20cobra-green%20morph.jpg"
+ },
+ "obj-pets-dog": {
+  "name": "Dog",
+  "article": "File:Dog sitting on grass (7257609304).jpg",
+  "author": "Andrew Filer from Seattle (ex-Minneapolis)",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ADog%20sitting%20on%20grass%20(7257609304).jpg"
+ },
+ "obj-weather-star": {
+  "name": "Star",
+  "article": "File:The Dog Star, Sirius, and its Tiny Companion (2005-36-1820).jpg",
+  "author": "NASA, H.E. Bond and E. Nelan (Space Telescope Science Institute, Baltimore, Md.); M. Barstow and M. Burleigh (University of Leicester, U.K.); and J.B. Holberg (University of Arizona)",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AThe%20Dog%20Star%2C%20Sirius%2C%20and%20its%20Tiny%20Companion%20(2005-36-1820).jpg"
+ },
+ "obj-weather-rain": {
+  "name": "Rain",
+  "article": "File:Rain drops (Unsplash).jpg",
+  "author": "Inge Maria ingemusic",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARain%20drops%20(Unsplash).jpg"
+ },
+ "obj-weather-fog": {
+  "name": "Fog",
+  "article": "File:Foggy road in Tuntorp.jpg",
+  "author": "W.carter",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AFoggy%20road%20in%20Tuntorp.jpg"
+ },
+ "obj-weather-wind": {
+  "name": "Wind",
+  "article": "File:2026-08-22 Letfest windsock 03.jpg",
+  "author": "Retired electrician",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3A2026-08-22%20Letfest%20windsock%2003.jpg"
+ },
+ "obj-weather-puddle": {
+  "name": "Puddle",
+  "article": "File:Rain puddle reflection Cot Way Shepherds Cot Crouch End London England 01.jpg",
+  "author": "Acabashi",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARain%20puddle%20reflection%20Cot%20Way%20Shepherds%20Cot%20Crouch%20End%20London%20England%2001.jpg"
+ },
+ "obj-clothes-dress": {
+  "name": "Dress",
+  "article": "File:Girl in white dress running in the backyard.jpg",
+  "author": "Shixart1985",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGirl%20in%20white%20dress%20running%20in%20the%20backyard.jpg"
+ },
+ "obj-clothes-shorts": {
+  "name": "Shorts",
+  "article": "File:Orange men's shorts for sale at Target.jpg",
+  "author": "Ser Amantio di Nicolao",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AOrange%20men's%20shorts%20for%20sale%20at%20Target.jpg"
+ },
+ "obj-clothes-raincoat": {
+  "name": "Raincoat",
+  "article": "File:Rain coat (3705441959).jpg",
+  "author": "Emran Kassim",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARain%20coat%20(3705441959).jpg"
+ },
+ "obj-clothes-tie": {
+  "name": "Tie",
+  "article": "File:Dress-pinstripe.jpg",
+  "author": "Tore Nergaard",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3ADress-pinstripe.jpg"
+ },
+ "obj-clothes-apron": {
+  "name": "Apron",
+  "article": "File:Apron with pockets for clothes pegs.png",
+  "author": "Wribln",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AApron%20with%20pockets%20for%20clothes%20pegs.png"
+ },
+ "obj-clothes-swimsuit": {
+  "name": "Swimsuit",
+  "article": "File:Polo Sport Ralph Lauren trunks.jpg",
+  "author": "Menswear Market",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APolo%20Sport%20Ralph%20Lauren%20trunks.jpg"
+ },
+ "obj-music-sitar": {
+  "name": "Sitar",
+  "article": "File:Pt. Shivnath Mishra.jpg",
+  "author": "Nandanupadhyay",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APt.%20Shivnath%20Mishra.jpg"
+ },
+ "obj-music-bagpipes": {
+  "name": "Bagpipes",
+  "article": "File:Bagpiper of the International Celtic Pipes and Drums 1.jpg",
+  "author": "Dmitry Ivanov.",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABagpiper%20of%20the%20International%20Celtic%20Pipes%20and%20Drums%201.jpg"
+ },
+ "obj-home-table": {
+  "name": "Table",
+  "article": "File:Tavolino DSC 0482.tif",
+  "author": "Unknown",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ATavolino%20DSC%200482.tif"
+ },
+ "obj-home-bed": {
+  "name": "Bed",
+  "article": "File:Wooden Four-poster Bed - Bedroom - Swami Vivekanandas Ancestral House - Kolkata 2011-10-22 6101.JPG",
+  "author": "Biswarup Ganguly",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AWooden%20Four-poster%20Bed%20-%20Bedroom%20-%20Swami%20Vivekanandas%20Ancestral%20House%20-%20Kolkata%202011-10-22%206101.JPG"
+ },
+ "obj-home-fork": {
+  "name": "Fork",
+  "article": "File:Fork, knife and spoon made of bamboo on a plate.jpg",
+  "author": "Cupofjoy",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AFork%2C%20knife%20and%20spoon%20made%20of%20bamboo%20on%20a%20plate.jpg"
+ },
+ "obj-home-plate": {
+  "name": "Plate",
+  "article": "File:Decorative plate from Poland Bogucice Katowice Porcelana Śląska 1952-1993 01.jpg",
+  "author": "Abraham",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ADecorative%20plate%20from%20Poland%20Bogucice%20Katowice%20Porcelana%20%C5%9Al%C4%85ska%201952-1993%2001.jpg"
+ },
+ "obj-home-fridge": {
+  "name": "Fridge",
+  "article": "File:Kitchen old design with different appliances.jpg",
+  "author": "Smtzzz",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AKitchen%20old%20design%20with%20different%20appliances.jpg"
+ },
+ "obj-home-mirror": {
+  "name": "Mirror",
+  "article": "File:Mirror MET DP106620.jpg",
+  "author": "Unknown",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMirror%20MET%20DP106620.jpg"
+ },
+ "obj-home-blanket": {
+  "name": "Blanket",
+  "article": "File:Grey knitted blanket.jpg",
+  "author": "Hannah Clover",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGrey%20knitted%20blanket.jpg"
+ },
+ "obj-food-pasta": {
+  "name": "Pasta",
+  "article": "File:A plate of red sauce pasta.jpg",
+  "author": "Rocky Masum This work was made by Masum-al-Hasan Rocky and released under the license(s) stated below. Please feel free to use it for any purpose as long as you credit Masum-al-Hasan Rocky as author and follow the terms of the chosen license. If you use this work outside of the Wikimedia projects, I would very much like to get a note from you. Thanks!",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AA%20plate%20of%20red%20sauce%20pasta.jpg"
+ },
+ "obj-toys-doll": {
+  "name": "Doll",
+  "article": "File:Mexican rag doll from Chiapas (muñeca chiapaneca).jpg",
+  "author": "Mapache027",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMexican%20rag%20doll%20from%20Chiapas%20(mu%C3%B1eca%20chiapaneca).jpg"
+ },
+ "obj-toys-kite": {
+  "name": "Kite",
+  "article": "File:Go fly a kite (7511318416).jpg",
+  "author": "Christopher Michel",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGo%20fly%20a%20kite%20(7511318416).jpg"
+ },
+ "obj-toys-skipping-rope": {
+  "name": "Skipping Rope",
+  "article": "File:Skipping Rope (5004365763).jpg",
+  "author": "RichardBH from Hamilton, Canada",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASkipping%20Rope%20(5004365763).jpg"
+ },
+ "obj-school-abacus": {
+  "name": "Abacus",
+  "article": "File:20th Century Small Wooden Abacus.jpg",
+  "author": "Deinodactyla",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3A20th%20Century%20Small%20Wooden%20Abacus.jpg"
+ },
+ "obj-school-desk": {
+  "name": "Desk",
+  "article": "File:School desk - Kolomna local museum.jpg",
+  "author": "Лапоть",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASchool%20desk%20-%20Kolomna%20local%20museum.jpg"
+ },
+ "obj-festivals-lantern": {
+  "name": "Lantern",
+  "article": "File:Diwali Lanterns 2.jpg",
+  "author": "आर्या जोशी",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ADiwali%20Lanterns%202.jpg"
+ },
+ "obj-festivals-garland": {
+  "name": "Garland",
+  "article": "File:Marigold Flowers as garland.jpg",
+  "author": "SnapMeUp",
+  "licence": "CC BY 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMarigold%20Flowers%20as%20garland.jpg"
+ },
+ "obj-festivals-bunting": {
+  "name": "Bunting",
+  "article": "File:Pink Bunting (7889856472).jpg",
+  "author": "Pete",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3APink%20Bunting%20(7889856472).jpg"
+ },
+ "obj-festivals-firecracker": {
+  "name": "Firecracker",
+  "article": "File:Sparklers at DLF City Phase 2, K Block, Gurgaon during Diwali 2.jpg",
+  "author": "Slyronit",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASparklers%20at%20DLF%20City%20Phase%202%2C%20K%20Block%2C%20Gurgaon%20during%20Diwali%202.jpg"
+ },
+ "obj-plants-branch": {
+  "name": "Branch",
+  "article": "File:A branch with autumn leaves.jpg",
+  "author": "iurie.ph",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AA%20branch%20with%20autumn%20leaves.jpg"
+ },
+ "obj-plants-bud": {
+  "name": "Bud",
+  "article": "File:Nelumbo nucifera, also known as Indian lotus in bud stage (Image 7 of 7).jpg",
+  "author": "Subhrajyoti07",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ANelumbo%20nucifera%2C%20also%20known%20as%20Indian%20lotus%20in%20bud%20stage%20(Image%207%20of%207).jpg"
+ },
+ "obj-plants-moss": {
+  "name": "Moss",
+  "article": "File:MOSS ROCK (5593170966).jpg",
+  "author": "Forest Service - Northern Region",
+  "licence": "Public domain",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMOSS%20ROCK%20(5593170966).jpg"
+ },
+ "obj-plants-sapling": {
+  "name": "Sapling",
+  "article": "File:The seedling.jpg",
+  "author": "Path slopu",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AThe%20seedling.jpg"
+ },
+ "obj-sports-cricket": {
+  "name": "Cricket",
+  "article": "File:Master Blaster at work.jpg",
+  "author": "Vikas",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AMaster%20Blaster%20at%20work.jpg"
+ },
+ "obj-sports-golf": {
+  "name": "Golf",
+  "article": "File:Golfer in Golf Links 1.jpg",
+  "author": "kallerna",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGolfer%20in%20Golf%20Links%201.jpg"
+ },
+ "obj-sports-surfing": {
+  "name": "Surfing",
+  "article": "File:Surfing - Cocoa Beach - Florida.jpg",
+  "author": "Watts",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASurfing%20-%20Cocoa%20Beach%20-%20Florida.jpg"
+ },
+ "obj-nature-hill": {
+  "name": "Hill",
+  "article": "File:Tuscan landscape with lonely tree.jpg",
+  "author": "Eric Kilby",
+  "licence": "CC BY-SA 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ATuscan%20landscape%20with%20lonely%20tree.jpg"
+ },
+ "obj-reptiles-tadpole": {
+  "name": "Tadpole",
+  "article": "File:Tadpoles 10 days.jpg",
+  "author": "The original uploader was Tarquin at English Wikipedia.",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ATadpoles%2010%20days.jpg"
+ },
+ "obj-reptiles-gharial": {
+  "name": "Gharial",
+  "article": "File:Gavialis gangeticus.jpg",
+  "author": "Cliff",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGavialis%20gangeticus.jpg"
+ },
+ "obj-reptiles-monitor-lizard": {
+  "name": "Monitor Lizard",
+  "article": "File:Bengal monitor (Varanus bengalensis)..jpg",
+  "author": "Md shahanshah bappy",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABengal%20monitor%20(Varanus%20bengalensis)..jpg"
+ },
+ "obj-town-playground": {
+  "name": "Playground",
+  "article": "File:Slide and swings at playground of ZŠ ul. Kpt. Jaroše in Třebíč, Třebíč District.jpg",
+  "author": "Frettie",
+  "licence": "CC BY 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ASlide%20and%20swings%20at%20playground%20of%20Z%C5%A0%20ul.%20Kpt.%20Jaro%C5%A1e%20in%20T%C5%99eb%C3%AD%C4%8D%2C%20T%C5%99eb%C3%AD%C4%8D%20District.jpg"
+ },
+ "obj-clothes-shirt": {
+  "name": "Shirt",
+  "article": "File:Banana Republic Button-Down Shirt 2 2019-03-21.jpg",
+  "author": "FASTILY",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ABanana%20Republic%20Button-Down%20Shirt%202%202019-03-21.jpg"
+ },
+ "obj-clothes-trousers": {
+  "name": "Trousers",
+  "article": "File:Chino pants.jpg",
+  "author": "Kuha455405",
+  "licence": "CC BY-SA 3.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AChino%20pants.jpg"
+ },
+ "obj-home-broom": {
+  "name": "Broom",
+  "article": "File:Chinese broom and sweeping tool.jpg",
+  "author": "J. Samuel Burner",
+  "licence": "CC BY 2.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AChinese%20broom%20and%20sweeping%20tool.jpg"
+ },
+ "obj-body-elbow": {
+  "name": "Elbow",
+  "article": "File:Running boy in joyous mood.jpg",
+  "author": "Sasin Tipchai",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3ARunning%20boy%20in%20joyous%20mood.jpg"
+ },
+ "obj-body-knee": {
+  "name": "Knee",
+  "article": "File:ALCANZANDO METAS GUATAPE 2017.jpg",
+  "author": "ALONSOZAR",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AALCANZANDO%20METAS%20GUATAPE%202017.jpg"
+ },
+ "obj-body-cheek": {
+  "name": "Cheek",
+  "article": "File:Grinning young boy of Laos.jpg",
+  "author": "Basile Morin",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGrinning%20young%20boy%20of%20Laos.jpg"
+ },
+ "obj-body-chin": {
+  "name": "Chin",
+  "article": "File:Grinning young boy of Laos.jpg",
+  "author": "Basile Morin",
+  "licence": "CC BY-SA 4.0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AGrinning%20young%20boy%20of%20Laos.jpg"
+ },
+ "obj-school-book": {
+  "name": "Book",
+  "article": "File:Old Books 01.JPG",
+  "author": "Ch. Maderthoner",
+  "licence": "CC0",
+  "source": "https://commons.wikimedia.org/wiki/File%3AOld%20Books%2001.JPG"
  }
 }

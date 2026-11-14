@@ -76,20 +76,36 @@ def contained():
             for c in cards['categories'] for i in c['items']
             if c.get('crop') == 'contain' or i.get('crop') == 'contain'}
 
+def plain_edge(im):
+    """the photo's border colour, and whether the border is plain (a product shot on
+    white, a planet on black) - only then can it be padded out to a square without the
+    padding showing as a box"""
+    w, h = im.size
+    px = [im.getpixel((x, y)) for x in range(0, w, max(1, w // 60)) for y in (0, h - 1)]
+    px += [im.getpixel((x, y)) for y in range(0, h, max(1, h // 60)) for x in (0, w - 1)]
+    mid = tuple(sorted(p[i] for p in px)[len(px) // 2] for i in range(3))
+    near = sum(max(abs(p[i] - mid[i]) for i in range(3)) < 20 for p in px) / len(px)
+    return mid, near > 0.8     # ponytail: hand-picked; a subject touching the edge stays under 20%
+
 def contain(path, rim, frame=None):
-    """the whole frame fitted inside a white square; the inset keeps the card's rounded
-    corners off the subject"""
-    inner = int(SIZE * 0.88)
+    """the whole frame fitted inside a square: flags on white with a grey rim, a single
+    card a little smaller on its own plain backdrop. Returns (image, plain?) - a single
+    card on a busy backdrop shows as a box, so it is listed for a better photo"""
     im = Image.open(path).convert('RGB')
     if frame:
         w, h = im.size
         im = im.crop((int(frame[0] * w), int(frame[1] * h), int(frame[2] * w), int(frame[3] * h)))
-    im = ImageOps.contain(im, (inner, inner), Image.LANCZOS)
+    bg, plain = ('white', True) if rim else plain_edge(im)
+    out = Image.new('RGB', (SIZE, SIZE), bg)
+    # flags all fit one 3:2 box, so a square flag (Switzerland) or a pennant (Nepal)
+    # sits at the same height as the rest instead of towering over them
+    # a hand-trimmed frame is already the card (a caption cut off), so it fills the square
+    box = (int(SIZE * 0.88), int(SIZE * 0.88 * 2 / 3)) if rim else (int(SIZE * (1.0 if frame else 0.80)),) * 2
+    im = ImageOps.contain(im, box, Image.LANCZOS)
     if rim:
         im = ImageOps.expand(im, border=2, fill='#D0D0D0')
-    out = Image.new('RGB', (SIZE, SIZE), 'white')
     out.paste(im, ((SIZE - im.width) // 2, (SIZE - im.height) // 2))
-    return out
+    return out, plain
 
 def main():
     want = set(sys.argv[1:])
@@ -104,7 +120,8 @@ def main():
     for p in paths:
         slot = os.path.basename(p)[:-4]
         if slot in centre:
-            im, fits, cov = contain(p, *centre[slot]), True, 1.0
+            im, fits = contain(p, *centre[slot])
+            cov = 1.0 if fits else 0.0     # busy backdrop: listed below like a cut subject
         else:
             im, fits, cov = crop(p, boxes[p])
         if slot in pts:
